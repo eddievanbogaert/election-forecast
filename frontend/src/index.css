@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply antialiased;
+  }
+  body {
+    @apply bg-gray-950 text-gray-100;
+  }
+  * {
+    box-sizing: border-box;
+  }
+}
+
+/* Smooth scrollbar for race list */
+.overflow-y-auto {
+  scrollbar-width: thin;
+  scrollbar-color: #374151 transparent;
+}
+.overflow-y-auto::-webkit-scrollbar {
+  width: 4px;
+}
+.overflow-y-auto::-webkit-scrollbar-track {
+  background: transparent;
+}
+.overflow-y-auto::-webkit-scrollbar-thumb {
+  background-color: #374151;
+  border-radius: 2px;
+}

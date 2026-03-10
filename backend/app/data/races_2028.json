@@ -1,0 +1,387 @@
+{
+  "election_date": "2028-11-07",
+  "cycle": 2028,
+  "current_president_party": "R",
+  "comment": "Senate Class III seats. dem_seats_not_up / rep_seats_not_up estimated after 2026 midterms (Class II).",
+  "dem_seats_not_up": 34,
+  "rep_seats_not_up": 32,
+  "races": [
+    {
+      "state": "Alabama",
+      "state_code": "AL",
+      "incumbent": {"name": "Katie Britt", "party": "R", "last_margin": 33.2, "years_in_office": 6},
+      "is_open": false,
+      "pvi": 27,
+      "candidates": {
+        "dem": {"name": "TBD", "quality_score": 3, "is_incumbent": false},
+        "rep": {"name": "Katie Britt", "quality_score": 7, "is_incumbent": true}
+      }
+    },
+    {
+      "state": "Alaska",
+      "state_code": "AK",
+      "incumbent": {"name": "Lisa Murkowski", "party": "R", "last_margin": 11.3, "years_in_office": 22},
+      "is_open": false,
+      "pvi": 9,
+      "candidates": {
+        "dem": {"name": "TBD", "quality_score": 4, "is_incumbent": false},
+        "rep": {"name": "Lisa Murkowski", "quality_score": 7, "is_incumbent": true}
+      }
+    },
+    {
+      "state": "Arizona",
+      "state_code": "AZ",
+      "incumbent": {"name": "Mark Kelly", "party": "D", "last_margin": 5.0, "years_in_office": 6},
+      "is_open": false,
+      "pvi": 2,
+      "candidates": {
+        "dem": {"name": "Mark Kelly", "quality_score": 8, "is_incumbent": true},
+        "rep": {"name": "TBD", "quality_score": 5, "is_incumbent": false}
+      }
+    },
+    {
+      "state": "Arkansas",
+      "state_code": "AR",
+      "incumbent": {"name": "John Boozman", "party": "R", "last_margin": 34.2, "years_in_office": 14},
+      "is_open": false,
+      "pvi": 24,
+      "candidates": {
+        "dem": {"name": "TBD", "quality_score": 2, "is_incumbent": false},
+        "rep": {"name": "John Boozman", "quality_score": 6, "is_incumbent": true}
+      }
+    },
+    {
+      "state": "California",
+      "state_code": "CA",
+      "incumbent": {"name": "Alex Padilla", "party": "D", "last_margin": 19.8, "years_in_office": 6},
+      "is_open": false,
+      "pvi": -29,
+      "candidates": {
+        "dem": {"name": "Alex Padilla", "quality_score": 7, "is_incumbent": true},
+        "rep": {"name": "TBD", "quality_score": 3, "is_incumbent": false}
+      }
+    },
+    {
+      "state": "Colorado",
+      "state_code": "CO",
+      "incumbent": {"name": "Michael Bennet", "party": "D", "last_margin": 15.9, "years_in_office": 18},
+      "is_open": false,
+      "pvi": -4,
+      "candidates": {
+        "dem": {"name": "Michael Bennet", "quality_score": 7, "is_incumbent": true},
+        "rep": {"name": "TBD", "quality_score": 5, "is_incumbent": false}
+      }
+    },
+    {
+      "state": "Connecticut",
+      "state_code": "CT",
+      "incumbent": {"name": "Richard Blumenthal", "party": "D", "last_margin": 20.5, "years_in_office": 14},
+      "is_open": false,
+      "pvi": -10,
+      "candidates": {
+        "dem": {"name": "Richard Blumenthal", "quality_score": 6, "is_incumbent": true},
+        "rep": {"name": "TBD", "quality_score": 4, "is_incumbent": false}
+      }
+    },
+    {
+      "state": "Florida",
+      "state_code": "FL",
+      "incumbent": null,
+      "is_open": true,
+      "pvi": 5,
+      "note": "Marco Rubio vacated seat upon confirmation as Secretary of State; governor appointed successor, special election pending",
+      "candidates": {
+        "dem": {"name": "TBD", "quality_score": 5, "is_incumbent": false},
+        "rep": {"name": "TBD", "quality_score": 6, "is_incumbent": false}
+      }
+    },
+    {
+      "state": "Georgia",
+      "state_code": "GA",
+      "incumbent": {"name": "Raphael Warnock", "party": "D", "last_margin": 2.8, "years_in_office": 6},
+      "is_open": false,
+      "pvi": 4,
+      "candidates": {
+        "dem": {"name": "Raphael Warnock", "quality_score": 8, "is_incumbent": true},
+        "rep": {"name": "TBD", "quality_score": 5, "is_incumbent": false}
+      }
+    },
+    {
+      "state": "Hawaii",
+      "state_code": "HI",
+      "incumbent": {"name": "Brian Schatz", "party": "D", "last_margin": 37.8, "years_in_office": 14},
+      "is_open": false,
+      "pvi": -30,
+      "candidates": {
+        "dem": {"name": "Brian Schatz", "quality_score": 7, "is_incumbent": true},
+        "rep": {"name": "TBD", "quality_score": 2, "is_incumbent": false}
+      }
+    },
+    {
+      "state": "Idaho",
+      "state_code": "ID",
+      "incumbent": {"name": "Mike Crapo", "party": "R", "last_margin": 40.7, "years_in_office": 26},
+      "is_open": false,
+      "pvi": 32,
+      "candidates": {
+        "dem": {"name": "TBD", "quality_score": 2, "is_incumbent": false},
+        "rep": {"name": "Mike Crapo", "quality_score": 6, "is_incumbent": true}
+      }
+    },
+    {
+      "state": "Illinois",
+      "state_code": "IL",
+      "incumbent": {"name": "Tammy Duckworth", "party": "D", "last_margin": 13.8, "years_in_office": 8},
+      "is_open": false,
+      "pvi": -17,
+      "candidates": {
+        "dem": {"name": "Tammy Duckworth", "quality_score": 8, "is_incumbent": true},
+        "rep": {"name": "TBD", "quality_score": 3, "is_incumbent": false}
+      }
+    },
+    {
+      "state": "Indiana",
+      "state_code": "IN",
+      "incumbent": {"name": "Todd Young", "party": "R", "last_margin": 12.5, "years_in_office": 8},
+      "is_open": false,
+      "pvi": 18,
+      "candidates": {
+        "dem": {"name": "TBD", "quality_score": 4, "is_incumbent": false},
+        "rep": {"name": "Todd Young", "quality_score": 6, "is_incumbent": true}
+      }
+    },
+    {
+      "state": "Iowa",
+      "state_code": "IA",
+      "incumbent": {"name": "Chuck Grassley", "party": "R", "last_margin": 16.1, "years_in_office": 44},
+      "is_open": false,
+      "pvi": 10,
+      "note": "Grassley will be 95 at time of election; retirement is possible, which would dramatically increase competitiveness",
+      "candidates": {
+        "dem": {"name": "TBD", "quality_score": 5, "is_incumbent": false},
+        "rep": {"name": "Chuck Grassley", "quality_score": 5, "is_incumbent": true}
+      }
+    },
+    {
+      "state": "Kansas",
+      "state_code": "KS",
+      "incumbent": {"name": "Jerry Moran", "party": "R", "last_margin": 27.5, "years_in_office": 14},
+      "is_open": false,
+      "pvi": 20,
+      "candidates": {
+        "dem": {"name": "TBD", "quality_score": 3, "is_incumbent": false},
+        "rep": {"name": "Jerry Moran", "quality_score": 6, "is_incumbent": true}
+      }
+    },
+    {
+      "state": "Kentucky",
+      "state_code": "KY",
+      "incumbent": {"name": "Rand Paul", "party": "R", "last_margin": 12.1, "years_in_office": 14},
+      "is_open": false,
+      "pvi": 26,
+      "candidates": {
+        "dem": {"name": "TBD", "quality_score": 3, "is_incumbent": false},
+        "rep": {"name": "Rand Paul", "quality_score": 6, "is_incumbent": true}
+      }
+    },
+    {
+      "state": "Louisiana",
+      "state_code": "LA",
+      "incumbent": {"name": "John Kennedy", "party": "R", "last_margin": 17.5, "years_in_office": 8},
+      "is_open": false,
+      "pvi": 20,
+      "candidates": {
+        "dem": {"name": "TBD", "quality_score": 3, "is_incumbent": false},
+        "rep": {"name": "John Kennedy", "quality_score": 6, "is_incumbent": true}
+      }
+    },
+    {
+      "state": "Maryland",
+      "state_code": "MD",
+      "incumbent": {"name": "Chris Van Hollen", "party": "D", "last_margin": 19.2, "years_in_office": 8},
+      "is_open": false,
+      "pvi": -24,
+      "candidates": {
+        "dem": {"name": "Chris Van Hollen", "quality_score": 7, "is_incumbent": true},
+        "rep": {"name": "TBD", "quality_score": 3, "is_incumbent": false}
+      }
+    },
+    {
+      "state": "Missouri",
+      "state_code": "MO",
+      "incumbent": {"name": "Eric Schmitt", "party": "R", "last_margin": 13.6, "years_in_office": 6},
+      "is_open": false,
+      "pvi": 18,
+      "candidates": {
+        "dem": {"name": "TBD", "quality_score": 4, "is_incumbent": false},
+        "rep": {"name": "Eric Schmitt", "quality_score": 6, "is_incumbent": true}
+      }
+    },
+    {
+      "state": "Nevada",
+      "state_code": "NV",
+      "incumbent": {"name": "Catherine Cortez Masto", "party": "D", "last_margin": 0.8, "years_in_office": 8},
+      "is_open": false,
+      "pvi": -1,
+      "candidates": {
+        "dem": {"name": "Catherine Cortez Masto", "quality_score": 7, "is_incumbent": true},
+        "rep": {"name": "TBD", "quality_score": 5, "is_incumbent": false}
+      }
+    },
+    {
+      "state": "New Hampshire",
+      "state_code": "NH",
+      "incumbent": {"name": "Maggie Hassan", "party": "D", "last_margin": 9.1, "years_in_office": 8},
+      "is_open": false,
+      "pvi": -1,
+      "candidates": {
+        "dem": {"name": "Maggie Hassan", "quality_score": 7, "is_incumbent": true},
+        "rep": {"name": "TBD", "quality_score": 5, "is_incumbent": false}
+      }
+    },
+    {
+      "state": "New York",
+      "state_code": "NY",
+      "incumbent": {"name": "Chuck Schumer", "party": "D", "last_margin": 11.1, "years_in_office": 26},
+      "is_open": false,
+      "pvi": -23,
+      "candidates": {
+        "dem": {"name": "Chuck Schumer", "quality_score": 8, "is_incumbent": true},
+        "rep": {"name": "TBD", "quality_score": 4, "is_incumbent": false}
+      }
+    },
+    {
+      "state": "North Carolina",
+      "state_code": "NC",
+      "incumbent": {"name": "Ted Budd", "party": "R", "last_margin": 3.3, "years_in_office": 6},
+      "is_open": false,
+      "pvi": 3,
+      "candidates": {
+        "dem": {"name": "TBD", "quality_score": 5, "is_incumbent": false},
+        "rep": {"name": "Ted Budd", "quality_score": 6, "is_incumbent": true}
+      }
+    },
+    {
+      "state": "North Dakota",
+      "state_code": "ND",
+      "incumbent": {"name": "John Hoeven", "party": "R", "last_margin": 43.5, "years_in_office": 14},
+      "is_open": false,
+      "pvi": 35,
+      "candidates": {
+        "dem": {"name": "TBD", "quality_score": 2, "is_incumbent": false},
+        "rep": {"name": "John Hoeven", "quality_score": 6, "is_incumbent": true}
+      }
+    },
+    {
+      "state": "Ohio",
+      "state_code": "OH",
+      "incumbent": null,
+      "is_open": true,
+      "pvi": 8,
+      "note": "J.D. Vance vacated seat upon inauguration as Vice President; governor appointed successor",
+      "candidates": {
+        "dem": {"name": "TBD", "quality_score": 5, "is_incumbent": false},
+        "rep": {"name": "TBD (appointed)", "quality_score": 5, "is_incumbent": false}
+      }
+    },
+    {
+      "state": "Oklahoma",
+      "state_code": "OK",
+      "incumbent": {"name": "James Lankford", "party": "R", "last_margin": 38.5, "years_in_office": 10},
+      "is_open": false,
+      "pvi": 26,
+      "candidates": {
+        "dem": {"name": "TBD", "quality_score": 2, "is_incumbent": false},
+        "rep": {"name": "James Lankford", "quality_score": 6, "is_incumbent": true}
+      }
+    },
+    {
+      "state": "Oregon",
+      "state_code": "OR",
+      "incumbent": {"name": "Jeff Merkley", "party": "D", "last_margin": 12.7, "years_in_office": 16},
+      "is_open": false,
+      "pvi": -14,
+      "candidates": {
+        "dem": {"name": "Jeff Merkley", "quality_score": 7, "is_incumbent": true},
+        "rep": {"name": "TBD", "quality_score": 4, "is_incumbent": false}
+      }
+    },
+    {
+      "state": "Pennsylvania",
+      "state_code": "PA",
+      "incumbent": {"name": "John Fetterman", "party": "D", "last_margin": 4.9, "years_in_office": 6},
+      "is_open": false,
+      "pvi": 1,
+      "candidates": {
+        "dem": {"name": "John Fetterman", "quality_score": 6, "is_incumbent": true},
+        "rep": {"name": "TBD", "quality_score": 5, "is_incumbent": false}
+      }
+    },
+    {
+      "state": "South Carolina",
+      "state_code": "SC",
+      "incumbent": {"name": "Tim Scott", "party": "R", "last_margin": 27.7, "years_in_office": 12},
+      "is_open": false,
+      "pvi": 11,
+      "candidates": {
+        "dem": {"name": "TBD", "quality_score": 4, "is_incumbent": false},
+        "rep": {"name": "Tim Scott", "quality_score": 6, "is_incumbent": true}
+      }
+    },
+    {
+      "state": "South Dakota",
+      "state_code": "SD",
+      "incumbent": {"name": "John Thune", "party": "R", "last_margin": 25.9, "years_in_office": 20},
+      "is_open": false,
+      "pvi": 27,
+      "candidates": {
+        "dem": {"name": "TBD", "quality_score": 2, "is_incumbent": false},
+        "rep": {"name": "John Thune", "quality_score": 7, "is_incumbent": true}
+      }
+    },
+    {
+      "state": "Utah",
+      "state_code": "UT",
+      "incumbent": {"name": "Mike Lee", "party": "R", "last_margin": 18.2, "years_in_office": 14},
+      "is_open": false,
+      "pvi": 20,
+      "candidates": {
+        "dem": {"name": "TBD", "quality_score": 3, "is_incumbent": false},
+        "rep": {"name": "Mike Lee", "quality_score": 6, "is_incumbent": true}
+      }
+    },
+    {
+      "state": "Vermont",
+      "state_code": "VT",
+      "incumbent": {"name": "Peter Welch", "party": "D", "last_margin": 38.7, "years_in_office": 6},
+      "is_open": false,
+      "pvi": -35,
+      "candidates": {
+        "dem": {"name": "Peter Welch", "quality_score": 7, "is_incumbent": true},
+        "rep": {"name": "TBD", "quality_score": 2, "is_incumbent": false}
+      }
+    },
+    {
+      "state": "Washington",
+      "state_code": "WA",
+      "incumbent": {"name": "Patty Murray", "party": "D", "last_margin": 13.6, "years_in_office": 32},
+      "is_open": false,
+      "pvi": -14,
+      "candidates": {
+        "dem": {"name": "Patty Murray", "quality_score": 7, "is_incumbent": true},
+        "rep": {"name": "TBD", "quality_score": 4, "is_incumbent": false}
+      }
+    },
+    {
+      "state": "Wisconsin",
+      "state_code": "WI",
+      "incumbent": {"name": "Ron Johnson", "party": "R", "last_margin": 1.0, "years_in_office": 14},
+      "is_open": false,
+      "pvi": 1,
+      "candidates": {
+        "dem": {"name": "TBD", "quality_score": 6, "is_incumbent": false},
+        "rep": {"name": "Ron Johnson", "quality_score": 5, "is_incumbent": true}
+      }
+    }
+  ]
+}
