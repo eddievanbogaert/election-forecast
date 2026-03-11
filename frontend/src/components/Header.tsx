@@ -10,7 +10,7 @@ export function Header({ meta }: Props) {
       <div className="max-w-screen-xl mx-auto flex items-center justify-between gap-4 flex-wrap">
         <div className="flex items-center gap-3">
           <div className="text-2xl font-bold text-white tracking-tight">
-            <span className="text-blue-400">2028</span>{' '}
+            <span className="text-blue-400">2026</span>{' '}
             <span className="text-gray-100">Senate Forecast</span>
           </div>
           <span className="hidden sm:block text-xs font-medium bg-gray-800 text-gray-400 rounded px-2 py-0.5">

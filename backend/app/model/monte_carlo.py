@@ -1,5 +1,5 @@
 """
-Monte Carlo simulation engine for the 2028 Senate forecast.
+Monte Carlo simulation engine for the 2026 Senate forecast.
 
 Architecture
 ------------
@@ -40,7 +40,7 @@ from .fundamentals import (
 
 N_SIMS: int = 40_000
 SIGMA_NATIONAL: float = 2.5   # national wave error (all states move together)
-DATA_PATH = Path(__file__).parent.parent / "data" / "races_2028.json"
+DATA_PATH = Path(__file__).parent.parent / "data" / "races_2026.json"
 
 RATING_THRESHOLDS = [
     (0.85, "Safe D"),

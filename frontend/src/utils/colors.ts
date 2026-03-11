@@ -42,7 +42,7 @@ export function probToColor(p: number): string {
   return '#B71C1C'
 }
 
-export const NO_RACE_COLOR = '#D1D5DB'   // Tailwind gray-300 — no 2028 race
+export const NO_RACE_COLOR = '#D1D5DB'   // Tailwind gray-300 — no 2026 race
 export const HOVER_STROKE  = '#F9FAFB'   // Tailwind gray-50
 
 export function ratingOrder(rating: Rating): number {

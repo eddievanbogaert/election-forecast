@@ -71,7 +71,7 @@ export function ChamberControl({ chamberControl, demSeatsNotUp, repSeatsNotUp }:
       {/* Seat distribution histogram */}
       <div className="mt-2">
         <p className="text-xs text-gray-500 mb-2">
-          Distribution of Democratic seats after 2028 ({(totalSims / 1000).toFixed(0)}k simulations)
+          Distribution of Democratic seats after 2026 ({(totalSims / 1000).toFixed(0)}k simulations)
         </p>
         <ResponsiveContainer width="100%" height={120}>
           <BarChart data={chartData} margin={{ top: 0, right: 0, left: -28, bottom: 0 }}>

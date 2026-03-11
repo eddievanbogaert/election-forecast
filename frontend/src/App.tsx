@@ -62,7 +62,7 @@ export default function App() {
           {/* Map */}
           <div className="bg-gray-900 rounded-xl border border-gray-800 p-4">
             <h2 className="text-sm font-semibold text-gray-300 mb-3">
-              2028 Senate Map — Class III Seats
+              2026 Senate Map — Class II Seats
             </h2>
             <USMap
               races={data.races}

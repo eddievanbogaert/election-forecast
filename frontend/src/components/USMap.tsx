@@ -118,7 +118,7 @@ export function USMap({ races, selectedCode, onSelect }: Props) {
               </div>
             </>
           ) : (
-            <div className="text-xs text-gray-500 mt-0.5">No Senate race in 2028</div>
+            <div className="text-xs text-gray-500 mt-0.5">No Senate race in 2026</div>
           )}
         </div>
       )}

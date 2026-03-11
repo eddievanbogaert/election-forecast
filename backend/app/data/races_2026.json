@@ -1,0 +1,398 @@
+{
+  "election_date": "2026-11-03",
+  "cycle": 2026,
+  "senate_class": 2,
+  "current_president_party": "R",
+  "comment": "Senate Class II seats (last elected 2020), plus OH special election for Vance's vacated Class III seat. dem_seats_not_up / rep_seats_not_up reflect current composition minus seats being contested.",
+  "dem_seats_not_up": 34,
+  "rep_seats_not_up": 32,
+  "races": [
+    {
+      "state": "Alabama",
+      "state_code": "AL",
+      "incumbent": {"name": "Tommy Tuberville", "party": "R", "last_margin": 20.4, "years_in_office": 6},
+      "is_open": false,
+      "pvi": 27,
+      "candidates": {
+        "dem": {"name": "TBD", "quality_score": 3, "is_incumbent": false},
+        "rep": {"name": "Tommy Tuberville", "quality_score": 5, "is_incumbent": true}
+      }
+    },
+    {
+      "state": "Alaska",
+      "state_code": "AK",
+      "incumbent": {"name": "Dan Sullivan", "party": "R", "last_margin": 11.8, "years_in_office": 12},
+      "is_open": false,
+      "pvi": 9,
+      "candidates": {
+        "dem": {"name": "TBD", "quality_score": 4, "is_incumbent": false},
+        "rep": {"name": "Dan Sullivan", "quality_score": 6, "is_incumbent": true}
+      }
+    },
+    {
+      "state": "Arkansas",
+      "state_code": "AR",
+      "incumbent": {"name": "Tom Cotton", "party": "R", "last_margin": 33.6, "years_in_office": 12},
+      "is_open": false,
+      "pvi": 24,
+      "candidates": {
+        "dem": {"name": "TBD", "quality_score": 2, "is_incumbent": false},
+        "rep": {"name": "Tom Cotton", "quality_score": 7, "is_incumbent": true}
+      }
+    },
+    {
+      "state": "Colorado",
+      "state_code": "CO",
+      "incumbent": {"name": "John Hickenlooper", "party": "D", "last_margin": 9.0, "years_in_office": 6},
+      "is_open": false,
+      "pvi": -4,
+      "candidates": {
+        "dem": {"name": "John Hickenlooper", "quality_score": 7, "is_incumbent": true},
+        "rep": {"name": "TBD", "quality_score": 5, "is_incumbent": false}
+      }
+    },
+    {
+      "state": "Delaware",
+      "state_code": "DE",
+      "incumbent": {"name": "Chris Coons", "party": "D", "last_margin": 23.4, "years_in_office": 16},
+      "is_open": false,
+      "pvi": -8,
+      "candidates": {
+        "dem": {"name": "Chris Coons", "quality_score": 7, "is_incumbent": true},
+        "rep": {"name": "TBD", "quality_score": 3, "is_incumbent": false}
+      }
+    },
+    {
+      "state": "Georgia",
+      "state_code": "GA",
+      "incumbent": {"name": "Jon Ossoff", "party": "D", "last_margin": 1.2, "years_in_office": 6},
+      "is_open": false,
+      "pvi": 4,
+      "note": "Won by 1.2% in January 2021 runoff; top Republican target in 2026",
+      "candidates": {
+        "dem": {"name": "Jon Ossoff", "quality_score": 7, "is_incumbent": true},
+        "rep": {"name": "TBD", "quality_score": 6, "is_incumbent": false}
+      }
+    },
+    {
+      "state": "Idaho",
+      "state_code": "ID",
+      "incumbent": {"name": "Jim Risch", "party": "R", "last_margin": 23.0, "years_in_office": 18},
+      "is_open": false,
+      "pvi": 32,
+      "note": "Risch will be 83 at election; retirement possible",
+      "candidates": {
+        "dem": {"name": "TBD", "quality_score": 2, "is_incumbent": false},
+        "rep": {"name": "Jim Risch", "quality_score": 6, "is_incumbent": true}
+      }
+    },
+    {
+      "state": "Illinois",
+      "state_code": "IL",
+      "incumbent": null,
+      "is_open": true,
+      "pvi": -17,
+      "note": "Dick Durbin retiring; open D primary between Raja Krishnamoorthi and Juliana Stratton among others. Either nominee is a strong candidate in this deep-blue state.",
+      "candidates": {
+        "dem": {"name": "TBD (primary: Krishnamoorthi / Stratton)", "quality_score": 7, "is_incumbent": false},
+        "rep": {"name": "TBD", "quality_score": 3, "is_incumbent": false}
+      }
+    },
+    {
+      "state": "Iowa",
+      "state_code": "IA",
+      "incumbent": {"name": "Joni Ernst", "party": "R", "last_margin": 6.6, "years_in_office": 12},
+      "is_open": false,
+      "pvi": 10,
+      "candidates": {
+        "dem": {"name": "TBD", "quality_score": 5, "is_incumbent": false},
+        "rep": {"name": "Joni Ernst", "quality_score": 6, "is_incumbent": true}
+      }
+    },
+    {
+      "state": "Kansas",
+      "state_code": "KS",
+      "incumbent": {"name": "Roger Marshall", "party": "R", "last_margin": 11.4, "years_in_office": 6},
+      "is_open": false,
+      "pvi": 20,
+      "candidates": {
+        "dem": {"name": "TBD", "quality_score": 3, "is_incumbent": false},
+        "rep": {"name": "Roger Marshall", "quality_score": 5, "is_incumbent": true}
+      }
+    },
+    {
+      "state": "Kentucky",
+      "state_code": "KY",
+      "incumbent": {"name": "Mitch McConnell", "party": "R", "last_margin": 19.8, "years_in_office": 42},
+      "is_open": false,
+      "pvi": 26,
+      "note": "McConnell stepped down as Senate leader; may not seek re-election at age 84. If he retires, this becomes an open seat but remains Safe R.",
+      "candidates": {
+        "dem": {"name": "TBD", "quality_score": 3, "is_incumbent": false},
+        "rep": {"name": "Mitch McConnell", "quality_score": 6, "is_incumbent": true}
+      }
+    },
+    {
+      "state": "Louisiana",
+      "state_code": "LA",
+      "incumbent": {"name": "Bill Cassidy", "party": "R", "last_margin": 39.0, "years_in_office": 12},
+      "is_open": false,
+      "pvi": 20,
+      "candidates": {
+        "dem": {"name": "TBD", "quality_score": 2, "is_incumbent": false},
+        "rep": {"name": "Bill Cassidy", "quality_score": 6, "is_incumbent": true}
+      }
+    },
+    {
+      "state": "Maine",
+      "state_code": "ME",
+      "incumbent": {"name": "Susan Collins", "party": "R", "last_margin": 8.6, "years_in_office": 30},
+      "is_open": false,
+      "pvi": -3,
+      "note": "Collins is a moderate R in a D-leaning state; historically outperforms PVI by 10+ points. Key 2026 battleground.",
+      "candidates": {
+        "dem": {"name": "TBD", "quality_score": 5, "is_incumbent": false},
+        "rep": {"name": "Susan Collins", "quality_score": 8, "is_incumbent": true}
+      }
+    },
+    {
+      "state": "Massachusetts",
+      "state_code": "MA",
+      "incumbent": {"name": "Ed Markey", "party": "D", "last_margin": 33.3, "years_in_office": 12},
+      "is_open": false,
+      "pvi": -30,
+      "candidates": {
+        "dem": {"name": "Ed Markey", "quality_score": 6, "is_incumbent": true},
+        "rep": {"name": "TBD", "quality_score": 2, "is_incumbent": false}
+      }
+    },
+    {
+      "state": "Michigan",
+      "state_code": "MI",
+      "incumbent": {"name": "Gary Peters", "party": "D", "last_margin": 1.7, "years_in_office": 12},
+      "is_open": false,
+      "pvi": 1,
+      "note": "Won by only 1.7% in 2020; Michigan has trended slightly R. Top-tier battleground.",
+      "candidates": {
+        "dem": {"name": "Gary Peters", "quality_score": 6, "is_incumbent": true},
+        "rep": {"name": "TBD", "quality_score": 6, "is_incumbent": false}
+      }
+    },
+    {
+      "state": "Minnesota",
+      "state_code": "MN",
+      "incumbent": {"name": "Tina Smith", "party": "D", "last_margin": 5.4, "years_in_office": 8},
+      "is_open": false,
+      "pvi": -3,
+      "candidates": {
+        "dem": {"name": "Tina Smith", "quality_score": 6, "is_incumbent": true},
+        "rep": {"name": "TBD", "quality_score": 5, "is_incumbent": false}
+      }
+    },
+    {
+      "state": "Mississippi",
+      "state_code": "MS",
+      "incumbent": {"name": "Cindy Hyde-Smith", "party": "R", "last_margin": 8.2, "years_in_office": 8},
+      "is_open": false,
+      "pvi": 18,
+      "candidates": {
+        "dem": {"name": "TBD", "quality_score": 3, "is_incumbent": false},
+        "rep": {"name": "Cindy Hyde-Smith", "quality_score": 5, "is_incumbent": true}
+      }
+    },
+    {
+      "state": "Montana",
+      "state_code": "MT",
+      "incumbent": {"name": "Steve Daines", "party": "R", "last_margin": 10.0, "years_in_office": 12},
+      "is_open": false,
+      "pvi": 18,
+      "candidates": {
+        "dem": {"name": "TBD", "quality_score": 3, "is_incumbent": false},
+        "rep": {"name": "Steve Daines", "quality_score": 7, "is_incumbent": true}
+      }
+    },
+    {
+      "state": "Nebraska",
+      "state_code": "NE",
+      "incumbent": {"name": "Pete Ricketts", "party": "R", "last_margin": null, "years_in_office": 3},
+      "is_open": false,
+      "pvi": 22,
+      "note": "Ricketts was appointed in 2023 after Ben Sasse resigned. Running for his first full term.",
+      "candidates": {
+        "dem": {"name": "TBD", "quality_score": 3, "is_incumbent": false},
+        "rep": {"name": "Pete Ricketts", "quality_score": 6, "is_incumbent": true}
+      }
+    },
+    {
+      "state": "New Hampshire",
+      "state_code": "NH",
+      "incumbent": {"name": "Jeanne Shaheen", "party": "D", "last_margin": 15.6, "years_in_office": 18},
+      "is_open": false,
+      "pvi": -1,
+      "note": "Shaheen will be 79 at election; retirement is possible, which would make this much more competitive in a swing state",
+      "candidates": {
+        "dem": {"name": "Jeanne Shaheen", "quality_score": 7, "is_incumbent": true},
+        "rep": {"name": "TBD", "quality_score": 5, "is_incumbent": false}
+      }
+    },
+    {
+      "state": "New Jersey",
+      "state_code": "NJ",
+      "incumbent": {"name": "Cory Booker", "party": "D", "last_margin": 16.0, "years_in_office": 12},
+      "is_open": false,
+      "pvi": -14,
+      "candidates": {
+        "dem": {"name": "Cory Booker", "quality_score": 7, "is_incumbent": true},
+        "rep": {"name": "TBD", "quality_score": 4, "is_incumbent": false}
+      }
+    },
+    {
+      "state": "New Mexico",
+      "state_code": "NM",
+      "incumbent": {"name": "Ben Ray Luján", "party": "D", "last_margin": 6.0, "years_in_office": 6},
+      "is_open": false,
+      "pvi": -4,
+      "candidates": {
+        "dem": {"name": "Ben Ray Luján", "quality_score": 6, "is_incumbent": true},
+        "rep": {"name": "TBD", "quality_score": 5, "is_incumbent": false}
+      }
+    },
+    {
+      "state": "North Carolina",
+      "state_code": "NC",
+      "incumbent": null,
+      "is_open": true,
+      "pvi": 3,
+      "note": "Thom Tillis not seeking re-election; open seat. Roy Cooper (former governor) is a strong D recruit. Top Democratic pickup opportunity.",
+      "candidates": {
+        "dem": {"name": "Roy Cooper", "quality_score": 8, "is_incumbent": false},
+        "rep": {"name": "TBD", "quality_score": 5, "is_incumbent": false}
+      }
+    },
+    {
+      "state": "Oklahoma",
+      "state_code": "OK",
+      "incumbent": {"name": "Markwayne Mullin", "party": "R", "last_margin": 20.7, "years_in_office": 4},
+      "is_open": false,
+      "pvi": 26,
+      "note": "Won 2022 special election to fill Jim Inhofe's seat; running for first full Class II term",
+      "candidates": {
+        "dem": {"name": "TBD", "quality_score": 2, "is_incumbent": false},
+        "rep": {"name": "Markwayne Mullin", "quality_score": 6, "is_incumbent": true}
+      }
+    },
+    {
+      "state": "Oregon",
+      "state_code": "OR",
+      "incumbent": {"name": "Jeff Merkley", "party": "D", "last_margin": 17.5, "years_in_office": 18},
+      "is_open": false,
+      "pvi": -8,
+      "candidates": {
+        "dem": {"name": "Jeff Merkley", "quality_score": 7, "is_incumbent": true},
+        "rep": {"name": "TBD", "quality_score": 4, "is_incumbent": false}
+      }
+    },
+    {
+      "state": "Rhode Island",
+      "state_code": "RI",
+      "incumbent": {"name": "Jack Reed", "party": "D", "last_margin": 35.4, "years_in_office": 30},
+      "is_open": false,
+      "pvi": -18,
+      "candidates": {
+        "dem": {"name": "Jack Reed", "quality_score": 6, "is_incumbent": true},
+        "rep": {"name": "TBD", "quality_score": 2, "is_incumbent": false}
+      }
+    },
+    {
+      "state": "South Carolina",
+      "state_code": "SC",
+      "incumbent": {"name": "Lindsey Graham", "party": "R", "last_margin": 10.3, "years_in_office": 24},
+      "is_open": false,
+      "pvi": 11,
+      "candidates": {
+        "dem": {"name": "TBD", "quality_score": 4, "is_incumbent": false},
+        "rep": {"name": "Lindsey Graham", "quality_score": 6, "is_incumbent": true}
+      }
+    },
+    {
+      "state": "South Dakota",
+      "state_code": "SD",
+      "incumbent": {"name": "Mike Rounds", "party": "R", "last_margin": 30.6, "years_in_office": 12},
+      "is_open": false,
+      "pvi": 27,
+      "candidates": {
+        "dem": {"name": "TBD", "quality_score": 2, "is_incumbent": false},
+        "rep": {"name": "Mike Rounds", "quality_score": 5, "is_incumbent": true}
+      }
+    },
+    {
+      "state": "Tennessee",
+      "state_code": "TN",
+      "incumbent": {"name": "Bill Hagerty", "party": "R", "last_margin": 24.9, "years_in_office": 6},
+      "is_open": false,
+      "pvi": 26,
+      "candidates": {
+        "dem": {"name": "TBD", "quality_score": 2, "is_incumbent": false},
+        "rep": {"name": "Bill Hagerty", "quality_score": 5, "is_incumbent": true}
+      }
+    },
+    {
+      "state": "Texas",
+      "state_code": "TX",
+      "incumbent": {"name": "John Cornyn", "party": "R", "last_margin": 9.6, "years_in_office": 24},
+      "is_open": false,
+      "pvi": 10,
+      "note": "Texas has become more competitive in recent cycles; still Likely R for Senate races",
+      "candidates": {
+        "dem": {"name": "TBD", "quality_score": 5, "is_incumbent": false},
+        "rep": {"name": "John Cornyn", "quality_score": 7, "is_incumbent": true}
+      }
+    },
+    {
+      "state": "Virginia",
+      "state_code": "VA",
+      "incumbent": {"name": "Mark Warner", "party": "D", "last_margin": 12.0, "years_in_office": 18},
+      "is_open": false,
+      "pvi": -3,
+      "note": "Warner may not seek re-election; an open seat in Virginia would be highly competitive",
+      "candidates": {
+        "dem": {"name": "Mark Warner", "quality_score": 8, "is_incumbent": true},
+        "rep": {"name": "TBD", "quality_score": 5, "is_incumbent": false}
+      }
+    },
+    {
+      "state": "West Virginia",
+      "state_code": "WV",
+      "incumbent": {"name": "Shelley Moore Capito", "party": "R", "last_margin": 43.3, "years_in_office": 12},
+      "is_open": false,
+      "pvi": 30,
+      "candidates": {
+        "dem": {"name": "TBD", "quality_score": 2, "is_incumbent": false},
+        "rep": {"name": "Shelley Moore Capito", "quality_score": 6, "is_incumbent": true}
+      }
+    },
+    {
+      "state": "Wyoming",
+      "state_code": "WY",
+      "incumbent": {"name": "Cynthia Lummis", "party": "R", "last_margin": 46.2, "years_in_office": 6},
+      "is_open": false,
+      "pvi": 35,
+      "candidates": {
+        "dem": {"name": "TBD", "quality_score": 2, "is_incumbent": false},
+        "rep": {"name": "Cynthia Lummis", "quality_score": 6, "is_incumbent": true}
+      }
+    },
+    {
+      "state": "Ohio",
+      "state_code": "OH",
+      "incumbent": null,
+      "is_open": true,
+      "pvi": 8,
+      "note": "Special election for J.D. Vance's vacated Class III seat. Sherrod Brown, who lost his Class I seat in 2024, is running as D candidate — a stronger-than-replacement candidate given his prior statewide wins.",
+      "candidates": {
+        "dem": {"name": "Sherrod Brown", "quality_score": 8, "is_incumbent": false},
+        "rep": {"name": "TBD", "quality_score": 5, "is_incumbent": false}
+      }
+    }
+  ]
+}

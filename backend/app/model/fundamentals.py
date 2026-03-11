@@ -24,7 +24,7 @@ MIDTERM_PENALTY: float = 3.0        # pts headwind for the presidential party
 QUALITY_WEIGHT: float = 0.8         # pts per quality-score point differential
 OPEN_SEAT_PENALTY: float = 1.5      # extra uncertainty (not mean shift) for open seats
 
-ELECTION_DATE = date(2028, 11, 7)
+ELECTION_DATE = date(2026, 11, 3)
 
 
 # ── Helpers ────────────────────────────────────────────────────────────────────
@@ -51,7 +51,7 @@ def fundamentals_lean(race: dict, president_party: str = "R") -> float:
     Parameters
     ----------
     race : dict
-        Single race entry from races_2028.json.
+        Single race entry from races_2026.json.
     president_party : str
         Party of the sitting president ("D" or "R").
 

@@ -35,7 +35,7 @@ export function formatPvi(pvi: number): string {
 }
 
 export function daysToElection(asOf: string): number {
-  const election = new Date('2028-11-07')
+  const election = new Date('2026-11-03')
   const ref = new Date(asOf)
   const diff = election.getTime() - ref.getTime()
   return Math.max(0, Math.round(diff / (1000 * 60 * 60 * 24)))
