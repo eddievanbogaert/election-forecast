@@ -1,6 +1,5 @@
 {
   "hosting": {
-    "site": "election-forecast-489820",
     "public": "dist",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
