@@ -3,19 +3,20 @@
   "cycle": 2026,
   "senate_class": 2,
   "current_president_party": "R",
-  "comment": "Senate Class II seats (last elected 2020), plus OH special election for Vance's vacated Class III seat. dem_seats_not_up / rep_seats_not_up reflect current composition minus seats being contested.",
+  "comment": "Senate Class II seats (last elected 2020), plus OH and FL special elections. dem_seats_not_up / rep_seats_not_up reflect current composition minus seats being contested.",
   "dem_seats_not_up": 34,
-  "rep_seats_not_up": 32,
+  "rep_seats_not_up": 31,
   "races": [
     {
       "state": "Alabama",
       "state_code": "AL",
-      "incumbent": {"name": "Tommy Tuberville", "party": "R", "last_margin": 20.4, "years_in_office": 6},
-      "is_open": false,
+      "incumbent": null,
+      "is_open": true,
       "pvi": 27,
+      "note": "Tommy Tuberville running for governor instead. Open R primary: Steve Marshall (AG), Barry Moore (Rep), Jared Hudson among leading candidates. Deep-red state remains Safe R.",
       "candidates": {
         "dem": {"name": "TBD", "quality_score": 3, "is_incumbent": false},
-        "rep": {"name": "Tommy Tuberville", "quality_score": 5, "is_incumbent": true}
+        "rep": {"name": "TBD (primary: Marshall / Moore / Hudson)", "quality_score": 5, "is_incumbent": false}
       }
     },
     {
@@ -63,15 +64,28 @@
       }
     },
     {
+      "state": "Florida",
+      "state_code": "FL",
+      "incumbent": {"name": "Ashley Moody", "party": "R", "last_margin": null, "years_in_office": 1},
+      "is_open": false,
+      "pvi": 5,
+      "note": "Special election for Marco Rubio's vacated seat (Rubio became Secretary of State). Ashley Moody (R, former FL AG) was appointed to fill the seat. D candidate is Val Jenkins.",
+      "candidates": {
+        "dem": {"name": "Val Jenkins", "quality_score": 4, "is_incumbent": false},
+        "rep": {"name": "Ashley Moody", "quality_score": 6, "is_incumbent": true}
+      }
+    },
+    {
       "state": "Georgia",
       "state_code": "GA",
       "incumbent": {"name": "Jon Ossoff", "party": "D", "last_margin": 1.2, "years_in_office": 6},
       "is_open": false,
       "pvi": 4,
-      "note": "Won by 1.2% in January 2021 runoff; top Republican target in 2026",
+      "polling_average": 5.3,
+      "note": "Won by 1.2% in January 2021 runoff; top Republican target in 2026. R primary: Doug Collins, Buddy Carter, Patrick Dooley. Ossoff leads all R candidates by 3-8 pts in early polling.",
       "candidates": {
         "dem": {"name": "Jon Ossoff", "quality_score": 7, "is_incumbent": true},
-        "rep": {"name": "TBD", "quality_score": 6, "is_incumbent": false}
+        "rep": {"name": "TBD (primary: Collins / Carter / Dooley)", "quality_score": 6, "is_incumbent": false}
       }
     },
     {
@@ -101,12 +115,13 @@
     {
       "state": "Iowa",
       "state_code": "IA",
-      "incumbent": {"name": "Joni Ernst", "party": "R", "last_margin": 6.6, "years_in_office": 12},
-      "is_open": false,
+      "incumbent": null,
+      "is_open": true,
       "pvi": 10,
+      "note": "Joni Ernst retiring. R primary: Rep. Ashley Hinson is the frontrunner. D primary includes state Sen. Zach Wahls and former auditor Rob Sand. Open seat but Iowa has trended solidly R.",
       "candidates": {
-        "dem": {"name": "TBD", "quality_score": 5, "is_incumbent": false},
-        "rep": {"name": "Joni Ernst", "quality_score": 6, "is_incumbent": true}
+        "dem": {"name": "TBD (primary: Wahls / Sand)", "quality_score": 5, "is_incumbent": false},
+        "rep": {"name": "Ashley Hinson", "quality_score": 6, "is_incumbent": false}
       }
     },
     {
@@ -123,13 +138,13 @@
     {
       "state": "Kentucky",
       "state_code": "KY",
-      "incumbent": {"name": "Mitch McConnell", "party": "R", "last_margin": 19.8, "years_in_office": 42},
-      "is_open": false,
+      "incumbent": null,
+      "is_open": true,
       "pvi": 26,
-      "note": "McConnell stepped down as Senate leader; may not seek re-election at age 84. If he retires, this becomes an open seat but remains Safe R.",
+      "note": "Mitch McConnell retiring after 42 years. R primary: Rep. Andy Barr, former AG Daniel Cameron, Nate Morris. D primary: Amy McGrath (2020 nominee), Pamela Stevenson. Deep-red state remains Safe R.",
       "candidates": {
-        "dem": {"name": "TBD", "quality_score": 3, "is_incumbent": false},
-        "rep": {"name": "Mitch McConnell", "quality_score": 6, "is_incumbent": true}
+        "dem": {"name": "TBD (primary: McGrath / Stevenson)", "quality_score": 4, "is_incumbent": false},
+        "rep": {"name": "TBD (primary: Barr / Cameron)", "quality_score": 6, "is_incumbent": false}
       }
     },
     {
@@ -149,9 +164,10 @@
       "incumbent": {"name": "Susan Collins", "party": "R", "last_margin": 8.6, "years_in_office": 30},
       "is_open": false,
       "pvi": -3,
-      "note": "Collins is a moderate R in a D-leaning state; historically outperforms PVI by 10+ points. Key 2026 battleground.",
+      "polling_average": 2.5,
+      "note": "Collins is a moderate R in a D-leaning state; historically outperforms PVI by 10+ points. Key 2026 battleground. D primary: Jason Platner leads Collins by 7 pts in one poll; Chellie Pingree also potential D candidate. Collins leads Mills (D) by 2 pts.",
       "candidates": {
-        "dem": {"name": "TBD", "quality_score": 5, "is_incumbent": false},
+        "dem": {"name": "TBD (primary: Platner / Mills)", "quality_score": 6, "is_incumbent": false},
         "rep": {"name": "Susan Collins", "quality_score": 8, "is_incumbent": true}
       }
     },
@@ -169,24 +185,25 @@
     {
       "state": "Michigan",
       "state_code": "MI",
-      "incumbent": {"name": "Gary Peters", "party": "D", "last_margin": 1.7, "years_in_office": 12},
-      "is_open": false,
+      "incumbent": null,
+      "is_open": true,
       "pvi": 1,
-      "note": "Won by only 1.7% in 2020; Michigan has trended slightly R. Top-tier battleground.",
+      "note": "Gary Peters retiring. D primary: State Sen. Mallory McMorrow, Rep. Haley Stevens, Abdul El-Sayed among leading candidates. Open seat in a swing state — top-tier battleground.",
       "candidates": {
-        "dem": {"name": "Gary Peters", "quality_score": 6, "is_incumbent": true},
+        "dem": {"name": "TBD (primary: McMorrow / Stevens / El-Sayed)", "quality_score": 6, "is_incumbent": false},
         "rep": {"name": "TBD", "quality_score": 6, "is_incumbent": false}
       }
     },
     {
       "state": "Minnesota",
       "state_code": "MN",
-      "incumbent": {"name": "Tina Smith", "party": "D", "last_margin": 5.4, "years_in_office": 8},
-      "is_open": false,
+      "incumbent": null,
+      "is_open": true,
       "pvi": -3,
+      "note": "Tina Smith retiring. D primary: Rep. Angie Craig and Lt. Gov. Peggy Flanagan are leading candidates. R nominee likely Royce White (2024 nominee). Minnesota leans D but open seat adds uncertainty.",
       "candidates": {
-        "dem": {"name": "Tina Smith", "quality_score": 6, "is_incumbent": true},
-        "rep": {"name": "TBD", "quality_score": 5, "is_incumbent": false}
+        "dem": {"name": "TBD (primary: Craig / Flanagan)", "quality_score": 6, "is_incumbent": false},
+        "rep": {"name": "Royce White", "quality_score": 4, "is_incumbent": false}
       }
     },
     {
@@ -203,12 +220,13 @@
     {
       "state": "Montana",
       "state_code": "MT",
-      "incumbent": {"name": "Steve Daines", "party": "R", "last_margin": 10.0, "years_in_office": 12},
-      "is_open": false,
+      "incumbent": null,
+      "is_open": true,
       "pvi": 18,
+      "note": "Steve Daines withdrew minutes before filing deadline and endorsed Kurt Alme (U.S. attorney). Controversial last-minute maneuver designed to clear the R primary field. Open seat adds uncertainty but Montana remains solidly R.",
       "candidates": {
         "dem": {"name": "TBD", "quality_score": 3, "is_incumbent": false},
-        "rep": {"name": "Steve Daines", "quality_score": 7, "is_incumbent": true}
+        "rep": {"name": "Kurt Alme", "quality_score": 5, "is_incumbent": false}
       }
     },
     {
@@ -226,13 +244,13 @@
     {
       "state": "New Hampshire",
       "state_code": "NH",
-      "incumbent": {"name": "Jeanne Shaheen", "party": "D", "last_margin": 15.6, "years_in_office": 18},
-      "is_open": false,
+      "incumbent": null,
+      "is_open": true,
       "pvi": -1,
-      "note": "Shaheen will be 79 at election; retirement is possible, which would make this much more competitive in a swing state",
+      "note": "Jeanne Shaheen retiring. D favorite: Rep. Chris Pappas. R primary: former Sen. John Sununu and former MA Sen. Scott Brown. Highly competitive open seat in a swing state.",
       "candidates": {
-        "dem": {"name": "Jeanne Shaheen", "quality_score": 7, "is_incumbent": true},
-        "rep": {"name": "TBD", "quality_score": 5, "is_incumbent": false}
+        "dem": {"name": "Chris Pappas", "quality_score": 7, "is_incumbent": false},
+        "rep": {"name": "TBD (primary: Sununu / Brown)", "quality_score": 7, "is_incumbent": false}
       }
     },
     {
@@ -263,22 +281,22 @@
       "incumbent": null,
       "is_open": true,
       "pvi": 3,
-      "note": "Thom Tillis not seeking re-election; open seat. Roy Cooper (former governor) is a strong D recruit. Top Democratic pickup opportunity.",
+      "note": "Thom Tillis not seeking re-election; open seat. Roy Cooper (former governor) is a strong D recruit. Top Democratic pickup opportunity. R primary: Mark Whatley leads strongly (+26-30 in polls).",
       "candidates": {
         "dem": {"name": "Roy Cooper", "quality_score": 8, "is_incumbent": false},
-        "rep": {"name": "TBD", "quality_score": 5, "is_incumbent": false}
+        "rep": {"name": "Mark Whatley", "quality_score": 5, "is_incumbent": false}
       }
     },
     {
       "state": "Oklahoma",
       "state_code": "OK",
-      "incumbent": {"name": "Markwayne Mullin", "party": "R", "last_margin": 20.7, "years_in_office": 4},
-      "is_open": false,
+      "incumbent": null,
+      "is_open": true,
       "pvi": 26,
-      "note": "Won 2022 special election to fill Jim Inhofe's seat; running for first full Class II term",
+      "note": "Markwayne Mullin tapped as DHS Secretary (replacing Kristi Noem), vacating the seat. Gov. Stitt will appoint an interim R senator. R primary: Reps Kevin Hern and Stephanie Bice among those interested. Deep-red state remains Safe R.",
       "candidates": {
         "dem": {"name": "TBD", "quality_score": 2, "is_incumbent": false},
-        "rep": {"name": "Markwayne Mullin", "quality_score": 6, "is_incumbent": true}
+        "rep": {"name": "TBD (primary: Hern / Bice)", "quality_score": 6, "is_incumbent": false}
       }
     },
     {
@@ -342,9 +360,9 @@
       "incumbent": {"name": "John Cornyn", "party": "R", "last_margin": 9.6, "years_in_office": 24},
       "is_open": false,
       "pvi": 10,
-      "note": "Texas has become more competitive in recent cycles; still Likely R for Senate races",
+      "note": "Texas has become more competitive in recent cycles. R primary: Ken Paxton leads Cornyn — Cornyn may lose his own primary. D nominee is James Talarico. If Paxton wins the R primary, the general election could be more competitive given his controversial record.",
       "candidates": {
-        "dem": {"name": "TBD", "quality_score": 5, "is_incumbent": false},
+        "dem": {"name": "James Talarico", "quality_score": 5, "is_incumbent": false},
         "rep": {"name": "John Cornyn", "quality_score": 7, "is_incumbent": true}
       }
     },
@@ -354,7 +372,6 @@
       "incumbent": {"name": "Mark Warner", "party": "D", "last_margin": 12.0, "years_in_office": 18},
       "is_open": false,
       "pvi": -3,
-      "note": "Warner may not seek re-election; an open seat in Virginia would be highly competitive",
       "candidates": {
         "dem": {"name": "Mark Warner", "quality_score": 8, "is_incumbent": true},
         "rep": {"name": "TBD", "quality_score": 5, "is_incumbent": false}
@@ -391,7 +408,7 @@
       "note": "Special election for J.D. Vance's vacated Class III seat. Sherrod Brown, who lost his Class I seat in 2024, is running as D candidate — a stronger-than-replacement candidate given his prior statewide wins.",
       "candidates": {
         "dem": {"name": "Sherrod Brown", "quality_score": 8, "is_incumbent": false},
-        "rep": {"name": "TBD", "quality_score": 5, "is_incumbent": false}
+        "rep": {"name": "Jon Husted", "quality_score": 6, "is_incumbent": false}
       }
     }
   ]
