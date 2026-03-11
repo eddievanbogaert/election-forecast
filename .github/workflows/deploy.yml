@@ -46,8 +46,9 @@ jobs:
 
       - name: Deploy to Cloud Run
         run: |
-          # Get current frontend URL for CORS (may not exist on first deploy)
-          FRONTEND_URL="https://${{ env.PROJECT_ID }}.web.app"
+          # Commas in env var values must be escaped as \, for --set-env-vars
+          # All vars combined in one flag to avoid the second call overwriting the first
+          CORS="https://${{ env.PROJECT_ID }}.web.app\,https://${{ env.PROJECT_ID }}.firebaseapp.com"
 
           gcloud run deploy "${{ env.SERVICE_NAME }}" \
             --image="${{ env.IMAGE }}:${{ github.sha }}" \
@@ -59,8 +60,7 @@ jobs:
             --min-instances=0 \
             --max-instances=5 \
             --timeout=30 \
-            --set-env-vars="CORS_ORIGINS=${FRONTEND_URL},https://${{ env.PROJECT_ID }}.firebaseapp.com" \
-            --set-env-vars="ADMIN_SECRET=${{ secrets.ADMIN_SECRET }}" \
+            --set-env-vars="CORS_ORIGINS=${CORS},ADMIN_SECRET=${{ secrets.ADMIN_SECRET }}" \
             --project="${{ env.PROJECT_ID }}"
 
       - name: Print backend URL
