@@ -45,10 +45,14 @@ jobs:
           docker push "${{ env.IMAGE }}:latest"
 
       - name: Deploy to Cloud Run
+        env:
+          ADMIN_SECRET: ${{ secrets.ADMIN_SECRET }}
         run: |
-          # Commas in env var values must be escaped as \, for --set-env-vars
-          # All vars combined in one flag to avoid the second call overwriting the first
-          CORS="https://${{ env.PROJECT_ID }}.web.app\,https://${{ env.PROJECT_ID }}.firebaseapp.com"
+          # Write env vars to a YAML file to avoid comma-escaping issues in --set-env-vars
+          cat > /tmp/run-env.yaml <<EOF
+          CORS_ORIGINS: "https://${{ env.PROJECT_ID }}.web.app,https://${{ env.PROJECT_ID }}.firebaseapp.com"
+          ADMIN_SECRET: "${ADMIN_SECRET}"
+          EOF
 
           gcloud run deploy "${{ env.SERVICE_NAME }}" \
             --image="${{ env.IMAGE }}:${{ github.sha }}" \
@@ -60,7 +64,7 @@ jobs:
             --min-instances=0 \
             --max-instances=5 \
             --timeout=30 \
-            --set-env-vars="CORS_ORIGINS=${CORS},ADMIN_SECRET=${{ secrets.ADMIN_SECRET }}" \
+            --env-vars-file=/tmp/run-env.yaml \
             --project="${{ env.PROJECT_ID }}"
 
       - name: Print backend URL
