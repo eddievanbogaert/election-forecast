@@ -71,7 +71,9 @@ export function RaceList({ races, selectedCode, onSelect }: Props) {
                       <div
                         className="h-full rounded-full transition-all"
                         style={{
-                          width: `${race.dem_win_probability * 100}%`,
+                          width: `${(race.dem_win_probability >= 0.5
+                            ? race.dem_win_probability
+                            : 1 - race.dem_win_probability) * 100}%`,
                           backgroundColor: RATING_COLORS[rating],
                         }}
                       />
