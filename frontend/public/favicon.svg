@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#0f172a"/>
+  <!-- Bar chart representing senate seats -->
+  <rect x="10" y="34" width="12" height="22" rx="2" fill="#3b82f6" opacity="0.85"/>
+  <rect x="26" y="22" width="12" height="34" rx="2" fill="#3b82f6"/>
+  <rect x="42" y="28" width="12" height="28" rx="2" fill="#ef4444"/>
+  <!-- Dividing line at majority threshold -->
+  <line x1="6" y1="18" x2="58" y2="18" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <text x="32" y="14" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" font-weight="600" fill="#94a3b8">51</text>
+</svg>
