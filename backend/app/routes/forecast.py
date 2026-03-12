@@ -81,10 +81,30 @@ class ChamberControlOut(BaseModel):
     seat_distribution: list[int]   # index 0-100 → count of sims
 
 
+class EnvironmentComponentsOut(BaseModel):
+    base_midterm_penalty: float
+    approval_effect: float
+    gdp_effect: float
+    sentiment_effect: float
+
+
+class NationalEnvironmentOut(BaseModel):
+    as_of: Optional[str]
+    presidential_approval: Optional[float]
+    presidential_disapproval: Optional[float]
+    net_approval: Optional[float]
+    gdp_growth: Optional[float]
+    consumer_sentiment: Optional[float]
+    unemployment_rate: Optional[float]
+    national_environment_shift: float
+    components: EnvironmentComponentsOut
+
+
 class MetaOut(BaseModel):
     as_of: str
     days_until_election: int
     polling_weight: float
+    national_environment: NationalEnvironmentOut
     model_version: str
     run_duration_ms: float
 
@@ -123,7 +143,8 @@ def _to_response(sim: SimulationOutput) -> ForecastResponse:
             as_of=sim.as_of,
             days_until_election=sim.days_until_election,
             polling_weight=sim.polling_weight_value,
-            model_version="0.1.0",
+            national_environment=NationalEnvironmentOut(**sim.national_environment),
+            model_version="0.2.0",
             run_duration_ms=sim.run_duration_ms,
         ),
         chamber_control=ChamberControlOut(
@@ -143,7 +164,7 @@ def _to_response(sim: SimulationOutput) -> ForecastResponse:
 @router.get("/forecast", response_model=ForecastResponse, summary="Current Senate forecast")
 async def get_forecast():
     """
-    Returns the full 2028 Senate forecast: per-race win probabilities,
+    Returns the full 2026 Senate forecast: per-race win probabilities,
     chamber control probabilities, and seat distribution from the Monte Carlo.
     Results are cached for 30 minutes.
     """

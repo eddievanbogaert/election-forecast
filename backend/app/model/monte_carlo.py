@@ -35,6 +35,11 @@ from .fundamentals import (
     polling_weight,
     total_sigma,
 )
+from .environment import (
+    load_environment,
+    national_environment_shift,
+    environment_summary,
+)
 
 # ── Constants ──────────────────────────────────────────────────────────────────
 
@@ -89,6 +94,7 @@ class SimulationOutput:
     seat_distribution: list[int]    # index = total D seats; value = sim count
     days_until_election: int
     polling_weight_value: float
+    national_environment: dict        # environment summary
     run_duration_ms: float
     as_of: str                       # ISO date string
 
@@ -118,10 +124,15 @@ def run_simulation(
     rep_not_up: int = data["rep_seats_not_up"]
     races_raw: list[dict] = data["races"]
 
+    # Load national environment once
+    env = load_environment()
+    env_shift = national_environment_shift(env)
+    env_summary = environment_summary(env)
+
     n_races = len(races_raw)
 
     # ── Per-race fundamentals ─────────────────────────────────────────────────
-    mu = np.array([blended_lean(r, president_party, ref) for r in races_raw])
+    mu = np.array([blended_lean(r, president_party, ref, env_shift) for r in races_raw])
     sigma_per_race = np.array([total_sigma(r, ref) for r in races_raw])
 
     # ── Monte Carlo draws ─────────────────────────────────────────────────────
@@ -182,6 +193,7 @@ def run_simulation(
         seat_distribution=seat_dist,
         days_until_election=days_until_election(ref),
         polling_weight_value=round(polling_weight(ref), 4),
+        national_environment=env_summary,
         run_duration_ms=round(elapsed_ms, 1),
         as_of=ref.isoformat(),
     )

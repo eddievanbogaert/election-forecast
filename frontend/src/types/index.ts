@@ -40,10 +40,30 @@ export interface ChamberControl {
   seat_distribution: number[]  // index 0–100 → simulation count
 }
 
+export interface EnvironmentComponents {
+  base_midterm_penalty: number
+  approval_effect: number
+  gdp_effect: number
+  sentiment_effect: number
+}
+
+export interface NationalEnvironment {
+  as_of: string | null
+  presidential_approval: number | null
+  presidential_disapproval: number | null
+  net_approval: number | null
+  gdp_growth: number | null
+  consumer_sentiment: number | null
+  unemployment_rate: number | null
+  national_environment_shift: number
+  components: EnvironmentComponents
+}
+
 export interface ForecastMeta {
   as_of: string
   days_until_election: number
   polling_weight: number
+  national_environment: NationalEnvironment
   model_version: string
   run_duration_ms: number
 }

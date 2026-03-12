@@ -38,6 +38,11 @@ export function Header({ meta }: Props) {
                 ? 'Fundamentals only'
                 : `${Math.round(meta.polling_weight * 100)}% polls / ${Math.round((1 - meta.polling_weight) * 100)}% fundamentals`}
             </span>
+            {meta.national_environment && (
+              <span className="hidden lg:block text-gray-600">
+                Approval {meta.national_environment.presidential_approval}% · Env D+{meta.national_environment.national_environment_shift.toFixed(1)}
+              </span>
+            )}
           </div>
         )}
       </div>

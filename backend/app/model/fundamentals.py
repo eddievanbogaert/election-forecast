@@ -3,8 +3,8 @@ Fundamentals model: converts seed race data into blended lean estimates.
 
 The model computes a Democratic vote margin estimate for each race based on:
   1. State partisan lean (Cook PVI)
-  2. Incumbency advantage / disadvantage
-  3. Midterm penalty against the president's party
+  2. National environment (presidential approval, GDP, consumer sentiment)
+  3. Incumbency advantage / disadvantage
   4. Candidate quality adjustment
   5. Open-seat volatility penalty
 
@@ -16,11 +16,12 @@ from datetime import date
 from typing import Optional
 import math
 
+from .environment import national_environment_shift, load_environment
+
 
 # ── Constants ──────────────────────────────────────────────────────────────────
 
 INCUMBENCY_ADVANTAGE: float = 2.5   # percentage points boost for incumbents
-MIDTERM_PENALTY: float = 3.0        # pts headwind for the presidential party
 QUALITY_WEIGHT: float = 0.8         # pts per quality-score point differential
 OPEN_SEAT_PENALTY: float = 1.5      # extra uncertainty (not mean shift) for open seats
 
@@ -43,7 +44,11 @@ def polling_weight(as_of: Optional[date] = None) -> float:
     return max(0.0, min(1.0, (365 - days) / 365))
 
 
-def fundamentals_lean(race: dict, president_party: str = "R") -> float:
+def fundamentals_lean(
+    race: dict,
+    president_party: str = "R",
+    env_shift: Optional[float] = None,
+) -> float:
     """
     Compute the fundamentals-based Democratic vote margin (percentage points).
     Positive = D favoured, negative = R favoured.
@@ -54,6 +59,9 @@ def fundamentals_lean(race: dict, president_party: str = "R") -> float:
         Single race entry from races_2026.json.
     president_party : str
         Party of the sitting president ("D" or "R").
+    env_shift : float, optional
+        Pre-computed national environment shift (D advantage in pts).
+        If None, loaded from environment.json.
 
     Returns
     -------
@@ -65,11 +73,13 @@ def fundamentals_lean(race: dict, president_party: str = "R") -> float:
     pvi: float = race["pvi"]
     lean: float = -pvi  # D perspective: negative PVI → positive lean
 
-    # 2. Midterm penalty: opposing party gains ~3 pts on average
+    # 2. National environment (replaces flat midterm penalty)
+    if env_shift is None:
+        env_shift = national_environment_shift()
     if president_party == "R":
-        lean += MIDTERM_PENALTY   # Democrats benefit
+        lean += env_shift     # D benefits from anti-R environment
     else:
-        lean -= MIDTERM_PENALTY   # Republicans benefit
+        lean -= env_shift     # R benefits from anti-D environment
 
     # 3. Incumbency
     incumbent = race.get("incumbent")
@@ -92,11 +102,12 @@ def blended_lean(
     race: dict,
     president_party: str = "R",
     as_of: Optional[date] = None,
+    env_shift: Optional[float] = None,
 ) -> float:
     """
     Blend fundamentals lean with polling average (if available).
     """
-    f_lean = fundamentals_lean(race, president_party)
+    f_lean = fundamentals_lean(race, president_party, env_shift)
     poll_avg = race.get("polling_average")  # D - R margin from polls, or None
 
     if poll_avg is None:
