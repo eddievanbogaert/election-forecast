@@ -1,0 +1,20 @@
+state,state_code,pollster,sponsor,sponsor_lean,date_start,date_end,dem_candidate,rep_candidate,dem_pct,rep_pct,margin,margin_label,included_in_average,notes
+Alaska,AK,Unknown (538 data),,,2026-02-01,2026-02-15,Mary Peltola,Dan Sullivan,,,D+2,Peltola +2,yes,Recent polls show Peltola leading by 1-4 pts; averaged to D+2
+Georgia,GA,Various (RCP),,,2025-12-01,2026-03-01,Jon Ossoff,TBD (various R),,,D+5.3,Ossoff +5.3,yes,Ossoff leads all R candidates by 3-8 pts; RCP average D+5.3
+Maine,ME,Unknown,,,2026-01-01,2026-02-01,TBD (Platner),Susan Collins,,,D+2.5,Platner +2.5,yes,"Platner leads Collins by 7 in one poll; Collins leads Mills by 2. Blended avg D+2.5"
+Nebraska,NE,Various,,,2026-01-01,2026-03-01,Dan Osborn (I),Pete Ricketts,,,R+1,Ricketts +1,yes,Osborn modeled on D side for Senate control. Polls show Ricketts +1
+North Carolina,NC,Change Research,,neutral,2026-01-31,2026-02-04,Roy Cooper,Mark Whatley,50,40,D+10,Cooper +10,yes,
+North Carolina,NC,TIPP Insights,League of American Workers,Republican,2026-01-12,2026-01-15,Roy Cooper,Mark Whatley,48,24,D+24,Cooper +24,no,Excluded as outlier — implausibly large margin
+North Carolina,NC,Change Research,Carolina Forward,Democratic,2026-01-05,2026-01-07,Roy Cooper,Mark Whatley,47,42,D+5,Cooper +5,yes,
+North Carolina,NC,Harper Polling,Carolina Journal,,2025-11-09,2025-11-10,Roy Cooper,Mark Whatley,47,39,D+9,Cooper +9,yes,Cooper vs Whatley matchup (note: separate Brown matchup was +10)
+North Carolina,NC,Harper Polling,Carolina Journal,,2025-09-14,2025-09-15,Roy Cooper,Mark Whatley,46,42,D+4,Cooper +4,yes,
+North Carolina,NC,Change Research,Carolina Forward,Democratic,2025-09-02,2025-09-08,Roy Cooper,Mark Whatley,48,41,D+7,Cooper +7,yes,
+North Carolina,NC,Harper Polling,Carolina Journal,,2025-08-11,2025-08-12,Roy Cooper,Mark Whatley,47,39,D+8,Cooper +8,yes,
+North Carolina,NC,Victory Insights,,,2025-07-28,2025-07-30,Roy Cooper,Mark Whatley,44,44,D+1,Cooper +1,yes,Earliest poll; race has trended toward Cooper since
+Texas,TX,Public Policy Polling,Senate Majority PAC,Democratic,2026-03-04,2026-03-05,James Talarico,Ken Paxton,47,45,D+2,Talarico +2,yes,
+Texas,TX,Public Policy Polling,Senate Majority PAC,Democratic,2026-03-04,2026-03-05,James Talarico,John Cornyn,44,43,D+1,Talarico +1,yes,
+Texas,TX,Hart Research Associates,Forward Texas,Democratic,2026-02-06,2026-02-12,Jasmine Crockett,Ken Paxton,49,45,D+4,Crockett +4,no,Crockett not the D nominee; included for context
+Texas,TX,UH Hobby School,,neutral,2026-01-20,2026-01-31,James Talarico,Ken Paxton,44,46,R+2,Paxton +2,yes,
+Texas,TX,UH Hobby School,,neutral,2026-01-20,2026-01-31,James Talarico,John Cornyn,43,44,R+1,Cornyn +1,yes,
+Texas,TX,Emerson College,Nexstar,,2026-01-10,2026-01-12,Jasmine Crockett,John Cornyn,43,48,R+6,Cornyn +6,no,Crockett not the D nominee; included for context
+Minnesota,MN,Various (D primary),,,2026-01-01,2026-03-01,Flanagan vs Craig,N/A,,,,,no,D primary polls only — Flanagan leads Craig by 3-30 pts. Not a general election matchup

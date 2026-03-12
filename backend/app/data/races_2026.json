@@ -285,7 +285,8 @@
       "incumbent": null,
       "is_open": true,
       "pvi": 3,
-      "note": "Thom Tillis not seeking re-election; open seat. Roy Cooper (former governor) is a strong D recruit. Top Democratic pickup opportunity. R primary: Mark Whatley leads strongly (+26-30 in polls).",
+      "polling_average": 7.0,
+      "note": "Thom Tillis not seeking re-election; open seat. Roy Cooper (former governor) is a strong D recruit. R primary held March 3 — Whatley is the nominee. Cooper leads Whatley by 1–10 pts across 7 polls (avg D+7). Top Democratic pickup opportunity.",
       "candidates": {
         "dem": {"name": "Roy Cooper", "quality_score": 8, "is_incumbent": false},
         "rep": {"name": "Mark Whatley", "quality_score": 5, "is_incumbent": false}
