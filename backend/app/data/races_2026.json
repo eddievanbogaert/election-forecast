@@ -202,7 +202,7 @@
       "incumbent": null,
       "is_open": true,
       "pvi": -3,
-      "note": "Tina Smith retiring. D primary: Rep. Angie Craig and Lt. Gov. Peggy Flanagan are leading candidates. R nominee likely Royce White (2024 nominee). Minnesota leans D but open seat adds uncertainty.",
+      "note": "Tina Smith retiring. D primary (Aug 2026): Lt. Gov. Peggy Flanagan leads Rep. Angie Craig by 3–30 pts in early polls. R nominee likely Royce White (2024 nominee). Minnesota leans D but open seat adds uncertainty.",
       "candidates": {
         "dem": {"name": "TBD (primary: Craig / Flanagan)", "quality_score": 6, "is_incumbent": false},
         "rep": {"name": "Royce White", "quality_score": 4, "is_incumbent": false}
@@ -238,8 +238,7 @@
       "is_open": false,
       "pvi": 22,
       "polling_average": -1.0,
-      "note": "Dan Osborn (Independent) challenging Ricketts. Osborn nearly beat Deb Fischer in 2024 and is a strong populist candidate. Polls show Ricketts +1 in both surveys. Osborn would likely caucus with Democrats for Senate control. Modeled on D side for control purposes.",
-      "note": "Ricketts was appointed in 2023 after Ben Sasse resigned. Running for his first full term.",
+      "note": "Dan Osborn (Independent) challenging Ricketts, who was appointed in 2023 after Ben Sasse resigned. Osborn nearly beat Deb Fischer in 2024 and is a strong populist candidate. Polls show Ricketts +1. Osborn would likely caucus with Democrats for Senate control. Modeled on D side for control purposes.",
       "candidates": {
         "dem": {"name": "Dan Osborn (I)", "quality_score": 7, "is_incumbent": false},
         "rep": {"name": "Pete Ricketts", "quality_score": 6, "is_incumbent": true}
