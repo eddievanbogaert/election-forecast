@@ -411,7 +411,8 @@
       "incumbent": null,
       "is_open": true,
       "pvi": 8,
-      "note": "Special election for J.D. Vance's vacated Class III seat. Sherrod Brown, who lost his Class I seat in 2024, is running as D candidate — a stronger-than-replacement candidate given his prior statewide wins.",
+      "polling_average": -2.0,
+      "note": "Special election for J.D. Vance's vacated Class III seat. Sherrod Brown (lost his Class I seat in 2024) vs Lt. Gov. Jon Husted. R primary May 5. Polls show race tightening: Husted +6 (Aug '25) → Brown +2 (Mar '26). Brown's populist brand remains strong but Ohio has trended sharply R.",
       "candidates": {
         "dem": {"name": "Sherrod Brown", "quality_score": 8, "is_incumbent": false},
         "rep": {"name": "Jon Husted", "quality_score": 6, "is_incumbent": false}
