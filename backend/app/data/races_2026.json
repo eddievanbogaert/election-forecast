@@ -273,9 +273,10 @@
       "incumbent": {"name": "Ben Ray Luján", "party": "D", "last_margin": 6.0, "years_in_office": 6},
       "is_open": false,
       "pvi": -4,
+      "note": "Only GOP candidate (Christopher Vanden Heuvel) disqualified for insufficient petition signatures. No Republican will appear on the general election ballot — first time in modern NM history.",
       "candidates": {
         "dem": {"name": "Ben Ray Luján", "quality_score": 6, "is_incumbent": true},
-        "rep": {"name": "TBD", "quality_score": 5, "is_incumbent": false}
+        "rep": {"name": "None (disqualified)", "quality_score": 0, "is_incumbent": false}
       }
     },
     {
@@ -363,10 +364,11 @@
       "incumbent": {"name": "John Cornyn", "party": "R", "last_margin": 9.6, "years_in_office": 24},
       "is_open": false,
       "pvi": 10,
-      "note": "Texas has become more competitive in recent cycles. R primary: Ken Paxton leads Cornyn — Cornyn may lose his own primary. D nominee is James Talarico. If Paxton wins the R primary, the general election could be more competitive given his controversial record.",
+      "polling_average": -1.0,
+      "note": "R primary headed to runoff (Paxton vs Cornyn). D nominee Talarico polls within 1–2 pts of both R candidates: PPP (Mar, D-sponsored) shows Talarico +2/+1; UH Hobby (Jan, neutral) shows R+1/R+2. Bruising R primary could depress general election turnout. Texas trending more competitive.",
       "candidates": {
-        "dem": {"name": "James Talarico", "quality_score": 5, "is_incumbent": false},
-        "rep": {"name": "John Cornyn", "quality_score": 7, "is_incumbent": true}
+        "dem": {"name": "James Talarico", "quality_score": 6, "is_incumbent": false},
+        "rep": {"name": "TBD (Cornyn/Paxton runoff)", "quality_score": 6, "is_incumbent": false}
       }
     },
     {
