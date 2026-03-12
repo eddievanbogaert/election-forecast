@@ -39,4 +39,40 @@ Kentucky,KY,Public Policy Polling,Charles Booker,Democratic,2025-12-18,2025-12-1
 Kentucky,KY,Public Policy Polling,Charles Booker,Democratic,2025-12-18,2025-12-19,Charles Booker,Generic R,36,50,R+14,Republican +14,yes,D-sponsored poll; generic R ballot
 South Carolina,SC,Public Policy Polling,314 Action,Democratic,2025-11-21,2025-11-22,Generic D,Lindsey Graham,39,41,R+2,Graham +2,yes,D-sponsored; Graham only +2 vs generic D in R+11 state
 South Carolina,SC,Public Policy Polling,314 Action,Democratic,2025-11-21,2025-11-22,Andrews,Lindsey Graham,36,42,R+6,Graham +6,yes,D-sponsored
+New Hampshire,NH,UNH,,,2026-01-15,2026-01-19,Chris Pappas,John E. Sununu,50,45,D+5,Pappas +5,yes,n=2038 LV; 538 data
+New Hampshire,NH,Praecones Analytica,,,2025-12-26,2025-12-28,Chris Pappas,John E. Sununu,42,36,D+7,Pappas +7,yes,n=603 RV; 538 data
+New Hampshire,NH,Guidant Polling,,,2025-12-09,2025-12-11,Chris Pappas,John E. Sununu,47,44,D+3,Pappas +3,yes,n=600 LV; 538 data
+New Hampshire,NH,St. Anselm,,,2025-11-18,2025-11-19,Chris Pappas,John E. Sununu,44,41,D+3,Pappas +3,yes,n=2212 RV; 538 data
+New Hampshire,NH,co/efficient,,,2025-10-09,2025-10-13,Chris Pappas,John E. Sununu,45,42,D+3,Pappas +3,yes,n=1034 LV; 538 data
+New Hampshire,NH,co/efficient,,,2025-09-10,2025-09-12,Chris Pappas,John E. Sununu,46,43,D+3,Pappas +3,yes,n=904 LV; 538 data
+New Hampshire,NH,1892 Polling,One Nation,,2025-09-02,2025-09-04,Chris Pappas,John E. Sununu,45,43,D+2,Pappas +2,yes,n=500 LV; 538 data
+New Hampshire,NH,UNH,,,2026-01-15,2026-01-19,Chris Pappas,Scott Brown,52,42,D+10,Pappas +10,no,Brown matchup — included for context; n=2017 LV
+New Hampshire,NH,Guidant Polling,,,2025-12-09,2025-12-11,Chris Pappas,Scott Brown,49,38,D+11,Pappas +11,no,Brown matchup — included for context; n=600 LV
+Florida,FL,UNF,,,2026-02-21,2026-03-02,Alexander Vindman,Ashley Moody,38,45,R+7,Moody +7,yes,n=772 LV; 538 data
+Florida,FL,UNF,,,2026-02-21,2026-03-02,Angie Nixon,Ashley Moody,38,46,R+8,Moody +8,yes,n=768 LV; 538 data
+Florida,FL,UNF,Florida Watch,Democratic,2025-10-15,2025-10-25,Jennifer Jenkins,Ashley Moody,38,49,R+11,Moody +11,yes,n=728 LV; D-sponsored; 538 data
+Iowa,IA,Change Research,,,2026-01-08,2026-01-11,Nathan Sage,Ashley Hinson,41,44,R+3,Hinson +3,yes,n=1108 LV; all 3 D candidates tested identically; 538 data
+Iowa,IA,Change Research,,,2026-01-08,2026-01-11,Zach Wahls,Ashley Hinson,41,44,R+3,Hinson +3,yes,n=1108 LV; 538 data
+Iowa,IA,Change Research,,,2026-01-08,2026-01-11,Josh Turek,Ashley Hinson,41,44,R+3,Hinson +3,yes,n=1108 LV; 538 data
+Iowa,IA,PPP,,Democratic,2025-08-18,2025-08-19,Zach Wahls,Joni Ernst,45,43,D+2,Wahls +2,no,Pre-retirement Ernst matchup; D-sponsored; 538 data
+Minnesota,MN,Emerson College,,,2026-02-06,2026-02-08,Peggy Flanagan,Michele Tafoya,47,41,D+6,Flanagan +6,yes,n=1000 LV; 538 data
+Minnesota,MN,Emerson College,,,2026-02-06,2026-02-08,Angie Craig,Michele Tafoya,47,40,D+6,Craig +6,yes,n=1000 LV; 538 data
+Minnesota,MN,PPP,GQR,,2025-09-15,2025-09-16,Angie Craig,Generic Republican,47,43,D+4,Craig +4,yes,n=1015 LV; 538 data
+Minnesota,MN,PPP,GQR,,2025-09-15,2025-09-16,Peggy Flanagan,Generic Republican,46,44,D+2,Flanagan +2,yes,n=1015 LV; 538 data
+Alaska,AK,PPP,DSCC,Democratic,2026-01-16,2026-01-17,Mary Peltola,Dan Sullivan,49,47,D+2,Peltola +2,yes,n=611 RV; D-sponsored; 538 data
+Alaska,AK,AK Survey Research,,,2026-01-08,2026-01-11,Mary Peltola,Dan Sullivan,48,46,D+2,Peltola +2,yes,n=1681 LV; 538 data
+Alaska,AK,Data for Progress,,,2025-10-17,2025-10-23,Mary Peltola,Dan Sullivan,46,45,D+1,Peltola +1,yes,n=823 RV; 538 data
+Alaska,AK,AK Survey Research,,,2025-10-10,2025-10-15,Mary Peltola,Dan Sullivan,48,46,D+2,Peltola +2,yes,n=1708 LV; 538 data
+Alaska,AK,AK Survey Research,,,2025-07-29,2025-08-01,Mary Peltola,Dan Sullivan,43,47,R+4,Sullivan +4,yes,n=1613 LV; earliest named-candidate poll; 538 data
+Alaska,AK,Data for Progress,,,2025-07-21,2025-07-27,Mary Peltola,Dan Sullivan,45,46,R+1,Sullivan +1,yes,n=678 LV; 538 data
+Maine,ME,Quantus Insights,,,2026-03-03,2026-03-05,Graham Platner,Susan Collins,49,42,D+7,Platner +7,yes,n=800 LV; 538 data
+Maine,ME,Pan Atlantic,,,2026-02-13,2026-03-02,Graham Platner,Susan Collins,44,40,D+4,Platner +4,yes,n=810 LV; 538 data
+Maine,ME,UNH,,,2026-02-12,2026-02-16,Graham Platner,Susan Collins,49,38,D+11,Platner +11,yes,n=1105 LV; 538 data
+Maine,ME,Fabrizio Lee,Pine Tree Results,Republican,2026-01-20,2026-01-24,Graham Platner,Susan Collins,44,45,R+1,Collins +1,yes,n=800 LV; R-sponsored; 538 data
+Maine,ME,Workbench Strategy,,Democratic,2025-12-11,2025-12-16,Graham Platner,Susan Collins,50,50,D+1,Platner +1,yes,n=900 LV; D-sponsored; 538 data
+Maine,ME,Pan Atlantic,,,2025-11-29,2025-12-07,Graham Platner,Susan Collins,43,42,D+1,Platner +1,yes,n=820 LV; 538 data
+Maine,ME,Maine PRC,,,2025-10-26,2025-10-29,Graham Platner,Susan Collins,45,41,D+4,Platner +4,yes,n=783 RV; 538 data
+Maine,ME,Zenith Research,More Perfect Union,,2025-10-07,2025-10-10,Graham Platner,Susan Collins,38,38,Even,Tied,yes,n=501 LV; 538 data
+Maine,ME,Quantus Insights,,,2026-03-03,2026-03-05,Janet T. Mills,Susan Collins,43,45,R+2,Collins +2,no,Mills matchup — included for context; Platner is stronger D option
+Maine,ME,Pan Atlantic,,,2026-02-13,2026-03-02,Janet T. Mills,Susan Collins,44,44,Even,Tied,no,Mills matchup — included for context
 Minnesota,MN,Various (D primary),,,2026-01-01,2026-03-01,Flanagan vs Craig,N/A,,,,,no,D primary polls only — Flanagan leads Craig by 3-30 pts. Not a general election matchup
