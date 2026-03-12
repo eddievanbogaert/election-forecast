@@ -143,10 +143,10 @@
       "incumbent": null,
       "is_open": true,
       "pvi": 26,
-      "note": "Mitch McConnell retiring after 42 years. R primary: Rep. Andy Barr, former AG Daniel Cameron, Nate Morris. D primary: Amy McGrath (2020 nominee), Pamela Stevenson. Deep-red state remains Safe R.",
+      "note": "Mitch McConnell retiring after 42 years. R primary: Rep. Andy Barr, former AG Daniel Cameron, Nate Morris. D candidate: Charles Booker. PPP polls (D-sponsored, Dec '25) show Morris only +1 vs Booker, Cameron +7, Barr +11, generic R +14. If Morris wins the R primary, this could be more competitive than PVI suggests — but R+26 keeps it Safe R.",
       "candidates": {
-        "dem": {"name": "TBD (primary: McGrath / Stevenson)", "quality_score": 4, "is_incumbent": false},
-        "rep": {"name": "TBD (primary: Barr / Cameron)", "quality_score": 6, "is_incumbent": false}
+        "dem": {"name": "Charles Booker", "quality_score": 5, "is_incumbent": false},
+        "rep": {"name": "TBD (primary: Barr / Cameron / Morris)", "quality_score": 6, "is_incumbent": false}
       }
     },
     {
@@ -190,10 +190,11 @@
       "incumbent": null,
       "is_open": true,
       "pvi": 1,
-      "note": "Gary Peters retiring. D primary: State Sen. Mallory McMorrow, Rep. Haley Stevens, Abdul El-Sayed among leading candidates. Open seat in a swing state — top-tier battleground.",
+      "polling_average": -1.0,
+      "note": "Gary Peters retiring. D primary ongoing: McMorrow, Stevens, and El-Sayed. R candidate is Mike Rogers. 10 polls (Nov '25–Jan '26) show Rogers leading most matchups narrowly. Stevens polls best (avg D+1.5), McMorrow middle (avg R+2), El-Sayed weakest (avg R+3). Blended avg R+1. Race tightening in Jan polls.",
       "candidates": {
         "dem": {"name": "TBD (primary: McMorrow / Stevens / El-Sayed)", "quality_score": 6, "is_incumbent": false},
-        "rep": {"name": "TBD", "quality_score": 6, "is_incumbent": false}
+        "rep": {"name": "Mike Rogers", "quality_score": 7, "is_incumbent": false}
       }
     },
     {
