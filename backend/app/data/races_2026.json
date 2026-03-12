@@ -333,6 +333,7 @@
       "incumbent": {"name": "Lindsey Graham", "party": "R", "last_margin": 10.3, "years_in_office": 24},
       "is_open": false,
       "pvi": 11,
+      "note": "Graham only +2 vs generic D and +6 vs Andrews in D-sponsored PPP polls (Nov '25). Graham is personally unpopular but R+11 PVI keeps this Safe R. Worth monitoring if a strong D candidate emerges.",
       "candidates": {
         "dem": {"name": "TBD", "quality_score": 4, "is_incumbent": false},
         "rep": {"name": "Lindsey Graham", "quality_score": 6, "is_incumbent": true}

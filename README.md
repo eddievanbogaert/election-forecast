@@ -1,19 +1,47 @@
-# 2028 Senate Forecast
+# 2026 Senate Forecast
 
-A FiveThirtyEight-style probabilistic forecast for the 2028 US Senate midterm elections, built with React + FastAPI and deployed on Google Cloud Platform.
+A FiveThirtyEight-style probabilistic forecast for the 2026 US Senate midterm elections, built with React + FastAPI and deployed on Google Cloud Platform.
 
 ---
 
 ## Overview
 
-The site forecasts all 34 Class III Senate seats up for election in November 2028. It features:
+The site forecasts all 35 Senate seats in play in November 2026 (33 Class II seats + OH and FL special elections). It features:
 
-- **Interactive US choropleth map** — states coloured by projected win probability
+- **Interactive US choropleth map** — states colored by projected win probability
 - **Chamber control probability** — probability the Democrats or Republicans control the Senate post-election, with a full seat-distribution histogram
-- **Per-race detail panel** — win probability, fundamentals lean, Cook PVI, candidate info, and polling average (once available)
+- **Per-race detail panel** — win probability, fundamentals lean, Cook PVI, candidate info, and polling average
 - **Monte Carlo engine** — 40,000 simulations per run, with correlated national errors producing realistic wave scenarios
+- **National environment model** — data-driven estimates from presidential approval, GDP growth, and consumer sentiment
 
 Live site: [https://election-forecast-489820.web.app](https://election-forecast-489820.web.app)
+
+---
+
+## Current Forecast Snapshot (March 2026)
+
+| Metric | Value |
+|--------|-------|
+| Expected D seats | ~48.5 / 100 |
+| D Senate control probability | ~15% |
+| Net national environment | D+3.54 |
+| Days to election | ~601 |
+| Polling weight | ~35% polls / 65% fundamentals |
+
+### Key Battlegrounds
+
+| Race | Rating | D Win Prob | Polling Avg |
+|------|--------|-----------|-------------|
+| NC (Cooper vs Whatley) | Likely D | ~76% | D+7 |
+| GA (Ossoff vs TBD) | Lean D | ~70% | D+5.3 |
+| NH (Pappas vs TBD) | Lean D | ~62% | — |
+| MI (TBD vs Rogers) | Lean D | ~55% | R+1 |
+| ME (TBD vs Collins) | Toss-up | ~55% | D+2.5 |
+| AK (Peltola vs Sullivan) | Lean R | ~40% | D+2 |
+| FL (Jenkins vs Moody) | Lean R | ~35% | — |
+| OH Special (Brown vs Husted) | Lean R | ~34% | R+2 |
+
+See [analysis_notes.md](backend/app/data/analysis_notes.md) for detailed race-by-race analysis and [polls.csv](backend/app/data/polls.csv) for all polling data considered.
 
 ---
 
@@ -34,7 +62,7 @@ Live site: [https://election-forecast-489820.web.app](https://election-forecast-
 └─────────────────────┘
 ```
 
-**GCP services used (cost-optimised):**
+**GCP services used (cost-optimized):**
 
 | Service | Purpose | Est. monthly cost |
 |---|---|---|
@@ -48,16 +76,31 @@ Live site: [https://election-forecast-489820.web.app](https://election-forecast-
 
 ## Model
 
-### Inputs (current — fundamentals only; polls integrated as they become available)
+### Inputs
 
 | Category | Variable | Source |
 |---|---|---|
-| Structural | Cook PVI | Stored in `races_2028.json` |
+| Structural | Cook PVI | `races_2026.json` |
 | Structural | Incumbency advantage (+2.5 pp) | Computed |
-| Structural | Midterm penalty for president's party (−3 pp) | Computed |
+| Environment | National environment shift (approval, GDP, sentiment) | `environment.json` → `environment.py` |
 | Candidate | Quality score differential | Seed data (0–10 scale) |
 | Seat | Open-seat volatility | Seed data flag |
 | Polling | Head-to-head average (D − R) | `polling_average` field in seed data |
+
+### National Environment (v0.2.0)
+
+The model uses a four-component national environment estimate that replaces the earlier flat midterm penalty:
+
+| Component | Coefficient | Current Value | Contribution |
+|-----------|------------|---------------|-------------|
+| Base midterm penalty | — | — | D+1.50 |
+| Presidential approval | 0.12 per net approval pt | −11.0 | D+1.32 |
+| GDP growth | 0.3 per pt above 2.0% trend | 2.3% | D−0.09 |
+| Consumer sentiment | 0.04 per pt below 85.0 baseline | 64.7 | D+0.81 |
+
+**Net environment: D+3.54**
+
+Data sourced from RealClearPolitics (approval, 16-poll average), BEA (GDP), and University of Michigan (sentiment). Updated in `backend/app/data/environment.json`.
 
 ### Blending
 
@@ -67,9 +110,9 @@ blended_lean = α × polling_average + (1 − α) × fundamentals_lean
 α = max(0, min(1, (365 − days_until_election) / 365))
 ```
 
-At the current date (~972 days out), `α ≈ 0`: the model is **fundamentals-only**. Polling weight ramps linearly to 1 over the final year.
+At ~601 days out, `α ≈ 0.35`: the model is **65% fundamentals, 35% polling**. Polling weight ramps linearly to 100% over the final year before the election.
 
-### Uncertainty / sigma
+### Uncertainty / Sigma
 
 ```
 σ_per_state = √(σ_fundamentals² + σ_polling² + σ_residual²)
@@ -93,13 +136,23 @@ D_wins_i   = margin_i > 0
 
 The shared national error produces the cross-state correlation essential for realistic chamber-control distributions.
 
-### Key judgment calls & planned improvements
+### Planned Improvements
 
-1. **Fundamentals vs. polls**: currently a linear ramp. Could be replaced with a Bayesian update or a decaying exponential once polls start flowing.
-2. **Correlated state errors**: currently a single national factor. A full covariance matrix (regional clusters, open-seat correlation) would improve accuracy.
-3. **Candidate quality**: currently a coarse 0–10 score. Plan to integrate FEC fundraising data and name-recognition tiers.
-4. **Economic environment**: presidential approval, GDP, consumer sentiment not yet wired in. Planned for the next model version.
-5. **Undecided allocation**: no model yet; assume they split evenly. Will add a challenger-lean adjustment.
+1. **Correlated state errors**: currently a single national factor. A full covariance matrix (regional clusters, open-seat correlation) would improve accuracy.
+2. **Candidate quality**: currently a coarse 0–10 score. Plan to integrate FEC fundraising data and name-recognition tiers.
+3. **Undecided allocation**: no model yet; assumes they split evenly. Will add a challenger-lean adjustment.
+4. **Bayesian blending**: replace the linear polling ramp with a Bayesian update framework as more polls arrive.
+
+---
+
+## Data Files
+
+| File | Description |
+|------|-------------|
+| `backend/app/data/races_2026.json` | Seed data for all 35 races (PVI, candidates, polling averages, notes) |
+| `backend/app/data/environment.json` | National environment indicators (approval, GDP, sentiment) |
+| `backend/app/data/polls.csv` | All polls considered, with sources, sponsors, dates, and inclusion flags |
+| `backend/app/data/analysis_notes.md` | Detailed race-by-race analysis, tiered ratings, and methodology |
 
 ---
 
@@ -147,7 +200,7 @@ This script:
 4. Prints the SA JSON key — add this to GitHub Secrets as `GCP_SA_KEY`
 5. Deploys a placeholder Cloud Run service
 
-Then initialise Firebase Hosting:
+Then initialize Firebase Hosting:
 
 ```bash
 cd frontend
@@ -184,10 +237,14 @@ election-forecast/
 │   │   ├── routes/
 │   │   │   └── forecast.py     # /api/forecast endpoint + cache
 │   │   ├── model/
-│   │   │   ├── fundamentals.py # PVI, incumbency, midterm lean
+│   │   │   ├── fundamentals.py # PVI, incumbency, environment lean
+│   │   │   ├── environment.py  # National environment model
 │   │   │   └── monte_carlo.py  # 40k simulation engine
 │   │   └── data/
-│   │       └── races_2028.json # Seed data for all 34 Class III races
+│   │       ├── races_2026.json    # Seed data for all 35 races
+│   │       ├── environment.json   # National environment indicators
+│   │       ├── polls.csv          # All polls considered
+│   │       └── analysis_notes.md  # Detailed race analysis
 │   ├── Dockerfile
 │   └── requirements.txt
 ├── frontend/
@@ -197,10 +254,15 @@ election-forecast/
 │   │   │   ├── ChamberControl.tsx  # Seat probability bar + histogram
 │   │   │   ├── RaceList.tsx        # Grouped race list with mini bars
 │   │   │   ├── RaceDetail.tsx      # Selected race detail panel
-│   │   │   └── Header.tsx          # Top bar with metadata
+│   │   │   └── Header.tsx          # Top bar with metadata + environment
 │   │   ├── hooks/useForecast.ts    # TanStack Query data fetching
 │   │   ├── types/index.ts          # TypeScript interfaces
 │   │   └── utils/                  # Color scales, state lookup, formatters
+│   ├── public/
+│   │   ├── favicon.svg            # Bar chart favicon
+│   │   ├── favicon.png            # PNG favicon + apple-touch-icon
+│   │   ├── og-image.svg           # Open Graph share image (source)
+│   │   └── og-image.png           # Open Graph share image (1200×630)
 │   ├── firebase.json               # Firebase Hosting config
 │   └── package.json
 ├── infrastructure/
@@ -211,23 +273,13 @@ election-forecast/
 
 ---
 
-## Data Notes
-
-All race data in `races_2028.json` is **preliminary** as of early 2026:
-
-- Candidate fields marked `"TBD"` will be updated as races develop
-- Open seats in Florida (Rubio → Sec. State) and Ohio (Vance → VP) are flagged with notes
-- Cook PVI values are approximate; will be updated after 2026 results
-- Chuck Grassley (IA, age 95 in 2028) is flagged as a potential retirement
-
----
-
 ## Contributing / Updating the Model
 
-1. **Add a poll**: edit `races_2028.json`, set `"polling_average": <D_margin>` for the race
+1. **Add a poll**: edit `races_2026.json`, set `"polling_average": <D_margin>` for the race. Log the poll in `polls.csv`.
 2. **Update candidate info**: edit the `candidates` block and `"quality_score"` fields
-3. **Change fundamentals**: edit `pvi` or model constants in `backend/app/model/fundamentals.py`
-4. **Tune model parameters**: adjust `SIGMA_NATIONAL`, `N_SIMS`, etc. in `backend/app/model/monte_carlo.py`
+3. **Update environment data**: edit `environment.json` with latest approval/GDP/sentiment figures
+4. **Change fundamentals**: edit `pvi` or model constants in `backend/app/model/fundamentals.py`
+5. **Tune model parameters**: adjust `SIGMA_NATIONAL`, `N_SIMS`, etc. in `backend/app/model/monte_carlo.py`
 
 After any backend change, push to `main` to auto-deploy. The cache refreshes every 30 minutes; to force an immediate refresh:
 
