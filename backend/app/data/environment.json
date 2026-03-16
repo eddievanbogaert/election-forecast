@@ -1,35 +1,34 @@
 {
-  "as_of": "2026-03-10",
+  "as_of": "2026-03-15",
   "presidential_approval": {
-    "approve": 43.3,
-    "disapprove": 54.3,
-    "net": -11.0,
-    "source": "RealClearPolitics average (2/20–3/10)",
+    "approve": 42.0,
+    "disapprove": 55.5,
+    "net": -13.5,
+    "source": "RealClearPolitics average (3/1–3/15)",
     "polls": [
-      {"pollster": "NPR/PBS/Marist", "date": "3/2–3/4", "approve": 40, "disapprove": 57},
-      {"pollster": "Rasmussen Reports", "date": "3/4–3/10", "approve": 47, "disapprove": 52},
       {"pollster": "Quinnipiac", "date": "3/6–3/8", "approve": 37, "disapprove": 57},
       {"pollster": "Economist/YouGov", "date": "3/6–3/9", "approve": 43, "disapprove": 54},
+      {"pollster": "Rasmussen Reports", "date": "3/4–3/10", "approve": 47, "disapprove": 52},
+      {"pollster": "NPR/PBS/Marist", "date": "3/2–3/4", "approve": 40, "disapprove": 57},
       {"pollster": "Quantus Insights", "date": "3/2–3/3", "approve": 45, "disapprove": 54},
       {"pollster": "Daily Mail", "date": "3/2–3/3", "approve": 44, "disapprove": 56},
       {"pollster": "Trafalgar Group", "date": "3/1–3/3", "approve": 50, "disapprove": 48},
       {"pollster": "RMG Research", "date": "2/28–3/4", "approve": 46, "disapprove": 52},
       {"pollster": "NBC News", "date": "2/27–3/3", "approve": 44, "disapprove": 54},
       {"pollster": "FOX News", "date": "2/28–3/3", "approve": 43, "disapprove": 57},
-      {"pollster": "Reuters/Ipsos", "date": "2/28–3/1", "approve": 38, "disapprove": 60},
+      {"pollster": "Reuters/Ipsos", "date": "2/28–3/1", "approve": 39, "disapprove": 60},
       {"pollster": "CBS News", "date": "2/25–2/27", "approve": 41, "disapprove": 59},
       {"pollster": "I&I/TIPP", "date": "2/24–2/27", "approve": 40, "disapprove": 51},
-      {"pollster": "Harvard-Harris", "date": "2/25–2/26", "approve": 46, "disapprove": 49},
-      {"pollster": "Emerson", "date": "2/20–2/22", "approve": 43, "disapprove": 55},
-      {"pollster": "Morning Consult", "date": "2/20–2/22", "approve": 45, "disapprove": 53}
-    ]
+      {"pollster": "Harvard-Harris", "date": "2/25–2/26", "approve": 46, "disapprove": 49}
+    ],
+    "note": "Trend is downward; Quinnipiac (37%) marks new second-term low. Multiple March polls show net approval worsening vs February."
   },
   "economy": {
-    "gdp_growth_annualized": 2.3,
-    "gdp_source": "BEA Q4 2025 advance estimate",
-    "consumer_sentiment": 64.7,
-    "consumer_sentiment_source": "University of Michigan, February 2026 final",
-    "unemployment_rate": 4.1,
-    "unemployment_source": "BLS, February 2026"
+    "gdp_growth_annualized": 0.7,
+    "gdp_source": "BEA Q4 2025 second estimate (revised down from 2.3% advance estimate on 3/13/26). Full year 2025: 2.1%. Government shutdown subtracted ~1.0pp.",
+    "consumer_sentiment": 55.5,
+    "consumer_sentiment_source": "University of Michigan, March 2026 preliminary (down from 64.7 in Feb final). Current conditions 57.0, expectations 54.1. Year-ahead inflation expectations 3.4%.",
+    "unemployment_rate": 4.4,
+    "unemployment_source": "BLS, February 2026 (nonfarm payrolls -92k; up from 4.1% in January). Includes Kaiser Permanente strike impact."
   }
 }
