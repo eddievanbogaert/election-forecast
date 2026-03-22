@@ -84,8 +84,8 @@
       "incumbent": {"name": "Jon Ossoff", "party": "D", "last_margin": 1.2, "years_in_office": 6},
       "is_open": false,
       "pvi": 4,
-      "polling_average": 5.4,
-      "note": "Won by 1.2% in January 2021 runoff; top Republican target in 2026. R primary: Carter, Collins, Dooley, King. 17 polls (Jan '25–Mar '26) across 8 pollsters avg D+5.4 vs likely nominees. Ossoff leads all R candidates except Kemp (unlikely to run). Most recent Emerson (Mar '26): D+3 to D+8 depending on R opponent.",
+      "polling_average": 5.3,
+      "note": "Won by 1.2% in January 2021 runoff; top Republican target in 2026. R primary: Carter, Collins, Dooley, King. 18 polls (Jan '25–Mar '26) across 8 pollsters avg D+5.3 vs likely nominees. Ossoff leads all R candidates except Kemp (unlikely to run). Most recent Emerson (Mar '26): D+3 to D+8 depending on R opponent.",
       "candidates": {
         "dem": {"name": "Jon Ossoff", "quality_score": 7, "is_incumbent": true},
         "rep": {"name": "TBD (primary: Collins / Carter / Dooley)", "quality_score": 6, "is_incumbent": false}
@@ -169,8 +169,8 @@
       "incumbent": {"name": "Susan Collins", "party": "R", "last_margin": 8.6, "years_in_office": 30},
       "is_open": false,
       "pvi": -3,
-      "polling_average": 3.3,
-      "note": "Collins is a moderate R who historically outperforms PVI by 10+ pts. D primary: Platner avg D+3.3 across 8 polls (range: tied to D+11); Mills avg R+0.4 (much weaker). D nominee choice is crucial. If Platner, this is a genuine toss-up trending D; if Mills, Collins likely holds.",
+      "polling_average": 3.2,
+      "note": "Collins is a moderate R who historically outperforms PVI by 10+ pts. D primary: Platner avg D+3.2 across 9 polls (range: tied to D+11); Mills avg R+0.4 (much weaker). OnMessage Mar '26 shows Platner +2. D nominee choice is crucial. If Platner, this is a genuine toss-up trending D; if Mills, Collins likely holds.",
       "candidates": {
         "dem": {"name": "TBD (primary: Platner / Mills)", "quality_score": 6, "is_incumbent": false},
         "rep": {"name": "Susan Collins", "quality_score": 8, "is_incumbent": true}
@@ -291,8 +291,8 @@
       "incumbent": null,
       "is_open": true,
       "pvi": 3,
-      "polling_average": 6.1,
-      "note": "Thom Tillis not seeking re-election; open seat. Roy Cooper (former governor) is a strong D recruit. R primary held March 3 — Whatley is the nominee. Cooper leads Whatley in 8 of 8 included polls (avg D+6.1, range D+1 to D+10). TIPP outlier (D+24) excluded. Top Democratic pickup opportunity.",
+      "polling_average": 5.8,
+      "note": "Thom Tillis not seeking re-election; open seat. Roy Cooper (former governor) is a strong D recruit. R primary held March 3 — Whatley is the nominee. Cooper leads Whatley in 9 of 9 included polls (avg D+5.8, range D+1 to D+10). Most recent PPP (Mar '26) shows D+3 — tightest margin yet. TIPP outlier (D+24) excluded. Top Democratic pickup opportunity.",
       "candidates": {
         "dem": {"name": "Roy Cooper", "quality_score": 8, "is_incumbent": false},
         "rep": {"name": "Mark Whatley", "quality_score": 5, "is_incumbent": false}
@@ -373,8 +373,8 @@
       "incumbent": {"name": "John Cornyn", "party": "R", "last_margin": 9.6, "years_in_office": 24},
       "is_open": false,
       "pvi": 10,
-      "polling_average": -1.8,
-      "note": "R primary headed to runoff (Paxton vs Cornyn). 12 Talarico polls (Sep '25–Mar '26) across 6 pollsters avg R+1.8. Range: D+2 (PPP, D-sponsored) to R+6 (Ragnar, UT Tyler). Talarico polls better vs Paxton (avg R+0.7) than vs Cornyn (avg R+3.0). Bruising R primary could depress general election turnout.",
+      "polling_average": -1.4,
+      "note": "R primary headed to runoff (Paxton vs Cornyn). 14 Talarico polls (Sep '25–Mar '26) across 7 pollsters avg R+1.4. Range: D+2 (PPP, Impact Research) to R+6 (Ragnar, UT Tyler). Impact Research Mar '26 shows Talarico +1/+2 vs Cornyn/Paxton. Talarico polls better vs Paxton than vs Cornyn. Bruising R primary could depress general election turnout.",
       "candidates": {
         "dem": {"name": "James Talarico", "quality_score": 6, "is_incumbent": false},
         "rep": {"name": "TBD (Cornyn/Paxton runoff)", "quality_score": 6, "is_incumbent": false}
@@ -419,8 +419,8 @@
       "incumbent": null,
       "is_open": true,
       "pvi": 8,
-      "polling_average": -2.5,
-      "note": "Special election for J.D. Vance's vacated Class III seat. Sherrod Brown (lost his Class I seat in 2024) vs Lt. Gov. Jon Husted. 6 polls (Feb '25–Mar '26) avg R+2.5. Race tightening: Husted +6 (Feb/Aug '25) → Brown +2 (Mar '26). Brown's populist brand remains strong but Ohio has trended sharply R.",
+      "polling_average": -1.5,
+      "note": "Special election for J.D. Vance's vacated Class III seat. Sherrod Brown (lost his Class I seat in 2024) vs Lt. Gov. Jon Husted. 8 polls (Feb '25–Mar '26) avg R+1.5. Race tightening: Husted +6 (Feb/Aug '25) → Brown +4 (EMC Mar '26). Recent EMC D+4 and Quantus R+1 polls show momentum shifting toward Brown.",
       "candidates": {
         "dem": {"name": "Sherrod Brown", "quality_score": 8, "is_incumbent": false},
         "rep": {"name": "Jon Husted", "quality_score": 6, "is_incumbent": false}
