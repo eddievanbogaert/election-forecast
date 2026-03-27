@@ -169,8 +169,8 @@
       "incumbent": {"name": "Susan Collins", "party": "R", "last_margin": 8.6, "years_in_office": 30},
       "is_open": false,
       "pvi": -3,
-      "polling_average": 3.2,
-      "note": "Collins is a moderate R who historically outperforms PVI by 10+ pts. D primary: Platner avg D+3.2 across 9 polls (range: tied to D+11); Mills avg R+0.4 (much weaker). OnMessage Mar '26 shows Platner +2. D nominee choice is crucial. If Platner, this is a genuine toss-up trending D; if Mills, Collins likely holds.",
+      "polling_average": 3.6,
+      "note": "Collins is a moderate R who historically outperforms PVI by 10+ pts. D primary: Platner avg D+3.6 across 10 polls (range: tied to D+11); Mills avg D+0.2 (much weaker). Emerson Mar '26 shows Platner +7 — strongest recent result. D nominee choice is crucial. If Platner, this is a genuine toss-up trending D; if Mills, Collins likely holds.",
       "candidates": {
         "dem": {"name": "TBD (primary: Platner / Mills)", "quality_score": 6, "is_incumbent": false},
         "rep": {"name": "Susan Collins", "quality_score": 8, "is_incumbent": true}
@@ -255,8 +255,8 @@
       "incumbent": null,
       "is_open": true,
       "pvi": -1,
-      "polling_average": 3.7,
-      "note": "Jeanne Shaheen retiring. Pappas (D) vs Sununu (R) is the competitive matchup: 7 polls avg D+3.7 (range D+2 to D+6.7). Pappas dominates Brown matchup at D+11 avg. If Sununu wins R primary, this is a top-tier battleground; if Brown, likely D hold.",
+      "polling_average": 3.6,
+      "note": "Jeanne Shaheen retiring. Pappas (D) vs Sununu (R) is the competitive matchup: 9 polls avg D+3.6 (range D+2 to D+7). Emerson Mar '26 shows D+2 — tightest Sununu matchup yet. Pappas dominates Brown matchup at D+10 avg. If Sununu wins R primary, this is a top-tier battleground; if Brown, likely D hold.",
       "candidates": {
         "dem": {"name": "Chris Pappas", "quality_score": 7, "is_incumbent": false},
         "rep": {"name": "TBD (primary: Sununu / Brown)", "quality_score": 7, "is_incumbent": false}
@@ -291,8 +291,8 @@
       "incumbent": null,
       "is_open": true,
       "pvi": 3,
-      "polling_average": 5.8,
-      "note": "Thom Tillis not seeking re-election; open seat. Roy Cooper (former governor) is a strong D recruit. R primary held March 3 — Whatley is the nominee. Cooper leads Whatley in 9 of 9 included polls (avg D+5.8, range D+1 to D+10). Most recent PPP (Mar '26) shows D+3 — tightest margin yet. TIPP outlier (D+24) excluded. Top Democratic pickup opportunity.",
+      "polling_average": 6.0,
+      "note": "Thom Tillis not seeking re-election; open seat. Roy Cooper (former governor) is a strong D recruit. R primary held March 3 — Whatley is the nominee. Cooper leads Whatley in 10 of 10 included polls (avg D+6.0, range D+1 to D+10). Harper Mar '26 shows D+8 — reverting toward mean after PPP's tight D+3. TIPP outlier (D+24) excluded. Top Democratic pickup opportunity.",
       "candidates": {
         "dem": {"name": "Roy Cooper", "quality_score": 8, "is_incumbent": false},
         "rep": {"name": "Mark Whatley", "quality_score": 5, "is_incumbent": false}
