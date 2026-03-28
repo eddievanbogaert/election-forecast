@@ -39,6 +39,7 @@
       "incumbent": {"name": "Tom Cotton", "party": "R", "last_margin": 33.6, "years_in_office": 12},
       "is_open": false,
       "pvi": 24,
+      "note": "Cotton seeking third term in deep-red Arkansas. Democrat Hallie Shoffner, a farmer and first-time candidate, won the D primary. Cotton's 33.6-pt 2020 margin and R+24 PVI make this Safe R.",
       "candidates": {
         "dem": {"name": "Hallie Shoffner", "quality_score": 3, "is_incumbent": false},
         "rep": {"name": "Tom Cotton", "quality_score": 7, "is_incumbent": true}
@@ -50,6 +51,7 @@
       "incumbent": {"name": "John Hickenlooper", "party": "D", "last_margin": 9.0, "years_in_office": 6},
       "is_open": false,
       "pvi": -4,
+      "note": "Hickenlooper seeking re-election (says this will be his final Senate term). Faces a D primary challenge from state Sen. Julie Gonzales. No major R challenger has emerged. Colorado has shifted solidly blue at the federal level. Safe D.",
       "candidates": {
         "dem": {"name": "John Hickenlooper", "quality_score": 7, "is_incumbent": true},
         "rep": {"name": "TBD", "quality_score": 5, "is_incumbent": false}
@@ -61,6 +63,7 @@
       "incumbent": {"name": "Chris Coons", "party": "D", "last_margin": 23.4, "years_in_office": 16},
       "is_open": false,
       "pvi": -8,
+      "note": "Coons running for a fourth term in deep-blue Delaware. R primary features only minor candidates. No Republican has won a Senate race in Delaware since 1994. Safe D.",
       "candidates": {
         "dem": {"name": "Chris Coons", "quality_score": 7, "is_incumbent": true},
         "rep": {"name": "TBD", "quality_score": 3, "is_incumbent": false}
@@ -98,7 +101,7 @@
       "incumbent": {"name": "Jim Risch", "party": "R", "last_margin": 23.0, "years_in_office": 18},
       "is_open": false,
       "pvi": 32,
-      "note": "Risch will be 83 at election; retirement possible",
+      "note": "Risch (age 83 at election) confirmed running for re-election with Trump's endorsement. Faces minor R primary challengers and a weak D field. Deep-red Idaho (R+32) keeps this Safe R.",
       "candidates": {
         "dem": {"name": "TBD", "quality_score": 2, "is_incumbent": false},
         "rep": {"name": "Jim Risch", "quality_score": 6, "is_incumbent": true}
@@ -137,6 +140,7 @@
       "incumbent": {"name": "Roger Marshall", "party": "R", "last_margin": 11.4, "years_in_office": 6},
       "is_open": false,
       "pvi": 20,
+      "note": "Marshall seeking re-election with only minor R primary opposition. A crowded D primary (8 candidates) will select a nominee Aug 4, but deep-red Kansas (R+20) keeps this Safe R.",
       "candidates": {
         "dem": {"name": "TBD", "quality_score": 3, "is_incumbent": false},
         "rep": {"name": "Roger Marshall", "quality_score": 5, "is_incumbent": true}
@@ -162,6 +166,7 @@
       "incumbent": {"name": "Bill Cassidy", "party": "R", "last_margin": 39.0, "years_in_office": 12},
       "is_open": false,
       "pvi": 20,
+      "note": "Cassidy faces a serious R primary challenge from Rep. Julia Letlow, who has Trump's endorsement, due to Cassidy's vote to convict Trump in his second impeachment trial. Former Rep. John Fleming also running. D field is weak. Louisiana remains Safe R regardless of primary outcome.",
       "candidates": {
         "dem": {"name": "TBD", "quality_score": 2, "is_incumbent": false},
         "rep": {"name": "Bill Cassidy", "quality_score": 6, "is_incumbent": true}
@@ -186,6 +191,7 @@
       "incumbent": {"name": "Ed Markey", "party": "D", "last_margin": 33.3, "years_in_office": 12},
       "is_open": false,
       "pvi": -30,
+      "note": "Markey (age 80) seeking a third full term. Rep. Seth Moulton is mounting a significant D primary challenge on generational change. Polls show Markey leading Moulton by 13-23 pts. No credible R challenger in D+30 Massachusetts. Safe D.",
       "candidates": {
         "dem": {"name": "Ed Markey", "quality_score": 6, "is_incumbent": true},
         "rep": {"name": "TBD", "quality_score": 2, "is_incumbent": false}
@@ -225,6 +231,7 @@
       "incumbent": {"name": "Cindy Hyde-Smith", "party": "R", "last_margin": 8.2, "years_in_office": 8},
       "is_open": false,
       "pvi": 18,
+      "note": "Hyde-Smith won the R primary (March 10) with 81%. She faces Democrat Scott Colom, Lowndes County DA. No Democrat has won a MS Senate race since 1982. Safe R.",
       "candidates": {
         "dem": {"name": "TBD", "quality_score": 3, "is_incumbent": false},
         "rep": {"name": "Cindy Hyde-Smith", "quality_score": 5, "is_incumbent": true}
@@ -276,6 +283,7 @@
       "incumbent": {"name": "Cory Booker", "party": "D", "last_margin": 16.0, "years_in_office": 12},
       "is_open": false,
       "pvi": -14,
+      "note": "Booker seeking a third full term. R primary features only minor candidates. NJ has not elected a Republican senator since 1972. Safe D.",
       "candidates": {
         "dem": {"name": "Cory Booker", "quality_score": 7, "is_incumbent": true},
         "rep": {"name": "TBD", "quality_score": 4, "is_incumbent": false}
@@ -326,6 +334,7 @@
       "incumbent": {"name": "Jeff Merkley", "party": "D", "last_margin": 17.5, "years_in_office": 18},
       "is_open": false,
       "pvi": -8,
+      "note": "Merkley seeking a fourth term. Oregon has not elected a Republican senator since 2002. Safe D.",
       "candidates": {
         "dem": {"name": "Jeff Merkley", "quality_score": 7, "is_incumbent": true},
         "rep": {"name": "TBD", "quality_score": 4, "is_incumbent": false}
@@ -337,6 +346,7 @@
       "incumbent": {"name": "Jack Reed", "party": "D", "last_margin": 35.4, "years_in_office": 30},
       "is_open": false,
       "pvi": -18,
+      "note": "Reed seeking re-election to a sixth term. RI has not elected a Republican senator since 2000. Safe D.",
       "candidates": {
         "dem": {"name": "Jack Reed", "quality_score": 6, "is_incumbent": true},
         "rep": {"name": "TBD", "quality_score": 2, "is_incumbent": false}
@@ -361,6 +371,7 @@
       "incumbent": {"name": "Mike Rounds", "party": "R", "last_margin": 30.6, "years_in_office": 12},
       "is_open": false,
       "pvi": 27,
+      "note": "Rounds seeking a third term. Faces only minor R primary opposition. Won by 31 pts in 2020; deep-red South Dakota (R+27) keeps this Safe R.",
       "candidates": {
         "dem": {"name": "TBD", "quality_score": 2, "is_incumbent": false},
         "rep": {"name": "Mike Rounds", "quality_score": 5, "is_incumbent": true}
@@ -372,6 +383,7 @@
       "incumbent": {"name": "Bill Hagerty", "party": "R", "last_margin": 24.9, "years_in_office": 6},
       "is_open": false,
       "pvi": 26,
+      "note": "Hagerty seeking a second term with Trump's endorsement and nearly $9M raised. No R primary challenger. Deep-red Tennessee (R+26) keeps this Safe R.",
       "candidates": {
         "dem": {"name": "TBD", "quality_score": 2, "is_incumbent": false},
         "rep": {"name": "Bill Hagerty", "quality_score": 5, "is_incumbent": true}
@@ -396,6 +408,7 @@
       "incumbent": {"name": "Mark Warner", "party": "D", "last_margin": 12.0, "years_in_office": 18},
       "is_open": false,
       "pvi": -3,
+      "note": "Warner seeking a fourth term. The most notable R challenger, state Sen. Bryce Reeves, withdrew in December 2025. Remaining R field lacks a top-tier recruit. Likely D.",
       "candidates": {
         "dem": {"name": "Mark Warner", "quality_score": 8, "is_incumbent": true},
         "rep": {"name": "TBD", "quality_score": 5, "is_incumbent": false}
@@ -407,6 +420,7 @@
       "incumbent": {"name": "Shelley Moore Capito", "party": "R", "last_margin": 43.3, "years_in_office": 12},
       "is_open": false,
       "pvi": 30,
+      "note": "Capito seeking a third term with Trump's endorsement. R primary challenge from convicted Jan. 6 participant Derrick Evans poses no real threat. Deep-red WV (R+30) keeps this Safe R.",
       "candidates": {
         "dem": {"name": "TBD", "quality_score": 2, "is_incumbent": false},
         "rep": {"name": "Shelley Moore Capito", "quality_score": 6, "is_incumbent": true}
@@ -415,12 +429,14 @@
     {
       "state": "Wyoming",
       "state_code": "WY",
-      "incumbent": {"name": "Cynthia Lummis", "party": "R", "last_margin": 46.2, "years_in_office": 6},
-      "is_open": false,
+      "incumbent": null,
+      "is_open": true,
+      "outgoing_senator": "Lummis",
       "pvi": 35,
+      "note": "Cynthia Lummis announced in December 2025 she will not seek re-election. Rep. Harriet Hageman, endorsed by Lummis, is the frontrunner in the R primary (Aug 18). Deep-red Wyoming (R+35) remains Safe R regardless.",
       "candidates": {
         "dem": {"name": "TBD", "quality_score": 2, "is_incumbent": false},
-        "rep": {"name": "Cynthia Lummis", "quality_score": 6, "is_incumbent": true}
+        "rep": {"name": "TBD (primary: Hageman / others)", "quality_score": 6, "is_incumbent": false}
       }
     },
     {
