@@ -85,12 +85,14 @@ export default function App() {
         {/* Right column: race detail (top) + race list */}
         <div className="flex flex-col gap-4 lg:max-h-[calc(100vh-80px)] lg:sticky lg:top-4">
           {selectedRace ? (
-            <RaceDetail
-              race={selectedRace}
-              onClose={() => setSelectedCode(null)}
-            />
+            <div className="hidden lg:block">
+              <RaceDetail
+                race={selectedRace}
+                onClose={() => setSelectedCode(null)}
+              />
+            </div>
           ) : (
-            <div className="bg-gray-900 rounded-xl border border-gray-800 p-4 text-xs text-gray-500 text-center">
+            <div className="hidden lg:block bg-gray-900 rounded-xl border border-gray-800 p-4 text-xs text-gray-500 text-center">
               Click a state on the map to see race details
             </div>
           )}
