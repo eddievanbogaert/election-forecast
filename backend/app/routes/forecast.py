@@ -66,6 +66,7 @@ class RaceOut(BaseModel):
     incumbent: Optional[IncumbentOut]
     candidates: CandidatesOut
     is_open: bool
+    outgoing_senator: Optional[str]
     pvi: int
     blended_lean: float
     dem_win_probability: float
@@ -130,6 +131,7 @@ def _to_response(sim: SimulationOutput) -> ForecastResponse:
             incumbent=inc,
             candidates=CandidatesOut(dem=r.dem_candidate, rep=r.rep_candidate),
             is_open=r.is_open,
+            outgoing_senator=r.outgoing_senator,
             pvi=r.pvi,
             blended_lean=r.blended_lean_value,
             dem_win_probability=r.dem_win_probability,
@@ -144,7 +146,7 @@ def _to_response(sim: SimulationOutput) -> ForecastResponse:
             days_until_election=sim.days_until_election,
             polling_weight=sim.polling_weight_value,
             national_environment=NationalEnvironmentOut(**sim.national_environment),
-            model_version="0.2.0",
+            model_version="1.1.0",
             run_duration_ms=sim.run_duration_ms,
         ),
         chamber_control=ChamberControlOut(

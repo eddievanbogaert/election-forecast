@@ -23,7 +23,7 @@ import json
 import math
 import time
 from dataclasses import dataclass, field
-from datetime import date
+from datetime import date, datetime, timezone, timedelta
 from pathlib import Path
 from typing import Optional
 
@@ -76,6 +76,7 @@ class RaceResult:
     dem_candidate: str
     rep_candidate: str
     is_open: bool
+    outgoing_senator: Optional[str]
     pvi: int
     blended_lean_value: float
     dem_win_probability: float
@@ -115,7 +116,9 @@ def run_simulation(
     Load race data, compute blended leans, and run the Monte Carlo.
     """
     t0 = time.perf_counter()
-    ref = as_of or date.today()
+    # Use US Eastern time so the date matches what US users expect
+    eastern = timezone(timedelta(hours=-5))
+    ref = as_of or datetime.now(eastern).date()
     rng = np.random.default_rng(rng_seed)
 
     data = load_data()
@@ -174,6 +177,7 @@ def run_simulation(
             dem_candidate=r["candidates"].get("dem", {}).get("name", "TBD"),
             rep_candidate=r["candidates"].get("rep", {}).get("name", "TBD"),
             is_open=r.get("is_open", False),
+            outgoing_senator=r.get("outgoing_senator"),
             pvi=r["pvi"],
             blended_lean_value=round(float(mu[i]), 2),
             dem_win_probability=round(float(win_probs[i]), 4),

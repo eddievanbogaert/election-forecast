@@ -19,8 +19,12 @@ export function RaceList({ races, selectedCode, onSelect }: Props) {
     races: races
       .filter(r => r.rating === rating)
       .sort((a, b) => {
-        // Within a group, sort by competitiveness (closest to 0.5 first)
-        return Math.abs(a.dem_win_probability - 0.5) - Math.abs(b.dem_win_probability - 0.5)
+        // Spectrum: safest D at top, toss-ups in middle, safest R at bottom
+        // D groups: highest D probability first; R groups & toss-ups: lowest D probability first
+        const isD = rating.includes('D')
+        return isD
+          ? b.dem_win_probability - a.dem_win_probability
+          : a.dem_win_probability - b.dem_win_probability
       }),
   })).filter(g => g.races.length > 0)
 
@@ -61,7 +65,7 @@ export function RaceList({ races, selectedCode, onSelect }: Props) {
                     <span className="text-xs text-gray-400 truncate">
                       {race.incumbent
                         ? `${race.incumbent.name} (${race.incumbent.party})`
-                        : 'Open seat'}
+                        : `Open seat${race.outgoing_senator ? ` (${race.outgoing_senator})` : ''}`}
                     </span>
                   </div>
 

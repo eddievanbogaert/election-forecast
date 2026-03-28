@@ -58,7 +58,7 @@ export function RaceDetail({ race, onClose }: Props) {
               {race.rating}
             </span>
             {race.is_open && (
-              <span className="text-xs text-amber-400 font-medium">Open seat</span>
+              <span className="text-xs text-amber-400 font-medium">Open seat{race.outgoing_senator ? ` (${race.outgoing_senator})` : ''}</span>
             )}
           </div>
         </div>

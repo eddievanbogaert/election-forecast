@@ -40,7 +40,7 @@ export function Header({ meta }: Props) {
             </span>
             {meta.national_environment && (
               <span className="hidden lg:block text-gray-600">
-                Approval {meta.national_environment.presidential_approval}% · Env D+{meta.national_environment.national_environment_shift.toFixed(1)}
+                WH Approval {meta.national_environment.presidential_approval}% · Env D+{meta.national_environment.national_environment_shift.toFixed(1)}
               </span>
             )}
           </div>

@@ -25,6 +25,7 @@ export interface Race {
   incumbent: Incumbent | null
   candidates: Candidates
   is_open: boolean
+  outgoing_senator: string | null
   pvi: number
   blended_lean: number
   dem_win_probability: number
