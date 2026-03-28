@@ -14,34 +14,36 @@ The site forecasts all 35 Senate seats in play in November 2026 (33 Class II sea
 - **Monte Carlo engine** — 40,000 simulations per run, with correlated national errors producing realistic wave scenarios
 - **National environment model** — data-driven estimates from presidential approval, GDP growth, and consumer sentiment
 
-Live site: [https://election-forecast-489820.web.app](https://election-forecast-489820.web.app)
+Live site: [https://elections.eddievb.com](https://elections.eddievb.com) (also: [https://election-forecast-489820.web.app](https://election-forecast-489820.web.app))
 
 ---
 
-## Current Forecast Snapshot (March 2026)
+## Current Forecast Snapshot (late March 2026)
 
 | Metric | Value |
 |--------|-------|
-| Expected D seats | ~48.5 / 100 |
-| D Senate control probability | ~15% |
-| Net national environment | D+3.54 |
-| Days to election | ~601 |
-| Polling weight | ~35% polls / 65% fundamentals |
+| Expected D seats | ~49 / 100 |
+| D Senate control probability | ~18% |
+| Net national environment | D+4.69 |
+| Days to election | ~220 |
+| Polling weight | ~40% polls / 60% fundamentals |
 
 ### Key Battlegrounds
 
 | Race | Rating | D Win Prob | Polling Avg |
 |------|--------|-----------|-------------|
-| NC (Cooper vs Whatley) | Likely D | ~76% | D+7 |
-| GA (Ossoff vs TBD) | Lean D | ~70% | D+5.3 |
-| NH (Pappas vs TBD) | Lean D | ~62% | — |
-| MI (TBD vs Rogers) | Lean D | ~55% | R+1 |
-| ME (TBD vs Collins) | Toss-up | ~55% | D+2.5 |
-| AK (Peltola vs Sullivan) | Lean R | ~40% | D+2 |
-| FL (Jenkins vs Moody) | Lean R | ~35% | — |
-| OH Special (Brown vs Husted) | Lean R | ~34% | R+2 |
+| NC (Cooper vs Whatley) | Likely D | ~78% | D+6.0 |
+| GA (Ossoff vs TBD) | Lean D | ~72% | D+5.3 |
+| NH (Pappas vs Sununu/Brown) | Lean D | ~76% | D+3.6 |
+| ME (Platner vs Collins) | Lean D | ~67% | D+3.6 |
+| MI (TBD vs Rogers) | Toss-up | ~55% | R+1 |
+| MN (Flanagan/Craig vs Tafoya) | Safe D | ~89% | D+6.5 |
+| AK (Peltola vs Sullivan) | Likely R | ~24% | D+1.5 |
+| OH Special (Brown vs Husted) | Lean R | ~34% | R+1 |
+| FL Special (TBD vs Moody) | Safe R | ~13% | R+8.7 |
+| TX (Talarico vs Cornyn/Paxton) | Safe R | ~15% | R+1 |
 
-See [analysis_notes.md](backend/app/data/analysis_notes.md) for detailed race-by-race analysis and [polls.csv](backend/app/data/polls.csv) for all polling data considered.
+See [analysis_notes.md](backend/app/data/analysis_notes.md) for detailed race-by-race analysis and [polls.csv](backend/app/data/polls.csv) for all 145 polls considered (14 states).
 
 ---
 
@@ -94,13 +96,13 @@ The model uses a four-component national environment estimate that replaces the 
 | Component | Coefficient | Current Value | Contribution |
 |-----------|------------|---------------|-------------|
 | Base midterm penalty | — | — | D+1.50 |
-| Presidential approval | 0.12 per net approval pt | −11.0 | D+1.32 |
-| GDP growth | 0.3 per pt above 2.0% trend | 2.3% | D−0.09 |
-| Consumer sentiment | 0.04 per pt below 85.0 baseline | 64.7 | D+0.81 |
+| Presidential approval | 0.12 per net approval pt | −13.5 | D+1.62 |
+| GDP growth | 0.3 per pt above 2.0% trend | 0.7% | D+0.39 |
+| Consumer sentiment | 0.04 per pt below 85.0 baseline | 55.5 | D+1.18 |
 
-**Net environment: D+3.54**
+**Net environment: D+4.69**
 
-Data sourced from RealClearPolitics (approval, 16-poll average), BEA (GDP), and University of Michigan (sentiment). Updated in `backend/app/data/environment.json`.
+Data sourced from RealClearPolitics (approval, 14-poll average), BEA (GDP Q4 2025 2nd estimate), and University of Michigan (sentiment, March 2026 prelim). Updated in `backend/app/data/environment.json`.
 
 ### Blending
 
@@ -110,7 +112,7 @@ blended_lean = α × polling_average + (1 − α) × fundamentals_lean
 α = max(0, min(1, (365 − days_until_election) / 365))
 ```
 
-At ~601 days out, `α ≈ 0.35`: the model is **65% fundamentals, 35% polling**. Polling weight ramps linearly to 100% over the final year before the election.
+At ~220 days out, `α ≈ 0.40`: the model is **60% fundamentals, 40% polling**. Polling weight ramps linearly to 100% over the final year before the election.
 
 ### Uncertainty / Sigma
 
@@ -122,7 +124,7 @@ At ~601 days out, `α ≈ 0.35`: the model is **65% fundamentals, 35% polling**.
 σ_residual      = 2.8              # state-specific floor
 ```
 
-Open seats receive an additional +1.5 pp of uncertainty.
+Open seats receive an additional +1.5 pp of uncertainty (added in quadrature: `σ = √(σ² + 1.5²)`).
 
 ### Simulation
 

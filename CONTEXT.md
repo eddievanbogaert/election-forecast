@@ -14,7 +14,7 @@ derived from a 40,000-iteration Monte Carlo simulation.
 **GitHub repo**: `eddievanbogaert/election-forecast` (private)
 **Local clone**: `/Users/eddievb/Development/election-forecast`
 **GCP project**: `election-forecast-489820` (owner: eddie@eddievb.com)
-**Live site**: https://election-forecast-489820.web.app
+**Live site**: https://elections.eddievb.com (also: https://election-forecast-489820.web.app)
 
 ---
 
@@ -41,7 +41,7 @@ backend/
   app/model/environment.py       — National environment model (approval, GDP, sentiment)
   app/data/races_2026.json       — Seed data: 35 races (PVI, candidates, polling averages, notes)
   app/data/environment.json      — National environment indicators (approval, GDP, sentiment)
-  app/data/polls.csv             — All polls considered (78 entries, 12 states), with tracking metadata
+  app/data/polls.csv             — All polls considered (145 entries, 14 states), with tracking metadata
   app/data/senate.csv            — NYT bulk export of all published Senate polls (~1400 rows)
   app/data/analysis_notes.md     — Detailed race-by-race analysis, tiered ratings, methodology
   app/data/races_2028.json       — Future cycle data (Class III, not active)
@@ -71,25 +71,25 @@ infrastructure/setup.sh          — One-shot GCP provisioning (already run)
 
 ## Model (v0.2.0)
 
-### Current state (March 2026, ~233 days to election)
+### Current state (late March 2026, ~220 days to election)
 
 The model blends **structural fundamentals** with **polling data** using a time-weighted
-ramp. At ~233 days out, polling weight `α ≈ 0.36`: the model is roughly
-**64% fundamentals / 36% polling**.
+ramp. At ~220 days out, polling weight `α ≈ 0.40`: the model is roughly
+**60% fundamentals / 40% polling**.
 
-### National environment: D+3.54
+### National environment: D+4.69
 
 A four-component data-driven estimate (replaces earlier flat midterm penalty):
 
 | Component | Coefficient | Current Value | Contribution |
 |-----------|-------------|---------------|-------------|
 | Base midterm penalty | — | — | D+1.50 |
-| Presidential approval | 0.12 per net approval pt | −11.0 | D+1.32 |
-| GDP growth | 0.3 per pt above 2.0% trend | 2.3% | D−0.09 |
-| Consumer sentiment | 0.04 per pt below 85.0 baseline | 64.7 | D+0.81 |
+| Presidential approval | 0.12 per net approval pt | −13.5 | D+1.62 |
+| GDP growth | 0.3 per pt above 2.0% trend | 0.7% | D+0.39 |
+| Consumer sentiment | 0.04 per pt below 85.0 baseline | 55.5 | D+1.18 |
 
-Data sources: RealClearPolitics (approval, 16-poll average), BEA (GDP), U. Michigan (sentiment).
-Stored in `backend/app/data/environment.json`.
+Data sources: RealClearPolitics (approval, 14-poll average), BEA (GDP Q4 2025 2nd estimate),
+U. Michigan (sentiment, March 2026 prelim). Stored in `backend/app/data/environment.json`.
 
 ### Fundamentals lean (per race)
 
@@ -112,7 +112,7 @@ At ≥365 days out, α = 0 (fundamentals only). Ramps linearly to α = 1 on elec
 σ_fundamentals = 7.0 × (1 − α)     # large early, shrinks as polls arrive
 σ_polling       = 2.5 × α           # pure polling error
 σ_residual      = 2.8               # state-specific floor
-σ_total         = √(σ_f² + σ_p² + σ_r²)  +  1.5 if open seat
+σ_total         = √(σ_f² + σ_p² + σ_r² + 1.5² if open seat)
 ```
 
 ### Monte Carlo simulation
@@ -130,14 +130,14 @@ Chamber control = P(D total seats ≥ 51).
 
 ---
 
-## Current forecast snapshot (as of March 2026)
+## Current forecast snapshot (late March 2026)
 
 | Metric | Value |
 |--------|-------|
-| Expected D seats | ~48.4 / 100 |
-| D Senate control probability | ~14.4% |
-| Net national environment | D+3.54 |
-| Polling weight | ~36% polls / 64% fundamentals |
+| Expected D seats | ~49 / 100 |
+| D Senate control probability | ~18% |
+| Net national environment | D+4.69 |
+| Polling weight | ~40% polls / 60% fundamentals |
 | D seats not up | 34 |
 | R seats not up | 31 |
 
@@ -157,10 +157,10 @@ Chamber control = P(D total seats ≥ 51).
 
 | Race | PVI | Polling Avg | D Win Prob | Rating |
 |------|-----|-------------|-----------|--------|
-| NC (Cooper vs Whatley) | R+3 | D+7 | ~76% | Likely D |
+| NC (Cooper vs Whatley) | R+3 | D+6.0 | ~78% | Likely D |
 | GA (Ossoff vs TBD) | R+4 | D+5.3 | ~70% | Lean D |
-| NH (Pappas vs Sununu/Brown) | D+1 | D+3.7 | ~76% | Lean D |
-| ME (Platner vs Collins) | D+3 | D+3.3 | ~67% | Lean D |
+| NH (Pappas vs Sununu/Brown) | D+1 | D+3.6 | ~76% | Lean D |
+| ME (Platner vs Collins) | D+3 | D+3.6 | ~67% | Lean D |
 | MI (TBD vs Rogers) | R+1 | R+1 | ~55% | Toss-up |
 | MN (Flanagan/Craig vs Tafoya) | D+3 | D+6.5 | ~89% | Safe D |
 | AK (Peltola vs Sullivan) | R+9 | D+1.5 | ~24% | Likely R |
@@ -170,10 +170,9 @@ Chamber control = P(D total seats ≥ 51).
 
 ### Polling data coverage
 
-12 states have polling data incorporated: AK, FL, GA, IA, KY, ME, MI, MN, NC, NE, NH, OH, TX.
-Additional polling exists for SC (Graham weakness) but the state is not competitive (R+11 PVI).
+14 states have polling data incorporated: AK, FL, GA, IA, KY, ME, MI, MN, NC, NE, NH, OH, SC, TX.
 
-All polls tracked in `polls.csv` (78 entries). Bulk NYT export in `senate.csv` (~1400 rows).
+All polls tracked in `polls.csv` (145 entries, 113 included in averages). Bulk NYT export in `senate.csv` (~1400 rows).
 
 ---
 
@@ -206,21 +205,21 @@ All polls tracked in `polls.csv` (78 entries). Bulk NYT export in `senate.csv` (
 | KS | Marshall | R | R+20 | — | Safe R |
 | KY | Open | R | R+26 | — | McConnell retiring. Booker (D) vs TBD |
 | LA | Cassidy | R | R+20 | — | Safe R |
-| ME | Collins | R | D+3 | D+3.3 | Platner (D) competitive. Collins moderate |
+| ME | Collins | R | D+3 | D+3.6 | Platner (D) competitive. Collins moderate |
 | MA | Markey | D | D+30 | — | Safe D |
 | MI | Open | D | R+1 | R+1 | Peters retiring. D primary: McMorrow/Stevens/El-Sayed vs Rogers |
 | MN | Open | D | D+3 | D+6.5 | Smith retiring. Flanagan/Craig vs Tafoya |
 | MS | Hyde-Smith | R | R+18 | — | Safe R |
 | MT | Open | R | R+18 | — | Daines withdrew. Safe R |
 | NE | Ricketts (appt) | R | R+22 | R+1 | Osborn (I) challenging. Modeled on D side |
-| NH | Open | D | D+1 | D+3.7 | Shaheen retiring. Pappas vs Sununu/Brown |
+| NH | Open | D | D+1 | D+3.6 | Shaheen retiring. Pappas vs Sununu/Brown |
 | NJ | Booker | D | D+14 | — | Safe D |
 | NM | Luján | D | D+4 | — | R candidate disqualified. Unopposed |
-| NC | Open | R | R+3 | D+7 | Tillis retiring. Cooper vs Whatley. Top D pickup |
+| NC | Open | R | R+3 | D+6.0 | Tillis retiring. Cooper vs Whatley. Top D pickup |
 | OK | Open | R | R+26 | — | Mullin → DHS. Safe R |
 | OR | Merkley | D | D+8 | — | Safe D |
 | RI | Reed | D | D+18 | — | Safe D |
-| SC | Graham | R | R+11 | — | Graham polling weak but PVI saves him |
+| SC | Graham | R | R+11 | R+4 | Graham polling weak but PVI saves him |
 | SD | Rounds | R | R+27 | — | Safe R |
 | TN | Hagerty | R | R+26 | — | Safe R |
 | TX | Cornyn | R | R+10 | R+1 | Talarico competitive. R primary runoff |
