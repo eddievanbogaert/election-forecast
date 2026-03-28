@@ -50,7 +50,7 @@ jobs:
         run: |
           # Write env vars to a YAML file to avoid comma-escaping issues in --set-env-vars
           cat > /tmp/run-env.yaml <<EOF
-          CORS_ORIGINS: "https://${{ env.PROJECT_ID }}.web.app,https://${{ env.PROJECT_ID }}.firebaseapp.com"
+          CORS_ORIGINS: "https://${{ env.PROJECT_ID }}.web.app,https://${{ env.PROJECT_ID }}.firebaseapp.com,https://elections.eddievb.com"
           ADMIN_SECRET: "${ADMIN_SECRET}"
           EOF
 
