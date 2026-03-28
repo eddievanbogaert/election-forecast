@@ -40,7 +40,7 @@
       "is_open": false,
       "pvi": 24,
       "candidates": {
-        "dem": {"name": "TBD", "quality_score": 2, "is_incumbent": false},
+        "dem": {"name": "Hallie Shoffner", "quality_score": 3, "is_incumbent": false},
         "rep": {"name": "Tom Cotton", "quality_score": 7, "is_incumbent": true}
       }
     },
@@ -111,10 +111,10 @@
       "is_open": true,
       "outgoing_senator": "Durbin",
       "pvi": -17,
-      "note": "Dick Durbin retiring; open D primary between Raja Krishnamoorthi and Juliana Stratton among others. Either nominee is a strong candidate in this deep-blue state.",
+      "note": "Dick Durbin retiring. Lt. Gov. Juliana Stratton won the D primary (March 17) with 40% over Krishnamoorthi and Kelly. Former IL GOP chair Don Tracy won the R primary. Stratton is heavily favored in deep-blue Illinois.",
       "candidates": {
-        "dem": {"name": "TBD (primary: Krishnamoorthi / Stratton)", "quality_score": 7, "is_incumbent": false},
-        "rep": {"name": "TBD", "quality_score": 3, "is_incumbent": false}
+        "dem": {"name": "Juliana Stratton", "quality_score": 7, "is_incumbent": false},
+        "rep": {"name": "Don Tracy", "quality_score": 3, "is_incumbent": false}
       }
     },
     {
@@ -125,9 +125,9 @@
       "outgoing_senator": "Ernst",
       "pvi": 10,
       "polling_average": -3.0,
-      "note": "Joni Ernst retiring. R nominee: Rep. Ashley Hinson. D primary: Zach Wahls, Rob Sand, Nathan Sage, Josh Turek. Change Research (Jan '26) shows Hinson +3 vs all D candidates. PPP (Aug '25, D-sponsored) showed Ernst era tighter at R+1 to D+2. Iowa has trended solidly R.",
+      "note": "Joni Ernst retiring. R primary June 2: Hinson vs Carlin (Hinson heavily favored). D primary June 2: Wahls vs Turek (both strong fundraisers). Change Research (Jan '26) shows Hinson +3 vs all D candidates. PPP (Aug '25, D-sponsored) showed Ernst era tighter at R+1 to D+2. Iowa has trended solidly R.",
       "candidates": {
-        "dem": {"name": "TBD (primary: Wahls / Sand)", "quality_score": 5, "is_incumbent": false},
+        "dem": {"name": "TBD (primary: Wahls / Turek)", "quality_score": 5, "is_incumbent": false},
         "rep": {"name": "Ashley Hinson", "quality_score": 6, "is_incumbent": false}
       }
     },
@@ -312,12 +312,12 @@
       "state_code": "OK",
       "incumbent": null,
       "is_open": true,
-      "outgoing_senator": "Mullin",
+      "outgoing_senator": "Armstrong",
       "pvi": 26,
-      "note": "Markwayne Mullin tapped as DHS Secretary (replacing Kristi Noem), vacating the seat. Gov. Stitt will appoint an interim R senator. R primary: Reps Kevin Hern and Stephanie Bice among those interested. Deep-red state remains Safe R.",
+      "note": "Markwayne Mullin confirmed as DHS Secretary, resigned March 23. Gov. Stitt appointed Alan Armstrong (Williams Companies exec) on March 24; Armstrong signed an oath not to run for the full term. R primary June 16: Rep. Kevin Hern is the frontrunner (Bice opted for House re-election). D primary: Evan Beck, Jim Priest among declared candidates. Deep-red state remains Safe R.",
       "candidates": {
         "dem": {"name": "TBD", "quality_score": 2, "is_incumbent": false},
-        "rep": {"name": "TBD (primary: Hern / Bice)", "quality_score": 6, "is_incumbent": false}
+        "rep": {"name": "TBD (primary: Hern / others)", "quality_score": 6, "is_incumbent": false}
       }
     },
     {
@@ -428,10 +428,10 @@
       "state_code": "OH",
       "incumbent": null,
       "is_open": true,
-      "outgoing_senator": "Vance",
+      "outgoing_senator": "Husted",
       "pvi": 8,
       "polling_average": -1.5,
-      "note": "Special election for J.D. Vance's vacated Class III seat. Sherrod Brown (lost his Class I seat in 2024) vs Lt. Gov. Jon Husted. 8 polls (Feb '25–Mar '26) avg R+1.5. Race tightening: Husted +6 (Feb/Aug '25) → Brown +4 (EMC Mar '26). Recent EMC D+4 and Quantus R+1 polls show momentum shifting toward Brown.",
+      "note": "Special election for J.D. Vance's vacated seat. Gov. DeWine appointed Jon Husted (former Lt. Gov.) to the seat in Jan 2025. Sherrod Brown (lost his Class I seat in 2024) running to reclaim a Senate seat. 8 polls (Feb '25–Mar '26) avg R+1.5. Race tightening: Husted +6 (Feb/Aug '25) → Brown +4 (EMC Mar '26). Recent EMC D+4 and Quantus R+1 polls show momentum shifting toward Brown.",
       "candidates": {
         "dem": {"name": "Sherrod Brown", "quality_score": 8, "is_incumbent": false},
         "rep": {"name": "Jon Husted", "quality_score": 6, "is_incumbent": false}

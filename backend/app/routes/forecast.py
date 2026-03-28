@@ -146,7 +146,7 @@ def _to_response(sim: SimulationOutput) -> ForecastResponse:
             days_until_election=sim.days_until_election,
             polling_weight=sim.polling_weight_value,
             national_environment=NationalEnvironmentOut(**sim.national_environment),
-            model_version="1.1.0",
+            model_version="1.1.1",
             run_duration_ms=sim.run_duration_ms,
         ),
         chamber_control=ChamberControlOut(
