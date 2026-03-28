@@ -50,20 +50,22 @@ export function ChamberControl({ chamberControl, demSeatsNotUp, repSeatsNotUp }:
           </div>
         </div>
 
-        <div className="flex justify-between mt-2 text-xs text-gray-500">
-          <span>
+        <div className="grid grid-cols-3 mt-2 text-xs text-gray-500">
+          <span className="text-left">
             D holding{' '}
-            <span className="text-blue-400 font-medium">{demSeatsNotUp}</span> seats not up
+            <span className="text-blue-400 font-medium">{demSeatsNotUp}</span>
+            {' '}seats not up
           </span>
-          <span>
+          <span className="text-center">
             Expected:{' '}
             <span className="text-gray-200 font-medium">
               {expected_dem_seats.toFixed(1)} D seats
             </span>
           </span>
-          <span>
+          <span className="text-right">
             R holding{' '}
-            <span className="text-red-400 font-medium">{repSeatsNotUp}</span> seats not up
+            <span className="text-red-400 font-medium">{repSeatsNotUp}</span>
+            {' '}seats not up
           </span>
         </div>
       </div>
