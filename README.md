@@ -23,8 +23,8 @@ Live site: [https://elections.eddievb.com](https://elections.eddievb.com) (also:
 | Metric | Value |
 |--------|-------|
 | Expected D seats | ~49 / 100 |
-| D Senate control probability | ~18% |
-| Net national environment | D+4.69 |
+| D Senate control probability | ~23% |
+| Net national environment | D+5.01 |
 | Days to election | ~220 |
 | Polling weight | ~40% polls / 60% fundamentals |
 
@@ -96,13 +96,13 @@ The model uses a four-component national environment estimate that replaces the 
 | Component | Coefficient | Current Value | Contribution |
 |-----------|------------|---------------|-------------|
 | Base midterm penalty | — | — | D+1.50 |
-| Presidential approval | 0.12 per net approval pt | −13.5 | D+1.62 |
+| Presidential approval | 0.12 per net approval pt | −15.4 | D+1.85 |
 | GDP growth | 0.3 per pt above 2.0% trend | 0.7% | D+0.39 |
-| Consumer sentiment | 0.04 per pt below 85.0 baseline | 55.5 | D+1.18 |
+| Consumer sentiment | 0.04 per pt below 85.0 baseline | 53.3 | D+1.27 |
 
-**Net environment: D+4.69**
+**Net environment: D+5.01**
 
-Data sourced from RealClearPolitics (approval, 14-poll average), BEA (GDP Q4 2025 2nd estimate), and University of Michigan (sentiment, March 2026 prelim). Updated in `backend/app/data/environment.json`.
+Data sourced from RealClearPolitics (approval, 14-poll average as of 3/27), BEA (GDP Q4 2025 2nd estimate), and University of Michigan (sentiment, March 2026 final). Updated in `backend/app/data/environment.json`.
 
 ### Blending
 

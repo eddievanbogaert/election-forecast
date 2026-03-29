@@ -1,34 +1,34 @@
 {
-  "as_of": "2026-03-15",
+  "as_of": "2026-03-29",
   "presidential_approval": {
-    "approve": 42.0,
-    "disapprove": 55.5,
-    "net": -13.5,
-    "source": "RealClearPolitics average (3/1–3/15)",
+    "approve": 41.2,
+    "disapprove": 56.6,
+    "net": -15.4,
+    "source": "RealClearPolitics average (3/15–3/27)",
     "polls": [
-      {"pollster": "Quinnipiac", "date": "3/6–3/8", "approve": 37, "disapprove": 57},
-      {"pollster": "Economist/YouGov", "date": "3/6–3/9", "approve": 43, "disapprove": 54},
-      {"pollster": "Rasmussen Reports", "date": "3/4–3/10", "approve": 47, "disapprove": 52},
-      {"pollster": "NPR/PBS/Marist", "date": "3/2–3/4", "approve": 40, "disapprove": 57},
-      {"pollster": "Quantus Insights", "date": "3/2–3/3", "approve": 45, "disapprove": 54},
-      {"pollster": "Daily Mail", "date": "3/2–3/3", "approve": 44, "disapprove": 56},
-      {"pollster": "Trafalgar Group", "date": "3/1–3/3", "approve": 50, "disapprove": 48},
-      {"pollster": "RMG Research", "date": "2/28–3/4", "approve": 46, "disapprove": 52},
-      {"pollster": "NBC News", "date": "2/27–3/3", "approve": 44, "disapprove": 54},
-      {"pollster": "FOX News", "date": "2/28–3/3", "approve": 43, "disapprove": 57},
-      {"pollster": "Reuters/Ipsos", "date": "2/28–3/1", "approve": 39, "disapprove": 60},
-      {"pollster": "CBS News", "date": "2/25–2/27", "approve": 41, "disapprove": 59},
-      {"pollster": "I&I/TIPP", "date": "2/24–2/27", "approve": 40, "disapprove": 51},
-      {"pollster": "Harvard-Harris", "date": "2/25–2/26", "approve": 46, "disapprove": 49}
+      {"pollster": "Quinnipiac", "date": "3/19–3/23", "approve": 38, "disapprove": 56},
+      {"pollster": "Reuters/Ipsos", "date": "3/20–3/23", "approve": 36, "disapprove": 61},
+      {"pollster": "FOX News", "date": "3/20–3/23", "approve": 40, "disapprove": 59},
+      {"pollster": "Economist/YouGov", "date": "3/15–3/18", "approve": 42, "disapprove": 55},
+      {"pollster": "Rasmussen Reports", "date": "3/17–3/23", "approve": 46, "disapprove": 53},
+      {"pollster": "Quantus Insights", "date": "3/16–3/17", "approve": 44, "disapprove": 55},
+      {"pollster": "Daily Mail", "date": "3/16–3/17", "approve": 43, "disapprove": 56},
+      {"pollster": "Trafalgar Group", "date": "3/14–3/17", "approve": 48, "disapprove": 50},
+      {"pollster": "RMG Research", "date": "3/13–3/17", "approve": 44, "disapprove": 54},
+      {"pollster": "NBC News", "date": "3/12–3/16", "approve": 40, "disapprove": 56},
+      {"pollster": "NPR/PBS/Marist", "date": "3/13–3/15", "approve": 39, "disapprove": 58},
+      {"pollster": "CBS News", "date": "3/11–3/14", "approve": 39, "disapprove": 61},
+      {"pollster": "I&I/TIPP", "date": "3/10–3/13", "approve": 40, "disapprove": 52},
+      {"pollster": "Harvard-Harris", "date": "3/11–3/12", "approve": 44, "disapprove": 51}
     ],
-    "note": "Trend is downward; Quinnipiac (37%) marks new second-term low. Multiple March polls show net approval worsening vs February."
+    "note": "Approval declining amid Iran conflict (started early March) and tariff fallout. Reuters/Ipsos 36% is new second-term low. RCP average down ~1pt from mid-March."
   },
   "economy": {
     "gdp_growth_annualized": 0.7,
-    "gdp_source": "BEA Q4 2025 second estimate (revised down from 2.3% advance estimate on 3/13/26). Full year 2025: 2.1%. Government shutdown subtracted ~1.0pp.",
-    "consumer_sentiment": 55.5,
-    "consumer_sentiment_source": "University of Michigan, March 2026 preliminary (down from 64.7 in Feb final). Current conditions 57.0, expectations 54.1. Year-ahead inflation expectations 3.4%.",
+    "gdp_source": "BEA Q4 2025 second estimate (revised down from 2.3% advance estimate on 3/13/26). Full year 2025: 2.1%. Third estimate due 4/9/26.",
+    "consumer_sentiment": 53.3,
+    "consumer_sentiment_source": "University of Michigan, March 2026 final (released 3/27, down from 55.5 prelim and 56.6 Feb final). Current conditions 55.8, expectations 51.7. Year-ahead inflation expectations surged to 3.8% (from 3.4% prelim). Decline driven by Iran conflict and energy cost spike.",
     "unemployment_rate": 4.4,
-    "unemployment_source": "BLS, February 2026 (nonfarm payrolls -92k; up from 4.1% in January). Includes Kaiser Permanente strike impact."
+    "unemployment_source": "BLS, February 2026 (nonfarm payrolls -92k; up from 4.1% in January). Includes Kaiser Permanente strike impact. March report due 4/3/26."
   }
 }

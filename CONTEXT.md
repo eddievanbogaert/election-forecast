@@ -77,19 +77,19 @@ The model blends **structural fundamentals** with **polling data** using a time-
 ramp. At ~220 days out, polling weight `α ≈ 0.40`: the model is roughly
 **60% fundamentals / 40% polling**.
 
-### National environment: D+4.69
+### National environment: D+5.01
 
 A four-component data-driven estimate (replaces earlier flat midterm penalty):
 
 | Component | Coefficient | Current Value | Contribution |
 |-----------|-------------|---------------|-------------|
 | Base midterm penalty | — | — | D+1.50 |
-| Presidential approval | 0.12 per net approval pt | −13.5 | D+1.62 |
+| Presidential approval | 0.12 per net approval pt | −15.4 | D+1.85 |
 | GDP growth | 0.3 per pt above 2.0% trend | 0.7% | D+0.39 |
-| Consumer sentiment | 0.04 per pt below 85.0 baseline | 55.5 | D+1.18 |
+| Consumer sentiment | 0.04 per pt below 85.0 baseline | 53.3 | D+1.27 |
 
-Data sources: RealClearPolitics (approval, 14-poll average), BEA (GDP Q4 2025 2nd estimate),
-U. Michigan (sentiment, March 2026 prelim). Stored in `backend/app/data/environment.json`.
+Data sources: RealClearPolitics (approval, 14-poll average as of 3/27), BEA (GDP Q4 2025 2nd estimate),
+U. Michigan (sentiment, March 2026 final). Stored in `backend/app/data/environment.json`.
 
 ### Fundamentals lean (per race)
 
@@ -135,8 +135,8 @@ Chamber control = P(D total seats ≥ 51).
 | Metric | Value |
 |--------|-------|
 | Expected D seats | ~49 / 100 |
-| D Senate control probability | ~18% |
-| Net national environment | D+4.69 |
+| D Senate control probability | ~23% |
+| Net national environment | D+5.01 |
 | Polling weight | ~40% polls / 60% fundamentals |
 | D seats not up | 34 |
 | R seats not up | 31 |
@@ -225,7 +225,7 @@ All polls tracked in `polls.csv` (145 entries, 113 included in averages). Bulk N
 | TX | Cornyn | R | R+10 | R+1 | Talarico competitive. R primary runoff |
 | VA | Warner | D | D+3 | — | Safe D |
 | WV | Capito | R | R+30 | — | Safe R |
-| WY | Lummis | R | R+35 | — | Safe R |
+| WY | Open | R | R+35 | — | Lummis retiring. Safe R |
 | OH | Open (Special) | R | R+8 | R+2 | Vance vacancy. Brown vs Husted |
 
 ---
