@@ -20,11 +20,8 @@ export function RaceList({ races, selectedCode, onSelect }: Props) {
       .filter(r => r.rating === rating)
       .sort((a, b) => {
         // Spectrum: safest D at top, toss-ups in middle, safest R at bottom
-        // D groups: highest D probability first; R groups & toss-ups: lowest D probability first
-        const isD = rating.includes('D')
-        return isD
-          ? b.dem_win_probability - a.dem_win_probability
-          : a.dem_win_probability - b.dem_win_probability
+        // All groups sorted by highest D probability first (most D-leaning at top)
+        return b.dem_win_probability - a.dem_win_probability
       }),
   })).filter(g => g.races.length > 0)
 
