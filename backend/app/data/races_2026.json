@@ -75,10 +75,10 @@
       "incumbent": {"name": "Ashley Moody", "party": "R", "last_margin": null, "years_in_office": 1},
       "is_open": false,
       "pvi": 5,
-      "polling_average": -8.7,
-      "note": "Special election for Marco Rubio's vacated seat (Rubio became Secretary of State). Ashley Moody (R, former FL AG) appointed. D primary unsettled: Vindman (R+7), Nixon (R+8), Jenkins (R+11) tested. Moody leads all D candidates by 7-11 pts. R+5 PVI + appointed incumbent advantage.",
+      "polling_average": -7.0,
+      "note": "Special election for Marco Rubio's vacated seat (Rubio became Secretary of State). Ashley Moody (R, former FL AG) appointed. D primary: Vindman, Nixon, Jenkins, Mujica. 8 polls avg R+7.0. Emerson (Mar '26): Vindman R+8, Nixon R+11, Mujica R+7. MDW (Apr '26, unrated): Vindman R+1 — outlier vs field. PPP (Apr '26, D-sponsored): Vindman R+3.",
       "candidates": {
-        "dem": {"name": "TBD (primary: Vindman / Nixon / Jenkins)", "quality_score": 4, "is_incumbent": false},
+        "dem": {"name": "TBD (primary: Vindman / Nixon / Mujica / Jenkins)", "quality_score": 4, "is_incumbent": false},
         "rep": {"name": "Ashley Moody", "quality_score": 6, "is_incumbent": true}
       }
     },
@@ -178,8 +178,8 @@
       "incumbent": {"name": "Susan Collins", "party": "R", "last_margin": 8.6, "years_in_office": 30},
       "is_open": false,
       "pvi": -3,
-      "polling_average": 3.6,
-      "note": "Collins is a moderate R who historically outperforms PVI by 10+ pts. D primary: Platner avg D+3.6 across 10 polls (range: tied to D+11); Mills avg D+0.2 (much weaker). Emerson Mar '26 shows Platner +7 — strongest recent result. D nominee choice is crucial. If Platner, this is a genuine toss-up trending D; if Mills, Collins likely holds.",
+      "polling_average": 4.0,
+      "note": "Collins is a moderate R who historically outperforms PVI by 10+ pts. D primary: Platner avg D+4.0 across 11 polls (range: tied to D+11); Mills avg R+0.3 (much weaker). MPRC (Mar '26, n=1167): Platner +9 — latest and strongest Platner result. If Platner wins primary, this is a genuine toss-up trending D; if Mills, Collins likely holds.",
       "candidates": {
         "dem": {"name": "TBD (primary: Platner / Mills)", "quality_score": 6, "is_incumbent": false},
         "rep": {"name": "Susan Collins", "quality_score": 8, "is_incumbent": true}
@@ -308,8 +308,8 @@
       "is_open": true,
       "outgoing_senator": "Tillis",
       "pvi": 3,
-      "polling_average": 6.0,
-      "note": "Thom Tillis not seeking re-election; open seat. Roy Cooper (former governor) is a strong D recruit. R primary held March 3 — Whatley is the nominee. Cooper leads Whatley in 10 of 10 included polls (avg D+6.0, range D+1 to D+10). Harper Mar '26 shows D+8 — reverting toward mean after PPP's tight D+3. TIPP outlier (D+24) excluded. Top Democratic pickup opportunity.",
+      "polling_average": 5.82,
+      "note": "Thom Tillis not seeking re-election; open seat. Roy Cooper (former governor) is a strong D recruit. R primary held March 3 — Whatley is the nominee. Cooper leads Whatley in 11 of 11 included polls (avg D+5.8, range D+0 to D+10). Quantus (Apr '26, n=987): D+5. TIPP outlier (D+24) excluded. Top Democratic pickup opportunity.",
       "candidates": {
         "dem": {"name": "Roy Cooper", "quality_score": 8, "is_incumbent": false},
         "rep": {"name": "Mark Whatley", "quality_score": 5, "is_incumbent": false}

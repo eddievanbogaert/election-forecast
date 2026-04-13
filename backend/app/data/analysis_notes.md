@@ -1,6 +1,6 @@
 # 2026 Senate Forecast — Race Analysis
 
-Last updated: 2026-03-12
+Last updated: 2026-04-08
 
 ---
 
@@ -10,23 +10,22 @@ Democrats currently hold 47 seats and need a net gain of 4 to reach 51 and contr
 
 | Metric | Value |
 |--------|-------|
-| Expected D seats | ~48.3 / 100 |
-| D Senate control prob. | ~12% |
-| Net national environment | D+3.54 |
-| Days to election | ~601 |
+| Expected D seats | ~49.0 / 100 |
+| D Senate control prob. | ~24% |
+| Net national environment | D+5.01 |
+| Days to election | ~209 |
 | Monte Carlo simulations | 40,000 |
 
 ### Ratings at a Glance
 
 | Rating | Races |
 |--------|-------|
-| **Likely D** | NC |
-| **Lean D** | GA, NH, MN |
-| **Toss-up** | ME, MI |
-| **Lean R** | AK, FL |
-| **Likely R** | OH-Special |
-| **Safe R** | TX, NE, AL, IA, KY, MT, OK |
-| **Safe D** | IL, NM |
+| **Likely D** | NC, ME, GA, NH |
+| **Toss-up** | MI |
+| **Lean R** | OH-Special, AK |
+| **Likely R** | FL, IA, TX |
+| **Safe R** | NE, SC, AL, KY, MT, OK, and others |
+| **Safe D** | MN, IL, NM, and others |
 
 ---
 
@@ -60,11 +59,11 @@ Jon Ossoff won his 2021 runoff by just 1.2 points, making him the GOP's top targ
 **Key dynamics:** Ossoff benefits from incumbency and a stronger fundraising apparatus than in 2020. Georgia's competitive electorate cuts both ways: Ossoff over-performed PVI in 2021 but did so in an unusual special-election environment. A strong Republican nominee who consolidates suburban Atlanta voters could tighten this race considerably.
 
 ### Maine — Collins (R) | D+3 PVI
-**Rating: Toss-up** · Polling avg: D+2.5 · D win prob: ~55%
+**Rating: Likely D** · Polling avg: D+4.0 · D win prob: ~76%
 
-Susan Collins has historically outperformed her state's PVI by 10+ points, and she remains one of the few Republicans who can win in a blue-leaning state. On the Democratic side, the primary is unsettled: Jason Platner leads Collins by 7 in one early poll, while Collins leads former Governor Janet Mills by 2 in another. The blended average stands at D+2.5.
+Susan Collins has historically outperformed her state's PVI by 10+ points, but 11 polls now show Platner leading by an average of D+4.0 (range: even to D+11). The MPRC poll (Mar '26, n=1167 LV) shows Platner at D+9 — the latest and strongest Platner result. Emerson (Mar '26) showed Platner +7. The polling average has upgraded this race from Toss-up to Likely D. Mills remains a much weaker option for Democrats (avg ~R+0.3 in 4 matchup polls).
 
-**Key dynamics:** This race embodies a classic fundamentals-vs-polling tension. Collins's crossover appeal is real, but the national environment and her state's PVI both favor Democrats. The Democratic primary outcome matters enormously — a strong nominee could push this into Lean D territory; a weaker one could flip it to Lean R.
+**Key dynamics:** If Platner wins the D primary (strong favorite), this is now a genuine Likely D race. Collins's crossover appeal is real but has been insufficient to offset the national environment and the D+3 PVI when facing a strong opponent. The D primary is the key remaining variable.
 
 ### Michigan — Open Seat | R+1 PVI
 **Rating: Toss-up** · No polling · D win prob: ~55%
@@ -101,11 +100,11 @@ J.D. Vance vacated this seat upon becoming Vice President. The special election 
 **Key dynamics:** Brown's populist economic brand remains strong in blue-collar Ohio, but replicating his past coalition will be difficult without a presidential-year electorate. Special election turnout dynamics are uncertain. Husted is a conventional Republican with statewide experience but less personal magnetism. R+8 PVI plus the 2024 loss make this an uphill climb for Brown.
 
 ### Florida — Moody (R, appointed) | R+5 PVI
-**Rating: Lean R** · D win prob: ~35% (est.)
+**Rating: Likely R** · Polling avg: R+7.0 · D win prob: ~17%
 
-Marco Rubio vacated this seat upon becoming Secretary of State. Governor DeSantis appointed Ashley Moody, the former Attorney General. Democrat Val Jenkins is the likely nominee. Florida has trended rightward in recent cycles, but an appointed incumbent lacks the electoral mandate of someone who won the seat outright.
+Marco Rubio vacated this seat upon becoming Secretary of State. Governor DeSantis appointed Ashley Moody, the former Attorney General. D primary field: Vindman, Nixon, Mujica, Jenkins. 8 polls avg R+7.0. Emerson (Mar '26): Vindman R+8, Nixon R+11, Mujica R+7. MDW (Apr '26, unrated pollster): Vindman R+1 — significant positive outlier for Democrats. PPP (Apr '26, D-sponsored): Vindman R+3.
 
-**Key dynamics:** Moody has statewide name ID from her AG tenure but has never run in a competitive general election. Jenkins is relatively unknown. Florida's R+5 PVI and Republican voter registration advantage make this structurally favorable for Moody, but appointed senators historically underperform elected ones. Democrats will need a strong nominee and favorable turnout to compete.
+**Key dynamics:** Moody leads consistently across most polls. The MDW and PPP polls hint at possible tightening, but both have reasons for skepticism (unrated pollster; D-sponsored). Moody's appointed status is a mild structural disadvantage, but R+5 PVI in a state trending Republican makes this Likely R barring major shifts in the national environment.
 
 ### Minnesota — Open Seat | D+3 PVI
 **Rating: Lean D** · No polling · D win prob: ~65% (est.)

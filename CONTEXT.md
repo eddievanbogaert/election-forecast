@@ -71,11 +71,11 @@ infrastructure/setup.sh          — One-shot GCP provisioning (already run)
 
 ## Model (v0.2.0)
 
-### Current state (late March 2026, ~220 days to election)
+### Current state (early April 2026, ~209 days to election)
 
 The model blends **structural fundamentals** with **polling data** using a time-weighted
-ramp. At ~220 days out, polling weight `α ≈ 0.40`: the model is roughly
-**60% fundamentals / 40% polling**.
+ramp. At ~209 days out, polling weight `α ≈ 0.44`: the model is roughly
+**56% fundamentals / 44% polling**.
 
 ### National environment: D+5.01
 
@@ -130,14 +130,14 @@ Chamber control = P(D total seats ≥ 51).
 
 ---
 
-## Current forecast snapshot (late March 2026)
+## Current forecast snapshot (early April 2026)
 
 | Metric | Value |
 |--------|-------|
-| Expected D seats | ~49 / 100 |
-| D Senate control probability | ~23% |
+| Expected D seats | ~49.0 / 100 |
+| D Senate control probability | ~24% |
 | Net national environment | D+5.01 |
-| Polling weight | ~40% polls / 60% fundamentals |
+| Polling weight | ~44% polls / 56% fundamentals |
 | D seats not up | 34 |
 | R seats not up | 31 |
 
@@ -145,34 +145,33 @@ Chamber control = P(D total seats ≥ 51).
 
 | Rating | Races |
 |--------|-------|
-| **Likely D** | NC |
-| **Lean D** | GA, NH, MN |
-| **Toss-up / Lean D** | ME, MI |
-| **Lean R** | AK |
-| **Likely R** | OH-Special, FL, IA |
-| **Safe R** | TX, NE, AL, KY, MT, OK, and 12 others |
-| **Safe D** | IL, NM, and 10 others |
+| **Likely D** | NC, ME, GA, NH |
+| **Toss-up** | MI |
+| **Lean R** | OH-Special, AK |
+| **Likely R** | FL, IA, TX |
+| **Safe R** | NE, SC, AL, KY, MT, OK, and 12 others |
+| **Safe D** | MN, IL, NM, and 10 others |
 
 ### Key battlegrounds
 
 | Race | PVI | Polling Avg | D Win Prob | Rating |
 |------|-----|-------------|-----------|--------|
-| NC (Cooper vs Whatley) | R+3 | D+6.0 | ~78% | Likely D |
-| GA (Ossoff vs TBD) | R+4 | D+5.3 | ~70% | Lean D |
-| NH (Pappas vs Sununu/Brown) | D+1 | D+3.6 | ~76% | Lean D |
-| ME (Platner vs Collins) | D+3 | D+3.6 | ~67% | Lean D |
-| MI (TBD vs Rogers) | R+1 | R+1 | ~55% | Toss-up |
-| MN (Flanagan/Craig vs Tafoya) | D+3 | D+6.5 | ~89% | Safe D |
-| AK (Peltola vs Sullivan) | R+9 | D+1.5 | ~24% | Likely R |
-| OH Special (Brown vs Husted) | R+8 | R+2 | ~34% | Lean R |
-| FL Special (TBD vs Moody) | R+5 | R+8.7 | ~13% | Safe R |
-| TX (Talarico vs Cornyn/Paxton) | R+10 | R+1 | ~15% | Safe R |
+| NC (Cooper vs Whatley) | R+3 | D+5.8 | ~81% | Likely D |
+| GA (Ossoff vs TBD) | R+4 | D+5.3 | ~81% | Likely D |
+| NH (Pappas vs Sununu/Brown) | D+1 | D+3.6 | ~80% | Likely D |
+| ME (Platner vs Collins) | D+3 | D+4.0 | ~76% | Likely D ↑ |
+| MI (TBD vs Rogers) | R+1 | R+2.5 | ~55% | Toss-up |
+| MN (Flanagan/Craig vs Tafoya) | D+3 | D+6.5 | ~92% | Safe D |
+| AK (Peltola vs Sullivan) | R+9 | D+1.5 | ~32% | Lean R |
+| OH Special (Brown vs Husted) | R+8 | R+1.5 | ~40% | Lean R |
+| FL Special (TBD vs Moody) | R+5 | R+7.0 | ~17% | Likely R |
+| TX (Talarico vs Cornyn/Paxton) | R+10 | R+1.4 | ~19% | Likely R |
 
 ### Polling data coverage
 
 14 states have polling data incorporated: AK, FL, GA, IA, KY, ME, MI, MN, NC, NE, NH, OH, SC, TX.
 
-All polls tracked in `polls.csv` (145 entries, 113 included in averages). Bulk NYT export in `senate.csv` (~1400 rows).
+All polls tracked in `polls.csv` (154 entries, 122 included in averages). Bulk NYT export in `senate.csv`.
 
 ---
 
