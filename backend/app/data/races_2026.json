@@ -16,95 +16,195 @@
       "pvi": 27,
       "note": "Tommy Tuberville running for governor instead. Open R primary: Steve Marshall (AG), Barry Moore (Rep), Jared Hudson among leading candidates. Deep-red state remains Safe R.",
       "candidates": {
-        "dem": {"name": "TBD", "quality_score": 3, "is_incumbent": false},
-        "rep": {"name": "TBD (primary: Marshall / Moore / Hudson)", "quality_score": 5, "is_incumbent": false}
+        "dem": {
+          "name": "TBD",
+          "quality_score": 3,
+          "is_incumbent": false
+        },
+        "rep": {
+          "name": "TBD (primary: Marshall / Moore / Hudson)",
+          "quality_score": 5,
+          "is_incumbent": false
+        }
       }
     },
     {
       "state": "Alaska",
       "state_code": "AK",
-      "incumbent": {"name": "Dan Sullivan", "party": "R", "last_margin": 11.8, "years_in_office": 12},
+      "incumbent": {
+        "name": "Dan Sullivan",
+        "party": "R",
+        "last_margin": 11.8,
+        "years_in_office": 12
+      },
       "is_open": false,
       "pvi": 9,
-      "polling_average": 1.5,
-      "note": "Mary Peltola (former congresswoman, lost House seat 2024) challenging Sullivan. Ranked-choice voting. 6 named-candidate polls: recent 4 (Jan '26–Oct '25) avg D+1.6; summer '25 polls showed R+1 to R+4. Race has trended toward Peltola. Alaska has a history of electing crossover candidates.",
+      "polling_average": 3.71,
+      "note": "Mary Peltola (former congresswoman, lost House seat 2024) challenging Sullivan. Ranked-choice voting. 6 named-candidate polls: recent 4 (Jan '26\u2013Oct '25) avg D+1.6; summer '25 polls showed R+1 to R+4. Race has trended toward Peltola. Alaska has a history of electing crossover candidates.",
       "candidates": {
-        "dem": {"name": "Mary Peltola", "quality_score": 7, "is_incumbent": false},
-        "rep": {"name": "Dan Sullivan", "quality_score": 6, "is_incumbent": true}
+        "dem": {
+          "name": "Mary Peltola",
+          "quality_score": 7,
+          "is_incumbent": false
+        },
+        "rep": {
+          "name": "Dan Sullivan",
+          "quality_score": 6,
+          "is_incumbent": true
+        }
       }
     },
     {
       "state": "Arkansas",
       "state_code": "AR",
-      "incumbent": {"name": "Tom Cotton", "party": "R", "last_margin": 33.6, "years_in_office": 12},
+      "incumbent": {
+        "name": "Tom Cotton",
+        "party": "R",
+        "last_margin": 33.6,
+        "years_in_office": 12
+      },
       "is_open": false,
       "pvi": 24,
       "note": "Cotton seeking third term in deep-red Arkansas. Democrat Hallie Shoffner, a farmer and first-time candidate, won the D primary. Cotton's 33.6-pt 2020 margin and R+24 PVI make this Safe R.",
       "candidates": {
-        "dem": {"name": "Hallie Shoffner", "quality_score": 3, "is_incumbent": false},
-        "rep": {"name": "Tom Cotton", "quality_score": 7, "is_incumbent": true}
-      }
+        "dem": {
+          "name": "Hallie Shoffner",
+          "quality_score": 3,
+          "is_incumbent": false
+        },
+        "rep": {
+          "name": "Tom Cotton",
+          "quality_score": 7,
+          "is_incumbent": true
+        }
+      },
+      "polling_average": -20.0
     },
     {
       "state": "Colorado",
       "state_code": "CO",
-      "incumbent": {"name": "John Hickenlooper", "party": "D", "last_margin": 9.0, "years_in_office": 6},
+      "incumbent": {
+        "name": "John Hickenlooper",
+        "party": "D",
+        "last_margin": 9.0,
+        "years_in_office": 6
+      },
       "is_open": false,
       "pvi": -4,
       "note": "Hickenlooper seeking re-election (says this will be his final Senate term). Faces a D primary challenge from state Sen. Julie Gonzales. No major R challenger has emerged. Colorado has shifted solidly blue at the federal level. Safe D.",
       "candidates": {
-        "dem": {"name": "John Hickenlooper", "quality_score": 7, "is_incumbent": true},
-        "rep": {"name": "TBD", "quality_score": 5, "is_incumbent": false}
+        "dem": {
+          "name": "John Hickenlooper",
+          "quality_score": 7,
+          "is_incumbent": true
+        },
+        "rep": {
+          "name": "TBD",
+          "quality_score": 5,
+          "is_incumbent": false
+        }
       }
     },
     {
       "state": "Delaware",
       "state_code": "DE",
-      "incumbent": {"name": "Chris Coons", "party": "D", "last_margin": 23.4, "years_in_office": 16},
+      "incumbent": {
+        "name": "Chris Coons",
+        "party": "D",
+        "last_margin": 23.4,
+        "years_in_office": 16
+      },
       "is_open": false,
       "pvi": -8,
       "note": "Coons running for a fourth term in deep-blue Delaware. R primary features only minor candidates. No Republican has won a Senate race in Delaware since 1994. Safe D.",
       "candidates": {
-        "dem": {"name": "Chris Coons", "quality_score": 7, "is_incumbent": true},
-        "rep": {"name": "TBD", "quality_score": 3, "is_incumbent": false}
+        "dem": {
+          "name": "Chris Coons",
+          "quality_score": 7,
+          "is_incumbent": true
+        },
+        "rep": {
+          "name": "TBD",
+          "quality_score": 3,
+          "is_incumbent": false
+        }
       }
     },
     {
       "state": "Florida",
       "state_code": "FL",
-      "incumbent": {"name": "Ashley Moody", "party": "R", "last_margin": null, "years_in_office": 1},
+      "incumbent": {
+        "name": "Ashley Moody",
+        "party": "R",
+        "last_margin": null,
+        "years_in_office": 1
+      },
       "is_open": false,
       "pvi": 5,
-      "polling_average": -7.0,
-      "note": "Special election for Marco Rubio's vacated seat (Rubio became Secretary of State). Ashley Moody (R, former FL AG) appointed. D primary: Vindman, Nixon, Jenkins, Mujica. 8 polls avg R+7.0. Emerson (Mar '26): Vindman R+8, Nixon R+11, Mujica R+7. MDW (Apr '26, unrated): Vindman R+1 — outlier vs field. PPP (Apr '26, D-sponsored): Vindman R+3.",
+      "polling_average": -6.68,
+      "note": "Special election for Marco Rubio's vacated seat (Rubio became Secretary of State). Ashley Moody (R, former FL AG) appointed. D primary: Vindman, Nixon, Jenkins, Mujica. 8 polls avg R+7.0. Emerson (Mar '26): Vindman R+8, Nixon R+11, Mujica R+7. MDW (Apr '26, unrated): Vindman R+1 \u2014 outlier vs field. PPP (Apr '26, D-sponsored): Vindman R+3.",
       "candidates": {
-        "dem": {"name": "TBD (primary: Vindman / Nixon / Mujica / Jenkins)", "quality_score": 4, "is_incumbent": false},
-        "rep": {"name": "Ashley Moody", "quality_score": 6, "is_incumbent": true}
+        "dem": {
+          "name": "TBD (primary: Vindman / Nixon / Mujica / Jenkins)",
+          "quality_score": 4,
+          "is_incumbent": false
+        },
+        "rep": {
+          "name": "Ashley Moody",
+          "quality_score": 6,
+          "is_incumbent": true
+        }
       }
     },
     {
       "state": "Georgia",
       "state_code": "GA",
-      "incumbent": {"name": "Jon Ossoff", "party": "D", "last_margin": 1.2, "years_in_office": 6},
+      "incumbent": {
+        "name": "Jon Ossoff",
+        "party": "D",
+        "last_margin": 1.2,
+        "years_in_office": 6
+      },
       "is_open": false,
       "pvi": 4,
-      "polling_average": 5.3,
-      "note": "Won by 1.2% in January 2021 runoff; top Republican target in 2026. R primary: Carter, Collins, Dooley, King. 18 polls (Jan '25–Mar '26) across 8 pollsters avg D+5.3 vs likely nominees. Ossoff leads all R candidates except Kemp (unlikely to run). Most recent Emerson (Mar '26): D+3 to D+8 depending on R opponent.",
+      "polling_average": 7.12,
+      "note": "Won by 1.2% in January 2021 runoff; top Republican target in 2026. R primary: Carter, Collins, Dooley, King. 18 polls (Jan '25\u2013Mar '26) across 8 pollsters avg D+5.3 vs likely nominees. Ossoff leads all R candidates except Kemp (unlikely to run). Most recent Emerson (Mar '26): D+3 to D+8 depending on R opponent.",
       "candidates": {
-        "dem": {"name": "Jon Ossoff", "quality_score": 7, "is_incumbent": true},
-        "rep": {"name": "TBD (primary: Collins / Carter / Dooley)", "quality_score": 6, "is_incumbent": false}
+        "dem": {
+          "name": "Jon Ossoff",
+          "quality_score": 7,
+          "is_incumbent": true
+        },
+        "rep": {
+          "name": "TBD (primary: Collins / Carter / Dooley)",
+          "quality_score": 6,
+          "is_incumbent": false
+        }
       }
     },
     {
       "state": "Idaho",
       "state_code": "ID",
-      "incumbent": {"name": "Jim Risch", "party": "R", "last_margin": 23.0, "years_in_office": 18},
+      "incumbent": {
+        "name": "Jim Risch",
+        "party": "R",
+        "last_margin": 23.0,
+        "years_in_office": 18
+      },
       "is_open": false,
       "pvi": 32,
       "note": "Risch (age 83 at election) confirmed running for re-election with Trump's endorsement. Faces minor R primary challengers and a weak D field. Deep-red Idaho (R+32) keeps this Safe R.",
       "candidates": {
-        "dem": {"name": "TBD", "quality_score": 2, "is_incumbent": false},
-        "rep": {"name": "Jim Risch", "quality_score": 6, "is_incumbent": true}
+        "dem": {
+          "name": "TBD",
+          "quality_score": 2,
+          "is_incumbent": false
+        },
+        "rep": {
+          "name": "Jim Risch",
+          "quality_score": 6,
+          "is_incumbent": true
+        }
       }
     },
     {
@@ -116,8 +216,16 @@
       "pvi": -17,
       "note": "Dick Durbin retiring. Lt. Gov. Juliana Stratton won the D primary (March 17) with 40% over Krishnamoorthi and Kelly. Former IL GOP chair Don Tracy won the R primary. Stratton is heavily favored in deep-blue Illinois.",
       "candidates": {
-        "dem": {"name": "Juliana Stratton", "quality_score": 7, "is_incumbent": false},
-        "rep": {"name": "Don Tracy", "quality_score": 3, "is_incumbent": false}
+        "dem": {
+          "name": "Juliana Stratton",
+          "quality_score": 7,
+          "is_incumbent": false
+        },
+        "rep": {
+          "name": "Don Tracy",
+          "quality_score": 3,
+          "is_incumbent": false
+        }
       }
     },
     {
@@ -127,24 +235,46 @@
       "is_open": true,
       "outgoing_senator": "Ernst",
       "pvi": 10,
-      "polling_average": -3.0,
+      "polling_average": -1.21,
       "note": "Joni Ernst retiring. R primary June 2: Hinson vs Carlin (Hinson heavily favored). D primary June 2: Wahls vs Turek (both strong fundraisers). Change Research (Jan '26) shows Hinson +3 vs all D candidates. PPP (Aug '25, D-sponsored) showed Ernst era tighter at R+1 to D+2. Iowa has trended solidly R.",
       "candidates": {
-        "dem": {"name": "TBD (primary: Wahls / Turek)", "quality_score": 5, "is_incumbent": false},
-        "rep": {"name": "Ashley Hinson", "quality_score": 6, "is_incumbent": false}
+        "dem": {
+          "name": "TBD (primary: Wahls / Turek)",
+          "quality_score": 5,
+          "is_incumbent": false
+        },
+        "rep": {
+          "name": "Ashley Hinson",
+          "quality_score": 6,
+          "is_incumbent": false
+        }
       }
     },
     {
       "state": "Kansas",
       "state_code": "KS",
-      "incumbent": {"name": "Roger Marshall", "party": "R", "last_margin": 11.4, "years_in_office": 6},
+      "incumbent": {
+        "name": "Roger Marshall",
+        "party": "R",
+        "last_margin": 11.4,
+        "years_in_office": 6
+      },
       "is_open": false,
       "pvi": 20,
       "note": "Marshall seeking re-election with only minor R primary opposition. A crowded D primary (8 candidates) will select a nominee Aug 4, but deep-red Kansas (R+20) keeps this Safe R.",
       "candidates": {
-        "dem": {"name": "TBD", "quality_score": 3, "is_incumbent": false},
-        "rep": {"name": "Roger Marshall", "quality_score": 5, "is_incumbent": true}
-      }
+        "dem": {
+          "name": "TBD",
+          "quality_score": 3,
+          "is_incumbent": false
+        },
+        "rep": {
+          "name": "Roger Marshall",
+          "quality_score": 5,
+          "is_incumbent": true
+        }
+      },
+      "polling_average": -8.5
     },
     {
       "state": "Kentucky",
@@ -153,49 +283,97 @@
       "is_open": true,
       "outgoing_senator": "McConnell",
       "pvi": 26,
-      "polling_average": -6.3,
-      "note": "Mitch McConnell retiring after 42 years. R primary: Rep. Andy Barr, former AG Daniel Cameron, Nate Morris. D candidate: Charles Booker. PPP polls (D-sponsored, Dec '25) show Morris only +1 vs Booker, Cameron +7, Barr +11. Avg vs named R candidates: R+6.3. If Morris wins the R primary, this could be more competitive than PVI suggests — but R+26 keeps it Safe R.",
+      "polling_average": -11.8,
+      "note": "Mitch McConnell retiring after 42 years. R primary: Rep. Andy Barr, former AG Daniel Cameron, Nate Morris. D candidate: Charles Booker. PPP polls (D-sponsored, Dec '25) show Morris only +1 vs Booker, Cameron +7, Barr +11. Avg vs named R candidates: R+6.3. If Morris wins the R primary, this could be more competitive than PVI suggests \u2014 but R+26 keeps it Safe R.",
       "candidates": {
-        "dem": {"name": "Charles Booker", "quality_score": 5, "is_incumbent": false},
-        "rep": {"name": "TBD (primary: Barr / Cameron / Morris)", "quality_score": 6, "is_incumbent": false}
+        "dem": {
+          "name": "Charles Booker",
+          "quality_score": 5,
+          "is_incumbent": false
+        },
+        "rep": {
+          "name": "TBD (primary: Barr / Cameron / Morris)",
+          "quality_score": 6,
+          "is_incumbent": false
+        }
       }
     },
     {
       "state": "Louisiana",
       "state_code": "LA",
-      "incumbent": {"name": "Bill Cassidy", "party": "R", "last_margin": 39.0, "years_in_office": 12},
+      "incumbent": {
+        "name": "Bill Cassidy",
+        "party": "R",
+        "last_margin": 39.0,
+        "years_in_office": 12
+      },
       "is_open": false,
       "pvi": 20,
       "note": "Cassidy faces a serious R primary challenge from Rep. Julia Letlow, who has Trump's endorsement, due to Cassidy's vote to convict Trump in his second impeachment trial. Former Rep. John Fleming also running. D field is weak. Louisiana remains Safe R regardless of primary outcome.",
       "candidates": {
-        "dem": {"name": "TBD", "quality_score": 2, "is_incumbent": false},
-        "rep": {"name": "Bill Cassidy", "quality_score": 6, "is_incumbent": true}
+        "dem": {
+          "name": "TBD",
+          "quality_score": 2,
+          "is_incumbent": false
+        },
+        "rep": {
+          "name": "Bill Cassidy",
+          "quality_score": 6,
+          "is_incumbent": true
+        }
       }
     },
     {
       "state": "Maine",
       "state_code": "ME",
-      "incumbent": {"name": "Susan Collins", "party": "R", "last_margin": 8.6, "years_in_office": 30},
+      "incumbent": {
+        "name": "Susan Collins",
+        "party": "R",
+        "last_margin": 8.6,
+        "years_in_office": 30
+      },
       "is_open": false,
       "pvi": -3,
-      "polling_average": 4.0,
-      "note": "Collins is a moderate R who historically outperforms PVI by 10+ pts. D primary: Platner avg D+4.0 across 11 polls (range: tied to D+11); Mills avg R+0.3 (much weaker). MPRC (Mar '26, n=1167): Platner +9 — latest and strongest Platner result. If Platner wins primary, this is a genuine toss-up trending D; if Mills, Collins likely holds.",
+      "polling_average": 1.77,
+      "note": "Collins is a moderate R who historically outperforms PVI by 10+ pts. D primary: Platner avg D+4.0 across 11 polls (range: tied to D+11); Mills avg R+0.3 (much weaker). MPRC (Mar '26, n=1167): Platner +9 \u2014 latest and strongest Platner result. If Platner wins primary, this is a genuine toss-up trending D; if Mills, Collins likely holds.",
       "candidates": {
-        "dem": {"name": "TBD (primary: Platner / Mills)", "quality_score": 6, "is_incumbent": false},
-        "rep": {"name": "Susan Collins", "quality_score": 8, "is_incumbent": true}
+        "dem": {
+          "name": "TBD (primary: Platner / Mills)",
+          "quality_score": 6,
+          "is_incumbent": false
+        },
+        "rep": {
+          "name": "Susan Collins",
+          "quality_score": 8,
+          "is_incumbent": true
+        }
       }
     },
     {
       "state": "Massachusetts",
       "state_code": "MA",
-      "incumbent": {"name": "Ed Markey", "party": "D", "last_margin": 33.3, "years_in_office": 12},
+      "incumbent": {
+        "name": "Ed Markey",
+        "party": "D",
+        "last_margin": 33.3,
+        "years_in_office": 12
+      },
       "is_open": false,
       "pvi": -30,
       "note": "Markey (age 80) seeking a third full term. Rep. Seth Moulton is mounting a significant D primary challenge on generational change. Polls show Markey leading Moulton by 13-23 pts. No credible R challenger in D+30 Massachusetts. Safe D.",
       "candidates": {
-        "dem": {"name": "Ed Markey", "quality_score": 6, "is_incumbent": true},
-        "rep": {"name": "TBD", "quality_score": 2, "is_incumbent": false}
-      }
+        "dem": {
+          "name": "Ed Markey",
+          "quality_score": 6,
+          "is_incumbent": true
+        },
+        "rep": {
+          "name": "TBD",
+          "quality_score": 2,
+          "is_incumbent": false
+        }
+      },
+      "polling_average": 27.72
     },
     {
       "state": "Michigan",
@@ -204,11 +382,19 @@
       "is_open": true,
       "outgoing_senator": "Peters",
       "pvi": 1,
-      "polling_average": -2.5,
-      "note": "Gary Peters retiring. D primary ongoing: McMorrow, Stevens, El-Sayed. R candidate Mike Rogers. 21 polls (Mar '25–Jan '26) across 7 pollsters avg R+2.5. Stevens polls best (avg R+0.5), McMorrow middle (avg R+2.9), El-Sayed weakest (avg R+6.0). Rosetta Stone (Oct '25) outlier polls (R+7, R+7, R+14) pull avg rightward. Race tightened in Jan '26 Emerson polls.",
+      "polling_average": -0.46,
+      "note": "Gary Peters retiring. D primary ongoing: McMorrow, Stevens, El-Sayed. R candidate Mike Rogers. 21 polls (Mar '25\u2013Jan '26) across 7 pollsters avg R+2.5. Stevens polls best (avg R+0.5), McMorrow middle (avg R+2.9), El-Sayed weakest (avg R+6.0). Rosetta Stone (Oct '25) outlier polls (R+7, R+7, R+14) pull avg rightward. Race tightened in Jan '26 Emerson polls.",
       "candidates": {
-        "dem": {"name": "TBD (primary: McMorrow / Stevens / El-Sayed)", "quality_score": 6, "is_incumbent": false},
-        "rep": {"name": "Mike Rogers", "quality_score": 7, "is_incumbent": false}
+        "dem": {
+          "name": "TBD (primary: McMorrow / Stevens / El-Sayed)",
+          "quality_score": 6,
+          "is_incumbent": false
+        },
+        "rep": {
+          "name": "Mike Rogers",
+          "quality_score": 7,
+          "is_incumbent": false
+        }
       }
     },
     {
@@ -218,24 +404,46 @@
       "is_open": true,
       "outgoing_senator": "Smith",
       "pvi": -3,
-      "polling_average": 6.5,
-      "note": "Tina Smith retiring. D primary (Aug 2026): Flanagan leads Craig by 3–30 pts in early polls. R candidate: Michele Tafoya. Emerson (Feb '26) shows both Flanagan and Craig at ~D+6.5 vs Tafoya. PPP (Sep '25) showed D+2 to D+4 vs generic R. Minnesota leans D.",
+      "polling_average": 6.26,
+      "note": "Tina Smith retiring. D primary (Aug 2026): Flanagan leads Craig by 3\u201330 pts in early polls. R candidate: Michele Tafoya. Emerson (Feb '26) shows both Flanagan and Craig at ~D+6.5 vs Tafoya. PPP (Sep '25) showed D+2 to D+4 vs generic R. Minnesota leans D.",
       "candidates": {
-        "dem": {"name": "TBD (primary: Craig / Flanagan)", "quality_score": 6, "is_incumbent": false},
-        "rep": {"name": "Michele Tafoya", "quality_score": 4, "is_incumbent": false}
+        "dem": {
+          "name": "TBD (primary: Craig / Flanagan)",
+          "quality_score": 6,
+          "is_incumbent": false
+        },
+        "rep": {
+          "name": "Michele Tafoya",
+          "quality_score": 4,
+          "is_incumbent": false
+        }
       }
     },
     {
       "state": "Mississippi",
       "state_code": "MS",
-      "incumbent": {"name": "Cindy Hyde-Smith", "party": "R", "last_margin": 8.2, "years_in_office": 8},
+      "incumbent": {
+        "name": "Cindy Hyde-Smith",
+        "party": "R",
+        "last_margin": 8.2,
+        "years_in_office": 8
+      },
       "is_open": false,
       "pvi": 18,
       "note": "Hyde-Smith won the R primary (March 10) with 81%. She faces Democrat Scott Colom, Lowndes County DA. No Democrat has won a MS Senate race since 1982. Safe R.",
       "candidates": {
-        "dem": {"name": "TBD", "quality_score": 3, "is_incumbent": false},
-        "rep": {"name": "Cindy Hyde-Smith", "quality_score": 5, "is_incumbent": true}
-      }
+        "dem": {
+          "name": "TBD",
+          "quality_score": 3,
+          "is_incumbent": false
+        },
+        "rep": {
+          "name": "Cindy Hyde-Smith",
+          "quality_score": 5,
+          "is_incumbent": true
+        }
+      },
+      "polling_average": -5.0
     },
     {
       "state": "Montana",
@@ -246,21 +454,43 @@
       "pvi": 18,
       "note": "Steve Daines withdrew minutes before filing deadline and endorsed Kurt Alme (U.S. attorney). Controversial last-minute maneuver designed to clear the R primary field. Open seat adds uncertainty but Montana remains solidly R.",
       "candidates": {
-        "dem": {"name": "TBD", "quality_score": 3, "is_incumbent": false},
-        "rep": {"name": "Kurt Alme", "quality_score": 5, "is_incumbent": false}
-      }
+        "dem": {
+          "name": "TBD",
+          "quality_score": 3,
+          "is_incumbent": false
+        },
+        "rep": {
+          "name": "Kurt Alme",
+          "quality_score": 5,
+          "is_incumbent": false
+        }
+      },
+      "polling_average": -20.25
     },
     {
       "state": "Nebraska",
       "state_code": "NE",
-      "incumbent": {"name": "Pete Ricketts", "party": "R", "last_margin": null, "years_in_office": 3},
+      "incumbent": {
+        "name": "Pete Ricketts",
+        "party": "R",
+        "last_margin": null,
+        "years_in_office": 3
+      },
       "is_open": false,
       "pvi": 22,
-      "polling_average": -1.0,
+      "polling_average": -3.0,
       "note": "Dan Osborn (Independent) challenging Ricketts, who was appointed in 2023 after Ben Sasse resigned. Osborn nearly beat Deb Fischer in 2024 and is a strong populist candidate. Polls show Ricketts +1. Osborn would likely caucus with Democrats for Senate control. Modeled on D side for control purposes.",
       "candidates": {
-        "dem": {"name": "Dan Osborn (I)", "quality_score": 7, "is_incumbent": false},
-        "rep": {"name": "Pete Ricketts", "quality_score": 6, "is_incumbent": true}
+        "dem": {
+          "name": "Dan Osborn (I)",
+          "quality_score": 7,
+          "is_incumbent": false
+        },
+        "rep": {
+          "name": "Pete Ricketts",
+          "quality_score": 6,
+          "is_incumbent": true
+        }
       }
     },
     {
@@ -270,35 +500,69 @@
       "is_open": true,
       "outgoing_senator": "Shaheen",
       "pvi": -1,
-      "polling_average": 3.6,
-      "note": "Jeanne Shaheen retiring. Pappas (D) vs Sununu (R) is the competitive matchup: 9 polls avg D+3.6 (range D+2 to D+7). Emerson Mar '26 shows D+2 — tightest Sununu matchup yet. Pappas dominates Brown matchup at D+10 avg. If Sununu wins R primary, this is a top-tier battleground; if Brown, likely D hold.",
+      "polling_average": 7.84,
+      "note": "Jeanne Shaheen retiring. Pappas (D) vs Sununu (R) is the competitive matchup: 9 polls avg D+3.6 (range D+2 to D+7). Emerson Mar '26 shows D+2 \u2014 tightest Sununu matchup yet. Pappas dominates Brown matchup at D+10 avg. If Sununu wins R primary, this is a top-tier battleground; if Brown, likely D hold.",
       "candidates": {
-        "dem": {"name": "Chris Pappas", "quality_score": 7, "is_incumbent": false},
-        "rep": {"name": "TBD (primary: Sununu / Brown)", "quality_score": 7, "is_incumbent": false}
+        "dem": {
+          "name": "Chris Pappas",
+          "quality_score": 7,
+          "is_incumbent": false
+        },
+        "rep": {
+          "name": "TBD (primary: Sununu / Brown)",
+          "quality_score": 7,
+          "is_incumbent": false
+        }
       }
     },
     {
       "state": "New Jersey",
       "state_code": "NJ",
-      "incumbent": {"name": "Cory Booker", "party": "D", "last_margin": 16.0, "years_in_office": 12},
+      "incumbent": {
+        "name": "Cory Booker",
+        "party": "D",
+        "last_margin": 16.0,
+        "years_in_office": 12
+      },
       "is_open": false,
       "pvi": -14,
       "note": "Booker seeking a third full term. R primary features only minor candidates. NJ has not elected a Republican senator since 1972. Safe D.",
       "candidates": {
-        "dem": {"name": "Cory Booker", "quality_score": 7, "is_incumbent": true},
-        "rep": {"name": "TBD", "quality_score": 4, "is_incumbent": false}
+        "dem": {
+          "name": "Cory Booker",
+          "quality_score": 7,
+          "is_incumbent": true
+        },
+        "rep": {
+          "name": "TBD",
+          "quality_score": 4,
+          "is_incumbent": false
+        }
       }
     },
     {
       "state": "New Mexico",
       "state_code": "NM",
-      "incumbent": {"name": "Ben Ray Luján", "party": "D", "last_margin": 6.0, "years_in_office": 6},
+      "incumbent": {
+        "name": "Ben Ray Luj\u00e1n",
+        "party": "D",
+        "last_margin": 6.0,
+        "years_in_office": 6
+      },
       "is_open": false,
       "pvi": -4,
-      "note": "Only GOP candidate (Christopher Vanden Heuvel) disqualified for insufficient petition signatures. No Republican will appear on the general election ballot — first time in modern NM history.",
+      "note": "Only GOP candidate (Christopher Vanden Heuvel) disqualified for insufficient petition signatures. No Republican will appear on the general election ballot \u2014 first time in modern NM history.",
       "candidates": {
-        "dem": {"name": "Ben Ray Luján", "quality_score": 6, "is_incumbent": true},
-        "rep": {"name": "None (disqualified)", "quality_score": 0, "is_incumbent": false}
+        "dem": {
+          "name": "Ben Ray Luj\u00e1n",
+          "quality_score": 6,
+          "is_incumbent": true
+        },
+        "rep": {
+          "name": "None (disqualified)",
+          "quality_score": 0,
+          "is_incumbent": false
+        }
       }
     },
     {
@@ -308,11 +572,19 @@
       "is_open": true,
       "outgoing_senator": "Tillis",
       "pvi": 3,
-      "polling_average": 5.82,
-      "note": "Thom Tillis not seeking re-election; open seat. Roy Cooper (former governor) is a strong D recruit. R primary held March 3 — Whatley is the nominee. Cooper leads Whatley in 11 of 11 included polls (avg D+5.8, range D+0 to D+10). Quantus (Apr '26, n=987): D+5. TIPP outlier (D+24) excluded. Top Democratic pickup opportunity.",
+      "polling_average": 8.35,
+      "note": "Thom Tillis not seeking re-election; open seat. Roy Cooper (former governor) is a strong D recruit. R primary held March 3 \u2014 Whatley is the nominee. Cooper leads Whatley in 11 of 11 included polls (avg D+5.8, range D+0 to D+10). Quantus (Apr '26, n=987): D+5. TIPP outlier (D+24) excluded. Top Democratic pickup opportunity.",
       "candidates": {
-        "dem": {"name": "Roy Cooper", "quality_score": 8, "is_incumbent": false},
-        "rep": {"name": "Mark Whatley", "quality_score": 5, "is_incumbent": false}
+        "dem": {
+          "name": "Roy Cooper",
+          "quality_score": 8,
+          "is_incumbent": false
+        },
+        "rep": {
+          "name": "Mark Whatley",
+          "quality_score": 5,
+          "is_incumbent": false
+        }
       }
     },
     {
@@ -324,106 +596,219 @@
       "pvi": 26,
       "note": "Markwayne Mullin confirmed as DHS Secretary, resigned March 23. Gov. Stitt appointed Alan Armstrong (Williams Companies exec) on March 24; Armstrong signed an oath not to run for the full term. R primary June 16: Rep. Kevin Hern is the frontrunner (Bice opted for House re-election). D primary: Evan Beck, Jim Priest among declared candidates. Deep-red state remains Safe R.",
       "candidates": {
-        "dem": {"name": "TBD", "quality_score": 2, "is_incumbent": false},
-        "rep": {"name": "TBD (primary: Hern / others)", "quality_score": 6, "is_incumbent": false}
+        "dem": {
+          "name": "TBD",
+          "quality_score": 2,
+          "is_incumbent": false
+        },
+        "rep": {
+          "name": "TBD (primary: Hern / others)",
+          "quality_score": 6,
+          "is_incumbent": false
+        }
       }
     },
     {
       "state": "Oregon",
       "state_code": "OR",
-      "incumbent": {"name": "Jeff Merkley", "party": "D", "last_margin": 17.5, "years_in_office": 18},
+      "incumbent": {
+        "name": "Jeff Merkley",
+        "party": "D",
+        "last_margin": 17.5,
+        "years_in_office": 18
+      },
       "is_open": false,
       "pvi": -8,
       "note": "Merkley seeking a fourth term. Oregon has not elected a Republican senator since 2002. Safe D.",
       "candidates": {
-        "dem": {"name": "Jeff Merkley", "quality_score": 7, "is_incumbent": true},
-        "rep": {"name": "TBD", "quality_score": 4, "is_incumbent": false}
+        "dem": {
+          "name": "Jeff Merkley",
+          "quality_score": 7,
+          "is_incumbent": true
+        },
+        "rep": {
+          "name": "TBD",
+          "quality_score": 4,
+          "is_incumbent": false
+        }
       }
     },
     {
       "state": "Rhode Island",
       "state_code": "RI",
-      "incumbent": {"name": "Jack Reed", "party": "D", "last_margin": 35.4, "years_in_office": 30},
+      "incumbent": {
+        "name": "Jack Reed",
+        "party": "D",
+        "last_margin": 35.4,
+        "years_in_office": 30
+      },
       "is_open": false,
       "pvi": -18,
       "note": "Reed seeking re-election to a sixth term. RI has not elected a Republican senator since 2000. Safe D.",
       "candidates": {
-        "dem": {"name": "Jack Reed", "quality_score": 6, "is_incumbent": true},
-        "rep": {"name": "TBD", "quality_score": 2, "is_incumbent": false}
+        "dem": {
+          "name": "Jack Reed",
+          "quality_score": 6,
+          "is_incumbent": true
+        },
+        "rep": {
+          "name": "TBD",
+          "quality_score": 2,
+          "is_incumbent": false
+        }
       }
     },
     {
       "state": "South Carolina",
       "state_code": "SC",
-      "incumbent": {"name": "Lindsey Graham", "party": "R", "last_margin": 10.3, "years_in_office": 24},
+      "incumbent": {
+        "name": "Lindsey Graham",
+        "party": "R",
+        "last_margin": 10.3,
+        "years_in_office": 24
+      },
       "is_open": false,
       "pvi": 11,
-      "polling_average": -4.0,
+      "polling_average": -6.91,
       "note": "Graham only +2 vs generic D and +6 vs Andrews in D-sponsored PPP polls (Nov '25). Avg R+4. Graham is personally unpopular but R+11 PVI keeps this Safe R. Worth monitoring if a strong D candidate emerges.",
       "candidates": {
-        "dem": {"name": "TBD", "quality_score": 4, "is_incumbent": false},
-        "rep": {"name": "Lindsey Graham", "quality_score": 6, "is_incumbent": true}
+        "dem": {
+          "name": "TBD",
+          "quality_score": 4,
+          "is_incumbent": false
+        },
+        "rep": {
+          "name": "Lindsey Graham",
+          "quality_score": 6,
+          "is_incumbent": true
+        }
       }
     },
     {
       "state": "South Dakota",
       "state_code": "SD",
-      "incumbent": {"name": "Mike Rounds", "party": "R", "last_margin": 30.6, "years_in_office": 12},
+      "incumbent": {
+        "name": "Mike Rounds",
+        "party": "R",
+        "last_margin": 30.6,
+        "years_in_office": 12
+      },
       "is_open": false,
       "pvi": 27,
       "note": "Rounds seeking a third term. Faces only minor R primary opposition. Won by 31 pts in 2020; deep-red South Dakota (R+27) keeps this Safe R.",
       "candidates": {
-        "dem": {"name": "TBD", "quality_score": 2, "is_incumbent": false},
-        "rep": {"name": "Mike Rounds", "quality_score": 5, "is_incumbent": true}
-      }
+        "dem": {
+          "name": "TBD",
+          "quality_score": 2,
+          "is_incumbent": false
+        },
+        "rep": {
+          "name": "Mike Rounds",
+          "quality_score": 5,
+          "is_incumbent": true
+        }
+      },
+      "polling_average": -17.49
     },
     {
       "state": "Tennessee",
       "state_code": "TN",
-      "incumbent": {"name": "Bill Hagerty", "party": "R", "last_margin": 24.9, "years_in_office": 6},
+      "incumbent": {
+        "name": "Bill Hagerty",
+        "party": "R",
+        "last_margin": 24.9,
+        "years_in_office": 6
+      },
       "is_open": false,
       "pvi": 26,
       "note": "Hagerty seeking a second term with Trump's endorsement and nearly $9M raised. No R primary challenger. Deep-red Tennessee (R+26) keeps this Safe R.",
       "candidates": {
-        "dem": {"name": "TBD", "quality_score": 2, "is_incumbent": false},
-        "rep": {"name": "Bill Hagerty", "quality_score": 5, "is_incumbent": true}
+        "dem": {
+          "name": "TBD",
+          "quality_score": 2,
+          "is_incumbent": false
+        },
+        "rep": {
+          "name": "Bill Hagerty",
+          "quality_score": 5,
+          "is_incumbent": true
+        }
       }
     },
     {
       "state": "Texas",
       "state_code": "TX",
-      "incumbent": {"name": "John Cornyn", "party": "R", "last_margin": 9.6, "years_in_office": 24},
+      "incumbent": {
+        "name": "John Cornyn",
+        "party": "R",
+        "last_margin": 9.6,
+        "years_in_office": 24
+      },
       "is_open": false,
       "pvi": 10,
-      "polling_average": -1.4,
-      "note": "R primary headed to runoff (Paxton vs Cornyn). 14 Talarico polls (Sep '25–Mar '26) across 7 pollsters avg R+1.4. Range: D+2 (PPP, Impact Research) to R+6 (Ragnar, UT Tyler). Impact Research Mar '26 shows Talarico +1/+2 vs Cornyn/Paxton. Talarico polls better vs Paxton than vs Cornyn. Bruising R primary could depress general election turnout.",
+      "polling_average": 1.15,
+      "note": "R primary headed to runoff (Paxton vs Cornyn). 14 Talarico polls (Sep '25\u2013Mar '26) across 7 pollsters avg R+1.4. Range: D+2 (PPP, Impact Research) to R+6 (Ragnar, UT Tyler). Impact Research Mar '26 shows Talarico +1/+2 vs Cornyn/Paxton. Talarico polls better vs Paxton than vs Cornyn. Bruising R primary could depress general election turnout.",
       "candidates": {
-        "dem": {"name": "James Talarico", "quality_score": 6, "is_incumbent": false},
-        "rep": {"name": "TBD (Cornyn/Paxton runoff)", "quality_score": 6, "is_incumbent": false}
+        "dem": {
+          "name": "James Talarico",
+          "quality_score": 6,
+          "is_incumbent": false
+        },
+        "rep": {
+          "name": "TBD (Cornyn/Paxton runoff)",
+          "quality_score": 6,
+          "is_incumbent": false
+        }
       }
     },
     {
       "state": "Virginia",
       "state_code": "VA",
-      "incumbent": {"name": "Mark Warner", "party": "D", "last_margin": 12.0, "years_in_office": 18},
+      "incumbent": {
+        "name": "Mark Warner",
+        "party": "D",
+        "last_margin": 12.0,
+        "years_in_office": 18
+      },
       "is_open": false,
       "pvi": -3,
       "note": "Warner seeking a fourth term. The most notable R challenger, state Sen. Bryce Reeves, withdrew in December 2025. Remaining R field lacks a top-tier recruit. Likely D.",
       "candidates": {
-        "dem": {"name": "Mark Warner", "quality_score": 8, "is_incumbent": true},
-        "rep": {"name": "TBD", "quality_score": 5, "is_incumbent": false}
+        "dem": {
+          "name": "Mark Warner",
+          "quality_score": 8,
+          "is_incumbent": true
+        },
+        "rep": {
+          "name": "TBD",
+          "quality_score": 5,
+          "is_incumbent": false
+        }
       }
     },
     {
       "state": "West Virginia",
       "state_code": "WV",
-      "incumbent": {"name": "Shelley Moore Capito", "party": "R", "last_margin": 43.3, "years_in_office": 12},
+      "incumbent": {
+        "name": "Shelley Moore Capito",
+        "party": "R",
+        "last_margin": 43.3,
+        "years_in_office": 12
+      },
       "is_open": false,
       "pvi": 30,
       "note": "Capito seeking a third term with Trump's endorsement. R primary challenge from convicted Jan. 6 participant Derrick Evans poses no real threat. Deep-red WV (R+30) keeps this Safe R.",
       "candidates": {
-        "dem": {"name": "TBD", "quality_score": 2, "is_incumbent": false},
-        "rep": {"name": "Shelley Moore Capito", "quality_score": 6, "is_incumbent": true}
+        "dem": {
+          "name": "TBD",
+          "quality_score": 2,
+          "is_incumbent": false
+        },
+        "rep": {
+          "name": "Shelley Moore Capito",
+          "quality_score": 6,
+          "is_incumbent": true
+        }
       }
     },
     {
@@ -435,8 +820,16 @@
       "pvi": 35,
       "note": "Cynthia Lummis announced in December 2025 she will not seek re-election. Rep. Harriet Hageman, endorsed by Lummis, is the frontrunner in the R primary (Aug 18). Deep-red Wyoming (R+35) remains Safe R regardless.",
       "candidates": {
-        "dem": {"name": "TBD", "quality_score": 2, "is_incumbent": false},
-        "rep": {"name": "TBD (primary: Hageman / others)", "quality_score": 6, "is_incumbent": false}
+        "dem": {
+          "name": "TBD",
+          "quality_score": 2,
+          "is_incumbent": false
+        },
+        "rep": {
+          "name": "TBD (primary: Hageman / others)",
+          "quality_score": 6,
+          "is_incumbent": false
+        }
       }
     },
     {
@@ -446,11 +839,19 @@
       "is_open": true,
       "outgoing_senator": "Husted",
       "pvi": 8,
-      "polling_average": -1.5,
-      "note": "Special election for J.D. Vance's vacated seat. Gov. DeWine appointed Jon Husted (former Lt. Gov.) to the seat in Jan 2025. Sherrod Brown (lost his Class I seat in 2024) running to reclaim a Senate seat. 8 polls (Feb '25–Mar '26) avg R+1.5. Race tightening: Husted +6 (Feb/Aug '25) → Brown +4 (EMC Mar '26). Recent EMC D+4 and Quantus R+1 polls show momentum shifting toward Brown.",
+      "polling_average": -2.18,
+      "note": "Special election for J.D. Vance's vacated seat. Gov. DeWine appointed Jon Husted (former Lt. Gov.) to the seat in Jan 2025. Sherrod Brown (lost his Class I seat in 2024) running to reclaim a Senate seat. 8 polls (Feb '25\u2013Mar '26) avg R+1.5. Race tightening: Husted +6 (Feb/Aug '25) \u2192 Brown +4 (EMC Mar '26). Recent EMC D+4 and Quantus R+1 polls show momentum shifting toward Brown.",
       "candidates": {
-        "dem": {"name": "Sherrod Brown", "quality_score": 8, "is_incumbent": false},
-        "rep": {"name": "Jon Husted", "quality_score": 6, "is_incumbent": false}
+        "dem": {
+          "name": "Sherrod Brown",
+          "quality_score": 8,
+          "is_incumbent": false
+        },
+        "rep": {
+          "name": "Jon Husted",
+          "quality_score": 6,
+          "is_incumbent": false
+        }
       }
     }
   ]
