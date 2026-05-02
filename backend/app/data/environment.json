@@ -1,27 +1,11 @@
 {
   "as_of": "2026-03-29",
   "presidential_approval": {
-    "approve": 41.2,
-    "disapprove": 56.6,
-    "net": -15.4,
-    "source": "RealClearPolitics average (3/15–3/27)",
-    "polls": [
-      {"pollster": "Quinnipiac", "date": "3/19–3/23", "approve": 38, "disapprove": 56},
-      {"pollster": "Reuters/Ipsos", "date": "3/20–3/23", "approve": 36, "disapprove": 61},
-      {"pollster": "FOX News", "date": "3/20–3/23", "approve": 40, "disapprove": 59},
-      {"pollster": "Economist/YouGov", "date": "3/15–3/18", "approve": 42, "disapprove": 55},
-      {"pollster": "Rasmussen Reports", "date": "3/17–3/23", "approve": 46, "disapprove": 53},
-      {"pollster": "Quantus Insights", "date": "3/16–3/17", "approve": 44, "disapprove": 55},
-      {"pollster": "Daily Mail", "date": "3/16–3/17", "approve": 43, "disapprove": 56},
-      {"pollster": "Trafalgar Group", "date": "3/14–3/17", "approve": 48, "disapprove": 50},
-      {"pollster": "RMG Research", "date": "3/13–3/17", "approve": 44, "disapprove": 54},
-      {"pollster": "NBC News", "date": "3/12–3/16", "approve": 40, "disapprove": 56},
-      {"pollster": "NPR/PBS/Marist", "date": "3/13–3/15", "approve": 39, "disapprove": 58},
-      {"pollster": "CBS News", "date": "3/11–3/14", "approve": 39, "disapprove": 61},
-      {"pollster": "I&I/TIPP", "date": "3/10–3/13", "approve": 40, "disapprove": 52},
-      {"pollster": "Harvard-Harris", "date": "3/11–3/12", "approve": 44, "disapprove": 51}
-    ],
-    "note": "Approval declining amid Iran conflict (started early March) and tariff fallout. Reuters/Ipsos 36% is new second-term low. RCP average down ~1pt from mid-March."
+    "_note": "Computed live from potus-approval.csv by environment.py — this block is a fallback only and is overridden at runtime.",
+    "approve": 40.55,
+    "disapprove": 56.44,
+    "net": -15.89,
+    "source": "potus-approval.csv weighted average (803 polls, half-life 21d)"
   },
   "economy": {
     "gdp_growth_annualized": 0.7,

@@ -19,14 +19,29 @@ Coefficients are calibrated to historical midterm Senate results
     or away from the president's party.
 
 All three are combined additively with a base midterm structural penalty.
+
+Presidential approval is computed live from potus-approval.csv using
+exponential time-decay (half-life 21 days) so the model always reflects
+the most recent polling.
 """
 
 from __future__ import annotations
+import csv
 import json
+import math
+from collections import defaultdict
+from datetime import date, datetime
 from pathlib import Path
 from typing import Optional
 
 ENV_PATH = Path(__file__).parent.parent / "data" / "environment.json"
+APPROVAL_CSV_PATH = Path(__file__).parent.parent / "data" / "potus-approval.csv"
+
+# ── Approval-average constants ────────────────────────────────────────────────
+
+APPROVAL_HALFLIFE_DAYS: int = 21        # exponential decay half-life
+APPROVAL_MAX_AGE_DAYS: int = 540        # ignore polls older than 18 months
+APPROVAL_PARTISAN_ADJ: float = 2.0     # pts to adjust partisan-sponsored polls
 
 # ── Coefficients (calibrated to 1982–2022 midterm Senate results) ────────────
 
@@ -38,9 +53,101 @@ SENTIMENT_BASELINE: float = 85.0           # long-run avg consumer sentiment
 SENTIMENT_COEFFICIENT: float = 0.04        # pts per sentiment point below baseline
 
 
-def load_environment() -> dict:
+def _parse_date(s: str) -> Optional[date]:
+    for fmt in ("%m/%d/%y", "%Y-%m-%d"):
+        try:
+            return datetime.strptime(s, fmt).date()
+        except ValueError:
+            pass
+    return None
+
+
+# Population rank: prefer likely voters > registered voters > adults
+_POP_RANK: dict[str, int] = {"lv": 0, "rv": 1, "a": 2}
+
+
+def compute_approval_average(ref: Optional[date] = None) -> dict:
+    """
+    Read potus-approval.csv and return a time-decay-weighted approval average.
+
+    Each unique poll contributes one data point (best available population
+    type: lv > rv > a).  Partisan-sponsored polls are adjusted by
+    ±APPROVAL_PARTISAN_ADJ points before averaging.  Weights follow an
+    exponential decay with half-life APPROVAL_HALFLIFE_DAYS so that recent
+    polls dominate.
+
+    Returns
+    -------
+    dict with keys: approve, disapprove, net, n_polls, as_of
+    """
+    ref = ref or date.today()
+
+    rows: list[dict] = []
+    with open(APPROVAL_CSV_PATH, newline="") as f:
+        for row in csv.DictReader(f):
+            if row.get("yes") and row.get("no"):
+                rows.append(row)
+
+    # One row per poll_id: pick the row with the best population type
+    by_poll: dict[str, list[dict]] = defaultdict(list)
+    for row in rows:
+        by_poll[row["poll_id"]].append(row)
+
+    total_w = total_app = total_dis = 0.0
+    n_polls = 0
+
+    for poll_rows in by_poll.values():
+        poll_rows.sort(
+            key=lambda r: _POP_RANK.get(r.get("population_full") or r.get("population", ""), 3)
+        )
+        best = poll_rows[0]
+        end_date = _parse_date(best["end_date"])
+        if end_date is None:
+            continue
+        age = (ref - end_date).days
+        if age < 0 or age > APPROVAL_MAX_AGE_DAYS:
+            continue
+
+        partisan = best.get("partisan", "").upper()
+        approve = float(best["yes"])
+        disapprove = float(best["no"])
+
+        # Adjust partisan-sponsored polls toward the center
+        if partisan == "REP":
+            approve -= APPROVAL_PARTISAN_ADJ
+            disapprove += APPROVAL_PARTISAN_ADJ
+        elif partisan == "DEM":
+            approve += APPROVAL_PARTISAN_ADJ
+            disapprove -= APPROVAL_PARTISAN_ADJ
+
+        w = math.exp(-age * math.log(2) / APPROVAL_HALFLIFE_DAYS)
+        total_w += w
+        total_app += w * approve
+        total_dis += w * disapprove
+        n_polls += 1
+
+    if total_w == 0:
+        return {}
+
+    avg_approve = round(total_app / total_w, 2)
+    avg_disapprove = round(total_dis / total_w, 2)
+    return {
+        "approve": avg_approve,
+        "disapprove": avg_disapprove,
+        "net": round(avg_approve - avg_disapprove, 2),
+        "n_polls": n_polls,
+        "source": f"potus-approval.csv weighted average ({n_polls} polls, half-life {APPROVAL_HALFLIFE_DAYS}d)",
+        "as_of": ref.isoformat(),
+    }
+
+
+def load_environment(ref: Optional[date] = None) -> dict:
     with open(ENV_PATH) as f:
-        return json.load(f)
+        env = json.load(f)
+    # Replace any hardcoded approval with the live CSV-computed average
+    if APPROVAL_CSV_PATH.exists():
+        env["presidential_approval"] = compute_approval_average(ref)
+    return env
 
 
 def national_environment_shift(env: Optional[dict] = None) -> float:
