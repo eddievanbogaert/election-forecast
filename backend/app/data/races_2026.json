@@ -40,7 +40,7 @@
       "is_open": false,
       "pvi": 9,
       "polling_average": 3.71,
-      "note": "Mary Peltola (former congresswoman, lost House seat 2024) challenging Sullivan. Ranked-choice voting. 6 named-candidate polls: recent 4 (Jan '26\u2013Oct '25) avg D+1.6; summer '25 polls showed R+1 to R+4. Race has trended toward Peltola. Alaska has a history of electing crossover candidates.",
+      "note": "Mary Peltola (former congresswoman, lost House seat 2024) challenging Sullivan. Ranked-choice voting. 8 polls (Jul '25\u2013Mar '26) avg D+3.7. Race has trended toward Peltola: Alaska Survey Research (Mar '26): D+5.5 and D+4.8 in paired questions \u2014 strongest results yet. Earlier polls showed R+4 (Aug '25) trending to D+2 by Jan '26. Alaska has a history of electing crossover candidates. Now a toss-up.",
       "candidates": {
         "dem": {
           "name": "Mary Peltola",
@@ -141,8 +141,8 @@
       },
       "is_open": false,
       "pvi": 5,
-      "polling_average": -6.68,
-      "note": "Special election for Marco Rubio's vacated seat (Rubio became Secretary of State). Ashley Moody (R, former FL AG) appointed. D primary: Vindman, Nixon, Jenkins, Mujica. 8 polls avg R+7.0. Emerson (Mar '26): Vindman R+8, Nixon R+11, Mujica R+7. MDW (Apr '26, unrated): Vindman R+1 \u2014 outlier vs field. PPP (Apr '26, D-sponsored): Vindman R+3.",
+      "polling_average": -4.38,
+      "note": "Vacancy election for Marco Rubio's vacated seat, on the November 2026 midterm ballot alongside all other races. Ashley Moody (R, former FL AG) appointed. D primary: Vindman, Nixon, Mujica. 10 polls avg R+4.4. Vindman polls best among D candidates; most polls show Moody ahead R+7 to R+11. Two recent outliers pull the avg toward competitive: MDW (Apr '26, unrated) R+1; Change Research (May '26, D-leaning) D+2 vs field of R+7 to R+11. Cherry Communications (May '26, R-sponsored): R+8.",
       "candidates": {
         "dem": {
           "name": "TBD (primary: Vindman / Nixon / Mujica / Jenkins)",
@@ -167,8 +167,8 @@
       },
       "is_open": false,
       "pvi": 4,
-      "polling_average": 7.12,
-      "note": "Won by 1.2% in January 2021 runoff; top Republican target in 2026. R primary: Carter, Collins, Dooley, King. 18 polls (Jan '25\u2013Mar '26) across 8 pollsters avg D+5.3 vs likely nominees. Ossoff leads all R candidates except Kemp (unlikely to run). Most recent Emerson (Mar '26): D+3 to D+8 depending on R opponent.",
+      "polling_average": 7.13,
+      "note": "Won by 1.2% in January 2021 runoff; top Republican target in 2026. R primary held May 19 \u2014 results pending in data. 14 polls across 8 pollsters avg D+7.1 vs likely R nominees. Ossoff leads all tested R candidates. Most recent: Echelon (Apr '26): Ossoff D+7 vs Collins, D+9 vs Carter. Emerson (Mar '26): D+3 to D+8. Top D incumbent defense seat.",
       "candidates": {
         "dem": {
           "name": "Jon Ossoff",
@@ -236,7 +236,7 @@
       "outgoing_senator": "Ernst",
       "pvi": 10,
       "polling_average": -1.21,
-      "note": "Joni Ernst retiring. R primary June 2: Hinson vs Carlin (Hinson heavily favored). D primary June 2: Wahls vs Turek (both strong fundraisers). Change Research (Jan '26) shows Hinson +3 vs all D candidates. PPP (Aug '25, D-sponsored) showed Ernst era tighter at R+1 to D+2. Iowa has trended solidly R.",
+      "note": "Joni Ernst retiring. R primary June 3: Hinson heavily favored over Carlin. D primary June 3: Wahls vs Turek (competitive primary). Echelon (Apr '26): Wahls D+2, Turek D+1 vs Hinson \u2014 closest polling of cycle. GBAO (Mar '26, D-sponsored): Wahls R+3, Turek R+4. Change Research (Jan '26): R+3 across D candidates. Iowa has trended solidly R but race is closer than PVI suggests.",
       "candidates": {
         "dem": {
           "name": "TBD (primary: Wahls / Turek)",
@@ -261,7 +261,7 @@
       },
       "is_open": false,
       "pvi": 20,
-      "note": "Marshall seeking re-election with only minor R primary opposition. A crowded D primary (8 candidates) will select a nominee Aug 4, but deep-red Kansas (R+20) keeps this Safe R.",
+      "note": "Marshall seeking re-election with only minor R primary opposition. D primary Aug 4 \u2014 Patrick Schmidt emerging as leading D candidate. GQR (Apr '26, D-sponsored): Schmidt R+4. Tavern Research (Jan '26): generic D R+8. Deep-red Kansas (R+20) keeps this Safe R regardless of D nominee.",
       "candidates": {
         "dem": {
           "name": "TBD",
@@ -274,7 +274,7 @@
           "is_incumbent": true
         }
       },
-      "polling_average": -8.5
+      "polling_average": -6.28
     },
     {
       "state": "Kentucky",
@@ -334,8 +334,8 @@
       },
       "is_open": false,
       "pvi": -3,
-      "polling_average": 1.77,
-      "note": "Collins is a moderate R who historically outperforms PVI by 10+ pts. D primary: Platner avg D+4.0 across 11 polls (range: tied to D+11); Mills avg R+0.3 (much weaker). MPRC (Mar '26, n=1167): Platner +9 \u2014 latest and strongest Platner result. If Platner wins primary, this is a genuine toss-up trending D; if Mills, Collins likely holds.",
+      "polling_average": 3.61,
+      "note": "Collins is a moderate R who historically outperforms PVI by 10+ pts. D primary June 10: Platner vs Mills. Platner leads Collins in 12 of 14 tested matchups, avg D+5 (range: even to D+11); Pan Atlantic (May '26): Platner D+7 \u2014 latest. Mills trails Collins in most polls, avg near even. If Platner wins primary, this is a genuine toss-up trending D; if Mills, Collins likely holds. 15 polls in window avg D+3.6 (all candidate matchups).",
       "candidates": {
         "dem": {
           "name": "TBD (primary: Platner / Mills)",
@@ -382,8 +382,8 @@
       "is_open": true,
       "outgoing_senator": "Peters",
       "pvi": 1,
-      "polling_average": -0.46,
-      "note": "Gary Peters retiring. D primary ongoing: McMorrow, Stevens, El-Sayed. R candidate Mike Rogers. 21 polls (Mar '25\u2013Jan '26) across 7 pollsters avg R+2.5. Stevens polls best (avg R+0.5), McMorrow middle (avg R+2.9), El-Sayed weakest (avg R+6.0). Rosetta Stone (Oct '25) outlier polls (R+7, R+7, R+14) pull avg rightward. Race tightened in Jan '26 Emerson polls.",
+      "polling_average": -2.31,
+      "note": "Gary Peters retiring. D primary Aug 2026: McMorrow, Stevens, El-Sayed. R candidate Mike Rogers. 8 polls in window avg R+2.3. May '26 polls (Glengariff, Mitchell) show Rogers R+2 to R+3 across all D candidates \u2014 race has stabilized with Rogers advantage. Stevens polls best (avg R+0.5 in Jan Emerson), McMorrow middle, El-Sayed weakest. Primary outcome will determine competitiveness.",
       "candidates": {
         "dem": {
           "name": "TBD (primary: McMorrow / Stevens / El-Sayed)",
@@ -452,7 +452,7 @@
       "is_open": true,
       "outgoing_senator": "Daines",
       "pvi": 18,
-      "note": "Steve Daines withdrew minutes before filing deadline and endorsed Kurt Alme (U.S. attorney). Controversial last-minute maneuver designed to clear the R primary field. Open seat adds uncertainty but Montana remains solidly R.",
+      "note": "Steve Daines withdrew minutes before filing deadline and endorsed Kurt Alme (U.S. attorney). Controversial last-minute maneuver designed to clear the R primary field. Tavern Research (May '26): Generic Dem R+12, Reilly Neill R+16 vs Alme \u2014 confirms deep R lean despite open seat. Montana remains solidly R.",
       "candidates": {
         "dem": {
           "name": "TBD",
@@ -465,7 +465,7 @@
           "is_incumbent": false
         }
       },
-      "polling_average": -20.25
+      "polling_average": -17.07
     },
     {
       "state": "Nebraska",
@@ -478,8 +478,8 @@
       },
       "is_open": false,
       "pvi": 22,
-      "polling_average": -3.0,
-      "note": "Dan Osborn (Independent) challenging Ricketts, who was appointed in 2023 after Ben Sasse resigned. Osborn nearly beat Deb Fischer in 2024 and is a strong populist candidate. Polls show Ricketts +1. Osborn would likely caucus with Democrats for Senate control. Modeled on D side for control purposes.",
+      "polling_average": 4.2,
+      "note": "Dan Osborn (Independent) challenging Ricketts, who was appointed in 2023 after Ben Sasse resigned. Osborn nearly beat Deb Fischer in 2024, running ~10 pts ahead of PVI as a populist Independent. Tavern Research (May '26): Osborn D+5 vs Ricketts; Impact Research (Feb '26, D-sponsored): Osborn R+1 adjusted. Osborn-specific poll avg D+4.2. Note: NE's R+22 PVI heavily offsets this in the fundamentals blend \u2014 model win probability (~13%) likely understates Osborn's actual chances given his Independent appeal. Osborn would likely caucus with Democrats. Modeled on D side.",
       "candidates": {
         "dem": {
           "name": "Dan Osborn (I)",
@@ -501,7 +501,7 @@
       "outgoing_senator": "Shaheen",
       "pvi": -1,
       "polling_average": 7.84,
-      "note": "Jeanne Shaheen retiring. Pappas (D) vs Sununu (R) is the competitive matchup: 9 polls avg D+3.6 (range D+2 to D+7). Emerson Mar '26 shows D+2 \u2014 tightest Sununu matchup yet. Pappas dominates Brown matchup at D+10 avg. If Sununu wins R primary, this is a top-tier battleground; if Brown, likely D hold.",
+      "note": "Jeanne Shaheen retiring. Pappas (D) vs Sununu (R) is the competitive matchup: 13 polls avg D+4 (range: D+2 to D+6). UNH (Apr '26): Sununu D+5 \u2014 slight improvement from Emerson Mar '26 D+2. Pappas dominates Brown matchup at D+10+ avg. Sununu filing deadline approaching \u2014 if he enters, this is a top-tier battleground. If Brown wins primary, likely D hold.",
       "candidates": {
         "dem": {
           "name": "Chris Pappas",
@@ -572,8 +572,8 @@
       "is_open": true,
       "outgoing_senator": "Tillis",
       "pvi": 3,
-      "polling_average": 8.35,
-      "note": "Thom Tillis not seeking re-election; open seat. Roy Cooper (former governor) is a strong D recruit. R primary held March 3 \u2014 Whatley is the nominee. Cooper leads Whatley in 11 of 11 included polls (avg D+5.8, range D+0 to D+10). Quantus (Apr '26, n=987): D+5. TIPP outlier (D+24) excluded. Top Democratic pickup opportunity.",
+      "polling_average": 8.42,
+      "note": "Thom Tillis not seeking re-election; open seat. Roy Cooper (former governor) is a strong D recruit. R primary held March 3 \u2014 Whatley is the nominee. 20 polls avg D+8.4. Cooper leads Whatley in every poll. Recent: Harper (May '26): D+11; Change Research (May '26, D-sponsored): D+7; Opinion Diagnostics (Apr '26): D+9. TIPP outlier (D+24) excluded. Top Democratic pickup opportunity.",
       "candidates": {
         "dem": {
           "name": "Roy Cooper",
@@ -746,8 +746,8 @@
       },
       "is_open": false,
       "pvi": 10,
-      "polling_average": 1.15,
-      "note": "R primary headed to runoff (Paxton vs Cornyn). 14 Talarico polls (Sep '25\u2013Mar '26) across 7 pollsters avg R+1.4. Range: D+2 (PPP, Impact Research) to R+6 (Ragnar, UT Tyler). Impact Research Mar '26 shows Talarico +1/+2 vs Cornyn/Paxton. Talarico polls better vs Paxton than vs Cornyn. Bruising R primary could depress general election turnout.",
+      "polling_average": 1.97,
+      "note": "R primary runoff (Paxton vs Cornyn) concluded May 24, 2026. 16 polls avg D+2.0. Talarico polls better vs Paxton than vs Cornyn. Barbara Jordan (May '26): near-even in both matchups (Paxton 0, Cornyn R+1). April YouGov/Slingshot showed large D leads but with very low combined shares \u2014 likely outliers. Bruising R primary may depress general election turnout. Competitive toss-up regardless of R nominee.",
       "candidates": {
         "dem": {
           "name": "James Talarico",
@@ -840,7 +840,7 @@
       "outgoing_senator": "Husted",
       "pvi": 8,
       "polling_average": -2.18,
-      "note": "Vacancy election for J.D. Vance's Class III seat, on the November 2026 midterm ballot alongside all other races. Gov. DeWine appointed Jon Husted (former Lt. Gov.) in Jan 2025. Sherrod Brown (lost his OH Class I seat in 2024) running to return to the Senate. Race tightened from Husted +6 (early 2025) to near-even through early 2026 (EMC Feb '26 Brown +4, OnMessage Mar '26 Brown +2), but April polls show Husted reasserting a lead (Echelon R+6, BGSU R+3). 12 polls avg R+2.2.",
+      "note": "Vacancy election for J.D. Vance's Class III seat, on the November 2026 midterm ballot alongside all other races. Gov. DeWine appointed Jon Husted (former Lt. Gov.) in Jan 2025. Sherrod Brown (lost his OH Class I seat in 2024) running to return to the Senate. Race tightened from Husted +6 (early 2025) to near-even (Brown +4 EMC Feb '26, Brown +2 OnMessage Mar '26), but April polls show Husted reasserting a lead (Echelon R+6, BGSU R+3). 8 polls avg R+2.2. No new polls since April.",
       "candidates": {
         "dem": {
           "name": "Sherrod Brown",
