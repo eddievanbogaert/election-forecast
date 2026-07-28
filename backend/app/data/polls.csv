@@ -13,6 +13,9 @@ Alaska,AK,PPP,DSCC,Democratic,2026-01-16,2026-01-17,Mary Peltola,Dan Sullivan,49
 Alaska,AK,Public Policy Polling,DSCC,Democratic,2026-01-16,2026-01-17,Mary S. Peltola,Dan Sullivan,49.0,47.0,D+2,D+2,yes,n=611 RV; NYT data
 Alaska,AK,Alaska Survey Research,,,2026-03-19,2026-03-22,Mary S. Peltola,Dan Sullivan,46.4,40.9,D+5.5,D+5.5,yes,n=1283 RV; NYT data
 Alaska,AK,Alaska Survey Research,,,2026-04-16,2026-04-19,Mary S. Peltola,Dan Sullivan,50.2,43.6,D+6.6,D+6.6,yes,n=1946 LV; NYT data
+Alaska,AK,Alaska Survey Research,,,2026-05-14,2026-05-17,Mary S. Peltola,Dan Sullivan,48.4,43.8,D+4.6,D+4.6,yes,n=1401 lv; NYT data
+Alaska,AK,Alaska Survey Research,,,2026-06-04,2026-06-07,Mary S. Peltola,Dan Sullivan,49.4,44.2,D+5.2,D+5.2,yes,n=1393 lv; NYT data
+Alaska,AK,The New York Times/Siena University,,,2026-06-15,2026-06-29,Mary S. Peltola,Dan Sullivan,45.06,47.47,R+2.4,R+2.4,yes,n=593 lv; NYT data
 Arkansas,AR,GrayHouse,America One Policies,Republican,2026-02-07,2026-02-09,Hallie Shoffner,Tom Cotton,36.0,58.0,R+22,R+22,yes,n=550 LV; NYT data
 Florida,FL,The Tyson Group,Plymouth Union Public Advocacy,,2025-10-01,2025-10-03,Jennifer Jenkins,Ashley Moody,37.0,44.0,R+7,R+7,yes,n=800 LV; NYT data
 Florida,FL,UNF,Florida Watch,Democratic,2025-10-15,2025-10-25,Jennifer Jenkins,Ashley Moody,38,49,R+11,Moody +11,yes,n=728 LV; D-sponsored; NYT data
@@ -29,6 +32,11 @@ Florida,FL,Echelon Insights,NetChoice,,2026-04-03,2026-04-09,Alexander Vindman,A
 Florida,FL,Stetson University Center for Public Opinion Research,,,2026-03-25,2026-04-13,Angie Nixon,Ashley Moody,38.0,51.0,R+13,R+13,yes,n=414 LV; NYT data
 Florida,FL,Cherry Communications,Florida Chamber of Commerce,Republican,2026-05-01,2026-05-09,Alexander Vindman,Ashley Moody,40.0,48.0,R+8,R+8,yes,n=604 LV; NYT data
 Florida,FL,Change Research,Freedom Project USA,,2026-05-13,2026-05-16,Alexander Vindman,Ashley Moody,47.0,45.0,D+2,D+2,yes,n=1593 LV; NYT data
+Florida,FL,Global Strategy Group,,Democratic,2026-05-18,2026-05-21,Alexander Vindman,Ashley Moody,43.0,46.0,R+3,R+3,yes,n=1000 lv; D-sponsored; NYT data
+Florida,FL,Change Research,Freedom Project USA,,2026-06-11,2026-06-14,Alexander Vindman,Ashley Moody,46.0,46.0,Even,Even,yes,n=1015 lv; NYT data
+Florida,FL,Change Research,Freedom Project USA,,2026-06-11,2026-06-14,Alexander Vindman,Ashley Moody,42.0,46.0,R+4,R+4,no,n=1273 rv; RV version — use LV version instead; NYT data
+Florida,FL,University of North Florida,,,2026-07-08,2026-07-17,Angie Nixon,Ashley Moody,41.6,50.0,R+8.4,R+8.4,yes,n=848 lv; NYT data
+Florida,FL,University of North Florida,,,2026-07-08,2026-07-17,Alexander Vindman,Ashley Moody,40.2,49.9,R+9.7,R+9.7,yes,n=848 lv; NYT data
 Georgia,GA,WPA Intelligence,Club for Growth,Republican,2025-01-14,2025-01-15,Jon Ossoff,Buddy Carter,45,32,D+13,Ossoff +13,yes,n=500 LV; R-sponsored; NYT data
 Georgia,GA,WPA Intelligence,Club for Growth,Republican,2025-01-14,2025-01-15,Jon Ossoff,Mike Collins,44,34,D+10,Ossoff +10,yes,n=500 LV; R-sponsored; NYT data
 Georgia,GA,WPA Intelligence,Club for Growth,Republican,2025-01-14,2025-01-15,Jon Ossoff,John King,47,31,D+16,Ossoff +16,yes,n=500 LV; R-sponsored; NYT data
@@ -62,6 +70,9 @@ Georgia,GA,Emerson College,Nexstar,,2026-02-28,2026-03-02,Jon Ossoff,Buddy Carte
 Georgia,GA,Emerson College,Nexstar,,2026-02-28,2026-03-02,Jon Ossoff,Derek Dooley,49,41,D+8,Ossoff +8,yes,n=1000 LV; NYT data
 Georgia,GA,Emerson College,Nexstar,,2026-02-28,2026-03-02,Jon Ossoff,Mike Collins,48,43,D+4,Ossoff +4,yes,n=1000 LV; NYT data
 Georgia,GA,Echelon Insights,NetChoice,,2026-04-03,2026-04-09,Jon Ossoff,Mike Collins,51.0,44.0,D+7,D+7,yes,n=407 LV; NYT data
+Georgia,GA,Fabrizio Ward/Impact Research,AARP,,2026-07-13,2026-07-16,Jon Ossoff,Mike Collins,52.0,43.0,D+9,D+9,yes,n=1060 lv; NYT data
+Georgia,GA,Wick,,,2026-06-27,2026-06-30,Jon Ossoff,Mike Collins,46.7,42.9,D+3.8,D+3.8,yes,n=1175 lv; NYT data
+Georgia,GA,Beacon Research/Shaw & Company Research,Fox News,,2026-06-23,2026-06-27,Jon Ossoff,Mike Collins,56.0,43.0,D+13,D+13,yes,n=1002 rv; NYT data
 Iowa,IA,Public Policy Polling,Senate Majority PAC,Democratic,2025-06-02,2025-06-03,Generic Democrat,Joni K. Ernst,43.0,45.0,R+2,R+2,yes,n=568 RV; NYT data
 Iowa,IA,PPP,,Democratic,2025-08-18,2025-08-19,Zach Wahls,Joni Ernst,45,43,D+2,Wahls +2,no,Pre-retirement Ernst matchup; D-sponsored; NYT data
 Iowa,IA,Public Policy Polling,,Democratic,2025-08-18,2025-08-19,Josh Turek,Joni K. Ernst,43.0,44.0,R+1,R+1,yes,n=572 RV; NYT data
@@ -70,6 +81,12 @@ Iowa,IA,Change Research,,,2026-01-08,2026-01-11,Zach Wahls,Ashley Hinson,41,44,R
 Iowa,IA,Change Research,,,2026-01-08,2026-01-11,Josh Turek,Ashley Hinson,41,44,R+3,Hinson +3,yes,n=1108 LV; NYT data
 Iowa,IA,GBAO,ModSquad,Democratic,2026-03-10,2026-03-16,Zach Wahls,Ashley Hinson,44.0,47.0,R+3,R+3,yes,n=1200 LV; NYT data
 Iowa,IA,Echelon Insights,NetChoice,,2026-04-03,2026-04-09,Josh Turek,Ashley Hinson,46.0,45.0,D+1,D+1,yes,n=377 LV; NYT data
+Iowa,IA,Public Policy Polling,Democratic Senatorial Campaign Committee,Democratic,2026-06-03,2026-06-04,Josh Turek,Ashley Hinson,46.0,46.0,Even,Even,yes,n=557 rv; D-sponsored; NYT data
+Iowa,IA,Global Strategy Group,,Democratic,2026-06-08,2026-06-11,Josh Turek,Ashley Hinson,47.0,45.0,D+2,D+2,yes,n=1000 lv; D-sponsored; NYT data
+Iowa,IA,Global Strategy Group,,Democratic,2026-06-08,2026-06-11,Generic Democrat,Generic Republican,45.0,47.0,R+2,R+2,no,n=1000 lv; generic ballot — excluded from named-candidate average; NYT data
+Iowa,IA,Cygnal,Iowans for Tax Relief Foundation,Republican,2026-06-16,2026-06-19,Josh Turek,Ashley Hinson,44.2,46.0,R+1.8,R+1.8,yes,n=600 lv; R-sponsored; NYT data
+Iowa,IA,Beacon Research/Shaw & Company Research,Fox News,,2026-06-23,2026-06-27,Josh Turek,Ashley Hinson,50.0,46.0,D+4,D+4,yes,n=1003 rv; NYT data
+Iowa,IA,The New York Times/Siena University,,,2026-06-15,2026-06-27,Josh Turek,Ashley Hinson,46.01,48.48,R+2.5,R+2.5,yes,n=600 lv; NYT data
 Kansas,KS,Tavern Research,,,2026-01-26,2026-01-28,Patrick Schmidt,Roger Marshall,46.0,54.0,R+8,R+8,yes,n=1013 LV; NYT data
 Kansas,KS,GQR,,Democratic,2026-04-23,2026-04-27,Patrick Schmidt,Roger Marshall,45.0,49.0,R+4,R+4,yes,n=500 LV; NYT data
 Kentucky,KY,Public Policy Polling,Charles Booker,Democratic,2025-12-18,2025-12-19,Charles Booker,Daniel Cameron,39,46,R+7,Cameron +7,yes,D-sponsored poll; NYT data
@@ -81,6 +98,10 @@ Massachusetts,MA,Suffolk University,Boston Globe,,2025-11-19,2025-11-23,Seth Mou
 Massachusetts,MA,Cygnal Political,,Republican,2026-01-22,2026-01-25,Edward J. Markey,John Deaton,54.0,30.0,D+24,D+24,yes,n=800 LV; NYT data
 Massachusetts,MA,University of New Hampshire,,,2026-02-12,2026-02-16,Seth Moulton,John Deaton,59.0,23.0,D+36,D+36,yes,n=611 LV; NYT data
 Massachusetts,MA,University of New Hampshire,,,2026-04-16,2026-04-20,Seth Moulton,John Deaton,56.0,25.0,D+31,D+31,yes,n=600 LV; NYT data
+Massachusetts,MA,Suffolk University,Boston Globe,,2026-06-08,2026-06-12,Seth Moulton,John Deaton,53.8,26.2,D+27.6,D+27.6,yes,n=500 rv; NYT data
+Massachusetts,MA,Suffolk University,Boston Globe,,2026-06-08,2026-06-12,Edward J. Markey,John Deaton,55.0,29.8,D+25.2,D+25.2,yes,n=500 rv; NYT data
+Massachusetts,MA,University of New Hampshire,,,2026-06-18,2026-06-23,Seth Moulton,John Deaton,50.0,30.0,D+20,D+20,yes,n=600 lv; NYT data
+Massachusetts,MA,University of New Hampshire,,,2026-06-18,2026-06-23,Edward J. Markey,John Deaton,50.0,34.0,D+16,D+16,yes,n=618 lv; NYT data
 Maine,ME,Public Policy Polling,,Democratic,2025-09-08,2025-09-09,Dan Kleban,Susan M. Collins,44.0,35.0,D+9,D+9,yes,n=642 RV; NYT data
 Maine,ME,Zenith Research,More Perfect Union,,2025-10-07,2025-10-10,Graham Platner,Susan Collins,38,38,Even,Tied,yes,n=501 LV; NYT data
 Maine,ME,University of New Hampshire,,,2025-10-16,2025-10-21,Dan Smeriglio,Susan M. Collins,1.0,66.0,R+65,R+65,yes,n=408 LV-R; NYT data
@@ -106,6 +127,28 @@ Maine,ME,Maine People's Resource Center,,,2026-03-20,2026-03-31,Graham Platner,S
 Maine,ME,Maine People's Resource Center,,,2026-03-20,2026-03-31,Janet T. Mills,Susan Collins,42,45,R+3,Collins +3,no,Mills matchup — included for context; Platner is stronger D option; NYT data
 Maine,ME,Echelon Insights,NetChoice,,2026-04-03,2026-04-09,Janet T. Mills,Susan M. Collins,48.0,46.0,D+2,D+2,yes,n=378 LV; NYT data
 Maine,ME,Pan Atlantic SMS Group,,,2026-05-08,2026-05-18,Graham Platner,Susan M. Collins,48.0,41.0,D+7,D+7,yes,n=827 LV; NYT data
+Maine,ME,University of New Hampshire,,,2026-05-21,2026-05-25,Graham Platner,Susan M. Collins,51.0,42.0,D+9,D+9,yes,n=1250 lv; NYT data
+Maine,ME,University of Massachusetts Lowell Center for Public Opinion/YouGov,,,2026-05-13,2026-05-26,Graham Platner,Susan M. Collins,48.0,43.0,D+5,D+5,yes,n=650 lv; NYT data
+Maine,ME,"Fabrizio, Lee & Associates",Pine Tree Results,Republican,2026-06-01,2026-06-03,Graham Platner,Susan M. Collins,46.0,46.0,Even,Even,yes,n=800 lv; R-sponsored; NYT data
+Maine,ME,Public Policy Polling,,Democratic,2026-06-02,2026-06-03,Graham Platner,Susan M. Collins,49.0,45.0,D+4,D+4,yes,n=670 rv; D-sponsored; NYT data
+Maine,ME,Tavern Research,,,2026-06-05,2026-06-08,Generic Democrat,Susan M. Collins,55.0,45.0,D+10,D+10,no,n=1642 lv; generic ballot — excluded from named-candidate average; NYT data
+Maine,ME,Tavern Research,,,2026-06-05,2026-06-08,Janet T. Mills,Susan M. Collins,52.0,48.0,D+4,D+4,yes,n=1642 lv; Mills matchup — included for context; NYT data
+Maine,ME,Tavern Research,,,2026-06-05,2026-06-08,Graham Platner,Susan M. Collins,51.0,49.0,D+2,D+2,yes,n=1642 lv; NYT data
+Maine,ME,Quantus Insights,,,2026-06-09,2026-06-11,Graham Platner,Susan M. Collins,46.0,45.0,D+1,D+1,yes,n=870 lv; NYT data
+Maine,ME,Wick,2Way,,2026-06-11,2026-06-14,Graham Platner,Susan M. Collins,47.6,45.4,D+2.2,D+2.2,yes,n=1008 lv; NYT data
+Maine,ME,University of New Hampshire,,,2026-07-15,2026-07-20,Troy Jackson,Susan M. Collins,49.0,46.0,D+3,D+3,yes,n=1178 lv; NYT data
+Maine,ME,Public Policy Polling,,Democratic,2026-07-07,2026-07-07,Jordan Wood,Susan M. Collins,38.0,47.0,R+9,R+9,no,n=785 rv; Jordan Wood — not the D nominee; excluded; D-sponsored; NYT data
+Maine,ME,Public Policy Polling,,Democratic,2026-07-07,2026-07-07,Janet T. Mills,Susan M. Collins,37.0,48.0,R+11,R+11,yes,n=785 rv; Mills matchup — included for context; D-sponsored; NYT data
+Maine,ME,Public Policy Polling,,Democratic,2026-07-07,2026-07-07,Nirav Shah,Susan M. Collins,45.0,45.0,Even,Even,no,n=785 rv; Nirav Shah — not the D nominee; excluded; D-sponsored; NYT data
+Maine,ME,Public Policy Polling,,Democratic,2026-07-07,2026-07-07,Shenna Bellows,Susan M. Collins,47.0,47.0,Even,Even,no,n=785 rv; Shenna Bellows — not the D nominee; excluded; D-sponsored; NYT data
+Maine,ME,Public Policy Polling,,Democratic,2026-07-07,2026-07-07,Troy Jackson,Susan M. Collins,49.0,44.0,D+5,D+5,yes,n=785 rv; D-sponsored; NYT data
+Maine,ME,Public Policy Polling,,Democratic,2026-07-07,2026-07-07,Graham Platner,Susan M. Collins,42.0,47.0,R+5,R+5,no,n=785 rv; Platner no longer D nominee (Jackson is) — excluded from current average; D-sponsored; NYT data
+Maine,ME,Wedgewood Polls,,,2026-07-04,2026-07-06,Janet T. Mills,Susan M. Collins,47.0,47.0,Even,Even,yes,n=405 lv; Mills matchup — included for context; NYT data
+Maine,ME,Wedgewood Polls,,,2026-07-04,2026-07-06,Troy Jackson,Susan M. Collins,48.0,43.0,D+5,D+5,yes,n=405 lv; NYT data
+Maine,ME,Wedgewood Polls,,,2026-07-04,2026-07-06,Graham Platner,Susan M. Collins,46.0,50.0,R+4,R+4,no,n=405 lv; Platner no longer D nominee (Jackson is) — excluded from current average; NYT data
+Maine,ME,Tavern Research,,,2026-07-03,2026-07-06,Graham Platner,Susan M. Collins,52.0,48.0,D+4,D+4,no,n=1074 lv; Platner no longer D nominee (Jackson is) — excluded from current average; NYT data
+Maine,ME,Beacon Research/Shaw & Company Research,Fox News,,2026-06-23,2026-06-27,Graham Platner,Susan M. Collins,47.0,50.0,R+3,R+3,yes,n=1003 rv; NYT data
+Maine,ME,The New York Times/Siena University,Portland Press Herald,,2026-06-19,2026-06-26,Graham Platner,Susan M. Collins,49.2,47.02,D+2.2,D+2.2,yes,n=608 lv; NYT data
 Michigan,MI,Target Insyght,MIRS News Service,,2025-03-03,2025-03-06,Haley Stevens,Mike Rogers,35,41,R+6,Rogers +6,yes,n=600 RV; earliest poll; NYT data
 Michigan,MI,Glengariff Group,Detroit Regional Chamber,,2025-05-05,2025-05-08,Haley Stevens,Mike Rogers,45,44,D+1,Stevens +1,yes,n=600 RV; NYT data
 Michigan,MI,Glengariff Group,Detroit Regional Chamber,,2025-05-05,2025-05-08,Mallory McMorrow,Mike Rogers,42,46,R+4,Rogers +4,yes,n=600 RV; NYT data
@@ -132,6 +175,27 @@ Michigan,MI,Emerson College,Nexstar,,2026-01-24,2026-01-25,Mallory McMorrow,Mike
 Michigan,MI,Emerson College,Nexstar,,2026-01-24,2026-01-25,Abdul El-Sayed,Mike Rogers,43,43,Even,Even,yes,NYT data
 Michigan,MI,"Glengariff Group, Inc.",Detroit Regional Chamber,,2026-04-28,2026-05-01,Haley Stevens,Mike Rogers,41.5,43.8,R+2.3,R+2.3,yes,n=600 LV; NYT data
 Michigan,MI,Mitchell Research & Communications,MIRS,,2026-05-01,2026-05-07,Haley Stevens,Mike Rogers,39.0,42.0,R+3,R+3,yes,n=606 LV; NYT data
+Michigan,MI,TIPP Insights,League of American Workers,Republican,2026-05-20,2026-05-23,Mallory McMorrow,Mike Rogers,45.16,41.6,D+3.6,D+3.6,yes,n=1163 lv; R-sponsored; NYT data
+Michigan,MI,TIPP Insights,League of American Workers,Republican,2026-05-20,2026-05-23,Abdul El-Sayed,Mike Rogers,43.43,42.14,D+1.3,D+1.3,yes,n=1163 lv; R-sponsored; NYT data
+Michigan,MI,TIPP Insights,League of American Workers,Republican,2026-05-20,2026-05-23,Haley Stevens,Mike Rogers,47.84,40.99,D+6.9,D+6.9,yes,n=1163 lv; R-sponsored; NYT data
+Michigan,MI,TIPP Insights,League of American Workers,Republican,2026-05-20,2026-05-23,Mallory McMorrow,Mike Rogers,42.26,38.57,D+3.7,D+3.7,no,n=1456 rv; RV version — LV version already included; R-sponsored; NYT data
+Michigan,MI,TIPP Insights,League of American Workers,Republican,2026-05-20,2026-05-23,Abdul El-Sayed,Mike Rogers,39.77,39.65,D+0.1,D+0.1,no,n=1456 rv; RV version — LV version already included; R-sponsored; NYT data
+Michigan,MI,TIPP Insights,League of American Workers,Republican,2026-05-20,2026-05-23,Haley Stevens,Mike Rogers,44.96,38.38,D+6.6,D+6.6,no,n=1456 rv; RV version — LV version already included; R-sponsored; NYT data
+Michigan,MI,Tulchin Research,Fighting for Michigan PAC,,2026-06-02,2026-06-04,Abdul El-Sayed,Mike Rogers,46.0,41.0,D+5,D+5,yes,n=500 lv; NYT data
+Michigan,MI,Mitchell Research & Communications,MIRS News Service,,2026-06-11,2026-06-13,Abdul El-Sayed,Mike Rogers,47.0,42.0,D+5,D+5,yes,n=827 lv; NYT data
+Michigan,MI,Mitchell Research & Communications,MIRS News Service,,2026-06-11,2026-06-13,Haley Stevens,Mike Rogers,41.0,45.0,R+4,R+4,yes,n=827 lv; NYT data
+Michigan,MI,Mitchell Research & Communications,MIRS News Service,,2026-06-11,2026-06-13,Mallory McMorrow,Mike Rogers,41.0,47.0,R+6,R+6,yes,n=827 lv; NYT data
+Michigan,MI,Zenith Research,Common Defense,Democratic,2026-06-11,2026-06-14,Haley Stevens,Mike Rogers,43.0,42.0,D+1,D+1,yes,n=602 lv; D-sponsored; NYT data
+Michigan,MI,Zenith Research,Common Defense,Democratic,2026-06-11,2026-06-14,Mallory McMorrow,Mike Rogers,44.0,42.0,D+2,D+2,yes,n=602 lv; D-sponsored; NYT data
+Michigan,MI,Zenith Research,Common Defense,Democratic,2026-06-11,2026-06-14,Abdul El-Sayed,Mike Rogers,45.0,42.0,D+3,D+3,yes,n=602 lv; D-sponsored; NYT data
+Michigan,MI,Data for Progress,Working Families Party PAC,,2026-06-15,2026-06-22,Haley Stevens,Mike Rogers,45.0,46.0,R+1,R+1,yes,n=709 lv; NYT data
+Michigan,MI,Data for Progress,Working Families Party PAC,,2026-06-15,2026-06-22,Abdul El-Sayed,Mike Rogers,47.0,46.0,D+1,D+1,yes,n=709 lv; NYT data
+Michigan,MI,Quantus Insights,,,2026-06-29,2026-06-30,Haley Stevens,Mike Rogers,45.1,43.7,D+1.4,D+1.4,yes,n=947 lv; NYT data
+Michigan,MI,Quantus Insights,,,2026-06-29,2026-06-30,Mallory McMorrow,Mike Rogers,44.4,45.3,R+0.9,R+0.9,yes,n=947 lv; NYT data
+Michigan,MI,Quantus Insights,,,2026-06-29,2026-06-30,Abdul El-Sayed,Mike Rogers,45.2,44.1,D+1.1,D+1.1,yes,n=947 lv; NYT data
+Michigan,MI,Wedgewood Polls,,,2026-06-25,2026-06-28,Mallory McMorrow,Mike Rogers,41.0,48.0,R+7,R+7,yes,n=602 lv; NYT data
+Michigan,MI,Wedgewood Polls,,,2026-06-25,2026-06-28,Haley Stevens,Mike Rogers,46.0,46.0,Even,Even,yes,n=602 lv; NYT data
+Michigan,MI,Wedgewood Polls,,,2026-06-25,2026-06-28,Abdul El-Sayed,Mike Rogers,49.0,44.0,D+5,D+5,yes,n=602 lv; NYT data
 Minnesota,MN,Impact Research,,Democratic,2025-07-08,2025-07-11,Peggy Flanagan,Michele Tafoya,48.0,45.0,D+3,D+3,yes,n=604 LV; NYT data
 Minnesota,MN,PPP,GQR,,2025-09-15,2025-09-16,Angie Craig,Generic Republican,47,43,D+4,Craig +4,yes,n=1015 LV; NYT data
 Minnesota,MN,PPP,GQR,,2025-09-15,2025-09-16,Peggy Flanagan,Generic Republican,46,44,D+2,Flanagan +2,yes,n=1015 LV; NYT data
@@ -139,10 +203,17 @@ Minnesota,MN,Public Policy Polling,GQR,,2025-09-15,2025-09-16,Angie Craig,Generi
 Minnesota,MN,Emerson College,,,2026-02-06,2026-02-08,Peggy Flanagan,Michele Tafoya,47,41,D+6,Flanagan +6,yes,n=1000 LV; NYT data
 Minnesota,MN,Emerson College,,,2026-02-06,2026-02-08,Angie Craig,Michele Tafoya,47,40,D+6,Craig +6,yes,n=1000 LV; NYT data
 Minnesota,MN,Various (D primary),,,2026-01-01,2026-03-01,Flanagan vs Craig,N/A,,,,,no,D primary polls only — Flanagan leads Craig by 3-30 pts. Not a general election matchup
+Minnesota,MN,Impact Research,,Democratic,2026-05-26,2026-05-28,Peggy Flanagan,Michele Tafoya,51.0,44.0,D+7,D+7,yes,n=808 lv; D-sponsored; NYT data
+Minnesota,MN,Impact Research,,Democratic,2026-05-26,2026-05-28,Angie Craig,Michele Tafoya,51.0,44.0,D+7,D+7,yes,n=808 lv; D-sponsored; NYT data
+Minnesota,MN,"Mason-Dixon Polling & Research, Inc.",KARE-TV | Minneapolis Star Tribune | U. of Minnesota Hubbard School of Journalism and Mass Communication,,2026-06-08,2026-06-10,Generic Democrat,Generic Republican,49.0,41.0,D+8,D+8,no,n=800 lv; generic ballot — excluded from named-candidate average; NYT data
 Mississippi,MS,Impact Research,SPLC Action Fund,Democratic,2026-04-08,2026-04-12,Scott Colom,Cindy Hyde-Smith,39.0,42.0,R+3,R+3,yes,n=500 LV; NYT data
 Montana,MT,yes. every kid. foundation.,,,2026-01-23,2026-01-26,Reilly Neill,Steve Daines,19.0,43.0,R+24,R+24,yes,n=500 RV; NYT data
 Montana,MT,American Pulse Research & Polling,,,2026-02-14,2026-02-18,Seth Bodnar,Steve Daines,40.0,53.9,R+13.9,R+13.9,yes,n=607 LV; NYT data
 Montana,MT,Tavern Research,Contours Inc.,,2026-05-13,2026-05-18,Generic Democrat,Kurt Alme,44.0,56.0,R+12,R+12,yes,n=607 LV; NYT data
+Montana,MT,Public Opinion Strategies,The Political Company,Republican,2026-06-08,2026-06-11,Alani Bankhead,Kurt Alme,25.0,44.0,R+19,R+19,yes,n=500 lv; R-sponsored; NYT data
+Montana,MT,Hart Research Associates,The Majority Institute,Democratic,2026-06-18,2026-06-24,Alani Bankhead,Kurt Alme,43.0,49.0,R+6,R+6,yes,n=800 lv; D-sponsored; NYT data
+Montana,MT,Hart Research Associates,The Majority Institute,Democratic,2026-06-18,2026-06-24,Alani Bankhead,Kurt Alme,22.0,47.0,R+25,R+25,no,n=800 lv; 3-way race question — excluded (two-party matchup used instead); D-sponsored; NYT data
+Montana,MT,GrayHouse,,,2026-06-23,2026-06-24,Alani Bankhead,Kurt Alme,25.0,41.0,R+16,R+16,no,n=500 lv; 3-way race question — excluded (two-party matchup used instead); NYT data
 North Carolina,NC,Emerson College,,,2025-07-28,2025-07-30,Roy Cooper,Mark Whatley,47,41,D+5,Cooper +5,yes,n=1000 RV; NYT data
 North Carolina,NC,Victory Insights,,,2025-07-28,2025-07-30,Roy Cooper,Mark Whatley,44,44,D+1,Cooper +1,yes,Earliest poll; race has trended toward Cooper since; NYT data
 North Carolina,NC,Harper Polling,Carolina Journal,,2025-08-11,2025-08-12,Roy Cooper,Mark Whatley,47,39,D+8,Cooper +8,yes,n=600 LV; NYT data
@@ -160,9 +231,12 @@ North Carolina,NC,High Point University,,,2026-03-26,2026-04-06,Roy A. Cooper,Mi
 North Carolina,NC,Opinion Diagnostics,,,2026-04-21,2026-04-24,Roy A. Cooper,Michael Whatley,50.4,41.4,D+9,D+9,yes,n=830 RV; NYT data
 North Carolina,NC,Change Research,Carolina Forward,Democratic,2026-05-04,2026-05-08,Roy A. Cooper,Michael Whatley,49.29,42.42,D+6.9,D+6.9,yes,n=957 LV; NYT data
 North Carolina,NC,Harper Polling,Carolina Journal,,2026-05-10,2026-05-11,Roy A. Cooper,Michael Whatley,49.8,38.7,D+11.1,D+11.1,yes,n=600 LV; NYT data
+North Carolina,NC,YouGov,Catawba College Center for N.C. Politics & Public Service,,2026-06-01,2026-06-10,Roy A. Cooper,Michael Whatley,47.73,34.03,D+13.7,D+13.7,yes,n=905 lv; NYT data
+North Carolina,NC,Public Policy Polling,,,2026-07-10,2026-07-11,Roy A. Cooper,Michael Whatley,48.0,44.0,D+4,D+4,yes,n=759 rv; NYT data
+North Carolina,NC,The New York Times/Siena University,,,2026-06-15,2026-06-27,Roy A. Cooper,Michael Whatley,50.0,43.19,D+6.8,D+6.8,yes,n=601 lv; NYT data
 Nebraska,NE,Change Research,,Democratic,2025-03-28,2025-04-01,Dan Osborn (I),Pete Ricketts,45,46,R+1,Ricketts +1,yes,n=524 LV; D-sponsored; NYT data
 Nebraska,NE,Impact Research,,Democratic,2026-02-02,2026-02-05,Dan Osborn (I),Pete Ricketts,47,48,R+1,Ricketts +1,yes,n=600 LV; D-sponsored; NYT data
-Nebraska,NE,Tavern Research,Contours Inc.,,2026-05-08,2026-05-11,William J. Forbes,Pete Ricketts,34.0,50.0,R+16,R+16,yes,n=1165 LV; NYT data
+Nebraska,NE,Tavern Research,Contours Inc.,,2026-05-08,2026-05-11,William J. Forbes,Pete Ricketts,34.0,50.0,R+16,R+16,no,n=1165 LV; NYT data; Forbes not D/I nominee — Osborn is expected candidate
 New Hampshire,NH,St. Anselm,,,2025-08-26,2025-08-27,Chris Pappas,Dan Innis,48.0,30.0,D+18,D+18,yes,n=1776 RV; NYT data
 New Hampshire,NH,1892 Polling,One Nation,,2025-09-02,2025-09-04,Chris Pappas,John E. Sununu,45,43,D+2,Pappas +2,yes,n=500 LV; NYT data
 New Hampshire,NH,co/efficient,,,2025-09-10,2025-09-12,Chris Pappas,John E. Sununu,46,43,D+3,Pappas +3,yes,n=904 LV; NYT data
@@ -183,6 +257,11 @@ New Hampshire,NH,St. Anselm,,,2026-03-16,2026-03-18,Chris Pappas,Scott Brown,47,
 New Hampshire,NH,Emerson College,,,2026-03-21,2026-03-23,Chris Pappas,John E. Sununu,45,44,D+2,Pappas +2,yes,n=1100 LV; NYT data
 New Hampshire,NH,Emerson College,,,2026-03-21,2026-03-23,Chris Pappas,Scott Brown,48,39,D+9,Pappas +9,no,Brown matchup — included for context; n=1100 LV; NYT data
 New Hampshire,NH,University of New Hampshire,,,2026-04-17,2026-04-21,Chris Pappas,John E. Sununu,49.0,42.0,D+7,D+7,yes,n=1130 LV; NYT data
+New Hampshire,NH,Peak Insights,NRSC,Republican,2026-06-24,2026-06-27,Chris Pappas,John E. Sununu,43.0,42.0,D+1,D+1,yes,n=500 lv; R-sponsored; NYT data
+New Hampshire,NH,St. Anselm,,,2026-06-24,2026-06-25,Chris Pappas,John E. Sununu,47.0,41.0,D+6,D+6,yes,n=1614 rv; NYT data
+New Hampshire,NH,St. Anselm,,,2026-06-24,2026-06-25,Chris Pappas,Scott Brown,48.0,36.0,D+12,D+12,yes,n=1614 rv; Brown matchup — included for context; NYT data
+New Hampshire,NH,University of New Hampshire,,,2026-06-18,2026-06-23,Chris Pappas,John E. Sununu,47.0,44.0,D+3,D+3,yes,n=2157 lv; NYT data
+New Hampshire,NH,University of New Hampshire,,,2026-06-18,2026-06-23,Chris Pappas,Scott Brown,52.0,38.0,D+14,D+14,yes,n=1980 lv; Brown matchup — included for context; NYT data
 Ohio,OH,BGSU/YouGov,,,2025-02-14,2025-02-21,Sherrod Brown,Jon Husted,41,47,R+6,Husted +6,yes,n=800 RV; earliest poll; NYT data
 Ohio,OH,BGSU/YouGov,,,2025-04-18,2025-04-24,Sherrod Brown,Jon Husted,46,49,R+3,Husted +3,yes,n=800 RV; NYT data
 Ohio,OH,Emerson College,,,2025-08-18,2025-08-19,Sherrod Brown,Jon Husted,44,50,R+6,Husted +6,yes,NYT data
@@ -194,11 +273,22 @@ Ohio,OH,OnMessage Inc.,Insurance Watchdog Coalition,,2026-03-03,2026-03-08,Sherr
 Ohio,OH,Quantus Insights,,,2026-03-13,2026-03-14,Sherrod Brown,Jon Husted,44,46,R+1,Husted +1,yes,n=784 LV; most recent poll; NYT data
 Ohio,OH,Echelon Insights,NetChoice,,2026-04-03,2026-04-09,Sherrod Brown,Jon Husted,45.0,51.0,R+6,R+6,yes,n=413 LV; NYT data
 Ohio,OH,Bowling Green State University Democracy and Public Policy Research Network/YouGov,,,2026-04-07,2026-04-14,Sherrod Brown,Jon Husted,47.0,50.0,R+3,R+3,yes,n=1000 RV; NYT data
-South Carolina,SC,Public Policy Polling,314 Action,Democratic,2025-11-21,2025-11-22,Generic D,Lindsey Graham,39,41,R+2,Graham +2,yes,D-sponsored; Graham only +2 vs generic D in R+11 state; NYT data
-South Carolina,SC,Public Policy Polling,314 Action,Democratic,2025-11-21,2025-11-22,Annie Andrews,Lindsey Graham,36,42,R+6,Graham +6,yes,D-sponsored; NYT data
-South Carolina,SC,Impact Research,,Democratic,2026-02-25,2026-03-01,Annie Andrews,Lindsey Graham,42.0,47.0,R+5,R+5,yes,n=700 LV; NYT data
+Ohio,OH,Beacon Research/Shaw & Company Research,Fox News,,2026-05-28,2026-06-01,Sherrod Brown,Jon Husted,53.0,45.0,D+8,D+8,yes,n=1015 rv; NYT data
+Ohio,OH,Tulchin Research,,Democratic,2026-06-02,2026-06-04,Sherrod Brown,Jon Husted,46.0,42.0,D+4,D+4,yes,n=600 lv; D-sponsored; NYT data
+Ohio,OH,Fabrizio Ward/Impact Research,AARP,,2026-06-14,2026-06-16,Sherrod Brown,Jon Husted,48.0,45.0,D+3,D+3,yes,n=800 lv; NYT data
+Ohio,OH,The New York Times/Siena University,,,2026-06-15,2026-06-28,Sherrod Brown,Jon Husted,47.0,49.8,R+2.8,R+2.8,yes,n=601 lv; NYT data
+South Carolina,SC,Public Policy Polling,314 Action,Democratic,2025-11-21,2025-11-22,Generic D,Lindsey Graham,39,41,R+2,Graham +2,no,"D-sponsored; Graham only +2 vs generic D in R+11 state; NYT data; Graham died July 11, 2026 — matchup no longer applicable"
+South Carolina,SC,Public Policy Polling,314 Action,Democratic,2025-11-21,2025-11-22,Annie Andrews,Lindsey Graham,36,42,R+6,Graham +6,no,"D-sponsored; NYT data; Graham died July 11, 2026 — matchup no longer applicable"
+South Carolina,SC,Impact Research,,Democratic,2026-02-25,2026-03-01,Annie Andrews,Lindsey Graham,42.0,47.0,R+5,R+5,no,"n=700 LV; NYT data; Graham died July 11, 2026 — matchup no longer applicable"
+South Carolina,SC,Public Policy Polling,,Democratic,2026-07-16,2026-07-17,Annie Andrews,Ralph W. Norman,42.0,43.0,R+1,R+1,yes,n=577 rv; D-sponsored; NYT data
+South Carolina,SC,Public Policy Polling,,Democratic,2026-07-16,2026-07-17,Annie Andrews,Russell Fry,42.0,39.0,D+3,D+3,yes,n=577 rv; D-sponsored; NYT data
+South Carolina,SC,Public Policy Polling,,Democratic,2026-07-16,2026-07-17,Annie Andrews,Mark Sanford,41.0,40.0,D+1,D+1,yes,n=577 rv; D-sponsored; NYT data
+South Carolina,SC,Public Policy Polling,,Democratic,2026-07-16,2026-07-17,Annie Andrews,Nancy Mace,42.0,39.0,D+3,D+3,yes,n=577 rv; D-sponsored; NYT data
+South Carolina,SC,Public Policy Polling,,Democratic,2026-07-16,2026-07-17,Annie Andrews,Mark Lynch,41.0,38.0,D+3,D+3,yes,n=577 rv; D-sponsored; NYT data
+South Carolina,SC,Impact Research,,Democratic,2026-06-17,2026-06-22,Annie Andrews,Lindsey Graham,45.0,48.0,R+3,R+3,no,"n=700 lv; D-sponsored; NYT data; Graham died July 11, 2026 — matchup no longer applicable"
 South Dakota,SD,Public Policy Polling,,,2025-11-13,2025-11-14,Julian Beaudion,Mike Rounds,30.0,52.0,R+22,R+22,yes,n=814 RV; NYT data
 South Dakota,SD,Public Policy Polling,,,2026-02-17,2026-02-18,Julian Beaudion,Mike Rounds,32.0,49.0,R+17,R+17,yes,n=685 RV; NYT data
+South Dakota,SD,Public Policy Polling,,,2026-05-29,2026-05-30,Julian Beaudion,Mike Rounds,18.0,43.0,R+25,R+25,yes,n=726 rv; NYT data
 Texas,TX,Barbara Jordan Public Policy Research and Survey Center,,,2025-05-09,2025-05-19,Colin Allred,Ken Paxton,46.0,48.0,R+2,R+2,yes,n=1200 RV; NYT data
 Texas,TX,Emerson College,,,2025-08-11,2025-08-12,Colin Allred,Ken Paxton,40.6,45.9,R+5.3,R+5.3,yes,n=1000 RV; NYT data
 Texas,TX,GBAO,,Democratic,2025-08-13,2025-08-18,Colin Allred,Ken Paxton,49.0,47.0,D+2,D+2,yes,n=800 LV; NYT data
@@ -228,3 +318,17 @@ Texas,TX,Impact Research,,Democratic,2026-03-12,2026-03-17,James Talarico,John C
 Texas,TX,Slingshot Strategies,Texas Public Opinion Research,,2026-04-17,2026-04-20,James Talarico,Ken Paxton,46.0,41.0,D+5,D+5,yes,n=1018 LV; NYT data
 Texas,TX,YouGov,University of Texas,,2026-04-10,2026-04-20,James Talarico,Ken Paxton,42.0,34.0,D+8,D+8,yes,n=1200 RV; NYT data
 Texas,TX,Barbara Jordan Public Policy Research and Survey Center,,,2026-04-22,2026-05-06,James Talarico,Ken Paxton,45.0,45.0,Even,Even,yes,n=1223 LV; NYT data
+Texas,TX,Public Policy Polling,Lone Star Rising PAC,Democratic,2026-05-22,2026-05-23,James Talarico,Ken Paxton,45.0,38.0,D+7,D+7,yes,n=643 rv; D-sponsored; NYT data
+Texas,TX,Slingshot Strategies,Texas Public Opinion Research,,2026-05-27,2026-05-28,James Talarico,Ken Paxton,47.0,44.0,D+3,D+3,yes,n=1670 lv; NYT data
+Texas,TX,Siena University,ReconMR | Texas A&M Bush School,,2026-06-01,2026-06-04,James Talarico,Ken Paxton,46.0,46.0,Even,Even,yes,n=807 lv; NYT data
+Texas,TX,Quantus Insights,,,2026-06-03,2026-06-04,James Talarico,Ken Paxton,43.0,45.0,R+2,R+2,yes,n=800 lv; NYT data
+Texas,TX,YouGov,University of Texas,,2026-06-05,2026-06-12,James Talarico,Ken Paxton,42.0,43.0,R+1,R+1,yes,n=1200 rv; NYT data
+Texas,TX,SoCal Strategies,Red Eagle Politics,Republican,2026-06-21,2026-06-21,James Talarico,Ken Paxton,47.05,48.53,R+1.5,R+1.5,yes,n=800 lv; R-sponsored; NYT data
+Texas,TX,A2 Insights,,,2026-06-23,2026-06-28,James Talarico,Ken Paxton,48.4,46.1,D+2.3,D+2.3,yes,n=618 lv; NYT data
+Texas,TX,The New York Times/Siena University,,,2026-06-19,2026-06-27,James Talarico,Ken Paxton,46.57,46.67,R+0.1,R+0.1,yes,n=656 lv; NYT data
+Idaho,ID,The Bullfinch Group,,,2026-05-29,2026-06-01,David Roth,James E. Risch,33.0,50.0,R+17,R+17,yes,n=774 rv; NYT data
+Idaho,ID,The Bullfinch Group,,,2026-05-29,2026-06-01,David Roth,James E. Risch,15.0,41.0,R+26,R+26,no,n=774 rv; high undecided share — excluded; NYT data
+Idaho,ID,Peak Insights,,Republican,2026-06-06,2026-06-07,David Roth,James E. Risch,15.0,55.0,R+40,R+40,no,n=500 lv; high undecided share — excluded; R-sponsored; NYT data
+Virginia,VA,Responsive Management,Virginia Commonwealth University,,2024-12-18,2025-01-15,Mark R. Warner,Glenn Youngkin,45.0,38.0,D+7,D+7,no,n=806 a; Jan 2025 — Youngkin not confirmed R nominee; too old for average; NYT data
+VA,VA,Responsive Management,Virginia Commonwealth University,,2024-12-18,2025-01-15,Mark R. Warner,Glenn Youngkin,45.0,38.0,D+7,D+7,no,n=806 a; 2025 — Youngkin not confirmed R nominee; too old for average; NYT data
+Rhode Island,RI,University of New Hampshire,,,2026-06-18,2026-06-23,Jack Reed,Raymond McKay,52.0,35.0,D+17,D+17,yes,n=627 lv; NYT data

@@ -1,18 +1,18 @@
 {
-  "as_of": "2026-03-29",
+  "as_of": "2026-07-27",
   "presidential_approval": {
     "_note": "Computed live from potus-approval.csv by environment.py — this block is a fallback only and is overridden at runtime.",
-    "approve": 40.55,
-    "disapprove": 56.44,
-    "net": -15.89,
-    "source": "potus-approval.csv weighted average (803 polls, half-life 21d)"
+    "approve": 40.08,
+    "disapprove": 57.10,
+    "net": -17.02,
+    "source": "potus-approval.csv weighted average (918 polls, half-life 21d)"
   },
   "economy": {
-    "gdp_growth_annualized": 0.7,
-    "gdp_source": "BEA Q4 2025 second estimate (revised down from 2.3% advance estimate on 3/13/26). Full year 2025: 2.1%. Third estimate due 4/9/26.",
-    "consumer_sentiment": 53.3,
-    "consumer_sentiment_source": "University of Michigan, March 2026 final (released 3/27, down from 55.5 prelim and 56.6 Feb final). Current conditions 55.8, expectations 51.7. Year-ahead inflation expectations surged to 3.8% (from 3.4% prelim). Decline driven by Iran conflict and energy cost spike.",
-    "unemployment_rate": 4.4,
-    "unemployment_source": "BLS, February 2026 (nonfarm payrolls -92k; up from 4.1% in January). Includes Kaiser Permanente strike impact. March report due 4/3/26."
+    "gdp_growth_annualized": 2.1,
+    "gdp_source": "BEA Q1 2026 third estimate (released 6/25/26): +2.1% annualized (advance 2.0%, second 2.6%, third 2.1%). Q4 2025 revised to +0.5%. Contributors: investment, exports, government spending, consumer spending; imports a partial offset. Q2 2026 advance estimate due 7/30/26.",
+    "consumer_sentiment": 54.4,
+    "consumer_sentiment_source": "University of Michigan, July 2026 preliminary (interviews 6/23-7/13, >70% completed before 7/7 resumption of US-Iran strikes). June 2026 final: 49.5. All five components improved M/M. Year-ahead inflation expectations 4.2% (down from 4.6% in June). Long-run expectations 3.3%. Final July reading due 7/31/26.",
+    "unemployment_rate": 4.2,
+    "unemployment_source": "BLS, June 2026 (released 7/2/26). Nonfarm payrolls 159.0M (+100k MoM); U-3: 4.2% (-0.1 pp MoM, down from 4.4% peak in Feb '26); U-6 underemployment: 7.9%; participation rate: 61.5%; jobless claims (Jul '26): 187k (-22k MoM)."
   }
 }
