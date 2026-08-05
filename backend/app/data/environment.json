@@ -1,17 +1,17 @@
 {
-  "as_of": "2026-07-27",
+  "as_of": "2026-08-05",
   "presidential_approval": {
     "_note": "Computed live from potus-approval.csv by environment.py — this block is a fallback only and is overridden at runtime.",
-    "approve": 40.08,
-    "disapprove": 57.10,
-    "net": -17.02,
-    "source": "potus-approval.csv weighted average (918 polls, half-life 21d)"
+    "approve": 39.47,
+    "disapprove": 57.63,
+    "net": -18.16,
+    "source": "potus-approval.csv weighted average (917 polls, half-life 21d, through 8/3/26)"
   },
   "economy": {
-    "gdp_growth_annualized": 2.1,
-    "gdp_source": "BEA Q1 2026 third estimate (released 6/25/26): +2.1% annualized (advance 2.0%, second 2.6%, third 2.1%). Q4 2025 revised to +0.5%. Contributors: investment, exports, government spending, consumer spending; imports a partial offset. Q2 2026 advance estimate due 7/30/26.",
-    "consumer_sentiment": 54.4,
-    "consumer_sentiment_source": "University of Michigan, July 2026 preliminary (interviews 6/23-7/13, >70% completed before 7/7 resumption of US-Iran strikes). June 2026 final: 49.5. All five components improved M/M. Year-ahead inflation expectations 4.2% (down from 4.6% in June). Long-run expectations 3.3%. Final July reading due 7/31/26.",
+    "gdp_growth_annualized": 1.5,
+    "gdp_source": "BEA Q2 2026 advance estimate (released 7/30/26): +1.5% annualized, down from Q1 2026's +2.1% third estimate (advance 2.0%, second 2.6%, third 2.1%). Q2 second estimate due late August 2026.",
+    "consumer_sentiment": 55.2,
+    "consumer_sentiment_source": "University of Michigan, July 2026 final (released 7/31/26): 55.2, revised up from the 54.4 preliminary and +11.5% from June's 49.5 — a five-month high driven by easing gasoline prices, though still ~11% below a year earlier. Current conditions 54.8, expectations 55.4. Year-ahead inflation expectations 4.2% (down from 4.6% in June).",
     "unemployment_rate": 4.2,
     "unemployment_source": "BLS, June 2026 (released 7/2/26). Nonfarm payrolls 159.0M (+100k MoM); U-3: 4.2% (-0.1 pp MoM, down from 4.4% peak in Feb '26); U-6 underemployment: 7.9%; participation rate: 61.5%; jobless claims (Jul '26): 187k (-22k MoM)."
   }
