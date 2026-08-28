@@ -40,8 +40,8 @@
       },
       "is_open": false,
       "pvi": 9,
-      "polling_average": 1.67,
-      "note": "Mary Peltola, the former at-large representative, is challenging Dan Sullivan. Alaska's top-four primary is Aug 18 — both advance comfortably — and November uses ranked-choice voting. 16 polls average D+1.7. The trend favored Peltola for most of the cycle (R+4 Aug '25 to D+5 in spring '26) before NYT/Siena (Jun '26) put Sullivan up R+2.4. Peltola has raised roughly three times Sullivan's total. RCV plus her crossover appeal keep this genuinely live. Toss-up.",
+      "polling_average": 1.91,
+      "note": "Mary Peltola, the former at-large representative, is challenging Dan Sullivan. Alaska's top-four primary is Aug 18 — both advance comfortably — and November uses ranked-choice voting. 18 polls average D+1.9. The trend favored Peltola for most of the cycle (R+4 Aug '25 to D+5 in spring '26) before NYT/Siena (Jun '26) put Sullivan up R+2.4. Peltola has raised roughly three times Sullivan's total. RCV plus her crossover appeal keep this genuinely live. Toss-up.",
       "candidates": {
         "dem": {
           "name": "Mary Peltola",
@@ -66,7 +66,7 @@
       },
       "is_open": false,
       "pvi": 24,
-      "note": "Cotton is seeking a third term. Hallie Shoffner, a farmer and first-time candidate, is the Democratic nominee. One poll (Cygnal, Feb '26) had Cotton up 22. R+24 PVI. Safe R.",
+      "note": "Cotton is seeking a third term. Hallie Shoffner, a farmer and first-time candidate, is the Democratic nominee. Four polls now average R+9.4, a sharp move from the single Cygnal survey (Feb '26, Cotton +22) that previously carried the state. The spread is very wide: Hendrix College/Talk Business (Aug '26) had Shoffner ahead 47.4-44.0, while J.L. Partners (Aug '26) had Cotton up 16 two weeks later. R+24 PVI and a 33.6-point Cotton margin in 2020 still make this Safe R; the polling average is thin enough that one more survey will move it several points.",
       "candidates": {
         "dem": {
           "name": "Hallie Shoffner",
@@ -79,7 +79,7 @@
           "is_incumbent": true
         }
       },
-      "polling_average": -22.0
+      "polling_average": -9.4
     },
     {
       "state": "Colorado",
@@ -104,7 +104,8 @@
           "quality_score": 4,
           "is_incumbent": false
         }
-      }
+      },
+      "polling_average": null
     },
     {
       "state": "Delaware",
@@ -129,7 +130,8 @@
           "quality_score": 3,
           "is_incumbent": false
         }
-      }
+      },
+      "polling_average": null
     },
     {
       "state": "Florida",
@@ -168,8 +170,8 @@
       },
       "is_open": false,
       "pvi": 4,
-      "polling_average": 6.51,
-      "note": "Ossoff, who won his 2021 runoff by 1.2 points, faces Rep. Mike Collins, who took the June 16 runoff over Derek Dooley on a late Trump endorsement. 23 polls average D+6.5 and Ossoff has led every one: Fox News (Jul '26) D+13, Fabrizio Ward/AARP (Jul '26) D+9. That AARP poll also shows his weak spot — Collins leads voters 65+ by 24 points, and that group reports the highest turnout motivation. Republicans' top target, but Ossoff is favored.",
+      "polling_average": 6.55,
+      "note": "Ossoff, who won his 2021 runoff by 1.2 points, faces Rep. Mike Collins, who took the June 16 runoff over Derek Dooley on a late Trump endorsement. 24 polls average D+6.6 and Ossoff has led every one: Fox News (Jul '26) D+13, Fabrizio Ward/AARP (Jul '26) D+9. That AARP poll also shows his weak spot — Collins leads voters 65+ by 24 points, and that group reports the highest turnout motivation. Republicans' top target, but Ossoff is favored.",
       "candidates": {
         "dem": {
           "name": "Jon Ossoff",
@@ -228,7 +230,8 @@
           "quality_score": 3,
           "is_incumbent": false
         }
-      }
+      },
+      "polling_average": null
     },
     {
       "state": "Iowa",
@@ -237,8 +240,8 @@
       "is_open": true,
       "outgoing_senator": "Ernst",
       "pvi": 10,
-      "polling_average": -1.02,
-      "note": "Ernst retired. Rep. Ashley Hinson (R) and state Rep. Josh Turek (D) won their June 2 primaries. 12 polls average R+1.0, making this one of the closest races in the country. Fox News (Jun '26) had Turek +4; NYT/Siena (Jun '26), the highest-rated poll of the race, had Hinson +2.5. R+10 PVI still gives Hinson the structural edge, but Turek has held it inside the margin all cycle.",
+      "polling_average": -1.39,
+      "note": "Ernst retired. Rep. Ashley Hinson (R) and state Rep. Josh Turek (D) won their June 2 primaries. 14 polls average R+1.4, making this one of the closest races in the country. Fox News (Jun '26) had Turek +4; NYT/Siena (Jun '26), the highest-rated poll of the race, had Hinson +2.5. R+10 PVI still gives Hinson the structural edge, but Turek has held it inside the margin all cycle.",
       "candidates": {
         "dem": {
           "name": "Josh Turek",
@@ -263,7 +266,7 @@
       },
       "is_open": false,
       "pvi": 20,
-      "note": "Marshall is seeking a second term after token primary opposition; Adam Hamilton emerged from the Aug 4 Democratic primary. Two polls average R+6. R+20 PVI. Safe R.",
+      "note": "Marshall is seeking a second term after token primary opposition; Adam Hamilton emerged from the Aug 4 Democratic primary. Four polls average R+4.3, though the two most recent are both D-sponsored (GBAO R+4, PPP R+1). R+20 PVI. Safe R.",
       "candidates": {
         "dem": {
           "name": "Adam Hamilton",
@@ -276,7 +279,7 @@
           "is_incumbent": true
         }
       },
-      "polling_average": -6.0
+      "polling_average": -4.25
     },
     {
       "state": "Kentucky",
@@ -319,7 +322,8 @@
           "is_incumbent": true
         }
       },
-      "outgoing_senator": "Cassidy"
+      "outgoing_senator": "Cassidy",
+      "polling_average": null
     },
     {
       "state": "Maine",
@@ -332,8 +336,8 @@
       },
       "is_open": false,
       "pvi": -3,
-      "polling_average": 1.23,
-      "note": "Troy Jackson, the former Maine Senate president, became the Democratic nominee at a July 25 party convention after Graham Platner withdrew on July 10 amid a sexual-assault allegation he denied. Jackson polls materially better than Platner did — UNH (Jul '26) had him up 49-46, and Jackson-specific polls average about D+4 against D+1.2 across the full 36-poll history that still includes Platner matchups. Collins, seeking a sixth term, has outrun Maine's D+3 PVI her entire career and remains formidable. Toss-up, and one of the two best Democratic pickup chances on the map.",
+      "polling_average": 1.32,
+      "note": "Troy Jackson, the former Maine Senate president, became the Democratic nominee at a July 25 party convention after Graham Platner withdrew on July 10 amid a sexual-assault allegation he denied. Jackson polls materially better than Platner did — UNH (Jul '26) had him up 49-46, and Jackson-specific polls average about D+4 against D+1.3 across the full 38-poll history that still includes Platner matchups. Collins, seeking a sixth term, has outrun Maine's D+3 PVI her entire career and remains formidable. Toss-up, and one of the two best Democratic pickup chances on the map.",
       "candidates": {
         "dem": {
           "name": "Troy Jackson",
@@ -358,7 +362,7 @@
       },
       "is_open": false,
       "pvi": -30,
-      "note": "Markey, who turns 80 before the election, faces a generational-change primary from Rep. Seth Moulton on Sept 1; polling has stayed inside single digits with undecideds rising. John Deaton is the Republican front-runner. 8 polls average D+25.4. D+30 PVI makes this Safe D whoever wins the primary.",
+      "note": "Markey, who turns 80 before the election, faces a generational-change primary from Rep. Seth Moulton on Sept 1; polling has stayed inside single digits with undecideds rising. John Deaton is the Republican front-runner. 12 polls average D+23.3. D+30 PVI makes this Safe D whoever wins the primary.",
       "candidates": {
         "dem": {
           "name": "Ed Markey",
@@ -371,7 +375,7 @@
           "is_incumbent": false
         }
       },
-      "polling_average": 25.35
+      "polling_average": 23.32
     },
     {
       "state": "Michigan",
@@ -380,8 +384,8 @@
       "is_open": true,
       "outgoing_senator": "Peters",
       "pvi": 1,
-      "polling_average": -1.67,
-      "note": "Peters retired. Abdul El-Sayed won the Aug 4 Democratic primary by about a point over Rep. Haley Stevens (48.5-47.5); Mallory McMorrow, who suspended her campaign a month out, took 4% and endorsed El-Sayed. He faces former Rep. Mike Rogers. The polling average now uses El-Sayed matchups only and sits at R+1.7 across 17 polls. Across the 17 surveys that tested both Democrats, Stevens ran about 2 points better against Rogers on average and led in 11 of them — though El-Sayed tested better through most of June before late-July polling broke back toward Stevens — so the primary result modestly worsened the Democratic position. Late-July polls split widely: Mitchell Even, SoCal (R-sponsored) R+1, EPIC-MRA R+3, Glengariff R+10. True toss-up in a R+1 state.",
+      "polling_average": -0.69,
+      "note": "Peters retired. Abdul El-Sayed won the Aug 4 Democratic primary by about a point over Rep. Haley Stevens (48.5-47.5); Mallory McMorrow, who suspended her campaign a month out, took 4% and endorsed El-Sayed. He faces former Rep. Mike Rogers. The polling average now uses El-Sayed matchups only and sits at R+0.7 across 22 polls. Across the 17 surveys that tested both Democrats, Stevens ran about 2 points better against Rogers on average and led in 11 of them — though El-Sayed tested better through most of June before late-July polling broke back toward Stevens — so the primary result modestly worsened the Democratic position. Late-July polls split widely: Mitchell Even, SoCal (R-sponsored) R+1, EPIC-MRA R+3, Glengariff R+10. True toss-up in a R+1 state.",
       "candidates": {
         "dem": {
           "name": "Abdul El-Sayed",
@@ -402,11 +406,11 @@
       "is_open": true,
       "outgoing_senator": "Smith",
       "pvi": -3,
-      "polling_average": 5.0,
-      "note": "Smith retired. The Aug 11 Democratic primary pits Lt. Gov. Peggy Flanagan against Rep. Angie Craig; Flanagan has led throughout and stretched it to 46-32 in mid-July PPP polling despite Craig's large cash advantage and millions in outside spending. Michele Tafoya is the Republican front-runner. 8 polls average D+5.0, with both Democrats testing about equally against the field. D+3 PVI and no Republican Senate win since 2002. Likely D.",
+      "polling_average": 4.6,
+      "note": "Smith retired. Lt. Gov. Peggy Flanagan won the Aug 11 Democratic primary over Rep. Angie Craig, who had led the final pre-primary survey 42-40. Michele Tafoya is the Republican nominee. The four Craig matchups have been dropped from the average now that she is not on the ballot, leaving 5 Flanagan polls averaging D+4.6 — the first post-primary survey, SurveyUSA/KSTP (Aug 17), had her up 46-41. D+3 PVI and no Republican Senate win since 2002. Likely D.",
       "candidates": {
         "dem": {
-          "name": "TBD (primary Aug 11: Flanagan / Craig)",
+          "name": "Peggy Flanagan",
           "quality_score": 6,
           "is_incumbent": false
         },
@@ -428,7 +432,7 @@
       },
       "is_open": false,
       "pvi": 18,
-      "note": "Hyde-Smith won her primary with 81% and faces Scott Colom, the Lowndes County district attorney. One poll (Impact Research, Apr '26, D-sponsored) had it R+3 — closer than the state's R+18 PVI implies, but no Democrat has won a Mississippi Senate race since 1982. Safe R.",
+      "note": "Hyde-Smith won her primary with 81% and faces Scott Colom, the Lowndes County district attorney. Two polls average R+4.5 — Impact Research (Apr '26) R+3 and Data for Progress (Aug '26) R+6, both D-sponsored. Closer than the state's R+18 PVI implies, but no Democrat has won a Mississippi Senate race since 1982, and independent Ty Pinkins draws 7% in the ballot-realistic question. Safe R.",
       "candidates": {
         "dem": {
           "name": "Scott Colom",
@@ -441,7 +445,7 @@
           "is_incumbent": true
         }
       },
-      "polling_average": -3.0
+      "polling_average": -4.5
     },
     {
       "state": "Montana",
@@ -450,7 +454,7 @@
       "is_open": true,
       "outgoing_senator": "Daines",
       "pvi": 18,
-      "note": "Daines withdrew minutes before the filing deadline and endorsed Kurt Alme, who won the June 2 primary with 76%. Alani Bankhead is the Democratic nominee. The defining feature of this race is independent Seth Bodnar, the former University of Montana president: backed by Jon Tester, $3.2M raised, and polling second — ahead of Bankhead — in every multi-candidate survey. The average now uses ballot-realistic multi-way questions (R+18.6 across 5 polls) rather than two-party hypotheticals, since Bodnar is on the November ballot and splits the anti-Alme vote. Democratic leaders have pressed Bankhead to stand down. Safe R as modeled — but note the model scores only the D-vs-R margin and cannot represent a Bodnar win.",
+      "note": "Daines withdrew minutes before the filing deadline and endorsed Kurt Alme, who won the June 2 primary with 76%. Alani Bankhead is the Democratic nominee. The defining feature of this race is independent Seth Bodnar, the former University of Montana president: backed by Jon Tester, $3.2M raised, and polling second — ahead of Bankhead — in every multi-candidate survey. The average now uses ballot-realistic multi-way questions (R+20.5 across 6 polls) rather than two-party hypotheticals, since Bodnar is on the November ballot and splits the anti-Alme vote. Democratic leaders have pressed Bankhead to stand down. Safe R as modeled — but note the model scores only the D-vs-R margin and cannot represent a Bodnar win.",
       "candidates": {
         "dem": {
           "name": "Alani Bankhead",
@@ -463,7 +467,7 @@
           "is_incumbent": false
         }
       },
-      "polling_average": -18.6
+      "polling_average": -20.5
     },
     {
       "state": "Nebraska",
@@ -476,7 +480,7 @@
       },
       "is_open": false,
       "pvi": 22,
-      "polling_average": -1.0,
+      "polling_average": -0.67,
       "note": "Dan Osborn, an independent, is again the de facto challenger: Democratic nominee Cindy Burbank has pledged to drop out and back him. Every public poll has had the race statistically tied, the most recent at Ricketts 48-47. Ricketts, appointed in 2023 after Sasse resigned, has outspent Osborn heavily ($11.2M raised to $5.75M) and starts underwater on favorability (46/53). Osborn is modeled on the Democratic side for control purposes. R+22 PVI is the only reason this stays Safe R in the model — the widest fundamentals-versus-polling gap on the board.",
       "candidates": {
         "dem": {
@@ -498,8 +502,8 @@
       "is_open": true,
       "outgoing_senator": "Shaheen",
       "pvi": -1,
-      "polling_average": 6.68,
-      "note": "Shaheen retired. Rep. Chris Pappas is the clear Democratic favorite for the Sept 8 primary. On the Republican side, former Sen. John E. Sununu leads Scott Brown 56-19 and has Trump's endorsement. Against Sununu — the tougher matchup — Pappas leads by about D+3.5 across 12 polls; he routs Brown by roughly 12. Overall average D+6.7 across 19 polls. Lean D, and closer to a toss-up once Sununu is the nominee.",
+      "polling_average": 6.48,
+      "note": "Shaheen retired. Rep. Chris Pappas is the clear Democratic favorite for the Sept 8 primary. On the Republican side, former Sen. John E. Sununu leads Scott Brown 56-19 and has Trump's endorsement. Against Sununu — the tougher matchup — Pappas leads by about D+2.8 across 14 polls; he routs Brown by roughly 12. Overall average D+6.5 across 23 polls. Lean D, and closer to a toss-up once Sununu is the nominee.",
       "candidates": {
         "dem": {
           "name": "Chris Pappas",
@@ -536,7 +540,8 @@
           "quality_score": 4,
           "is_incumbent": false
         }
-      }
+      },
+      "polling_average": null
     },
     {
       "state": "New Mexico",
@@ -561,7 +566,8 @@
           "quality_score": 0,
           "is_incumbent": false
         }
-      }
+      },
+      "polling_average": null
     },
     {
       "state": "North Carolina",
@@ -570,8 +576,8 @@
       "is_open": true,
       "outgoing_senator": "Tillis",
       "pvi": 3,
-      "polling_average": 7.42,
-      "note": "Tillis retired. Roy Cooper, the two-term former governor, faces Michael Whatley, the former RNC chair, in Democrats' single best pickup opportunity. Cooper has led all 20 polls, averaging D+7.4; Fox News (Jul '26) had him up 53-44. Cooper's personal brand consistently runs ahead of the generic Democratic ballot in North Carolina. Likely D.",
+      "polling_average": 7.72,
+      "note": "Tillis retired. Roy Cooper, the two-term former governor, faces Michael Whatley, the former RNC chair, in Democrats' single best pickup opportunity. Cooper has led all 25 polls, averaging D+7.7; Fox News (Jul '26) had him up 53-44. Cooper's personal brand consistently runs ahead of the generic Democratic ballot in North Carolina. Likely D.",
       "candidates": {
         "dem": {
           "name": "Roy Cooper",
@@ -604,7 +610,8 @@
           "quality_score": 6,
           "is_incumbent": false
         }
-      }
+      },
+      "polling_average": null
     },
     {
       "state": "Oregon",
@@ -629,7 +636,8 @@
           "quality_score": 4,
           "is_incumbent": false
         }
-      }
+      },
+      "polling_average": null
     },
     {
       "state": "Rhode Island",
@@ -642,7 +650,7 @@
       },
       "is_open": false,
       "pvi": -18,
-      "note": "Reed is seeking a sixth term against Raymond McKay. One poll (UNH, Jun '26) had Reed +17. Rhode Island has not elected a Republican senator since 2000. Safe D.",
+      "note": "Reed is seeking a sixth term against Raymond McKay. Two UNH polls (Jun and Aug '26) average Reed +18.5. Rhode Island has not elected a Republican senator since 2000. Safe D.",
       "candidates": {
         "dem": {
           "name": "Jack Reed",
@@ -655,7 +663,7 @@
           "is_incumbent": false
         }
       },
-      "polling_average": 17.0
+      "polling_average": 18.5
     },
     {
       "state": "South Carolina",
@@ -664,7 +672,7 @@
       "is_open": true,
       "pvi": 11,
       "polling_average": null,
-      "note": "The seat is vacant. Lindsey Graham had already won the June 9 Republican primary with 56.8% before he died, so state Republicans are choosing a replacement nominee in a special primary on Aug 11, with an Aug 25 runoff if no one clears 50%; ten Republicans are on that ballot and the party removed three others in a dispute now in litigation. Gov. McMaster appointed Graham's sister, Darline Graham, to hold the seat through January. Trump endorsed her on July 17 and she is running for the full term, leading early primary polling at about 21% with Rep. Ralph Norman near 17%. Pediatrician Annie Andrews won the Democratic primary with 61.5%. The only general-election polling is a single D-sponsored PPP survey (Jul '26) testing five possible Republicans against Andrews, which found her even or ahead in each (avg D+1.8). It is held out of the polling average: it is one sponsored poll counted five times, and it never tested Darline Graham, the primary front-runner. The forecast runs on fundamentals until the nominee is settled. R+11 PVI still makes this Safe R.",
+      "note": "The seat is vacant. Lindsey Graham had already won the June 9 Republican primary with 56.8% before he died, so state Republicans are choosing a replacement nominee in a special primary on Aug 11, with an Aug 25 runoff if no one clears 50%; ten Republicans are on that ballot and the party removed three others in a dispute now in litigation. Gov. McMaster appointed Graham's sister, Darline Graham, to hold the seat through January. Trump endorsed her on July 17 and she is running for the full term, leading early primary polling at about 21% with Rep. Ralph Norman near 17%. Pediatrician Annie Andrews won the Democratic primary with 61.5%. The only general-election polling is a single D-sponsored PPP survey (Jul '26) testing five possible Republicans against Andrews, which found her even or ahead in each (avg D+1.8). It is held out of the polling average: it is one sponsored poll counted five times, and it never tested Darline Graham, the primary front-runner. The Aug 25 runoff between Darline Graham and Ralph Norman was a dead heat in the last poll of it (Trafalgar, Aug 24: 47.9-47.8), and the certified nominee is not yet reflected here. A single D-sponsored Impact Research survey (Aug 24) had Andrews tied 41-41 with Graham; it is also held out, because it polled a nomination that had not been decided when it was in the field. The forecast runs on fundamentals until the nominee is settled. R+11 PVI still makes this Safe R.",
       "candidates": {
         "dem": {
           "name": "Annie Andrews",
@@ -690,7 +698,7 @@
       },
       "is_open": false,
       "pvi": 27,
-      "note": "Rounds is seeking a third term. Democratic nominee Julian Beaudion withdrew on Aug 4, citing a house fire, financial strain and threats, leaving independent Brian Bengs — who lost to Thune by 44 points in 2022 — as the only opponent. The three polls in the average all tested Rounds against Beaudion and average R+21.3; no Bengs general-election polling exists. Rounds held $2.7M at midyear to Bengs' $51k. R+27 PVI. Safe R.",
+      "note": "Rounds is seeking a third term. Democratic nominee Julian Beaudion withdrew on Aug 4, citing a house fire, financial strain and threats, leaving independent Brian Bengs — who lost to Thune by 44 points in 2022 — as the only opponent. The three Beaudion polls have been dropped from the average now that he is not running. Two Bengs surveys have since appeared and they disagree sharply: Public Opinion Strategies (Jul, R-sponsored) had Rounds up 56-33, while Impact Research (Aug, D-sponsored) had it tied 44-44. They average R+11.5, and Bengs is modeled on the Democratic side the same way Osborn is in Nebraska. Rounds held $2.7M at midyear to Bengs' $51k. R+27 PVI. Safe R.",
       "candidates": {
         "dem": {
           "name": "Brian Bengs (I)",
@@ -703,7 +711,7 @@
           "is_incumbent": true
         }
       },
-      "polling_average": -21.33
+      "polling_average": -11.5
     },
     {
       "state": "Tennessee",
@@ -728,7 +736,8 @@
           "quality_score": 5,
           "is_incumbent": true
         }
-      }
+      },
+      "polling_average": null
     },
     {
       "state": "Texas",
@@ -736,8 +745,8 @@
       "incumbent": null,
       "is_open": true,
       "pvi": 10,
-      "polling_average": 1.29,
-      "note": "Cornyn lost the Republican primary to Ken Paxton, leaving an open seat with no incumbent on the ballot. State Rep. James Talarico is the Democratic nominee. The average now uses Talarico-vs-Paxton matchups only and has flipped to D+1.3 across 23 polls: Talarico has led four straight — Slingshot D+5 (Jul 17), Fox News D+3 (Jul 27), Texas Southern D+2 (Jul 30), Wedgewood D+2 (Jul 31). Paxton's impeachment and securities-fraud history makes him an unusually weak nominee, and Talarico posts large margins with moderates (+34) and independents (+20). R+10 PVI still anchors the fundamentals, so the model keeps Republicans favored — but this is now the largest polling-versus-fundamentals divergence among competitive seats.",
+      "polling_average": 1.6,
+      "note": "Cornyn lost the Republican primary to Ken Paxton, leaving an open seat with no incumbent on the ballot. State Rep. James Talarico is the Democratic nominee. The average now uses Talarico-vs-Paxton matchups only and has flipped to D+1.6 across 28 polls: Talarico has led four straight — Slingshot D+5 (Jul 17), Fox News D+3 (Jul 27), Texas Southern D+2 (Jul 30), Wedgewood D+2 (Jul 31). Paxton's impeachment and securities-fraud history makes him an unusually weak nominee, and Talarico posts large margins with moderates (+34) and independents (+20). R+10 PVI still anchors the fundamentals, so the model keeps Republicans favored — but this is now the largest polling-versus-fundamentals divergence among competitive seats.",
       "candidates": {
         "dem": {
           "name": "James Talarico",
@@ -775,7 +784,8 @@
           "quality_score": 4,
           "is_incumbent": false
         }
-      }
+      },
+      "polling_average": null
     },
     {
       "state": "West Virginia",
@@ -800,7 +810,8 @@
           "quality_score": 6,
           "is_incumbent": true
         }
-      }
+      },
+      "polling_average": null
     },
     {
       "state": "Wyoming",
@@ -821,7 +832,8 @@
           "quality_score": 6,
           "is_incumbent": false
         }
-      }
+      },
+      "polling_average": null
     },
     {
       "state": "Ohio",
@@ -830,8 +842,8 @@
       "is_open": true,
       "outgoing_senator": "Husted",
       "pvi": 8,
-      "polling_average": -0.59,
-      "note": "Special election for Vance's seat. Sherrod Brown, who held Ohio's other seat from 2007 to 2025, faces appointed Sen. Jon Husted. 15 polls average R+0.6 and the race has swung repeatedly: Husted +6 in mid-'25, even in April, Brown ahead through June, then NYT/Siena (Jun 28) at R+2.8. Brown's populist economic brand is why a R+8 state is competitive at all; whether it survives a midterm electorate without presidential-year turnout is the open question. Toss-up.",
+      "polling_average": 0.4,
+      "note": "Special election for Vance's seat. Sherrod Brown, who held Ohio's other seat from 2007 to 2025, faces appointed Sen. Jon Husted. 18 polls now average D+0.4 — the average has crossed to Brown for the first time. Three August surveys all had him ahead: Fox News/Beacon-Shaw D+8, Wedgewood D+4, Tulchin (D-sponsored) D+4. The race has swung repeatedly — Husted +6 in mid-'25, even in April, Brown ahead through June, then NYT/Siena (Jun 28) at R+2.8 — so treat the crossing as a shift, not a settled lead. Brown's populist economic brand is why a R+8 state is competitive at all; whether it survives a midterm electorate without presidential-year turnout is the open question. Toss-up.",
       "candidates": {
         "dem": {
           "name": "Sherrod Brown",

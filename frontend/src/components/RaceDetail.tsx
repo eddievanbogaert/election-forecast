@@ -1,6 +1,6 @@
 import type { Race } from '../types'
 import { RATING_COLORS } from '../utils/colors'
-import { formatProb, formatLean, formatPvi } from '../utils/stateUtils'
+import { formatProbPair, formatLean, formatPvi } from '../utils/stateUtils'
 
 interface Props {
   race: Race
@@ -8,10 +8,11 @@ interface Props {
 }
 
 function ProbBar({ prob }: { prob: number }) {
+  const [demProb, repProb] = formatProbPair(prob)
   return (
     <div className="flex items-center gap-2">
       <span className="text-xs text-blue-400 w-10 text-right tabular-nums font-medium">
-        {formatProb(prob)}
+        {demProb}
       </span>
       <div className="flex-1 h-3 rounded-full bg-gray-700 overflow-hidden flex">
         <div
@@ -24,7 +25,7 @@ function ProbBar({ prob }: { prob: number }) {
         />
       </div>
       <span className="text-xs text-red-400 w-10 tabular-nums font-medium">
-        {formatProb(1 - prob)}
+        {repProb}
       </span>
     </div>
   )
@@ -42,7 +43,7 @@ function StatRow({ label, value }: { label: string; value: React.ReactNode }) {
 export function RaceDetail({ race, onClose }: Props) {
   const color = RATING_COLORS[race.rating]
   const demProb = race.dem_win_probability
-  const repProb = 1 - demProb
+  const [demProbLabel, repProbLabel] = formatProbPair(demProb)
 
   return (
     <div className="bg-gray-900 rounded-xl border border-gray-800 p-4 flex flex-col gap-3">
@@ -89,7 +90,7 @@ export function RaceDetail({ race, onClose }: Props) {
             <div className="text-xs text-blue-300 mt-0.5">Incumbent</div>
           )}
           <div className="text-xs text-blue-300 mt-1 font-semibold">
-            {formatProb(demProb)}
+            {demProbLabel}
           </div>
         </div>
         <div className="bg-red-950/40 rounded-lg p-2.5 border border-red-900/30">
@@ -99,7 +100,7 @@ export function RaceDetail({ race, onClose }: Props) {
             <div className="text-xs text-red-300 mt-0.5">Incumbent</div>
           )}
           <div className="text-xs text-red-300 mt-1 font-semibold">
-            {formatProb(repProb)}
+            {repProbLabel}
           </div>
         </div>
       </div>

@@ -18,32 +18,47 @@ Live site: [https://elections.eddievb.com](https://elections.eddievb.com) (also:
 
 ---
 
-## Current Forecast Snapshot (early May 2026)
+## Current Forecast Snapshot (August 28, 2026)
 
 | Metric | Value |
 |--------|-------|
-| Expected D seats | ~49.5 / 100 |
-| D Senate control probability | ~30.5% |
-| Net national environment | D+5.06 |
-| Days to election | ~186 |
-| Polling weight | ~49% polls / 51% fundamentals |
+| Expected D seats | ~50.2 / 100 |
+| D Senate control probability | ~45% |
+| Net national environment | D+5.02 |
+| Days to election | 67 |
+| Polling weight | ~82% polls / 18% fundamentals |
+
+Democrats need 51 seats for control (the model does not credit a tie-breaking
+vice president, since the VP is Republican this cycle). The expected seat count
+sitting just above 50 while control probability sits below 50% is exactly what
+that asymmetry looks like.
 
 ### Key Battlegrounds
 
 | Race | Rating | D Win Prob | Polling Avg |
 |------|--------|-----------|-------------|
-| NC (Cooper vs Whatley) | Safe D | ~87% | D+8.4 |
-| GA (Ossoff vs TBD) | Safe D | ~86% | D+7.1 |
-| NH (Pappas vs Sununu/Brown) | Safe D | ~90% | D+7.8 |
-| ME (TBD vs Collins) | Likely D | ~71% | D+1.8 |
-| MI (TBD vs Rogers) | Lean D | ~60% | R+0.5 |
-| MN (Craig/Flanagan vs Tafoya) | Safe D | ~92% | D+6.3 |
-| AK (Peltola vs Sullivan) | Lean R | ~41% | D+3.7 |
-| OH vacancy (Brown vs Husted) | Lean R | ~38% | R+2.2 |
-| FL vacancy (TBD vs Moody) | Likely R | ~16% | R+6.7 |
-| TX (Talarico vs Cornyn/Paxton) | Likely R | ~27% | D+1.2 |
+| NC (Cooper vs Whatley) | Safe D | ~94% | D+7.7 |
+| GA (Ossoff vs Collins) | Safe D | ~92% | D+6.6 |
+| NH (Pappas vs Sununu/Brown) | Safe D | ~91% | D+6.5 |
+| MN (Flanagan vs Tafoya) | Safe D | ~88% | D+4.6 |
+| ME (Jackson vs Collins) | Lean D | ~66% | D+1.3 |
+| AK (Peltola vs Sullivan) | Toss-up | ~55% | D+1.9 |
+| TX (Talarico vs Paxton) | Toss-up | ~53% | D+1.6 |
+| OH vacancy (Brown vs Husted) | Toss-up | ~51% | D+0.4 |
+| MI (El-Sayed vs Rogers) | Toss-up | ~50% | R+0.7 |
+| IA (Turek vs Hinson) | Lean R | ~32% | R+1.4 |
+| NE (Osborn I vs Ricketts) | Likely R | ~19% | R+0.7 |
+| FL vacancy (TBD vs Moody) | Safe R | ~8% | R+6.8 |
 
-See [analysis_notes.md](backend/app/data/analysis_notes.md) for detailed race-by-race analysis and [polls.csv](backend/app/data/polls.csv) for all 216 polls considered (20 states).
+> **Rating labels are looser than the analysis scale.** `prob_to_rating()` in
+> `monte_carlo.py` labels anything ≥85% "Safe", while
+> [analysis_notes.md](backend/app/data/analysis_notes.md) reserves "Safe" for
+> >95%. That is why NC/GA/NH/MN read "Safe D" at 88–94%. The two scales are
+> not yet reconciled.
+
+See [analysis_notes.md](backend/app/data/analysis_notes.md) for detailed
+race-by-race analysis and [polls.csv](backend/app/data/polls.csv) for all 408
+polls considered — 274 included in averages across 22 states.
 
 ---
 
@@ -96,13 +111,21 @@ The model uses a four-component national environment estimate that replaces the 
 | Component | Coefficient | Current Value | Contribution |
 |-----------|------------|---------------|-------------|
 | Base midterm penalty | — | — | D+1.50 |
-| Presidential approval | 0.12 per net approval pt | −15.89 | D+1.91 |
-| GDP growth | 0.3 per pt above 2.0% trend | 0.7% | D+0.39 |
-| Consumer sentiment | 0.04 per pt below 85.0 baseline | 53.3 | D+1.27 |
+| Presidential approval | 0.12 per net approval pt | −18.16 | D+2.18 |
+| GDP growth | 0.3 per pt above 2.0% trend | 1.5% | D+0.15 |
+| Consumer sentiment | 0.04 per pt below 85.0 baseline | 55.2 | D+1.19 |
 
-**Net environment: D+5.06**
+**Net environment: D+5.02**
 
-Presidential approval is computed live from `potus-approval.csv` — a time-decay-weighted average of 803 polls (half-life 21 days, partisan-adjusted), so the model automatically reflects the latest data whenever the CSV is updated. GDP and sentiment are sourced from BEA (Q4 2025 2nd estimate) and University of Michigan (March 2026 final), updated in `backend/app/data/environment.json`.
+Presidential approval is computed live from `potus-approval.csv` — a
+time-decay-weighted average of 953 polls (half-life 21 days, partisan-adjusted,
+polls older than 540 days dropped), so the model automatically reflects the
+latest data whenever the CSV is updated. The `presidential_approval` block in
+`environment.json` is a fallback only and is overridden on every run.
+
+GDP and sentiment are **manual** entries in `backend/app/data/environment.json`,
+currently BEA Q2 2026 advance estimate (+1.5% annualized, released 7/30/26) and
+University of Michigan July 2026 final (55.2, released 7/31/26).
 
 ### Blending
 
@@ -112,7 +135,9 @@ blended_lean = α × polling_average + (1 − α) × fundamentals_lean
 α = max(0, min(1, (365 − days_until_election) / 365))
 ```
 
-At ~186 days out, `α ≈ 0.49`: the model is **51% fundamentals, 49% polling**. Polling weight ramps linearly to 100% over the final year before the election.
+At 67 days out, `α ≈ 0.82`: the model is **18% fundamentals, 82% polling**. Polling weight ramps linearly to 100% over the final year before the election.
+
+Because polling now dominates, a thin or unrepresentative state average moves a race hard. That is why hypothetical matchups — polls testing a nomination that has not been decided — are held out of the averages rather than averaged in (see SC and OK).
 
 ### Uncertainty / Sigma
 
@@ -153,10 +178,47 @@ The shared national error produces the cross-state correlation essential for rea
 |------|-------------|
 | `backend/app/data/races_2026.json` | Seed data for all 35 races (PVI, candidates, polling averages, notes) |
 | `backend/app/data/environment.json` | Economic environment indicators (GDP, consumer sentiment, unemployment) |
-| `backend/app/data/potus-approval.csv` | Raw presidential approval polls (803 polls, Jan 2025–present); read by `environment.py` at runtime |
-| `backend/app/data/senate.csv` | Raw NYT Senate polling data; processed into `polls.csv` averages |
-| `backend/app/data/polls.csv` | Curated Senate polls (216 rows, 20 states) with sources, sponsors, dates, and inclusion flags |
+| `backend/app/data/potus-approval.csv` | Raw presidential approval polls (953 polls); read by `environment.py` at runtime |
+| `backend/app/data/senate.csv` | Raw NYT Senate polling bulk export (~3,800 rows); curated by hand into `polls.csv` |
+| `backend/app/data/polls.csv` | Curated Senate polls (408 rows, 274 included, 22 states) with sources, sponsors, dates, and inclusion flags |
+| `backend/app/data/archive/` | Dated snapshots of prior `senate.csv` / `potus-approval.csv` drops, kept so each new drop can be diffed against the last |
 | `backend/app/data/analysis_notes.md` | Detailed race-by-race analysis, tiered ratings, and methodology |
+| `backend/app/data/races_2028.json` | Class III seed data for the next cycle (not active) |
+
+### How a polling average is produced
+
+There is **no averaging script** — this step is done by hand, and the details matter:
+
+```
+senate.csv          one row per candidate per question (NYT bulk export)
+    ↓  curate by hand
+polls.csv           one row per matchup, with included_in_average yes/no + reason
+    ↓  unweighted mean of (dem_pct − rep_pct) over rows flagged "yes"
+races_2026.json     polling_average
+```
+
+The average is a plain unweighted mean: no time decay, no sample-size weighting,
+no pollster-rating weighting. (The *approval* average in `environment.py` is a
+different pipeline and does use time decay and a partisan adjustment.)
+
+The trap to watch for: **one survey that publishes N questions contributes N
+rows and gets N× the weight.** A pollster testing three likely-voter screens of
+the same matchup, or five hypothetical opponents, will quietly dominate a
+state's average. The curation rules that follow from this:
+
+- One row per distinct matchup; where a survey publishes several population
+  screens of it, keep the likely-voter version and flag the rest `no`.
+- Where a survey asks both a two-party and a ballot-realistic multi-way
+  question, keep the one that matches the actual November ballot (MT, MS).
+- Where a nomination is genuinely unresolved, keep every live matchup (NH, MA)
+  — or, if the data is a single sponsored poll of an undecided field, hold the
+  state out entirely (SC, OK).
+- When a primary resolves, re-flag the losing candidate's matchups `no`, or the
+  average keeps measuring someone who is not on the ballot (MN, SD).
+
+After any new `senate.csv` drop, recompute every state's mean from `polls.csv`
+and diff it against the stored values — they should match to 0.01 before you
+start editing.
 
 ---
 
@@ -246,10 +308,12 @@ election-forecast/
 │   │   │   └── monte_carlo.py  # 40k simulation engine
 │   │   └── data/
 │   │       ├── races_2026.json    # Seed data for all 35 races
+│   │       ├── races_2028.json    # Class III seed data (not active)
 │   │       ├── environment.json   # Economic environment indicators
 │   │       ├── potus-approval.csv # Presidential approval polls (live input)
-│   │       ├── senate.csv         # Raw NYT Senate polling data
+│   │       ├── senate.csv         # Raw NYT Senate polling bulk export
 │   │       ├── polls.csv          # Curated polls with inclusion flags
+│   │       ├── archive/           # Dated snapshots of prior data drops
 │   │       └── analysis_notes.md  # Detailed race analysis
 │   ├── Dockerfile
 │   └── requirements.txt
@@ -281,8 +345,8 @@ election-forecast/
 
 ## Contributing / Updating the Model
 
-1. **Add Senate polls**: add rows to `senate.csv` (NYT format), then re-run the averaging script to update `polls.csv` and `polling_average` fields in `races_2026.json`
-2. **Add approval polls**: add rows to `potus-approval.csv` — the model reads it live at runtime, no other changes needed
+1. **Add Senate polls**: drop the new NYT bulk export in as `senate.csv`, moving the previous one to `archive/senate-<date>.csv` first. Diff the two by `poll_id` to find what is actually new, curate those matchups into `polls.csv` by hand (see [How a polling average is produced](#how-a-polling-average-is-produced) — there is no script), re-flag any matchup whose candidate is no longer running, then recompute the `polling_average` fields in `races_2026.json`.
+2. **Add approval polls**: drop in a new `potus-approval.csv` — the model reads it live at runtime, no other changes needed
 3. **Update economic data**: edit `environment.json` with the latest GDP and consumer sentiment figures
 4. **Update candidate info**: edit the `candidates` block and `"quality_score"` fields in `races_2026.json`
 5. **Change fundamentals**: edit `pvi` or model constants in `backend/app/model/fundamentals.py`

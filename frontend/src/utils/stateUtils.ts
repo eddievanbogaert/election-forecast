@@ -22,6 +22,29 @@ export function formatProb(p: number): string {
   return `${Math.round(p * 100)}%`
 }
 
+/**
+ * Format a probability and its complement for display side by side.
+ *
+ * Rounding each half on its own lets both move the same direction when the
+ * split sits near a .x5 boundary: 39.5 / 60.5 renders as "40%" and "61%",
+ * which reads as 101%. Rounding one half and deriving the other from it keeps
+ * the displayed pair at exactly 100%.
+ *
+ * Returns [p, 1 − p] as formatted strings.
+ */
+export function formatProbPair(p: number, decimals = 0): [string, string] {
+  if (p >= 0.995) return ['>99%', '<1%']
+  if (p <= 0.005) return ['<1%', '>99%']
+  const left = roundTo(p * 100, decimals)
+  return [`${left.toFixed(decimals)}%`, `${(100 - left).toFixed(decimals)}%`]
+}
+
+/** Round a percentage to `decimals` places — the value the label will show. */
+export function roundTo(pct: number, decimals = 0): number {
+  const factor = 10 ** decimals
+  return Math.round(pct * factor) / factor
+}
+
 export function formatLean(lean: number): string {
   if (Math.abs(lean) < 0.5) return 'Even'
   const party = lean > 0 ? 'D' : 'R'

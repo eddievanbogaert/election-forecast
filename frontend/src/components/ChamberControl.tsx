@@ -9,7 +9,7 @@ import {
   Cell,
 } from 'recharts'
 import type { ChamberControl as ChamberControlType } from '../types'
-import { formatProb } from '../utils/stateUtils'
+import { formatProbPair, roundTo } from '../utils/stateUtils'
 
 interface Props {
   chamberControl: ChamberControlType
@@ -18,7 +18,13 @@ interface Props {
 }
 
 export function ChamberControl({ chamberControl, demSeatsNotUp, repSeatsNotUp }: Props) {
-  const { dem_probability, rep_probability, expected_dem_seats, seat_distribution } = chamberControl
+  const { dem_probability, expected_dem_seats, seat_distribution } = chamberControl
+
+  // Chamber control is the headline number and moves meaningfully run to run,
+  // so it carries one decimal. Both the labels and the bar widths derive from
+  // the same rounded value, so they always total exactly 100%.
+  const [demLabel, repLabel] = formatProbPair(dem_probability, 1)
+  const demWidth = roundTo(dem_probability * 100, 1)
 
   // Build chart data — only show plausible range (e.g., 30–70 seats)
   const chartData = seat_distribution
@@ -37,16 +43,16 @@ export function ChamberControl({ chamberControl, demSeatsNotUp, repSeatsNotUp }:
         </div>
         <div className="flex h-8 rounded-lg overflow-hidden text-sm font-semibold">
           <div
-            className="flex items-center justify-center text-white transition-all duration-500"
-            style={{ width: `${dem_probability * 100}%`, backgroundColor: '#1565C0' }}
+            className="flex items-center justify-center text-white whitespace-nowrap transition-all duration-500"
+            style={{ width: `${demWidth}%`, backgroundColor: '#1565C0' }}
           >
-            {dem_probability >= 0.12 && formatProb(dem_probability)}
+            {demWidth >= 15 && demLabel}
           </div>
           <div
-            className="flex items-center justify-center text-white transition-all duration-500"
-            style={{ width: `${rep_probability * 100}%`, backgroundColor: '#B71C1C' }}
+            className="flex items-center justify-center text-white whitespace-nowrap transition-all duration-500"
+            style={{ width: `${100 - demWidth}%`, backgroundColor: '#B71C1C' }}
           >
-            {rep_probability >= 0.12 && formatProb(rep_probability)}
+            {demWidth <= 85 && repLabel}
           </div>
         </div>
 

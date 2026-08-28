@@ -7,8 +7,7 @@ import {
 } from 'react-simple-maps'
 import type { Race } from '../types'
 import { probToColor, NO_RACE_COLOR, RATING_COLORS } from '../utils/colors'
-import { STATE_NAME_TO_CODE } from '../utils/stateUtils'
-import { formatProb } from '../utils/stateUtils'
+import { STATE_NAME_TO_CODE, formatProbPair } from '../utils/stateUtils'
 
 // Public CDN — us-atlas 10m resolution
 const GEO_URL = 'https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json'
@@ -18,6 +17,24 @@ interface Tooltip {
   y: number
   state: string
   race: Race | null
+}
+
+function TooltipRace({ race }: { race: Race }) {
+  const [demProb, repProb] = formatProbPair(race.dem_win_probability)
+  return (
+    <>
+      <div className="flex items-center gap-1.5 mt-0.5">
+        <div
+          className="w-2 h-2 rounded-sm"
+          style={{ backgroundColor: RATING_COLORS[race.rating] }}
+        />
+        <span className="text-gray-300 text-xs">{race.rating}</span>
+      </div>
+      <div className="text-xs text-gray-400 mt-0.5">
+        D {demProb} · R {repProb}
+      </div>
+    </>
+  )
 }
 
 interface Props {
@@ -104,19 +121,7 @@ export function USMap({ races, selectedCode, onSelect }: Props) {
         >
           <div className="font-semibold text-white">{tooltip.state}</div>
           {tooltip.race ? (
-            <>
-              <div className="flex items-center gap-1.5 mt-0.5">
-                <div
-                  className="w-2 h-2 rounded-sm"
-                  style={{ backgroundColor: RATING_COLORS[tooltip.race.rating] }}
-                />
-                <span className="text-gray-300 text-xs">{tooltip.race.rating}</span>
-              </div>
-              <div className="text-xs text-gray-400 mt-0.5">
-                D {formatProb(tooltip.race.dem_win_probability)} ·{' '}
-                R {formatProb(1 - tooltip.race.dem_win_probability)}
-              </div>
-            </>
+            <TooltipRace race={tooltip.race} />
           ) : (
             <div className="text-xs text-gray-500 mt-0.5">No Senate race in 2026</div>
           )}
