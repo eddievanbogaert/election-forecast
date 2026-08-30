@@ -84,23 +84,24 @@ stays with PVI, the national environment, incumbency, candidate quality and the 
 gubernatorial signal. A thin state average still moves a race hard, which is why
 hypothetical-matchup polls get held out and stale matchups get re-flagged.
 
-### National environment: D+5.02
+### National environment: D+5.10
 
 A four-component data-driven estimate (replaces earlier flat midterm penalty):
 
 | Component | Coefficient | Current Value | Contribution |
 |-----------|-------------|---------------|-------------|
 | Base midterm penalty | — | — | D+1.50 |
-| Presidential approval | 0.12 per net approval pt | −18.16 | D+2.18 |
+| Presidential approval | 0.12 per net approval pt | −17.64 | D+2.12 |
 | GDP growth | 0.3 per pt above 2.0% trend | 1.5% | D+0.15 |
-| Consumer sentiment | 0.04 per pt below 85.0 baseline | 55.2 | D+1.19 |
+| Consumer sentiment | 0.04 per pt below 85.0 baseline | 51.7 | D+1.33 |
 
 Approval is **computed live** at runtime by `environment.py` from `potus-approval.csv`
 (exponential time decay, 21-day half-life, ±2.0 pt partisan-sponsor adjustment, polls older
 than 540 days dropped). The `presidential_approval` block in `environment.json` is only a
 fallback and is overridden on every run — so dropping a fresh `potus-approval.csv` in is
-all that is needed. GDP and sentiment are **manual** entries in `environment.json`
-(BEA Q2 2026 advance estimate, released 7/30; U. Michigan July 2026 final, released 7/31).
+all that is needed (currently 989 polls through 8/28/26). GDP and sentiment are **manual**
+entries in `environment.json` (BEA Q2 2026 second estimate, released 8/26; U. Michigan
+August 2026 final 51.7, released 8/28). See `DATA-REFRESH.md`.
 
 ### Fundamentals lean (per race)
 
@@ -179,7 +180,7 @@ Chamber control = P(D total seats ≥ 51).
 |--------|-------|
 | Expected D seats | ~50.0 / 100 |
 | D Senate control probability | ~42% |
-| Net national environment | D+5.02 |
+| Net national environment | D+5.10 |
 | Polling weight | ~62% Senate polls / 38% everything else (cap 75%) |
 | D seats not up | 34 |
 | R seats not up | 31 |
@@ -351,8 +352,9 @@ curl -X POST "https://<CLOUD_RUN_URL>/api/forecast/refresh?secret=<ADMIN_SECRET>
 2. **MA (Sept 1) and NH (Sept 8) primaries** — the last two unresolved nominations. When
    they land, re-flag the loser's matchups `no` in `polls.csv`, as was done for Craig,
    Beaudion, Vindman and Priest.
-3. **Refresh macro inputs** — see `DATA-REFRESH.md` in the repo root. Approval polling is
-   27 days stale against a 21-day half-life; U. Michigan August sentiment is out.
+3. **Keep macro inputs fresh** — see `DATA-REFRESH.md`. All four are current as of 8/30.
+   Next that matters: U. Michigan Sept preliminary (Sept 11) and the BEA Q3 advance estimate
+   in late October, the last GDP print before the election.
 4. **Update analysis_notes.md** — ratings moved again on Aug 30 (MI → Lean D, TX → Lean R,
    SC → Lean R, IA → Likely R, NE → Safe R)
 5. **Model documentation** — living document detailing forecasting methodology

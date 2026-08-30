@@ -24,7 +24,7 @@ Live site: [https://elections.eddievb.com](https://elections.eddievb.com) (also:
 |--------|-------|
 | Expected D seats | ~50.0 / 100 |
 | D Senate control probability | ~42% |
-| Net national environment | D+5.02 |
+| Net national environment | D+5.10 |
 | Days to election | 65 |
 | Polling weight | ~62% Senate polls / 38% everything else |
 
@@ -119,21 +119,24 @@ The model uses a four-component national environment estimate that replaces the 
 | Component | Coefficient | Current Value | Contribution |
 |-----------|------------|---------------|-------------|
 | Base midterm penalty | — | — | D+1.50 |
-| Presidential approval | 0.12 per net approval pt | −18.16 | D+2.18 |
+| Presidential approval | 0.12 per net approval pt | −17.64 | D+2.12 |
 | GDP growth | 0.3 per pt above 2.0% trend | 1.5% | D+0.15 |
-| Consumer sentiment | 0.04 per pt below 85.0 baseline | 55.2 | D+1.19 |
+| Consumer sentiment | 0.04 per pt below 85.0 baseline | 51.7 | D+1.33 |
 
-**Net environment: D+5.02**
+**Net environment: D+5.10**
 
 Presidential approval is computed live from `potus-approval.csv` — a
-time-decay-weighted average of 953 polls (half-life 21 days, partisan-adjusted,
-polls older than 540 days dropped), so the model automatically reflects the
-latest data whenever the CSV is updated. The `presidential_approval` block in
+time-decay-weighted average (half-life 21 days, partisan-adjusted, polls older
+than 540 days dropped), so the model automatically reflects the latest data
+whenever the CSV is updated. The file currently holds 989 polls through 8/28/26,
+896 of them inside the window. The `presidential_approval` block in
 `environment.json` is a fallback only and is overridden on every run.
 
 GDP and sentiment are **manual** entries in `backend/app/data/environment.json`,
-currently BEA Q2 2026 advance estimate (+1.5% annualized, released 7/30/26) and
-University of Michigan July 2026 final (55.2, released 7/31/26).
+currently the BEA Q2 2026 second estimate (+1.5% annualized, unchanged from the
+advance, released 8/26/26) and University of Michigan August 2026 final (51.7,
+released 8/28/26). See `DATA-REFRESH.md` for the refresh routine and release
+calendar.
 
 ### Gubernatorial coattails
 
@@ -261,7 +264,7 @@ The shared national error produces the cross-state correlation essential for rea
 |------|-------------|
 | `backend/app/data/races_2026.json` | Seed data for all 35 races (PVI, candidates, polling averages, notes) |
 | `backend/app/data/environment.json` | Economic environment indicators (GDP, consumer sentiment, unemployment) |
-| `backend/app/data/potus-approval.csv` | Raw presidential approval polls (953 polls); read by `environment.py` at runtime |
+| `backend/app/data/potus-approval.csv` | Raw presidential approval polls (989 polls through 8/28/26); read by `environment.py` at runtime |
 | `backend/app/data/senate.csv` | Raw NYT Senate polling bulk export (~3,800 rows); curated by hand into `polls.csv` |
 | `backend/app/data/governors.csv` | Raw NYT gubernatorial polling bulk export; read live by `governors.py` for the coattail signal |
 | `backend/app/data/polls.csv` | Curated Senate polls (408 rows, 257 included, 24 states) with sources, sponsors, dates, and inclusion flags |

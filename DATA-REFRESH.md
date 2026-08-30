@@ -1,110 +1,102 @@
 # Data Refresh Checklist
 
-Everything the forecast needs that has to be fetched by hand, as of **August 30, 2026**
-(65 days to the election). Ordered by how much it moves the model.
+Status of every input that has to be fetched by hand. Last refreshed **August 30, 2026**
+(65 days to the election).
 
 The four economic inputs feed `national_environment_shift()` in
-`backend/app/model/environment.py`, which currently reads **D+5.02**. That shift is added
-to every one of the 35 races, so an error here moves the whole map, not one state.
+`backend/app/model/environment.py`, currently **D+5.10**. That shift is added to all 35
+races, so an error here moves the whole map rather than one state.
 
-| Input | Model coefficient | Current value | Age |
-|---|---|---|---|
-| Presidential approval | 0.12 pts per net approval pt | net −18.16 → D+2.18 | newest poll 8/3/26 |
-| Consumer sentiment | 0.04 pts per pt below 85.0 | 55.2 → D+1.19 | July final |
-| GDP growth | 0.3 pts per pt above 2.0% | 1.5% → D+0.15 | Q2 advance |
-| Unemployment | none — display only | 4.2% | June |
-
----
-
-## 1. Presidential approval polls — **highest priority**
-
-**Get:** a fresh NYT bulk export of presidential approval polling, saved over
-`backend/app/data/potus-approval.csv`.
-
-**Why it matters most:** this is the single largest environment component (D+2.18 of the
-D+5.02 total) and the only one the model recomputes live at runtime. Drop the file in and
-the forecast picks it up on the next cache cycle — no code or JSON edits needed.
-
-**Why it is stale:** the newest poll in the file ends **8/3/26 — 27 days ago**. The average
-uses a 21-day half-life, so the freshest data we have is already weighted below half. The
-file has 953 polls but only 52 ending since July 1, meaning the recent window that actually
-drives the number is thin.
-
-**Before overwriting:** move the current file to
-`backend/app/data/archive/potus-approval-2026-08-30.csv`. The archive is how each new drop
-gets diffed against the last.
+| Input | Coefficient | Current value | Contribution | Status |
+|---|---|---|---|---|
+| Presidential approval | 0.12 / net approval pt | net −17.64 | D+2.12 | ✅ through 8/28/26 |
+| Consumer sentiment | 0.04 / pt below 85.0 | 51.7 | D+1.33 | ✅ Aug final |
+| GDP growth | 0.3 / pt above 2.0% | 1.5% | D+0.15 | ✅ Q2 second estimate |
+| Unemployment | none — display only | 4.1% | — | ✅ July |
+| Base midterm penalty | — | — | D+1.50 | constant |
 
 ---
 
-## 2. Consumer sentiment — August final
+## ✅ Done in this refresh
 
-**Get:** the University of Michigan Surveys of Consumers August 2026 **final** reading, from
-<https://data.sca.isr.umich.edu/>.
+**Presidential approval** — new NYT bulk export in place, 989 polls running through
+**8/28/26** (was 8/3/26). 896 fall inside the 540-day window and carry weight. Net approval
+moved −18.16 → **−17.64**, slightly *less* favourable to Democrats. The previous file is
+archived at `backend/app/data/archive/potus-approval-2026-08-04.csv` (verified byte-identical
+to the version it replaced). No code or JSON edits were needed — `environment.py` reads this
+file live at runtime.
 
-**Update:** `economy.consumer_sentiment` and `economy.consumer_sentiment_source` in
-`backend/app/data/environment.json`.
+**Consumer sentiment** — updated 55.2 → **51.7**, the University of Michigan August final
+released 8/28/26, down about 6% from July and about 11% below a year ago. Taken from the
+Surveys of Consumers monthly series at
+<https://www.sca.isr.umich.edu/files/tbmics.csv> and cross-checked against the headline on
+<https://www.sca.isr.umich.edu/>. This is the largest single change in the refresh:
+sentiment's contribution rose D+1.19 → **D+1.33**.
 
-**Note:** while researching this I saw the August final reported as **51.7**, down 3.5 points
-from July's 55.2, with the preliminary at 51.0 and year-ahead inflation expectations easing
-to 4.0%. That came from secondary coverage, not the U. Michigan release itself, so please
-confirm it at the primary source before applying. If 51.7 holds, the sentiment contribution
-goes from D+1.19 to **D+1.33** and the national environment from D+5.02 to about **D+5.16**
-— a real move, and in the Democrats' direction.
+**GDP** — no value change. The BEA Q2 2026 second estimate (released 8/26/26) left real GDP
+growth at **1.5% annualized**, with consumer spending revised up to 3.4%. Only the source
+note in `environment.json` was updated from "advance" to "second estimate."
 
----
+**Unemployment** — updated 4.2% → **4.1%** (BLS July Employment Situation, released 8/7/26).
+Display only: `national_environment_shift()` never reads it. Note the decline is not good
+news — payrolls fell 23k, May and June were revised down 103k combined, and participation
+dropped to 61.4%.
 
-## 3. GDP — **probably no change needed**
-
-**Get:** BEA Q2 2026 **second** estimate, released 8/26/26
-(<https://www.bea.gov/data/gdp/gross-domestic-product>).
-
-**Note:** the second estimate appears to have left real GDP growth **unchanged at 1.5%
-annualized**, with consumer spending revised up to 3.4%. If that is right, the model's
-`gdp_growth_annualized` is already correct and only `gdp_source` needs its wording updated
-from "advance estimate" to "second estimate." Worth confirming, but do not expect the
-forecast to move.
-
-**Next release that would matter:** Q2 third estimate (late September) and the Q3 advance
-estimate (late October) — the last GDP print before the election.
+**Net effect:** national environment D+5.02 → **D+5.10**. D control probability moved ~42%
+→ ~42%. No race changed rating.
 
 ---
 
-## 4. Unemployment — cosmetic only
+## ⚠️ One correction
 
-**Get:** BLS Employment Situation for July 2026, released 8/7/26
-(<https://www.bls.gov/news.release/empsit.nr0.htm>).
+`backend/app/data/ff202607.pdf` is the **July** report, not August — the `202607` in the
+filename is the year-month. Its data table runs Jul 2025 → Jul 2026 and ends at 55.2, which
+is the value the model already had. The August figure came from the monthly CSV instead.
 
-**Note:** reporting on that release has the unemployment rate at **4.1%**, down from 4.2%,
-though payrolls fell 23,000 and May/June were revised down 103,000 combined.
+For next time, the reliable path is the monthly series rather than the per-month PDF:
 
-**Impact: none.** `unemployment_rate` is carried in `environment.json` and echoed in the API
-response, but `national_environment_shift()` never reads it — the shift is built only from
-the base midterm penalty, approval, GDP and sentiment. Update it for accuracy of the
-displayed figure, not because it changes the forecast. If you want unemployment to actually
-count, that is a model change, not a data refresh.
+- **CSV (best):** <https://www.sca.isr.umich.edu/files/tbmics.csv> — full Index of Consumer
+  Sentiment history, one row per month, always current.
+- Per-month reports are `ff<YYYYMM>.pdf`, so the August one would be `ff202608.pdf`.
 
 ---
 
-## 5. Senate and gubernatorial polling
+## Coming up
 
-**Get:** fresh NYT bulk exports over `backend/app/data/senate.csv` and
-`backend/app/data/governors.csv`, archiving the current ones first.
+| Date | Release | Matters? |
+|---|---|---|
+| **Sept 4** | BLS Employment Situation, August | display only |
+| **Sept 11** | U. Michigan September **preliminary** | yes — sentiment |
+| Late Sept | BEA Q2 third estimate | rarely moves |
+| Early Oct | U. Michigan September final | yes — sentiment |
+| **Late Oct** | BEA Q3 **advance** estimate | yes — last GDP print before the election |
 
-Both are curated by hand — see the pipeline notes in `README.md`. Two things specifically
-worth a new Senate drop:
+Approval polling should be re-dropped roughly weekly from here. The average uses a 21-day
+half-life, so a file more than about two weeks stale is materially discounting its own
+freshest data.
 
-- **South Carolina** rests on a single D-sponsored poll taken before the nominee was
-  certified. It is currently the most fragile input in the model: that one poll is the
-  entire difference between Safe R and Lean R there.
+---
+
+## Polling files
+
+**Senate** (`senate.csv`) and **gubernatorial** (`governors.csv`) NYT bulk exports. Archive
+the current file before overwriting; both are curated by hand — see the pipeline notes in
+`README.md`.
+
+Two things specifically worth a new Senate drop:
+
+- **South Carolina** is the most fragile input in the model. Its entire average is one
+  D-sponsored poll showing 41-41 in an R+11 seat, and that poll alone is the difference
+  between Safe R and Lean R.
 - **Massachusetts (Sept 1)** and **New Hampshire (Sept 8)** primaries resolve within days.
-  Once they do, the losing candidate's matchups have to be re-flagged `no` in `polls.csv`,
-  the way the Craig, Beaudion, Vindman and Priest matchups already were.
+  Once they do, the losing candidate's matchups must be re-flagged `no` in `polls.csv`, the
+  way the Craig, Beaudion, Vindman and Priest matchups already were.
 
 ---
 
 ## Not needed
 
-- **Cook PVI** — the values in `races_2026.json` and the reference table in
-  `backend/app/model/governors.py` are current and only change after a presidential election.
+- **Cook PVI** — values in `races_2026.json` and the reference table in
+  `backend/app/model/governors.py` only change after a presidential election.
 - **Candidate quality scores** — hand-set in `races_2026.json`; revisit only when a nominee
   changes.
