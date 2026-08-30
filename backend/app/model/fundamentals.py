@@ -6,10 +6,12 @@ The model computes a Democratic vote margin estimate for each race based on:
   2. National environment (presidential approval, GDP, consumer sentiment)
   3. Incumbency advantage / disadvantage
   4. Candidate quality adjustment
-  5. Open-seat volatility penalty
+  5. Gubernatorial coattails, where a governor race shares the ballot
+  6. Open-seat volatility penalty
 
-Polling weight ramps from 0 → 1 linearly over the final 365 days before
-the election.  More than a year out, the estimate is fundamentals-only.
+Polling weight ramps from 0 → MAX_POLLING_WEIGHT linearly over the final 365
+days before the election. More than a year out, the estimate is
+fundamentals-only.
 """
 
 from datetime import date
@@ -17,6 +19,7 @@ from typing import Optional
 import math
 
 from .environment import national_environment_shift, load_environment
+from .governors import governor_adjustment
 
 
 # ── Constants ──────────────────────────────────────────────────────────────────
@@ -24,6 +27,14 @@ from .environment import national_environment_shift, load_environment
 INCUMBENCY_ADVANTAGE: float = 2.5   # percentage points boost for incumbents
 QUALITY_WEIGHT: float = 0.8         # pts per quality-score point differential
 OPEN_SEAT_PENALTY: float = 1.5      # extra uncertainty (not mean shift) for open seats
+
+# Senate polling never becomes the whole forecast. Public polling error has been
+# large and directionally persistent in recent cycles, so even on election day a
+# quarter of the estimate stays with the fundamentals — PVI, the national
+# environment (approval, GDP, sentiment), incumbency, candidate quality and the
+# gubernatorial signal — which carry independent information and fail in
+# different ways than state horse-race polls do.
+MAX_POLLING_WEIGHT: float = 0.75
 
 ELECTION_DATE = date(2026, 11, 3)
 
@@ -37,17 +48,19 @@ def days_until_election(as_of: Optional[date] = None) -> int:
 
 def polling_weight(as_of: Optional[date] = None) -> float:
     """
-    Weight given to polling vs. fundamentals.
-    Ramps linearly from 0 (≥365 days out) to 1 (election day).
+    Weight given to Senate polling vs. everything else.
+    Ramps linearly from 0 (≥365 days out) to MAX_POLLING_WEIGHT on election day.
     """
     days = days_until_election(as_of)
-    return max(0.0, min(1.0, (365 - days) / 365))
+    ramp = max(0.0, min(1.0, (365 - days) / 365))
+    return MAX_POLLING_WEIGHT * ramp
 
 
 def fundamentals_lean(
     race: dict,
     president_party: str = "R",
     env_shift: Optional[float] = None,
+    as_of: Optional[date] = None,
 ) -> float:
     """
     Compute the fundamentals-based Democratic vote margin (percentage points).
@@ -62,6 +75,9 @@ def fundamentals_lean(
     env_shift : float, optional
         Pre-computed national environment shift (D advantage in pts).
         If None, loaded from environment.json.
+    as_of : date, optional
+        Reference date; controls which gubernatorial polls are recent enough
+        to count. Defaults to today.
 
     Returns
     -------
@@ -95,6 +111,10 @@ def fundamentals_lean(
     rep_quality = race["candidates"].get("rep", {}).get("quality_score", 5)
     lean += (dem_quality - rep_quality) * QUALITY_WEIGHT
 
+    # 5. Gubernatorial coattails — how far this state's governor race is running
+    #    from its partisan baseline, damped hard. See governors.py.
+    lean += governor_adjustment(race["state_code"], as_of)
+
     return lean
 
 
@@ -107,14 +127,19 @@ def blended_lean(
     """
     Blend fundamentals lean with polling average (if available).
     """
-    f_lean = fundamentals_lean(race, president_party, env_shift)
+    f_lean = fundamentals_lean(race, president_party, env_shift, as_of)
     poll_avg = race.get("polling_average")  # D - R margin from polls, or None
 
     if poll_avg is None:
-        return f_lean
+        lean = f_lean
+    else:
+        pw = polling_weight(as_of)
+        lean = pw * poll_avg + (1.0 - pw) * f_lean
 
-    pw = polling_weight(as_of)
-    return pw * poll_avg + (1.0 - pw) * f_lean
+    # A ballot-structure adjustment describes the ballot voters actually get, so
+    # it applies at full strength rather than being blended away. Currently only
+    # Alaska, where a second candidate named Dan Sullivan is on the ballot.
+    return lean + float(race.get("ballot_adjustment") or 0.0)
 
 
 def total_sigma(

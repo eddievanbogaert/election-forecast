@@ -18,37 +18,43 @@ Live site: [https://elections.eddievb.com](https://elections.eddievb.com) (also:
 
 ---
 
-## Current Forecast Snapshot (August 28, 2026)
+## Current Forecast Snapshot (August 30, 2026)
 
 | Metric | Value |
 |--------|-------|
-| Expected D seats | ~50.2 / 100 |
-| D Senate control probability | ~45% |
+| Expected D seats | ~50.0 / 100 |
+| D Senate control probability | ~42% |
 | Net national environment | D+5.02 |
-| Days to election | 67 |
-| Polling weight | ~82% polls / 18% fundamentals |
+| Days to election | 65 |
+| Polling weight | ~62% Senate polls / 38% everything else |
 
 Democrats need 51 seats for control (the model does not credit a tie-breaking
 vice president, since the VP is Republican this cycle). The expected seat count
-sitting just above 50 while control probability sits below 50% is exactly what
+sitting right at 50 while control probability sits below 50% is exactly what
 that asymmetry looks like.
 
 ### Key Battlegrounds
 
 | Race | Rating | D Win Prob | Polling Avg |
 |------|--------|-----------|-------------|
-| NC (Cooper vs Whatley) | Safe D | ~94% | D+7.7 |
-| GA (Ossoff vs Collins) | Safe D | ~92% | D+6.6 |
-| NH (Pappas vs Sununu/Brown) | Safe D | ~91% | D+6.5 |
-| MN (Flanagan vs Tafoya) | Safe D | ~88% | D+4.6 |
-| ME (Jackson vs Collins) | Lean D | ~66% | D+1.3 |
-| AK (Peltola vs Sullivan) | Toss-up | ~55% | D+1.9 |
-| TX (Talarico vs Paxton) | Toss-up | ~53% | D+1.6 |
-| OH vacancy (Brown vs Husted) | Toss-up | ~51% | D+0.4 |
-| MI (El-Sayed vs Rogers) | Toss-up | ~50% | R+0.7 |
-| IA (Turek vs Hinson) | Lean R | ~32% | R+1.4 |
-| NE (Osborn I vs Ricketts) | Likely R | ~19% | R+0.7 |
-| FL vacancy (TBD vs Moody) | Safe R | ~8% | R+6.8 |
+| MN (Flanagan vs Tafoya) | Safe D | ~90% | D+4.6 |
+| NC (Cooper vs Whatley) | Safe D | ~90% | D+7.7 |
+| GA (Ossoff vs Collins) | Safe D | ~89% | D+6.6 |
+| NH (Pappas vs Sununu/Brown) | Safe D | ~87% | D+6.1 |
+| ME (Jackson vs Collins) | Lean D | ~69% | D+1.3 |
+| MI (El-Sayed vs Rogers) | Lean D | ~57% | R+0.7 |
+| AK (Peltola vs Sullivan) | Toss-up | ~50% | D+1.9 |
+| OH vacancy (Brown vs Husted) | Toss-up | ~48% | D+0.4 |
+| TX (Talarico vs Paxton) | Lean R | ~42% | D+1.7 |
+| SC vacancy (Andrews vs D. Graham) | Lean R | ~32% | EVEN |
+| IA (Turek vs Hinson) | Likely R | ~28% | R+1.4 |
+| NE (Osborn I vs Ricketts) | Safe R | ~6% | R+0.7 |
+| FL vacancy (Nixon vs Moody) | Safe R | ~5% | R+10.1 |
+
+> **South Carolina is the weakest number on this page.** Its average is one
+> D-sponsored poll showing a 41-41 tie in an R+11 seat. That single poll is the
+> entire difference between Safe R and Lean R there. Treat SC as poorly
+> measured rather than genuinely competitive until more polling lands.
 
 > **Rating labels are looser than the analysis scale.** `prob_to_rating()` in
 > `monte_carlo.py` labels anything ≥85% "Safe", while
@@ -58,7 +64,7 @@ that asymmetry looks like.
 
 See [analysis_notes.md](backend/app/data/analysis_notes.md) for detailed
 race-by-race analysis and [polls.csv](backend/app/data/polls.csv) for all 408
-polls considered — 274 included in averages across 22 states.
+polls considered — 257 included in averages across 24 states.
 
 ---
 
@@ -102,6 +108,8 @@ polls considered — 274 included in averages across 22 states.
 | Environment | National environment shift (approval, GDP, sentiment) | `potus-approval.csv` + `environment.json` → `environment.py` |
 | Candidate | Quality score differential | Seed data (0–10 scale) |
 | Seat | Open-seat volatility | Seed data flag |
+| Coattails | Gubernatorial over/under-performance | `governors.csv` → `governors.py` |
+| Ballot | Ballot-structure adjustment (AK only) | `ballot_adjustment` in seed data |
 | Polling | Head-to-head average (D − R) | `polls.csv` + `senate.csv` → `polling_average` in seed data |
 
 ### National Environment (v0.2.0)
@@ -127,17 +135,87 @@ GDP and sentiment are **manual** entries in `backend/app/data/environment.json`,
 currently BEA Q2 2026 advance estimate (+1.5% annualized, released 7/30/26) and
 University of Michigan July 2026 final (55.2, released 7/31/26).
 
+### Gubernatorial coattails
+
+Where a state votes for governor on the same ballot, the Senate candidate gets a
+small push from how far the governor race is running from that state's partisan
+baseline.
+
+The raw correlation between same-state Senate and gubernatorial margins is high
+(r = 0.59 across the 45 concurrent races since 2018) — but nearly all of that is
+shared state partisanship, which PVI already captures. Using it directly would
+double-count. What is actually incremental is the *residual* relationship:
+
+```
+1. Senate margin   ~ PVI  →  Senate residual        (fit within each cycle,
+2. Governor margin ~ PVI  →  Governor residual       which absorbs that cycle's
+3. Senate residual ~ Governor residual → β           national environment)
+
+β = 0.119   (SE 0.050, t = 2.36, r = 0.34)
+bootstrap 90% CI [0.036, 0.241]; Theil–Sen 0.142
+```
+
+So roughly **10–15% of a governor candidate's over-performance shows up in the
+Senate race** — real, but an order of magnitude smaller than the raw correlation
+suggests. The model uses **β = 0.10**, the conservative end, because the estimate
+is unstable across cycles (2018 β = 0.25, 2022 β = 0.02) and the largest
+residuals are exactly the personality-driven cases that transfer least — the
+Phil Scott / Charlie Baker / Larry Hogan pattern of a Republican winning a
+governor's race in a blue state whose Senate seat never moves.
+
+Two dampers keep it modest: a hard **±2.0 point cap**, and an `n/(n+2)` shrink
+toward zero so a state with one stale gubernatorial poll cannot move its Senate
+race much. In the current run the largest adjustment on a competitive race is
+**NH at −0.97** (Ayotte running well ahead in the governor race), and most are
+under half a point.
+
 ### Blending
 
 ```
 blended_lean = α × polling_average + (1 − α) × fundamentals_lean
+             + ballot_adjustment
 
-α = max(0, min(1, (365 − days_until_election) / 365))
+α = 0.75 × max(0, min(1, (365 − days_until_election) / 365))
 ```
 
-At 67 days out, `α ≈ 0.82`: the model is **18% fundamentals, 82% polling**. Polling weight ramps linearly to 100% over the final year before the election.
+At 65 days out, `α ≈ 0.62`: the model is **62% Senate polling, 38% everything
+else**. The ramp is capped so that **Senate polling never exceeds 75% of the
+mix, even on election day.** Public state-level polling error has been large and
+directionally persistent in recent cycles, so the remaining quarter stays with
+inputs that carry independent information and fail in different ways —  PVI, the
+national environment (approval, GDP, sentiment), incumbency, candidate quality
+and the gubernatorial signal.
 
-Because polling now dominates, a thin or unrepresentative state average moves a race hard. That is why hypothetical matchups — polls testing a nomination that has not been decided — are held out of the averages rather than averaged in (see SC and OK).
+A thin or unrepresentative state average still moves a race hard, which is why
+polls testing a nomination that has not been decided are held out rather than
+averaged in, and why matchups are re-flagged the moment a primary resolves.
+
+`ballot_adjustment` is applied at full strength rather than blended, because it
+describes the ballot voters actually receive. Only Alaska uses it — see below.
+
+### Alaska: two candidates named Dan Sullivan
+
+The November ballot carries both **Dan Sullivan**, the Republican incumbent, and
+**Daniel J. Sullivan Jr.**, a Petersburg logger listed with no party affiliation
+who took 2.5% in the August top-four primary and polls 3–5%. The state tried to
+keep him off the ballot as a deliberate attempt to confuse voters; the Alaska
+Supreme Court allowed him on.
+
+Alaska uses ranked-choice voting, which matters enormously here: most votes cast
+for the wrong Sullivan flow back to the incumbent in later rounds. The residual
+benefit to Peltola is only the share that *never returns*:
+
+```
+share × intent × non-return  =  0.030 × 0.70 × 0.45  ≈  1.0 pt
+```
+
+- **share 3.0%** — the name-alike's first-round vote (2.5% in the primary, 3–5% in polls)
+- **intent 0.70** — the fraction of that meant for the incumbent rather than genuine protest votes
+- **non-return 0.45** — the fraction that fails to reach Sullivan in later rounds, either exhausting or transferring elsewhere. Alaska's overall ballot exhaustion runs 5–8%, but this subgroup is far higher: a voter who misidentified the candidate has no reason to rank the *other* Sullivan second.
+
+The model applies **+1.0 point to Peltola**, with a plausible range of +0.4 to
++2.3. The state's polling average is read as the RCV final round, which is
+head-to-head, so this does not double-count.
 
 ### Uncertainty / Sigma
 
@@ -147,6 +225,9 @@ Because polling now dominates, a thin or unrepresentative state average moves a 
 σ_fundamentals = 7.0 × (1 − α)    # large early, shrinks as polls arrive
 σ_polling       = 2.5 × α          # pure polling error
 σ_residual      = 2.8              # state-specific floor
+
+# α caps at 0.75, so σ_fundamentals never falls below 1.75 — the model stays
+# permanently uncertain about the share it does not give to Senate polling.
 ```
 
 Open seats receive an additional +1.5 pp of uncertainty (added in quadrature: `σ = √(σ² + 1.5²)`).
@@ -165,10 +246,12 @@ The shared national error produces the cross-state correlation essential for rea
 
 ### Planned Improvements
 
-1. **Correlated state errors**: currently a single national factor. A full covariance matrix (regional clusters, open-seat correlation) would improve accuracy.
-2. **Candidate quality**: currently a coarse 0–10 score. Plan to integrate FEC fundraising data and name-recognition tiers.
-3. **Undecided allocation**: no model yet; assumes they split evenly. Will add a challenger-lean adjustment.
-4. **Bayesian blending**: replace the linear polling ramp with a Bayesian update framework as more polls arrive.
+1. **Weight polling averages by depth**: every state's `polling_average` currently counts the same regardless of whether it rests on 27 polls or 1. South Carolina is the live example — a single sponsored poll carries the same 62% weight as Texas's 27. Widening σ when a state's average is thin would be the single biggest accuracy win available.
+2. **Correlated state errors**: currently a single national factor. A full covariance matrix (regional clusters, open-seat correlation) would improve accuracy.
+3. **Candidate quality**: currently a coarse 0–10 score. Plan to integrate FEC fundraising data and name-recognition tiers.
+4. **Undecided allocation**: no model yet; assumes they split evenly. Will add a challenger-lean adjustment.
+5. **Bayesian blending**: replace the linear polling ramp with a Bayesian update framework as more polls arrive.
+6. **Reconcile rating labels** with the stricter scale in `analysis_notes.md`.
 
 ---
 
@@ -180,10 +263,12 @@ The shared national error produces the cross-state correlation essential for rea
 | `backend/app/data/environment.json` | Economic environment indicators (GDP, consumer sentiment, unemployment) |
 | `backend/app/data/potus-approval.csv` | Raw presidential approval polls (953 polls); read by `environment.py` at runtime |
 | `backend/app/data/senate.csv` | Raw NYT Senate polling bulk export (~3,800 rows); curated by hand into `polls.csv` |
-| `backend/app/data/polls.csv` | Curated Senate polls (408 rows, 274 included, 22 states) with sources, sponsors, dates, and inclusion flags |
+| `backend/app/data/governors.csv` | Raw NYT gubernatorial polling bulk export; read live by `governors.py` for the coattail signal |
+| `backend/app/data/polls.csv` | Curated Senate polls (408 rows, 257 included, 24 states) with sources, sponsors, dates, and inclusion flags |
 | `backend/app/data/archive/` | Dated snapshots of prior `senate.csv` / `potus-approval.csv` drops, kept so each new drop can be diffed against the last |
 | `backend/app/data/analysis_notes.md` | Detailed race-by-race analysis, tiered ratings, and methodology |
 | `backend/app/data/races_2028.json` | Class III seed data for the next cycle (not active) |
+| `DATA-REFRESH.md` | Running checklist of hand-fetched inputs that need updating |
 
 ### How a polling average is produced
 
@@ -305,6 +390,7 @@ election-forecast/
 │   │   ├── model/
 │   │   │   ├── fundamentals.py # PVI, incumbency, environment lean
 │   │   │   ├── environment.py  # National environment model + approval average
+│   │   │   ├── governors.py    # Gubernatorial coattail signal
 │   │   │   └── monte_carlo.py  # 40k simulation engine
 │   │   └── data/
 │   │       ├── races_2026.json    # Seed data for all 35 races
@@ -312,6 +398,7 @@ election-forecast/
 │   │       ├── environment.json   # Economic environment indicators
 │   │       ├── potus-approval.csv # Presidential approval polls (live input)
 │   │       ├── senate.csv         # Raw NYT Senate polling bulk export
+│   │       ├── governors.csv      # Raw NYT gubernatorial polling (live input)
 │   │       ├── polls.csv          # Curated polls with inclusion flags
 │   │       ├── archive/           # Dated snapshots of prior data drops
 │   │       └── analysis_notes.md  # Detailed race analysis

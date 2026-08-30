@@ -17,26 +17,26 @@ Alaska,AK,Alaska Survey Research,,,2026-05-14,2026-05-17,Mary S. Peltola,Dan Sul
 Alaska,AK,Alaska Survey Research,,,2026-06-04,2026-06-07,Mary S. Peltola,Dan Sullivan,49.4,44.2,D+5.2,D+5.2,yes,n=1393 lv; NYT data
 Alaska,AK,The New York Times/Siena University,,,2026-06-15,2026-06-29,Mary S. Peltola,Dan Sullivan,45.06,47.47,R+2.4,R+2.4,yes,n=593 lv; NYT data
 Arkansas,AR,GrayHouse,America One Policies,Republican,2026-02-07,2026-02-09,Hallie Shoffner,Tom Cotton,36.0,58.0,R+22,R+22,yes,n=550 LV; NYT data
-Florida,FL,The Tyson Group,Plymouth Union Public Advocacy,,2025-10-01,2025-10-03,Jennifer Jenkins,Ashley Moody,37.0,44.0,R+7,R+7,yes,n=800 LV; NYT data
-Florida,FL,UNF,Florida Watch,Democratic,2025-10-15,2025-10-25,Jennifer Jenkins,Ashley Moody,38,49,R+11,Moody +11,yes,n=728 LV; D-sponsored; NYT data
-Florida,FL,University of North Florida,Florida Watch,Democratic,2025-10-15,2025-10-25,Jennifer Jenkins,Ashley Moody,38.0,49.0,R+11,R+11,yes,n=728 LV; NYT data
-Florida,FL,UNF,,,2026-02-21,2026-03-02,Alexander Vindman,Ashley Moody,38,45,R+7,Moody +7,yes,n=772 LV; NYT data
+Florida,FL,The Tyson Group,Plymouth Union Public Advocacy,,2025-10-01,2025-10-03,Jennifer Jenkins,Ashley Moody,37.0,44.0,R+7,R+7,no,n=800 LV; NYT data; Jennifer Jenkins is not the nominee — Nixon won the Aug 18 primary 56-44
+Florida,FL,UNF,Florida Watch,Democratic,2025-10-15,2025-10-25,Jennifer Jenkins,Ashley Moody,38,49,R+11,Moody +11,no,n=728 LV; D-sponsored; NYT data; Jennifer Jenkins is not the nominee — Nixon won the Aug 18 primary 56-44
+Florida,FL,University of North Florida,Florida Watch,Democratic,2025-10-15,2025-10-25,Jennifer Jenkins,Ashley Moody,38.0,49.0,R+11,R+11,no,n=728 LV; NYT data; Jennifer Jenkins is not the nominee — Nixon won the Aug 18 primary 56-44
+Florida,FL,UNF,,,2026-02-21,2026-03-02,Alexander Vindman,Ashley Moody,38,45,R+7,Moody +7,no,n=772 LV; NYT data; Alexander Vindman is not the nominee — Nixon won the Aug 18 primary 56-44
 Florida,FL,UNF,,,2026-02-21,2026-03-02,Angie Nixon,Ashley Moody,38,46,R+8,Moody +8,yes,n=768 LV; NYT data
-Florida,FL,University of North Florida,,,2026-02-21,2026-03-02,Angie Nixon,Ashley Moody,38.0,46.0,R+8,R+8,yes,n=768 LV; NYT data
-Florida,FL,Emerson College,,,2026-03-29,2026-03-31,Alexander Vindman,Ashley Moody,38,46,R+8,Moody +8,yes,n=1125 LV; NYT data
+Florida,FL,University of North Florida,,,2026-02-21,2026-03-02,Angie Nixon,Ashley Moody,38.0,46.0,R+8,R+8,no,n=768 LV; NYT data; duplicate entry of the same survey (listed twice under two pollster spellings)
+Florida,FL,Emerson College,,,2026-03-29,2026-03-31,Alexander Vindman,Ashley Moody,38,46,R+8,Moody +8,no,n=1125 LV; NYT data; Alexander Vindman is not the nominee — Nixon won the Aug 18 primary 56-44
 Florida,FL,Emerson College,,,2026-03-29,2026-03-31,Angie Nixon,Ashley Moody,36,47,R+11,Moody +11,yes,n=1125 LV; NYT data
-Florida,FL,Emerson College,,,2026-03-29,2026-03-31,Hector Mujica,Ashley Moody,38,45,R+7,Moody +7,yes,n=1125 LV; first Mujica poll; NYT data
-Florida,FL,MDW Communications,EDGE Communications,,2026-03-27,2026-04-03,Alexander Vindman,Ashley Moody,42,43,R+1,Moody +1,yes,n=1834 LV; unrated pollster; D+10 outlier vs field; NYT data
-Florida,FL,Public Policy Polling,,Democratic,2026-04-02,2026-04-03,Alexander Vindman,Ashley Moody,40,43,R+3,Moody +3,yes,n=574 RV; D-sponsored; NYT data
-Florida,FL,Echelon Insights,NetChoice,,2026-04-03,2026-04-09,Alexander Vindman,Ashley Moody,43.0,50.0,R+7,R+7,yes,n=406 LV; NYT data
+Florida,FL,Emerson College,,,2026-03-29,2026-03-31,Hector Mujica,Ashley Moody,38,45,R+7,Moody +7,no,n=1125 LV; first Mujica poll; NYT data; Hector Mujica is not the nominee — Nixon won the Aug 18 primary 56-44
+Florida,FL,MDW Communications,EDGE Communications,,2026-03-27,2026-04-03,Alexander Vindman,Ashley Moody,42,43,R+1,Moody +1,no,n=1834 LV; unrated pollster; D+10 outlier vs field; NYT data; Alexander Vindman is not the nominee — Nixon won the Aug 18 primary 56-44
+Florida,FL,Public Policy Polling,,Democratic,2026-04-02,2026-04-03,Alexander Vindman,Ashley Moody,40,43,R+3,Moody +3,no,n=574 RV; D-sponsored; NYT data; Alexander Vindman is not the nominee — Nixon won the Aug 18 primary 56-44
+Florida,FL,Echelon Insights,NetChoice,,2026-04-03,2026-04-09,Alexander Vindman,Ashley Moody,43.0,50.0,R+7,R+7,no,n=406 LV; NYT data; Alexander Vindman is not the nominee — Nixon won the Aug 18 primary 56-44
 Florida,FL,Stetson University Center for Public Opinion Research,,,2026-03-25,2026-04-13,Angie Nixon,Ashley Moody,38.0,51.0,R+13,R+13,yes,n=414 LV; NYT data
-Florida,FL,Cherry Communications,Florida Chamber of Commerce,Republican,2026-05-01,2026-05-09,Alexander Vindman,Ashley Moody,40.0,48.0,R+8,R+8,yes,n=604 LV; NYT data
-Florida,FL,Change Research,Freedom Project USA,,2026-05-13,2026-05-16,Alexander Vindman,Ashley Moody,47.0,45.0,D+2,D+2,yes,n=1593 LV; NYT data
-Florida,FL,Global Strategy Group,,Democratic,2026-05-18,2026-05-21,Alexander Vindman,Ashley Moody,43.0,46.0,R+3,R+3,yes,n=1000 lv; D-sponsored; NYT data
-Florida,FL,Change Research,Freedom Project USA,,2026-06-11,2026-06-14,Alexander Vindman,Ashley Moody,46.0,46.0,Even,Even,yes,n=1015 lv; NYT data
+Florida,FL,Cherry Communications,Florida Chamber of Commerce,Republican,2026-05-01,2026-05-09,Alexander Vindman,Ashley Moody,40.0,48.0,R+8,R+8,no,n=604 LV; NYT data; Alexander Vindman is not the nominee — Nixon won the Aug 18 primary 56-44
+Florida,FL,Change Research,Freedom Project USA,,2026-05-13,2026-05-16,Alexander Vindman,Ashley Moody,47.0,45.0,D+2,D+2,no,n=1593 LV; NYT data; Alexander Vindman is not the nominee — Nixon won the Aug 18 primary 56-44
+Florida,FL,Global Strategy Group,,Democratic,2026-05-18,2026-05-21,Alexander Vindman,Ashley Moody,43.0,46.0,R+3,R+3,no,n=1000 lv; D-sponsored; NYT data; Alexander Vindman is not the nominee — Nixon won the Aug 18 primary 56-44
+Florida,FL,Change Research,Freedom Project USA,,2026-06-11,2026-06-14,Alexander Vindman,Ashley Moody,46.0,46.0,Even,Even,no,n=1015 lv; NYT data; Alexander Vindman is not the nominee — Nixon won the Aug 18 primary 56-44
 Florida,FL,Change Research,Freedom Project USA,,2026-06-11,2026-06-14,Alexander Vindman,Ashley Moody,42.0,46.0,R+4,R+4,no,n=1273 rv; RV version — use LV version instead; NYT data
 Florida,FL,University of North Florida,,,2026-07-08,2026-07-17,Angie Nixon,Ashley Moody,41.6,50.0,R+8.4,R+8.4,yes,n=848 lv; NYT data
-Florida,FL,University of North Florida,,,2026-07-08,2026-07-17,Alexander Vindman,Ashley Moody,40.2,49.9,R+9.7,R+9.7,yes,n=848 lv; NYT data
+Florida,FL,University of North Florida,,,2026-07-08,2026-07-17,Alexander Vindman,Ashley Moody,40.2,49.9,R+9.7,R+9.7,no,n=848 lv; NYT data; Alexander Vindman is not the nominee — Nixon won the Aug 18 primary 56-44
 Georgia,GA,WPA Intelligence,Club for Growth,Republican,2025-01-14,2025-01-15,Jon Ossoff,Buddy Carter,45,32,D+13,Ossoff +13,yes,n=500 LV; R-sponsored; NYT data
 Georgia,GA,WPA Intelligence,Club for Growth,Republican,2025-01-14,2025-01-15,Jon Ossoff,Mike Collins,44,34,D+10,Ossoff +10,yes,n=500 LV; R-sponsored; NYT data
 Georgia,GA,WPA Intelligence,Club for Growth,Republican,2025-01-14,2025-01-15,Jon Ossoff,John King,47,31,D+16,Ossoff +16,yes,n=500 LV; R-sponsored; NYT data
@@ -246,11 +246,11 @@ New Hampshire,NH,co/efficient,,,2025-10-09,2025-10-13,Chris Pappas,John E. Sunun
 New Hampshire,NH,St. Anselm,,,2025-11-18,2025-11-19,Chris Pappas,John E. Sununu,44,41,D+3,Pappas +3,yes,n=2212 RV; NYT data
 New Hampshire,NH,Guidant Polling,,,2025-12-09,2025-12-11,Chris Pappas,John E. Sununu,47,44,D+3,Pappas +3,yes,n=600 LV; NYT data
 New Hampshire,NH,Guidant Polling,,,2025-12-09,2025-12-11,Chris Pappas,Scott Brown,49,38,D+11,Pappas +11,no,Brown matchup — included for context; n=600 LV
-New Hampshire,NH,Guidant Polling and Strategy,One Nation,,2025-12-09,2025-12-11,Chris Pappas,Scott Brown,49.0,38.0,D+11,D+11,yes,n=600 LV; NYT data
+New Hampshire,NH,Guidant Polling and Strategy,One Nation,,2025-12-09,2025-12-11,Chris Pappas,Scott Brown,49.0,38.0,D+11,D+11,no,n=600 LV; NYT data; duplicate entry of the same survey (listed twice under two pollster spellings)
 New Hampshire,NH,Praecones Analytica,,,2025-12-26,2025-12-28,Chris Pappas,John E. Sununu,42,36,D+7,Pappas +7,yes,n=603 RV; NYT data
 New Hampshire,NH,UNH,,,2026-01-15,2026-01-19,Chris Pappas,John E. Sununu,50,45,D+5,Pappas +5,yes,n=2038 LV; NYT data
 New Hampshire,NH,UNH,,,2026-01-15,2026-01-19,Chris Pappas,Scott Brown,52,42,D+10,Pappas +10,no,Brown matchup — included for context; n=2017 LV
-New Hampshire,NH,University of New Hampshire,,,2026-01-15,2026-01-19,Chris Pappas,Scott Brown,52.0,42.0,D+10,D+10,yes,n=2017 LV; NYT data
+New Hampshire,NH,University of New Hampshire,,,2026-01-15,2026-01-19,Chris Pappas,Scott Brown,52.0,42.0,D+10,D+10,no,n=2017 LV; NYT data; duplicate entry of the same survey (listed twice under two pollster spellings)
 New Hampshire,NH,yes. every kid. foundation.,,,2026-01-28,2026-01-29,Chris Pappas,John E. Sununu,45,41,D+4,Pappas +4,yes,n=563 LV; NYT data
 New Hampshire,NH,St. Anselm,,,2026-03-16,2026-03-18,Chris Pappas,Chris Sununu,46,43,D+3,Pappas +3,no,Chris Sununu (former Gov) matchup — different person from John E. Sununu; n=1491 RV; NYT data
 New Hampshire,NH,St. Anselm,,,2026-03-16,2026-03-18,Chris Pappas,Scott Brown,47,38,D+9,Pappas +9,no,Brown matchup — included for context; n=1491 RV; NYT data
@@ -266,7 +266,7 @@ Ohio,OH,BGSU/YouGov,,,2025-02-14,2025-02-21,Sherrod Brown,Jon Husted,41,47,R+6,H
 Ohio,OH,BGSU/YouGov,,,2025-04-18,2025-04-24,Sherrod Brown,Jon Husted,46,49,R+3,Husted +3,yes,n=800 RV; NYT data
 Ohio,OH,Emerson College,,,2025-08-18,2025-08-19,Sherrod Brown,Jon Husted,44,50,R+6,Husted +6,yes,NYT data
 Ohio,OH,BGSU/YouGov,,,2025-10-02,2025-10-14,Sherrod Brown,Jon Husted,49,48,D+1,Brown +1,yes,n=800 RV; NYT data
-Ohio,OH,Bowling Green State University Democracy and Public Policy Research Network/YouGov,,,2025-10-02,2025-10-14,Sherrod Brown,Jon Husted,49.0,48.0,D+1,D+1,yes,n=800 RV; NYT data
+Ohio,OH,Bowling Green State University Democracy and Public Policy Research Network/YouGov,,,2025-10-02,2025-10-14,Sherrod Brown,Jon Husted,49.0,48.0,D+1,D+1,no,n=800 RV; NYT data; duplicate entry of the same survey (listed twice under two pollster spellings)
 Ohio,OH,Emerson College,,,2025-12-06,2025-12-08,Sherrod Brown,Jon Husted,46,49,R+3,Husted +3,yes,NYT data
 Ohio,OH,EMC Research,Ohio Environmental Council,,2026-02-10,2026-02-22,Sherrod Brown,Jon Husted,51,47,D+4,Brown +4,yes,n=1343 LV; NYT data
 Ohio,OH,OnMessage Inc.,Insurance Watchdog Coalition,,2026-03-03,2026-03-08,Sherrod Brown,Jon Husted,47,45,D+2,Brown +2,yes,Most recent poll; race has tightened significantly; NYT data
@@ -302,7 +302,7 @@ Texas,TX,University of Houston Hobby School of Public Affairs/Texas Southern Uni
 Texas,TX,Cygnal Political,Plymouth Union Public Advocacy,,2025-10-05,2025-10-06,Generic Democrat,John Cornyn,40.0,47.0,R+7,R+7,no,n=600 LV; NYT data; Talarico/Paxton are the nominees — non-nominee matchup
 Texas,TX,Ragnar Research,,,2025-11-12,2025-11-17,James Talarico,Ken Paxton,44,44,Even,Even,yes,n=1000 LV; NYT data
 Texas,TX,Ragnar Research,,,2025-11-12,2025-11-17,James Talarico,John Cornyn,40,46,R+6,Cornyn +6,no,n=1000 LV; NYT data; Talarico/Paxton are the nominees — non-nominee matchup
-Texas,TX,Ragnar Research Partners,,,2025-11-12,2025-11-17,James Talarico,Ken Paxton,44.0,44.0,Even,Even,yes,n=1000 LV; NYT data
+Texas,TX,Ragnar Research Partners,,,2025-11-12,2025-11-17,James Talarico,Ken Paxton,44.0,44.0,Even,Even,no,n=1000 LV; NYT data; duplicate entry of the same survey (listed twice under two pollster spellings)
 Texas,TX,Change Research,Agave Social Welfare Fund,Democratic,2025-11-21,2025-11-26,Jasmine Crockett,Ken Paxton,42.0,50.0,R+8,R+8,no,n=1189 RV; NYT data; Talarico/Paxton are the nominees — non-nominee matchup
 Texas,TX,Emerson College,Nexstar,,2026-01-10,2026-01-12,James Talarico,Ken Paxton,46,46,Even,Even,yes,n=1165 RV; NYT data
 Texas,TX,Emerson College,Nexstar,,2026-01-10,2026-01-12,James Talarico,John Cornyn,44,47,R+3,Cornyn +3,no,n=1165 RV; NYT data; Talarico/Paxton are the nominees — non-nominee matchup
@@ -396,10 +396,10 @@ New Hampshire,NH,University of New Hampshire,7News,,2026-08-20,2026-08-24,Chris 
 Ohio,OH,Tulchin Research,,D,2026-07-29,2026-08-04,Sherrod Brown,Jon Husted,47,43,4,D+4,yes,"n=600 lv; D-sponsored; other: Levy (I) 2, Redpath (L) 2; NYT data"
 Ohio,OH,Beacon Research/Shaw & Company Research,Fox News,,2026-08-06,2026-08-10,Sherrod Brown,Jon Husted,53,45,8,D+8,yes,n=1008 rv; NYT data
 Ohio,OH,Wedgewood Polls,,,2026-08-11,2026-08-13,Sherrod Brown,Jon Husted,48,44,4,D+4,yes,n=800 lv; NYT data
-Oklahoma,OK,Cole Hargrave,,,2026-08-03,2026-08-06,Jim Priest,Kevin Hern,27,48,-21,R+21,no,"n=500 rv; D nominee unresolved — Priest and Thomas both tested in the same survey; single RV poll from one firm, held out pending the nomination; other: Meinhardt (I) 5, Stinnett (I) 3, White (L) 2; NYT data"
-Oklahoma,OK,Cole Hargrave,,,2026-08-03,2026-08-06,N'Kiyla Jasmine Thomas,Kevin Hern,25,49,-24,R+24,no,"n=500 rv; D nominee unresolved — Priest and Thomas both tested in the same survey; single RV poll from one firm, held out pending the nomination; other: Meinhardt (I) 1, Stinnett (I) 4, White (L) 3; NYT data"
+Oklahoma,OK,Cole Hargrave,,,2026-08-03,2026-08-06,Jim Priest,Kevin Hern,27,48,-21,R+21,no,n=500 rv; Priest lost the Aug 25 Democratic runoff to Thomas — no longer a live matchup; NYT data
+Oklahoma,OK,Cole Hargrave,,,2026-08-03,2026-08-06,N'Kiyla Jasmine Thomas,Kevin Hern,25,49,-24,R+24,yes,"n=500 rv; Thomas won the Aug 25 Democratic runoff over Priest, so this tests the actual nominee; other: Meinhardt (I) 1, Stinnett (I) 4, White (L) 3; NYT data"
 Rhode Island,RI,University of New Hampshire,,,2026-08-20,2026-08-24,Jack Reed,Raymond McKay,51,31,20,D+20,yes,n=722 lv; other: Bahry (I) 4; NYT data
-South Carolina,SC,Impact Research,,D,2026-08-18,2026-08-24,Annie Andrews,Darline Graham,41,41,0,EVEN,no,"n=700 lv; D-sponsored; R nominee unresolved on the field dates — Aug 25 runoff was a dead heat (Trafalgar: Graham 47.9 / Norman 47.8); single D-sponsored poll in an R+11 seat, held out pending the certified nominee; other: Whitener (L) 5; NYT data"
+South Carolina,SC,Impact Research,,D,2026-08-18,2026-08-24,Annie Andrews,Darline Graham,41,41,0,EVEN,yes,"n=700 lv; D-sponsored; Graham won the Aug 25 runoff over Norman, so this tests the actual nominee; only SC general-election poll of the real matchup; other: Whitener (L) 5; NYT data"
 South Dakota,SD,Public Opinion Strategies,National Republican Senatorial Committee,R,2026-07-06,2026-07-09,Brian Bengs (I),Mike Rounds,33,56,-23,R+23,yes,"n=500 lv; R-sponsored; Bengs (I) modeled on the D side — Beaudion (D) withdrew Aug 4, leaving Bengs as the only opponent; NYT data"
 South Dakota,SD,Impact Research,,,2026-08-13,2026-08-17,Brian Bengs (I),Mike Rounds,44,44,0,EVEN,yes,"n=500 lv; Bengs (I) modeled on the D side — Beaudion (D) withdrew Aug 4, leaving Bengs as the only opponent; NYT data"
 Texas,TX,Siena University,ReconMR | Texas A&M Bush School,,2026-07-27,2026-07-30,James Talarico,Ken Paxton,47,43,4,D+4,yes,n=619 lv; NYT data

@@ -41,7 +41,7 @@
       "is_open": false,
       "pvi": 9,
       "polling_average": 1.91,
-      "note": "Mary Peltola, the former at-large representative, is challenging Dan Sullivan. Alaska's top-four primary is Aug 18 — both advance comfortably — and November uses ranked-choice voting. 18 polls average D+1.9. The trend favored Peltola for most of the cycle (R+4 Aug '25 to D+5 in spring '26) before NYT/Siena (Jun '26) put Sullivan up R+2.4. Peltola has raised roughly three times Sullivan's total. RCV plus her crossover appeal keep this genuinely live. Toss-up.",
+      "note": "Sullivan is seeking a third term against former Rep. Mary Peltola, who led the Aug 18 top-four primary 49.5-41.4. The general election uses ranked-choice voting, so the polling average is read as the final-round head-to-head. The ballot also carries a second Daniel J. Sullivan, a logger running with no party affiliation who drew 2.5% in the primary and polls 3-5%; the state tried to keep him off the ballot as a deliberate attempt to confuse voters, but the Alaska Supreme Court allowed him on. A +1.0 point ballot adjustment for Peltola accounts for the share of misdirected votes that ranked-choice tabulation does not return to the incumbent. R+9 PVI. Toss-up.",
       "candidates": {
         "dem": {
           "name": "Mary Peltola",
@@ -53,7 +53,9 @@
           "quality_score": 6,
           "is_incumbent": true
         }
-      }
+      },
+      "ballot_adjustment": 1.0,
+      "ballot_adjustment_note": "Two candidates named Dan Sullivan are on the November ballot: the incumbent (Dan Sullivan, R) and Daniel J. Sullivan Jr., a Petersburg logger listed with no party affiliation who took 2.5% in the Aug 18 top-four primary. Alaska uses ranked-choice voting, so most misdirected first-round votes flow back to the incumbent in later rounds; what does not flow back is the residual benefit to Peltola. Estimated as share x intent x non-return = 0.030 x 0.70 x 0.45 = 1.0 pt. Applied after blending because it is a property of the ballot, not a fundamental. Plausible range +0.4 to +2.3."
     },
     {
       "state": "Arkansas",
@@ -144,12 +146,12 @@
       },
       "is_open": false,
       "pvi": 5,
-      "polling_average": -6.79,
-      "note": "Special election for Rubio's seat. Ashley Moody, appointed by DeSantis, is the Republican nominee. The Aug 18 Democratic primary has largely consolidated behind Alex Vindman, who leads Angie Nixon and has out-raised Moody. 19 polls average R+6.8, most in the R+7 to R+11 band; UNF (Jul '26) had Vindman R+9.7. R+5 PVI plus a durable Moody lead makes this Likely R.",
+      "polling_average": -10.1,
+      "note": "Rubio vacancy. Appointed Sen. Ashley Moody is the Republican. State Rep. Angie Nixon, a democratic socialist, upset Alex Vindman 56-44 in the Aug 18 primary despite his 16-to-1 money advantage and national party backing. That reshapes the polling picture: 14 of the 19 polls in the old average tested Vindman, Jenkins or Mujica and have been dropped. Only the Nixon matchups remain, and they were consistently the weaker of the two — pollsters testing both had Nixon running 1-3 points behind Vindman. R+5 PVI. Safe R.",
       "candidates": {
         "dem": {
-          "name": "TBD (primary Aug 18: Vindman / Nixon)",
-          "quality_score": 4,
+          "name": "Angie Nixon",
+          "quality_score": 3,
           "is_incumbent": false
         },
         "rep": {
@@ -502,7 +504,7 @@
       "is_open": true,
       "outgoing_senator": "Shaheen",
       "pvi": -1,
-      "polling_average": 6.48,
+      "polling_average": 6.1,
       "note": "Shaheen retired. Rep. Chris Pappas is the clear Democratic favorite for the Sept 8 primary. On the Republican side, former Sen. John E. Sununu leads Scott Brown 56-19 and has Trump's endorsement. Against Sununu — the tougher matchup — Pappas leads by about D+2.8 across 14 polls; he routs Brown by roughly 12. Overall average D+6.5 across 23 polls. Lean D, and closer to a toss-up once Sununu is the nominee.",
       "candidates": {
         "dem": {
@@ -598,10 +600,10 @@
       "is_open": true,
       "outgoing_senator": "Armstrong",
       "pvi": 26,
-      "note": "Mullin resigned to become Homeland Security secretary; appointed Sen. Alan Armstrong was required under state law to pledge not to run for the full term. Rep. Kevin Hern won the June 16 Republican primary with Trump's endorsement. The Democratic field is minor. R+26 PVI. Safe R.",
+      "note": "Mullin resigned to become Homeland Security secretary. Rep. Kevin Hern won the June Republican primary with Trump's endorsement. N'Kiyla Jasmine Thomas, a democratic socialist, won the Aug 25 Democratic runoff over Jim Priest. The one general-election poll (Cole Hargrave, Aug '26) had Hern up 49-25 over Thomas. R+26 PVI. Safe R.",
       "candidates": {
         "dem": {
-          "name": "TBD",
+          "name": "N'Kiyla Jasmine Thomas",
           "quality_score": 2,
           "is_incumbent": false
         },
@@ -611,7 +613,7 @@
           "is_incumbent": false
         }
       },
-      "polling_average": null
+      "polling_average": -24.0
     },
     {
       "state": "Oregon",
@@ -671,8 +673,8 @@
       "incumbent": null,
       "is_open": true,
       "pvi": 11,
-      "polling_average": null,
-      "note": "The seat is vacant. Lindsey Graham had already won the June 9 Republican primary with 56.8% before he died, so state Republicans are choosing a replacement nominee in a special primary on Aug 11, with an Aug 25 runoff if no one clears 50%; ten Republicans are on that ballot and the party removed three others in a dispute now in litigation. Gov. McMaster appointed Graham's sister, Darline Graham, to hold the seat through January. Trump endorsed her on July 17 and she is running for the full term, leading early primary polling at about 21% with Rep. Ralph Norman near 17%. Pediatrician Annie Andrews won the Democratic primary with 61.5%. The only general-election polling is a single D-sponsored PPP survey (Jul '26) testing five possible Republicans against Andrews, which found her even or ahead in each (avg D+1.8). It is held out of the polling average: it is one sponsored poll counted five times, and it never tested Darline Graham, the primary front-runner. The Aug 25 runoff between Darline Graham and Ralph Norman was a dead heat in the last poll of it (Trafalgar, Aug 24: 47.9-47.8), and the certified nominee is not yet reflected here. A single D-sponsored Impact Research survey (Aug 24) had Andrews tied 41-41 with Graham; it is also held out, because it polled a nomination that had not been decided when it was in the field. The forecast runs on fundamentals until the nominee is settled. R+11 PVI still makes this Safe R.",
+      "polling_average": 0.0,
+      "note": "The seat is vacant after Lindsey Graham's death. His sister Darline Graham, whom Gov. McMaster appointed to hold the seat and whom Trump endorsed, won the Aug 25 runoff over Rep. Ralph Norman. Pediatrician Annie Andrews is the Democratic nominee. The only general-election poll of the real matchup is a single D-sponsored Impact Research survey (Aug 24) showing a 41-41 tie — it is now in the average because it tests the actual nominees, but one sponsored poll is thin evidence in an R+11 seat and it is doing all the work here. Treat this race as poorly measured rather than genuinely close. Note also that Graham is a sitting appointed senator but is modeled as an open seat, so she gets no incumbency bonus.",
       "candidates": {
         "dem": {
           "name": "Annie Andrews",
@@ -680,8 +682,8 @@
           "is_incumbent": false
         },
         "rep": {
-          "name": "TBD (special primary Aug 11: D. Graham / Norman / Fry / Mace / others)",
-          "quality_score": 5,
+          "name": "Darline Graham",
+          "quality_score": 4,
           "is_incumbent": false
         }
       },
@@ -724,11 +726,11 @@
       },
       "is_open": false,
       "pvi": 26,
-      "note": "Hagerty is seeking a second term with Trump's endorsement and no serious primary opposition. The Democratic primary is Aug 6 and has not produced a well-funded candidate. R+26 PVI. Safe R.",
+      "note": "Hagerty is seeking a second term. Marquita Bradshaw, the Memphis environmental activist who was the 2020 nominee and lost by 27, won the Aug 6 primary with over 50%. No general-election polling. R+26 PVI. Safe R.",
       "candidates": {
         "dem": {
-          "name": "TBD",
-          "quality_score": 2,
+          "name": "Marquita Bradshaw",
+          "quality_score": 3,
           "is_incumbent": false
         },
         "rep": {
@@ -745,7 +747,7 @@
       "incumbent": null,
       "is_open": true,
       "pvi": 10,
-      "polling_average": 1.6,
+      "polling_average": 1.66,
       "note": "Cornyn lost the Republican primary to Ken Paxton, leaving an open seat with no incumbent on the ballot. State Rep. James Talarico is the Democratic nominee. The average now uses Talarico-vs-Paxton matchups only and has flipped to D+1.6 across 28 polls: Talarico has led four straight — Slingshot D+5 (Jul 17), Fox News D+3 (Jul 27), Texas Southern D+2 (Jul 30), Wedgewood D+2 (Jul 31). Paxton's impeachment and securities-fraud history makes him an unusually weak nominee, and Talarico posts large margins with moderates (+34) and independents (+20). R+10 PVI still anchors the fundamentals, so the model keeps Republicans favored — but this is now the largest polling-versus-fundamentals divergence among competitive seats.",
       "candidates": {
         "dem": {
@@ -798,10 +800,10 @@
       },
       "is_open": false,
       "pvi": 30,
-      "note": "Capito is seeking a third term with Trump's endorsement, having turned back a primary challenge from Jan. 6 convict Derrick Evans. Democrats have not fielded a serious candidate. R+30 PVI. Safe R.",
+      "note": "Capito is seeking a third term. Former Morgantown city councilmember Rachel Fetty Anderson won the May 12 Democratic primary with 33%. No general-election polling. R+30 PVI and a 43-point Capito margin in 2020. Safe R.",
       "candidates": {
         "dem": {
-          "name": "TBD",
+          "name": "Rachel Fetty Anderson",
           "quality_score": 2,
           "is_incumbent": false
         },
@@ -820,7 +822,7 @@
       "is_open": true,
       "outgoing_senator": "Lummis",
       "pvi": 35,
-      "note": "Lummis announced in December 2025 that she would not seek a second term. Rep. Harriet Hageman, endorsed by both Lummis and Trump, is the overwhelming favorite in the Aug 18 Republican primary against Jimmy Skovgard; James Byrd is the Democratic candidate. R+35 PVI — the reddest seat on the board. Safe R.",
+      "note": "Lummis retired. Rep. Harriet Hageman won the Aug 18 Republican primary with 64.9% over Sam Mead, with Trump's endorsement. James Byrd is the Democratic nominee, taking 79.3% of a low-turnout primary. No general-election polling. R+35 PVI. Safe R.",
       "candidates": {
         "dem": {
           "name": "James Byrd",
@@ -828,7 +830,7 @@
           "is_incumbent": false
         },
         "rep": {
-          "name": "TBD (primary Aug 18: Hageman)",
+          "name": "Harriet Hageman",
           "quality_score": 6,
           "is_incumbent": false
         }
@@ -842,7 +844,7 @@
       "is_open": true,
       "outgoing_senator": "Husted",
       "pvi": 8,
-      "polling_average": 0.4,
+      "polling_average": 0.36,
       "note": "Special election for Vance's seat. Sherrod Brown, who held Ohio's other seat from 2007 to 2025, faces appointed Sen. Jon Husted. 18 polls now average D+0.4 — the average has crossed to Brown for the first time. Three August surveys all had him ahead: Fox News/Beacon-Shaw D+8, Wedgewood D+4, Tulchin (D-sponsored) D+4. The race has swung repeatedly — Husted +6 in mid-'25, even in April, Brown ahead through June, then NYT/Siena (Jun 28) at R+2.8 — so treat the crossing as a shift, not a settled lead. Brown's populist economic brand is why a R+8 state is competitive at all; whether it survives a midterm electorate without presidential-year turnout is the open question. Toss-up.",
       "candidates": {
         "dem": {
