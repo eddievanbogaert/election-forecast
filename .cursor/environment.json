@@ -1,0 +1,20 @@
+{
+  "name": "2026 Senate Forecast",
+  "install": "sudo apt-get update && sudo apt-get install -y python3.12-venv && cd backend && python3 -m venv .venv && .venv/bin/pip install --upgrade pip && .venv/bin/pip install -r requirements.txt && cd ../frontend && npm ci",
+  "terminals": [
+    {
+      "name": "backend",
+      "command": "cd backend && .venv/bin/uvicorn app.main:app --host 0.0.0.0 --port 8080",
+      "description": "FastAPI backend serving the Monte Carlo forecast at http://localhost:8080 (API docs at /api/docs)."
+    },
+    {
+      "name": "frontend",
+      "command": "cd frontend && npm run dev",
+      "description": "Vite + React dev server at http://localhost:5173. Proxies /api/* to the backend on port 8080."
+    }
+  ],
+  "ports": [
+    { "name": "frontend", "port": 5173 },
+    { "name": "backend", "port": 8080 }
+  ]
+}
