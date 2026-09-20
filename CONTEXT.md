@@ -42,9 +42,9 @@ backend/
   app/model/governors.py         — Gubernatorial coattail signal (beta=0.10, capped)
   app/data/races_2026.json       — Seed data: 35 races (PVI, candidates, polling averages, notes)
   app/data/environment.json      — National environment indicators (approval, GDP, sentiment)
-  app/data/polls.csv             — All polls considered (408 entries, 257 included, 24 states)
+  app/data/polls.csv             — All polls considered (499 entries, 303 included, 25 states)
   app/data/governors.csv         — NYT bulk export of gubernatorial polls (read live)
-  app/data/senate.csv            — NYT bulk export of all published Senate polls (~3.8k rows)
+  app/data/senate.csv            — NYT bulk export of all published Senate polls (~4.2k rows)
   app/data/potus-approval.csv    — NYT bulk export of presidential approval polls (read live)
   app/data/archive/              — Dated snapshots of prior senate.csv / potus-approval.csv drops
   app/data/analysis_notes.md     — Detailed race-by-race analysis, tiered ratings, methodology
@@ -174,14 +174,14 @@ Chamber control = P(D total seats ≥ 51).
 
 ---
 
-## Current forecast snapshot (Aug 30, 2026 — 65 days out)
+## Current forecast snapshot (Sept 20, 2026 — 44 days out)
 
 | Metric | Value |
 |--------|-------|
-| Expected D seats | ~50.0 / 100 |
-| D Senate control probability | ~42% |
-| Net national environment | D+5.10 |
-| Polling weight | ~62% Senate polls / 38% everything else (cap 75%) |
+| Expected D seats | ~50.1 / 100 |
+| D Senate control probability | ~44% |
+| Net national environment | D+5.14 |
+| Polling weight | ~66% Senate polls / 34% everything else (cap 75%) |
 | D seats not up | 34 |
 | R seats not up | 31 |
 
@@ -192,52 +192,54 @@ sit above 50 while control probability sits below 50%.
 
 | Rating | Races |
 |--------|-------|
-| **Safe D** | MN, NC, GA, NH, and 9 others |
+| **Safe D** | NC, GA, MN, and 9 others |
+| **Likely D** | NH |
 | **Lean D** | ME, MI |
-| **Toss-up** | AK, OH-Special |
-| **Lean R** | TX, SC |
-| **Likely R** | IA |
-| **Safe R** | NE, FL, MS, KS, KY, and 11 others |
+| **Toss-up** | AK, OH-Special, TX |
+| **Lean R** | IA |
+| **Safe R** | SC, FL, NE, MS, KS, KY, TN, and 9 others |
 
-Changes from the Aug 28 run, almost all driven by cutting Senate polling from 82% to
-62% of the mix — every race pulled toward its fundamentals:
-- **MI Toss-up → Lean D** and **TX Toss-up → Lean R**: both polled near even, but MI is
-  R+1 PVI and TX is R+10, so the fundamentals pull them opposite ways.
-- **IA Lean R → Likely R**, **NE Likely R → Safe R**: Osborn polling even cannot outrun
-  an R+22 PVI at 38% fundamentals weight.
-- **SC Safe R → Lean R**: not a weighting effect — the Aug 25 runoff resolved, so the one
-  D-sponsored poll of the real matchup entered the average. Fragile; see below.
-- **FL Safe R (8% → 5%)**: Nixon's upset dropped 14 of 19 polls from the average.
+Changes from the Aug 30 run, driven by the Sept 19 NYT drop (71 new Senate polls) and
+two resolved primaries:
+- **SC Lean R → Safe R** (34% → 14%): the fragile one-poll average is gone. Abacus Data
+  (Aug 26-28) at R+13 and InsiderAdvantage (Sept 8-9) at R+1.9 took the average from
+  D+0.0 to R+5.0. Biggest single move in the refresh.
+- **NH Safe D → Likely D** (88% → 81%): Sununu won the Sept 8 R primary, so the Scott
+  Brown matchups — about 12 points better for Pappas — left the average.
+- **TX Lean R → Toss-up** (44% → 46%) and **IA Likely R → Lean R** (29% → 33%): 9 and 8
+  new polls respectively, both nudging D.
+- **MI** (56% → 62%) and **OH** (49% → 53%) firmed up for D without changing tier.
 
 Note: rating labels come from `prob_to_rating()` in `monte_carlo.py`, whose cutoffs
 (Safe ≥85%) are looser than the scale documented in `analysis_notes.md` (Safe >95%).
-That is why NC/GA/NH/MN read "Safe D" at ~88–94%. Unreconciled — see priorities.
+That is why NC/GA/MN read "Safe D" at ~87–92%. Unreconciled — see priorities.
 
 ### Key battlegrounds
 
 | Race | PVI | Polling Avg | D Win Prob | Rating |
 |------|-----|-------------|-----------|--------|
 | MN (Flanagan vs Tafoya) | D+3 | D+4.6 | ~90% | Safe D |
-| NC (Cooper vs Whatley) | R+3 | D+7.7 | ~90% | Safe D |
-| GA (Ossoff vs Mike Collins) | R+4 | D+6.6 | ~89% | Safe D |
-| NH (Pappas vs Sununu/Brown) | D+1 | D+6.1 | ~87% | Safe D |
+| NC (Cooper vs Whatley) | R+3 | D+8.0 | ~92% | Safe D |
+| GA (Ossoff vs Mike Collins) | R+4 | D+6.5 | ~90% | Safe D |
+| MN (Flanagan vs Tafoya) | D+1 | D+3.3 | ~87% | Safe D |
+| NH (Pappas vs Sununu) | D+1 | D+4.1 | ~81% | Likely D |
 | ME (Jackson vs Collins) | D+3 | D+1.3 | ~69% | Lean D |
-| MI (El-Sayed vs Rogers) | R+1 | R+0.7 | ~57% | Lean D |
-| AK (Peltola vs Sullivan) | R+9 | D+1.9 | ~50% | Toss-up |
-| OH Special (Brown vs Husted) | R+8 | D+0.4 | ~48% | Toss-up |
-| TX (Talarico vs Paxton) | R+10 | D+1.7 | ~42% | Lean R |
-| SC Special (Andrews vs D. Graham) | R+11 | EVEN | ~32% | Lean R |
-| IA (Turek vs Hinson) | R+10 | R+1.4 | ~28% | Likely R |
-| NE (Osborn I vs Ricketts) | R+22 | R+0.7 | ~6% | Safe R |
-| FL Special (Nixon vs Moody) | R+5 | R+10.1 | ~5% | Safe R |
+| MI (El-Sayed vs Rogers) | R+1 | D+0.5 | ~62% | Lean D |
+| AK (Peltola vs Sullivan) | R+9 | D+2.2 | ~54% | Toss-up |
+| OH Special (Brown vs Husted) | R+8 | D+1.1 | ~53% | Toss-up |
+| TX (Talarico vs Paxton) | R+10 | D+2.0 | ~46% | Toss-up |
+| IA (Turek vs Hinson) | R+10 | R+0.8 | ~33% | Lean R |
+| SC Special (Andrews vs D. Graham) | R+11 | R+5.0 | ~14% | Safe R |
+| FL Special (Nixon vs Moody) | R+5 | R+6.9 | ~9% | Safe R |
+| NE (Osborn I vs Ricketts) | R+22 | R+0.4 | ~8% | Safe R |
 
 ### Polling data coverage
 
-24 states have polling data incorporated: AK, AL, AR, FL, GA, IA, ID, KS, KY, MA, ME,
-MI, MN, MS, MT, NC, NE, NH, OH, OK, RI, SC, SD, TX. SC and OK joined once their Aug 25
-runoffs resolved and their polls tested real nominees.
+25 states have polling data incorporated: AK, AL, AR, FL, GA, IA, ID, KS, KY, MA, ME,
+MI, MN, MS, MT, NC, NE, NH, OH, OK, RI, SC, SD, TN, TX. TN joined with the Sept 19 drop
+(its first general-election poll). NM has a poll but is deliberately held out — see below.
 
-All polls tracked in `polls.csv` (408 entries, 257 included in averages). Bulk NYT export
+All polls tracked in `polls.csv` (499 entries, 303 included in averages). Bulk NYT export
 in `senate.csv`; prior drops in `app/data/archive/`.
 
 **How a polling average is produced** (there is no script — this is done by hand):
@@ -249,7 +251,13 @@ sample-size or pollster weighting. Multi-matchup surveys contribute one row per 
 so a single poll testing five opponents counts five times — watch for that when one
 sponsored survey is the only data (it is why SC and OK are currently held out).
 
-Curation rules applied to the Aug 28 drop:
+**NM is held out on purpose.** `races_2026.json` says no Republican qualified for the
+NM ballot, but the Sept 19 drop carries a Research & Polling/ABQ Journal general-election
+question testing Lujan 53 - Larry Marker (R) 38. The contradiction is unresolved, so the
+poll is flagged `no` and NM has no polling average. Confirm the ballot line before
+including it.
+
+Curation rules applied through the Sept 19 drop:
 - One row per distinct matchup. Where a survey published several population screens of
   the same matchup, the LV screen is kept and the others flagged `no` (NC/Elon published
   three, NC/High Point and MI/TIPP two each).
@@ -259,7 +267,14 @@ Curation rules applied to the Aug 28 drop:
   MA Markey+Moulton). Where the only data is one sponsored poll of an undecided field, the
   state is held out entirely (SC, OK).
 - When a primary resolves, the loser's matchups are re-flagged `no` (MN: four Craig rows
-  dropped after Aug 11; SD: three Beaudion rows dropped after his withdrawal).
+  dropped after Aug 11; SD: three Beaudion rows dropped after his withdrawal; MA: seven
+  Moulton rows after Sept 1; NH: five Brown rows after Sept 8).
+- **Check for duplicate surveys every drop.** NYT lists some pollsters under two names and
+  both spellings get curated in, double-counting one survey. The Sept 19 pass found eight
+  such rows (AK x4, ME x3, MI x1) that had been inflating those averages, on top of the
+  MN PPP/GQR pair caught in August. Match on state + field dates + sample size + matchup.
+- **Check for withdrawn polls too.** The Sept 19 export dropped an MN Impact Research poll
+  that had been in the average (its source memo and field dates disagreed).
 
 ---
 
@@ -280,40 +295,40 @@ Curation rules applied to the Aug 28 drop:
 | State | Inc. | Party | PVI | Polling | Key notes |
 |---|---|---|---|---|---|
 | AL | Open | R | R+27 | R+15 | Tuberville → Gov race. Moore (R) vs Wess (D). Safe R |
-| AK | Sullivan | R | R+9 | D+1.91 | Peltola led top-4 primary 49.5-41.4. TWO Dan Sullivans on ballot; +1.0 ballot adj; RCV |
+| AK | Sullivan | R | R+9 | D+2.15 | Peltola led top-4 primary 49.5-41.4. TWO Dan Sullivans on ballot; +1.0 ballot adj; RCV |
 | AR | Cotton | R | R+24 | R+9.4 | Safe R |
 | CO | Hickenlooper | D | D+4 | — | Baisley (R) nominee. Safe D |
 | DE | Coons | D | D+8 | — | Safe D |
-| FL | Moody (appt) | R | R+5 | R+10.1 | Rubio vacancy. Nixon (D-socialist) upset Vindman 56-44; 14 of 19 polls dropped |
-| GA | Ossoff | D | R+4 | D+6.55 | Top R target. Ossoff vs Mike Collins |
+| FL | Moody (appt) | R | R+5 | R+6.89 | Rubio vacancy. Nixon upset Vindman 56-44. 3 Sept polls pulled the average in 3.2 pts |
+| GA | Ossoff | D | R+4 | D+6.46 | Top R target. Ossoff vs Mike Collins |
 | ID | Risch | R | R+32 | R+17 | Safe R |
 | IL | Open | D | D+17 | — | Durbin retired. Stratton vs Tracy. Safe D |
-| IA | Open | R | R+10 | R+1.39 | Ernst retired. Hinson (R) vs Turek (D). Very close |
-| KS | Marshall | R | R+20 | R+4.25 | Marshall vs Hamilton. Safe R |
-| KY | Open | R | R+26 | R+6.33 | McConnell retired. Barr (R) vs Booker (D) |
+| IA | Open | R | R+10 | R+0.76 | Ernst retired. Hinson (R) vs Turek (D). 8 new Sept polls; Likely R -> Lean R |
+| KS | Marshall | R | R+20 | R+2.79 | Marshall vs Hamilton. Safe R |
+| KY | Open | R | R+26 | R+7.0 | McConnell retired. Barr (R) vs Booker (D) |
 | LA | Open | R | R+20 | — | Cassidy LOST primary. Letlow (R) vs Davis (D). Safe R |
-| ME | Collins | R | D+3 | D+1.32 | Platner withdrew; Jackson (D) nominated Jul 25. Toss-up |
-| MA | Markey | D | D+30 | D+23.32 | Markey vs Moulton primary Sept 1. Safe D |
-| MI | Open | D | R+1 | R+0.69 | Peters retired. El-Sayed won Aug 4 primary vs Rogers |
-| MN | Open | D | D+3 | D+4.6 | Smith retired. Flanagan won the Aug 11 primary over Craig; vs Tafoya |
+| ME | Collins | R | D+3 | D+1.26 | Platner withdrew; Jackson (D) nominated Jul 25. Lean D |
+| MA | Markey | D | D+30 | D+21.04 | Markey beat Moulton Sept 1; Moulton rows dropped. Safe D |
+| MI | Open | D | R+1 | D+0.51 | Peters retired. El-Sayed vs Rogers. 8 new Sept polls flipped the average D |
+| MN | Open | D | D+3 | D+3.33 | Smith retired. Flanagan (won Aug 11) vs Tafoya. NYT withdrew one 2025 poll |
 | MS | Hyde-Smith | R | R+18 | R+4.5 | Safe R |
-| MT | Open | R | R+18 | R+20.5 | Daines withdrew. Alme (R) vs Bankhead (D) + Bodnar (I) — 3-way |
-| NE | Ricketts (appt) | R | R+22 | R+0.67 | Osborn (I) tied in polls. Modeled on D side |
-| NH | Open | D | D+1 | D+6.1 | Shaheen retired. Pappas vs Sununu/Brown (primary Sept 8) |
+| MT | Open | R | R+18 | R+21.21 | Daines withdrew. Alme (R) vs Bankhead (D) + Bodnar (I) — 3-way |
+| NE | Ricketts (appt) | R | R+22 | R+0.4 | Osborn (I) tied in polls. Modeled on D side |
+| NH | Open | D | D+1 | D+4.05 | Shaheen retired. Pappas vs Sununu; Brown rows dropped after Sept 8. Likely D |
 | NJ | Booker | D | D+14 | — | Safe D |
-| NM | Luján | D | D+4 | — | R candidate disqualified. Unopposed |
-| NC | Open | R | R+3 | D+7.72 | Tillis retired. Cooper vs Whatley. Top D pickup |
+| NM | Luján | D | D+4 | — | R candidate disqualified. Unopposed. One Sept poll tests a Marker (R) — held out, unresolved |
+| NC | Open | R | R+3 | D+7.97 | Tillis retired. Cooper vs Whatley. Top D pickup |
 | OK | Open | R | R+26 | R+24 | Mullin → DHS. Hern (R) vs Thomas (D), who won the Aug 25 runoff. Safe R |
 | OR | Merkley | D | D+8 | — | Safe D |
 | RI | Reed | D | D+18 | D+18.5 | Safe D |
-| SC | Open | R | R+11 | EVEN | Graham seat vacant. D. Graham beat Norman Aug 25. ONE D-sponsored poll = whole average |
-| SD | Rounds | R | R+27 | R+11.5 | Beaudion (D) withdrew Aug 4; Bengs (I) modeled D-side. 2 polls disagree wildly |
-| TN | Hagerty | R | R+26 | — | Bradshaw (D), 2020 nominee, won Aug 6 primary. No polling. Safe R |
-| TX | Open | R | R+10 | D+1.66 | Cornyn LOST primary. Paxton (R) vs Talarico (D) — Talarico leads |
+| SC | Open | R | R+11 | R+4.97 | Graham seat vacant. 2 independent Sept polls ended the one-poll average; Lean R -> Safe R |
+| SD | Rounds | R | R+27 | R+8.67 | Beaudion (D) withdrew Aug 4; Bengs (I) modeled D-side. 3 polls disagree wildly |
+| TN | Hagerty | R | R+26 | R+25 | Bradshaw (D) won Aug 6 primary. First poll arrived Sept 19 — single-poll average |
+| TX | Open | R | R+10 | D+1.98 | Cornyn LOST primary. Paxton (R) vs Talarico (D). 9 new Sept polls; now Toss-up |
 | VA | Warner | D | D+3 | — | Mizusawa (R) won Aug 4 primary. Safe D |
 | WV | Capito | R | R+30 | — | Anderson (D) won the May 12 primary. No polling. Safe R |
 | WY | Open | R | R+35 | — | Lummis retired. Hageman won Aug 18 primary 64.9% vs Byrd (D). Safe R |
-| OH | Open | R | R+8 | D+0.36 | Vance vacancy. Brown (D) vs Husted (R, appt) |
+| OH | Open | R | R+8 | D+1.12 | Vance vacancy. Brown (D) vs Husted (R, appt) |
 
 ---
 
@@ -345,19 +360,24 @@ curl -X POST "https://<CLOUD_RUN_URL>/api/forecast/refresh?secret=<ADMIN_SECRET>
 
 ## Next development priorities
 
-1. **Weight polling averages by depth** — every state's average counts the same whether it
-   rests on 27 polls or 1. SC is the live example: one D-sponsored poll is the entire
-   difference between Safe R and Lean R there. Widening σ when a state's average is thin is
-   the biggest accuracy win still available, and the natural companion to the 0.75 cap.
-2. **MA (Sept 1) and NH (Sept 8) primaries** — the last two unresolved nominations. When
-   they land, re-flag the loser's matchups `no` in `polls.csv`, as was done for Craig,
-   Beaudion, Vindman and Priest.
-3. **Keep macro inputs fresh** — see `DATA-REFRESH.md`. All four are current as of 8/30.
-   Next that matters: U. Michigan Sept preliminary (Sept 11) and the BEA Q3 advance estimate
-   in late October, the last GDP print before the election.
-4. **Update analysis_notes.md** — ratings moved again on Aug 30 (MI → Lean D, TX → Lean R,
-   SC → Lean R, IA → Likely R, NE → Safe R)
-5. **Model documentation** — living document detailing forecasting methodology
+1. **Refresh consumer sentiment** — the U. Michigan September preliminary was due Sept 11
+   and is **not** in the model; the Sept 19 refresh covered polling files only. Sentiment is
+   the second-largest environment contributor (D+1.33). Pull from
+   <https://www.sca.isr.umich.edu/files/tbmics.csv>. The BEA Q3 advance estimate in late
+   October is the last GDP print before the election. See `DATA-REFRESH.md`.
+2. **Weight polling averages by depth** — every state's average counts the same whether it
+   rests on 36 polls or 1. SC was the live example until Sept, when going from 1 poll to 3
+   moved it two rating steps (Lean R → Safe R) — exactly the fragility this addresses. TN
+   now sits on a single poll, as do AL, ID and OK. Widening σ when a state's average is thin
+   is the biggest accuracy win still available, and the natural companion to the 0.75 cap.
+3. **Resolve the NM contradiction** — `races_2026.json` says no Republican qualified, but the
+   Sept 19 drop has a general-election poll testing Lujan vs Larry Marker (R). The poll is
+   held out pending confirmation of the ballot line.
+4. **Refresh `governors.csv`** — not updated since Aug 28, now the stalest polling file in
+   the repo. It feeds the β=0.10 coattails term, so second-order but drifting.
+5. **Rewrite analysis_notes.md** — badly stale: it still discusses Platner in Maine and
+   describes the race "at 601 days out". Ratings have moved twice since.
+6. **Model documentation** — living document detailing forecasting methodology
 6. **Regional correlation** — improve correlation structure in `monte_carlo.py` with state clusters
 7. **Candidate quality pipeline** — integrate FEC fundraising data to auto-update quality scores
 8. **Undecided allocation** — currently assumes even split; add challenger-lean adjustment

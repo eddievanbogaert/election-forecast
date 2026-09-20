@@ -1,18 +1,18 @@
 {
-  "as_of": "2026-08-30",
+  "as_of": "2026-09-20",
   "presidential_approval": {
     "_note": "Computed live from potus-approval.csv by environment.py — this block is a fallback only and is overridden at runtime.",
-    "approve": 39.75,
-    "disapprove": 57.39,
-    "net": -17.64,
-    "source": "potus-approval.csv weighted average (989 polls in file, 896 inside the 540-day window, half-life 21d, through 8/28/26)"
+    "approve": 39.77,
+    "disapprove": 57.78,
+    "net": -18.01,
+    "source": "potus-approval.csv weighted average (1020 polls in file, 891 inside the 540-day window, half-life 21d, through 9/16/26)"
   },
   "economy": {
     "gdp_growth_annualized": 1.5,
     "gdp_source": "BEA Q2 2026 second estimate (released 8/26/26): +1.5% annualized, unchanged from the advance estimate, with consumer spending revised up to 3.4%. Down from Q1 2026's +2.1% third estimate. Q2 third estimate due late September 2026; the Q3 advance estimate in late October is the last GDP print before the election.",
     "consumer_sentiment": 51.7,
-    "consumer_sentiment_source": "University of Michigan, August 2026 final (released 8/28/26): 51.7, down about 6% from July's 55.2 and about 11% below a year ago, confirming the early-month reading amid continued worries that inflation will stay elevated. Verified against the Surveys of Consumers monthly series (sca.isr.umich.edu/files/tbmics.csv). Next release Sept 11, 2026.",
+    "consumer_sentiment_source": "University of Michigan, August 2026 final (released 8/28/26): 51.7, down about 6% from July's 55.2 and about 11% below a year ago, confirming the early-month reading amid continued worries that inflation will stay elevated. Verified against the Surveys of Consumers monthly series (sca.isr.umich.edu/files/tbmics.csv). STALE AS OF 2026-09-20: the September preliminary was due Sept 11 and is not reflected here — the 9/19 refresh contained polling files only. Sentiment is the second-largest contributor to national_environment_shift(), so refresh this from tbmics.csv before relying on the shift.",
     "unemployment_rate": 4.1,
-    "unemployment_source": "BLS Employment Situation, July 2026 (released 8/7/26). U-3 fell to 4.1% from 4.2%, but for a weak reason — payrolls fell 23k, May and June were revised down 103k combined, and the participation rate dropped to 61.4%. Note: unemployment is carried for display only; national_environment_shift() does not read it."
+    "unemployment_source": "BLS Employment Situation, July 2026 (released 8/7/26). U-3 fell to 4.1% from 4.2%, but for a weak reason — payrolls fell 23k, May and June were revised down 103k combined, and the participation rate dropped to 61.4%. STALE AS OF 2026-09-20: the August Employment Situation was due Sept 4 and is not reflected here. Note: unemployment is carried for display only; national_environment_shift() does not read it, so this does not affect the forecast."
   }
 }

@@ -1,15 +1,15 @@
 state,state_code,pollster,sponsor,sponsor_lean,date_start,date_end,dem_candidate,rep_candidate,dem_pct,rep_pct,margin,margin_label,included_in_average,notes
 Alaska,AK,AK Survey Research,,,2023-04-21,2023-04-25,Mary Peltola,Dan Sullivan,44,41,D+3,Peltola +3,no,n=1261 LV; April 2023 poll — too old for current average; NYT data
 Alaska,AK,Data for Progress,,,2025-07-21,2025-07-27,Mary Peltola,Dan Sullivan,45,46,R+1,Sullivan +1,yes,n=678 LV; NYT data
-Alaska,AK,AK Survey Research,,,2025-07-29,2025-08-01,Mary Peltola,Dan Sullivan,43,47,R+4,Sullivan +4,yes,n=1613 LV; earliest named-candidate poll; NYT data
+Alaska,AK,AK Survey Research,,,2025-07-29,2025-08-01,Mary Peltola,Dan Sullivan,43,47,R+4,Sullivan +4,no,n=1613 LV; earliest named-candidate poll; NYT data; duplicate entry of the same survey (NYT lists this pollster under two names) — counted once via the other row
 Alaska,AK,Alaska Survey Research,,,2025-07-29,2025-08-01,Mary S. Peltola,Dan Sullivan,42.5,46.7,R+4.2,R+4.2,yes,n=1613 LV; NYT data
-Alaska,AK,AK Survey Research,,,2025-10-10,2025-10-15,Mary Peltola,Dan Sullivan,48,46,D+2,Peltola +2,yes,n=1708 LV; NYT data
+Alaska,AK,AK Survey Research,,,2025-10-10,2025-10-15,Mary Peltola,Dan Sullivan,48,46,D+2,Peltola +2,no,n=1708 LV; NYT data; duplicate entry of the same survey (NYT lists this pollster under two names) — counted once via the other row
 Alaska,AK,Alaska Survey Research,,,2025-10-10,2025-10-15,Mary S. Peltola,Dan Sullivan,47.7,45.9,D+1.8,D+1.8,yes,n=1708 LV; NYT data
 Alaska,AK,Data for Progress,,,2025-10-17,2025-10-23,Mary Peltola,Dan Sullivan,46,45,D+1,Peltola +1,yes,n=823 RV; NYT data
 Alaska,AK,The Tyson Group,Plymouth Union Public Advocacy,,2025-11-11,2025-11-13,Generic Democrat,Dan Sullivan,43.0,39.0,D+4,D+4,yes,n=600 LV; NYT data
-Alaska,AK,AK Survey Research,,,2026-01-08,2026-01-11,Mary Peltola,Dan Sullivan,48,46,D+2,Peltola +2,yes,n=1681 LV; NYT data
+Alaska,AK,AK Survey Research,,,2026-01-08,2026-01-11,Mary Peltola,Dan Sullivan,48,46,D+2,Peltola +2,no,n=1681 LV; NYT data; duplicate entry of the same survey (NYT lists this pollster under two names) — counted once via the other row
 Alaska,AK,Alaska Survey Research,,,2026-01-08,2026-01-11,Mary S. Peltola,Dan Sullivan,48.0,46.4,D+1.6,D+1.6,yes,n=1681 LV; NYT data
-Alaska,AK,PPP,DSCC,Democratic,2026-01-16,2026-01-17,Mary Peltola,Dan Sullivan,49,47,D+2,Peltola +2,yes,n=611 RV; D-sponsored; NYT data
+Alaska,AK,PPP,DSCC,Democratic,2026-01-16,2026-01-17,Mary Peltola,Dan Sullivan,49,47,D+2,Peltola +2,no,n=611 RV; D-sponsored; NYT data; duplicate entry of the same survey (NYT lists this pollster under two names) — counted once via the other row
 Alaska,AK,Public Policy Polling,DSCC,Democratic,2026-01-16,2026-01-17,Mary S. Peltola,Dan Sullivan,49.0,47.0,D+2,D+2,yes,n=611 RV; NYT data
 Alaska,AK,Alaska Survey Research,,,2026-03-19,2026-03-22,Mary S. Peltola,Dan Sullivan,46.4,40.9,D+5.5,D+5.5,yes,n=1283 RV; NYT data
 Alaska,AK,Alaska Survey Research,,,2026-04-16,2026-04-19,Mary S. Peltola,Dan Sullivan,50.2,43.6,D+6.6,D+6.6,yes,n=1946 LV; NYT data
@@ -94,13 +94,13 @@ Kentucky,KY,Public Policy Polling,Charles Booker,Democratic,2025-12-18,2025-12-1
 Kentucky,KY,Public Policy Polling,Charles Booker,Democratic,2025-12-18,2025-12-19,Charles Booker,Nate Morris,40,41,R+1,Morris +1,yes,D-sponsored poll; Morris surprisingly close; NYT data
 Kentucky,KY,Public Policy Polling,Charles Booker,Democratic,2025-12-18,2025-12-19,Charles Booker,Generic R,36,50,R+14,Republican +14,no,D-sponsored poll; generic R ballot; NYT data
 Kentucky,KY,Public Policy Polling,Charles Booker,Democratic,2025-12-18,2025-12-19,Amy McGrath,Generic R,35,51,R+16,Republican +16,no,D-sponsored poll; McGrath not running; generic R ballot
-Massachusetts,MA,Suffolk University,Boston Globe,,2025-11-19,2025-11-23,Seth Moulton,John Deaton,52.0,29.0,D+23,D+23,yes,n=500 RV; NYT data
+Massachusetts,MA,Suffolk University,Boston Globe,,2025-11-19,2025-11-23,Seth Moulton,John Deaton,52.0,29.0,D+23,D+23,no,n=500 RV; NYT data; Moulton lost the Sept 1 primary to Markey — no longer a live matchup
 Massachusetts,MA,Cygnal Political,,Republican,2026-01-22,2026-01-25,Edward J. Markey,John Deaton,54.0,30.0,D+24,D+24,yes,n=800 LV; NYT data
-Massachusetts,MA,University of New Hampshire,,,2026-02-12,2026-02-16,Seth Moulton,John Deaton,59.0,23.0,D+36,D+36,yes,n=611 LV; NYT data
-Massachusetts,MA,University of New Hampshire,,,2026-04-16,2026-04-20,Seth Moulton,John Deaton,56.0,25.0,D+31,D+31,yes,n=600 LV; NYT data
-Massachusetts,MA,Suffolk University,Boston Globe,,2026-06-08,2026-06-12,Seth Moulton,John Deaton,53.8,26.2,D+27.6,D+27.6,yes,n=500 rv; NYT data
+Massachusetts,MA,University of New Hampshire,,,2026-02-12,2026-02-16,Seth Moulton,John Deaton,59.0,23.0,D+36,D+36,no,n=611 LV; NYT data; Moulton lost the Sept 1 primary to Markey — no longer a live matchup
+Massachusetts,MA,University of New Hampshire,,,2026-04-16,2026-04-20,Seth Moulton,John Deaton,56.0,25.0,D+31,D+31,no,n=600 LV; NYT data; Moulton lost the Sept 1 primary to Markey — no longer a live matchup
+Massachusetts,MA,Suffolk University,Boston Globe,,2026-06-08,2026-06-12,Seth Moulton,John Deaton,53.8,26.2,D+27.6,D+27.6,no,n=500 rv; NYT data; Moulton lost the Sept 1 primary to Markey — no longer a live matchup
 Massachusetts,MA,Suffolk University,Boston Globe,,2026-06-08,2026-06-12,Edward J. Markey,John Deaton,55.0,29.8,D+25.2,D+25.2,yes,n=500 rv; NYT data
-Massachusetts,MA,University of New Hampshire,,,2026-06-18,2026-06-23,Seth Moulton,John Deaton,50.0,30.0,D+20,D+20,yes,n=600 lv; NYT data
+Massachusetts,MA,University of New Hampshire,,,2026-06-18,2026-06-23,Seth Moulton,John Deaton,50.0,30.0,D+20,D+20,no,n=600 lv; NYT data; Moulton lost the Sept 1 primary to Markey — no longer a live matchup
 Massachusetts,MA,University of New Hampshire,,,2026-06-18,2026-06-23,Edward J. Markey,John Deaton,50.0,34.0,D+16,D+16,yes,n=618 lv; NYT data
 Maine,ME,Public Policy Polling,,Democratic,2025-09-08,2025-09-09,Dan Kleban,Susan M. Collins,44.0,35.0,D+9,D+9,yes,n=642 RV; NYT data
 Maine,ME,Zenith Research,More Perfect Union,,2025-10-07,2025-10-10,Graham Platner,Susan Collins,38,38,Even,Tied,yes,n=501 LV; NYT data
@@ -108,14 +108,14 @@ Maine,ME,University of New Hampshire,,,2025-10-16,2025-10-21,Dan Smeriglio,Susan
 Maine,ME,Maine PRC,,,2025-10-26,2025-10-29,Graham Platner,Susan Collins,45,41,D+4,Platner +4,yes,n=783 RV; NYT data
 Maine,ME,Maine People's Resource Center,,,2025-10-26,2025-10-29,Janet T. Mills,Susan M. Collins,41.7,45.8,R+4.1,R+4.1,yes,n=783 RV; NYT data
 Maine,ME,Cygnal Political,Plymouth Union Public Advocacy,,2025-11-10,2025-11-11,Generic Democrat,Susan M. Collins,49.0,41.0,D+8,D+8,yes,n=600 LV; NYT data
-Maine,ME,Pan Atlantic,,,2025-11-29,2025-12-07,Graham Platner,Susan Collins,43,42,D+1,Platner +1,yes,n=820 LV; NYT data
+Maine,ME,Pan Atlantic,,,2025-11-29,2025-12-07,Graham Platner,Susan Collins,43,42,D+1,Platner +1,no,n=820 LV; NYT data; duplicate entry of the same survey (NYT lists this pollster under two names) — counted once via the other row
 Maine,ME,Pan Atlantic SMS Group,,,2025-11-29,2025-12-07,Graham Platner,Susan M. Collins,43.0,42.0,D+1,D+1,yes,n=820 LV; NYT data
 Maine,ME,Workbench Strategy,,Democratic,2025-12-11,2025-12-16,Graham Platner,Susan Collins,50,50,D+1,Platner +1,yes,n=900 LV; D-sponsored; NYT data
 Maine,ME,Fabrizio Lee,Pine Tree Results,Republican,2026-01-20,2026-01-24,Graham Platner,Susan Collins,44,45,R+1,Collins +1,yes,n=800 LV; R-sponsored; NYT data
 Maine,ME,"Fabrizio, Lee & Associates",Pine Tree Results,Republican,2026-01-20,2026-01-24,Janet T. Mills,Susan M. Collins,44.0,45.0,R+1,R+1,yes,n=800 LV; NYT data
-Maine,ME,UNH,,,2026-02-12,2026-02-16,Graham Platner,Susan Collins,49,38,D+11,Platner +11,yes,n=1105 LV; NYT data
+Maine,ME,UNH,,,2026-02-12,2026-02-16,Graham Platner,Susan Collins,49,38,D+11,Platner +11,no,n=1105 LV; NYT data; duplicate entry of the same survey (NYT lists this pollster under two names) — counted once via the other row
 Maine,ME,University of New Hampshire,,,2026-02-12,2026-02-16,Graham Platner,Susan M. Collins,49.0,38.0,D+11,D+11,yes,n=1105 LV; NYT data
-Maine,ME,Pan Atlantic,,,2026-02-13,2026-03-02,Graham Platner,Susan Collins,44,40,D+4,Platner +4,yes,n=810 LV; NYT data
+Maine,ME,Pan Atlantic,,,2026-02-13,2026-03-02,Graham Platner,Susan Collins,44,40,D+4,Platner +4,no,n=810 LV; NYT data; duplicate entry of the same survey (NYT lists this pollster under two names) — counted once via the other row
 Maine,ME,Pan Atlantic,,,2026-02-13,2026-03-02,Janet T. Mills,Susan Collins,44,44,Even,Tied,no,Mills matchup — included for context
 Maine,ME,Pan Atlantic SMS Group,,,2026-02-13,2026-03-02,Graham Platner,Susan M. Collins,44.0,40.0,D+4,D+4,yes,n=810 LV; NYT data
 Maine,ME,Quantus Insights,,,2026-03-03,2026-03-05,Graham Platner,Susan Collins,49,42,D+7,Platner +7,yes,n=800 LV; NYT data
@@ -168,7 +168,7 @@ Michigan,MI,Mitchell Research,MIRS News Service,,2025-11-18,2025-11-21,Abdul El-
 Michigan,MI,Mitchell Research & Communications,MIRS News Service,,2025-11-18,2025-11-21,Haley Stevens,Mike Rogers,40.0,42.0,R+2,R+2,no,n=616 LV; NYT data; El-Sayed won the Aug 4 primary — non-nominee matchup
 Michigan,MI,Glengariff Group,Detroit News / WDIV-TV,,2026-01-02,2026-01-06,Haley Stevens,Mike Rogers,44,44,Even,Even,no,NYT data; El-Sayed won the Aug 4 primary — non-nominee matchup
 Michigan,MI,Glengariff Group,Detroit News / WDIV-TV,,2026-01-02,2026-01-06,Mallory McMorrow,Mike Rogers,42,46,R+3,Rogers +3,no,NYT data; El-Sayed won the Aug 4 primary — non-nominee matchup
-Michigan,MI,Glengariff Group,Detroit News / WDIV-TV,,2026-01-02,2026-01-06,Abdul El-Sayed,Mike Rogers,42,48,R+6,Rogers +6,yes,NYT data
+Michigan,MI,Glengariff Group,Detroit News / WDIV-TV,,2026-01-02,2026-01-06,Abdul El-Sayed,Mike Rogers,42,48,R+6,Rogers +6,no,NYT data; duplicate entry of the same survey (NYT lists this pollster under two names) — counted once via the other row
 Michigan,MI,"Glengariff Group, Inc.",Detroit News | WDIV-TV,,2026-01-02,2026-01-06,Abdul El-Sayed,Mike Rogers,41.6,48.0,R+6.4,R+6.4,yes,n=600 LV; NYT data
 Michigan,MI,Emerson College,Nexstar,,2026-01-24,2026-01-25,Haley Stevens,Mike Rogers,47,42,D+6,Stevens +6,no,Stevens polls strongest against Rogers; NYT data; El-Sayed won the Aug 4 primary — non-nominee matchup
 Michigan,MI,Emerson College,Nexstar,,2026-01-24,2026-01-25,Mallory McMorrow,Mike Rogers,46,43,D+3,McMorrow +3,no,NYT data; El-Sayed won the Aug 4 primary — non-nominee matchup
@@ -196,7 +196,7 @@ Michigan,MI,Quantus Insights,,,2026-06-29,2026-06-30,Abdul El-Sayed,Mike Rogers,
 Michigan,MI,Wedgewood Polls,,,2026-06-25,2026-06-28,Mallory McMorrow,Mike Rogers,41.0,48.0,R+7,R+7,no,n=602 lv; NYT data; El-Sayed won the Aug 4 primary — non-nominee matchup
 Michigan,MI,Wedgewood Polls,,,2026-06-25,2026-06-28,Haley Stevens,Mike Rogers,46.0,46.0,Even,Even,no,n=602 lv; NYT data; El-Sayed won the Aug 4 primary — non-nominee matchup
 Michigan,MI,Wedgewood Polls,,,2026-06-25,2026-06-28,Abdul El-Sayed,Mike Rogers,49.0,44.0,D+5,D+5,yes,n=602 lv; NYT data
-Minnesota,MN,Impact Research,,Democratic,2025-07-08,2025-07-11,Peggy Flanagan,Michele Tafoya,48.0,45.0,D+3,D+3,yes,n=604 LV; NYT data
+Minnesota,MN,Impact Research,,Democratic,2025-07-08,2025-07-11,Peggy Flanagan,Michele Tafoya,48.0,45.0,D+3,D+3,no,n=604 LV; NYT data; removed from the NYT database in the 9/19/26 export (field dates conflict with the source memo) — dropped from the average
 Minnesota,MN,PPP,GQR,,2025-09-15,2025-09-16,Angie Craig,Generic Republican,47,43,D+4,Craig +4,no,n=1015 LV; NYT data; Craig lost the Aug 11 primary to Flanagan — no longer a live matchup
 Minnesota,MN,PPP,GQR,,2025-09-15,2025-09-16,Peggy Flanagan,Generic Republican,46,44,D+2,Flanagan +2,yes,n=1015 LV; NYT data
 Minnesota,MN,Public Policy Polling,GQR,,2025-09-15,2025-09-16,Angie Craig,Generic Republican,47.0,43.0,D+4,D+4,no,n=1015 LV; NYT data; Craig lost the Aug 11 primary to Flanagan — no longer a live matchup
@@ -241,7 +241,7 @@ New Hampshire,NH,St. Anselm,,,2025-08-26,2025-08-27,Chris Pappas,Dan Innis,48.0,
 New Hampshire,NH,1892 Polling,One Nation,,2025-09-02,2025-09-04,Chris Pappas,John E. Sununu,45,43,D+2,Pappas +2,yes,n=500 LV; NYT data
 New Hampshire,NH,co/efficient,,,2025-09-10,2025-09-12,Chris Pappas,John E. Sununu,46,43,D+3,Pappas +3,yes,n=904 LV; NYT data
 New Hampshire,NH,UNH,,,2025-09-17,2025-09-23,Chris Pappas,Chris Sununu,49,43,D+6,Pappas +6,no,Chris Sununu (former Gov) matchup — different person from John E. Sununu; n=1225 LV; NYT data
-New Hampshire,NH,University of New Hampshire,,,2025-09-17,2025-09-23,Chris Pappas,Scott Brown,52.0,37.0,D+15,D+15,yes,n=1213 LV; NYT data
+New Hampshire,NH,University of New Hampshire,,,2025-09-17,2025-09-23,Chris Pappas,Scott Brown,52.0,37.0,D+15,D+15,no,n=1213 LV; NYT data; Brown lost the Sept 8 primary to Sununu — no longer a live matchup
 New Hampshire,NH,co/efficient,,,2025-10-09,2025-10-13,Chris Pappas,John E. Sununu,45,42,D+3,Pappas +3,yes,n=1034 LV; NYT data
 New Hampshire,NH,St. Anselm,,,2025-11-18,2025-11-19,Chris Pappas,John E. Sununu,44,41,D+3,Pappas +3,yes,n=2212 RV; NYT data
 New Hampshire,NH,Guidant Polling,,,2025-12-09,2025-12-11,Chris Pappas,John E. Sununu,47,44,D+3,Pappas +3,yes,n=600 LV; NYT data
@@ -259,9 +259,9 @@ New Hampshire,NH,Emerson College,,,2026-03-21,2026-03-23,Chris Pappas,Scott Brow
 New Hampshire,NH,University of New Hampshire,,,2026-04-17,2026-04-21,Chris Pappas,John E. Sununu,49.0,42.0,D+7,D+7,yes,n=1130 LV; NYT data
 New Hampshire,NH,Peak Insights,NRSC,Republican,2026-06-24,2026-06-27,Chris Pappas,John E. Sununu,43.0,42.0,D+1,D+1,yes,n=500 lv; R-sponsored; NYT data
 New Hampshire,NH,St. Anselm,,,2026-06-24,2026-06-25,Chris Pappas,John E. Sununu,47.0,41.0,D+6,D+6,yes,n=1614 rv; NYT data
-New Hampshire,NH,St. Anselm,,,2026-06-24,2026-06-25,Chris Pappas,Scott Brown,48.0,36.0,D+12,D+12,yes,n=1614 rv; Brown matchup — included for context; NYT data
+New Hampshire,NH,St. Anselm,,,2026-06-24,2026-06-25,Chris Pappas,Scott Brown,48.0,36.0,D+12,D+12,no,n=1614 rv; Brown matchup — included for context; NYT data; Brown lost the Sept 8 primary to Sununu — no longer a live matchup
 New Hampshire,NH,University of New Hampshire,,,2026-06-18,2026-06-23,Chris Pappas,John E. Sununu,47.0,44.0,D+3,D+3,yes,n=2157 lv; NYT data
-New Hampshire,NH,University of New Hampshire,,,2026-06-18,2026-06-23,Chris Pappas,Scott Brown,52.0,38.0,D+14,D+14,yes,n=1980 lv; Brown matchup — included for context; NYT data
+New Hampshire,NH,University of New Hampshire,,,2026-06-18,2026-06-23,Chris Pappas,Scott Brown,52.0,38.0,D+14,D+14,no,n=1980 lv; Brown matchup — included for context; NYT data; Brown lost the Sept 8 primary to Sununu — no longer a live matchup
 Ohio,OH,BGSU/YouGov,,,2025-02-14,2025-02-21,Sherrod Brown,Jon Husted,41,47,R+6,Husted +6,yes,n=800 RV; earliest poll; NYT data
 Ohio,OH,BGSU/YouGov,,,2025-04-18,2025-04-24,Sherrod Brown,Jon Husted,46,49,R+3,Husted +3,yes,n=800 RV; NYT data
 Ohio,OH,Emerson College,,,2025-08-18,2025-08-19,Sherrod Brown,Jon Husted,44,50,R+6,Husted +6,yes,NYT data
@@ -363,10 +363,10 @@ Iowa,IA,Suffolk University,,,2026-08-20,2026-08-23,Josh Turek,Ashley Hinson,40.8
 Idaho,ID,Change Research,,I,2026-07-28,2026-07-30,David Roth,James E. Risch,13,42,-29,R+29,no,"lv sample; IND-sponsored; 5-way question with Achilles (I) 18 and Fleming (I) 3; Roth squeezed to 13% — two-party model cannot represent this ballot; consistent with prior ID exclusions; other: Loesby (L) 1, Fleming (I) 3, Achilles (I) 18; NYT data"
 Kansas,KS,GBAO,,D,2026-07-08,2026-07-13,Adam Hamilton,Roger Marshall,43,47,-4,R+4,yes,n=600 lv; D-sponsored; NYT data
 Kansas,KS,Public Policy Polling,Senate Majority PAC,D,2026-08-07,2026-08-08,Adam Hamilton,Roger Marshall,45,46,-1,R+1,yes,rv sample; D-sponsored; NYT data
-Massachusetts,MA,YouGov,UMass Amherst | WCVB-TV,,2026-08-05,2026-08-12,Seth Moulton,John Deaton,49,25,24,D+24,yes,n=800 rv; Moulton matchup — primary Sept 1 unresolved; NYT data
+Massachusetts,MA,YouGov,UMass Amherst | WCVB-TV,,2026-08-05,2026-08-12,Seth Moulton,John Deaton,49,25,24,D+24,no,n=800 rv; Moulton matchup — primary Sept 1 unresolved; NYT data; Moulton lost the Sept 1 primary to Markey — no longer a live matchup
 Massachusetts,MA,YouGov,UMass Amherst | WCVB-TV,,2026-08-05,2026-08-12,Edward J. Markey,John Deaton,51,30,21,D+21,yes,n=800 rv; Markey matchup — primary Sept 1 unresolved; NYT data
 Massachusetts,MA,University of New Hampshire,7News,,2026-08-20,2026-08-24,Edward J. Markey,John Deaton,49,30,19,D+19,yes,n=906 lv; Markey matchup — primary Sept 1 unresolved; other: Tache (P) 7; NYT data
-Massachusetts,MA,University of New Hampshire,7News,,2026-08-20,2026-08-24,Seth Moulton,John Deaton,38,25,13,D+13,yes,n=893 lv; Moulton matchup — primary Sept 1 unresolved; other: Tache (P) 16; NYT data
+Massachusetts,MA,University of New Hampshire,7News,,2026-08-20,2026-08-24,Seth Moulton,John Deaton,38,25,13,D+13,no,n=893 lv; Moulton matchup — primary Sept 1 unresolved; other: Tache (P) 16; NYT data; Moulton lost the Sept 1 primary to Markey — no longer a live matchup
 Maine,ME,Hart Research Associates,Senate Majority PAC,D,2026-07-27,2026-08-01,Troy Jackson,Susan M. Collins,49,45,4,D+4,yes,n=802 lv; D-sponsored; NYT data
 Maine,ME,Beacon Research/Shaw & Company Research,Fox News,,2026-08-06,2026-08-10,Troy Jackson,Susan M. Collins,48,46,2,D+2,yes,n=1000 rv; NYT data
 Michigan,MI,Beacon Research/Shaw & Company Research,Fox News,,2026-08-06,2026-08-10,Abdul El-Sayed,Mike Rogers,47,51,-4,R+4,yes,n=1006 rv; NYT data
@@ -390,8 +390,8 @@ North Carolina,NC,High Point University,,,2026-08-03,2026-08-12,Roy A. Cooper,Mi
 North Carolina,NC,High Point University,,,2026-08-03,2026-08-12,Roy A. Cooper,Michael Whatley,50,45,5,D+5,yes,n=660 lv; LV screen used; NYT data
 Nebraska,NE,Impact Research,,D,2026-08-09,2026-08-13,Dan Osborn,Pete Ricketts,47,47,0,EVEN,yes,n=600 lv; D-sponsored; Osborn (I) modeled on the D side; NYT data
 New Hampshire,NH,St. Anselm,,,2026-08-17,2026-08-18,Chris Pappas,John E. Sununu,48,41,7,D+7,yes,n=1411 lv; Sununu matchup — primary Sept 8 unresolved; NYT data
-New Hampshire,NH,St. Anselm,,,2026-08-17,2026-08-18,Chris Pappas,Scott Brown,49,37,12,D+12,yes,n=1411 lv; Brown matchup — primary Sept 8 unresolved; NYT data
-New Hampshire,NH,University of New Hampshire,7News,,2026-08-20,2026-08-24,Chris Pappas,Scott Brown,45,40,5,D+5,yes,n=1846 lv; Brown matchup — primary Sept 8 unresolved; NYT data
+New Hampshire,NH,St. Anselm,,,2026-08-17,2026-08-18,Chris Pappas,Scott Brown,49,37,12,D+12,no,n=1411 lv; Brown matchup — primary Sept 8 unresolved; NYT data; Brown lost the Sept 8 primary to Sununu — no longer a live matchup
+New Hampshire,NH,University of New Hampshire,7News,,2026-08-20,2026-08-24,Chris Pappas,Scott Brown,45,40,5,D+5,no,n=1846 lv; Brown matchup — primary Sept 8 unresolved; NYT data; Brown lost the Sept 8 primary to Sununu — no longer a live matchup
 New Hampshire,NH,University of New Hampshire,7News,,2026-08-20,2026-08-24,Chris Pappas,John E. Sununu,43,45,-2,R+2,yes,n=1846 lv; Sununu matchup — primary Sept 8 unresolved; NYT data
 Ohio,OH,Tulchin Research,,D,2026-07-29,2026-08-04,Sherrod Brown,Jon Husted,47,43,4,D+4,yes,"n=600 lv; D-sponsored; other: Levy (I) 2, Redpath (L) 2; NYT data"
 Ohio,OH,Beacon Research/Shaw & Company Research,Fox News,,2026-08-06,2026-08-10,Sherrod Brown,Jon Husted,53,45,8,D+8,yes,n=1008 rv; NYT data
@@ -407,3 +407,94 @@ Texas,TX,YouGov Blue,254 Labs,,2026-07-15,2026-07-31,James Talarico,Ken Paxton,4
 Texas,TX,Emerson College,Nexstar,,2026-08-09,2026-08-10,James Talarico,Ken Paxton,46.25,47.25,-1,R+1,yes,n=1000 lv; NYT data
 Texas,TX,YouGov,University of Texas,,2026-08-05,2026-08-13,James Talarico,Ken Paxton,42,39,3,D+3,yes,n=1200 rv; other: Brown (L) 3; NYT data
 Texas,TX,Slingshot Strategies,Texas Public Opinion Research,,2026-08-21,2026-08-24,James Talarico,Ken Paxton,48,42,6,D+6,yes,"n=1000 lv; other: Truelson (I) 0, Ford (I) 0, Cain (I) 0, Brown (L) 1; NYT data"
+Alaska,AK,Alaska Survey Research,,,2026-08-20,2026-08-23,Mary S. Peltola,Dan Sullivan,50.6,49.4,1.2,D+1.2,yes,n=1495 lv; head-to-head question (final RCV round); NYT data
+Alaska,AK,Fabrizio Ward/Impact Research,AARP,,2026-09-08,2026-09-11,Mary S. Peltola,Dan Sullivan,53,47,6,D+6,yes,n=800 lv; head-to-head question (final RCV round); NYT data
+Alaska,AK,Fabrizio Ward/Impact Research,AARP,,2026-09-08,2026-09-11,Mary S. Peltola,Dan Sullivan,50,43,7,D+7,no,"n=800 lv; alternate ballot form of the same AARP survey (field incl. minor R candidates, no undecided) — head-to-head form used instead; NYT data"
+Alaska,AK,Fabrizio Ward/Impact Research,AARP,,2026-09-08,2026-09-11,Mary S. Peltola,Dan Sullivan,46,41,5,D+5,no,n=800 lv; alternate ballot form of the same AARP survey (first round incl. minor R candidates and undecideds) — head-to-head form used instead; NYT data
+Alaska,AK,co/efficient,,,2026-09-14,2026-09-17,Mary S. Peltola,Dan Sullivan,46,49,-3,R+3,yes,n=799 lv; head-to-head question (final RCV round); NYT data
+Alaska,AK,co/efficient,,,2026-09-14,2026-09-17,Mary S. Peltola,Dan Sullivan,46,48,-2,R+2,no,n=799 lv; alternate ballot form of the same survey (full field incl. minor R candidates) — head-to-head form used instead; NYT data
+Alaska,AK,co/efficient,,,2026-09-14,2026-09-17,Generic Democrat,Generic Republican,44,49,-5,R+5,no,n=799 lv; generic ballot — excluded from named-candidate average; NYT data
+Florida,FL,Change Research,Freedom Project USA,,2026-09-07,2026-09-09,Angie Nixon,Ashley Moody,47,47,0,EVEN,yes,n=1107 lv; NYT data
+Florida,FL,Quantus Insights,,,2026-09-08,2026-09-10,Angie Nixon,Ashley Moody,43,50.4,-7.4,R+7.4,yes,n=733 lv; NYT data
+Florida,FL,St. Pete Polls,Florida Politics,,2026-09-15,2026-09-17,Angie Nixon,Ashley Moody,44.8,45.2,-0.4,R+0.4,yes,n=913 lv; NYT data
+Georgia,GA,Trafalgar Group,,Republican,2026-09-10,2026-09-12,Jon Ossoff,Mike Collins,49.4,42.8,6.6,D+6.6,yes,n=1091 lv; R-affiliated pollster; other: Buckley (I) 1.3; NYT data
+Georgia,GA,Quantus Insights,,,2026-09-14,2026-09-16,Jon Ossoff,Mike Collins,49,44.9,4.1,D+4.1,yes,n=645 lv; NYT data
+Iowa,IA,Abacus Data,,,2026-08-26,2026-08-28,Josh Turek,Ashley Hinson,48,41,7,D+7,yes,n=323 lv; LV screen used; NYT data
+Iowa,IA,Abacus Data,,,2026-08-26,2026-08-28,Josh Turek,Ashley Hinson,41,36,5,D+5,no,n=500 rv; RV screen of the same Abacus survey — LV screen used instead; NYT data
+Iowa,IA,Wedgewood Polls,,,2026-08-27,2026-08-29,Josh Turek,Ashley Hinson,48,50,-2,R+2,yes,n=600 lv; NYT data
+Iowa,IA,Global Strategy Group,,Democratic,2026-08-27,2026-08-31,Josh Turek,Ashley Hinson,46,42,4,D+4,yes,n=800 lv; D-sponsored; other: Laehn (L) 6; NYT data
+Iowa,IA,Emerson College,Nexstar,,2026-08-31,2026-09-01,Josh Turek,Ashley Hinson,45.05,49.47,-4.42,R+4.42,yes,n=750 lv; other: Laehn (L) 0.76; NYT data
+Iowa,IA,YouGov,,,2026-09-03,2026-09-08,Josh Turek,Ashley Hinson,47,43,4,D+4,yes,n=2041 lv; tightest of three YouGov toplines from the same survey; NYT data
+Iowa,IA,YouGov,,,2026-09-03,2026-09-08,Josh Turek,Ashley Hinson,45,43,2,D+2,no,n=2127 lv; looser LV screen of the same YouGov survey — n=2041 LV screen used instead; NYT data
+Iowa,IA,YouGov,,,2026-09-03,2026-09-08,Josh Turek,Ashley Hinson,44,43,1,D+1,no,n=2166 rv; RV screen of the same YouGov survey — LV screen used instead; NYT data
+Iowa,IA,Cygnal Political,Iowans for Tax Relief Foundation,Republican,2026-09-09,2026-09-11,Josh Turek,Ashley Hinson,42.9,42.9,0,EVEN,yes,n=500 lv; R-sponsored; other: Laehn (L) 3.6; NYT data
+Iowa,IA,co/efficient,,,2026-09-14,2026-09-16,Josh Turek,Ashley Hinson,42,46,-4,R+4,yes,n=831 lv; other: Laehn (L) 2; NYT data
+Iowa,IA,co/efficient,,,2026-09-14,2026-09-16,Generic Democrat,Generic Republican,43,48,-5,R+5,no,n=831 lv; generic ballot — excluded from named-candidate average; NYT data
+Iowa,IA,Trafalgar Group,,Republican,2026-09-16,2026-09-18,Josh Turek,Ashley Hinson,42.1,44,-1.9,R+1.9,yes,n=1089 lv; R-affiliated pollster; other: Laehn (L) 3.4; NYT data
+Kansas,KS,Global Strategy Group,People Over Politics Action Fund,Democratic,2026-08-12,2026-08-16,Adam Hamilton,Roger Marshall,44,43,1,D+1,yes,n=800 lv; D-sponsored; other: Graham (L) 5; NYT data
+Kansas,KS,co/efficient,,,2026-09-08,2026-09-10,Adam Hamilton,Roger Marshall,44,49,-5,R+5,yes,n=915 lv; other: Graham (L) 2; NYT data
+Kansas,KS,co/efficient,,,2026-09-08,2026-09-10,Generic Democrat,Generic Republican,45,51,-6,R+6,no,n=915 lv; generic ballot — excluded from named-candidate average; NYT data
+Kansas,KS,Emerson College,Nexstar,,2026-09-15,2026-09-16,Adam Hamilton,Roger Marshall,44.75,43.3,1.45,D+1.45,yes,n=750 lv; other: Graham (L) 3.7; NYT data
+Kentucky,KY,Global Strategy Group,,Democratic,2026-08-24,2026-08-27,Charles Booker,Andy Barr,40,49,-9,R+9,yes,n=600 lv; D-sponsored; NYT data
+Maine,ME,Abacus Data,,,2026-08-26,2026-08-28,Troy Jackson,Susan M. Collins,50,42,8,D+8,yes,n=327 lv; LV screen used; NYT data
+Maine,ME,Abacus Data,,,2026-08-26,2026-08-28,Troy Jackson,Susan M. Collins,40,40,0,EVEN,no,n=499 rv; RV screen of the same Abacus survey — LV screen used instead; NYT data
+Maine,ME,CNN/SSRS,,,2026-08-31,2026-09-06,Troy Jackson,Susan M. Collins,48,45,3,D+3,yes,n=880 lv; NYT data
+Maine,ME,YouGov,,,2026-09-02,2026-09-08,Troy Jackson,Susan M. Collins,48,44,4,D+4,yes,n=1335 lv; LV screen used; NYT data
+Maine,ME,YouGov,,,2026-09-02,2026-09-08,Troy Jackson,Susan M. Collins,46,44,2,D+2,no,n=1378 rv; RV screen of the same YouGov survey — LV screen used instead; NYT data
+Maine,ME,Quantus Insights,,,2026-09-14,2026-09-15,Troy Jackson,Susan M. Collins,47.4,47.6,-0.2,R+0.2,yes,n=621 lv; NYT data
+Michigan,MI,Michigan State University IPPSR/YouGov,,,2026-08-10,2026-08-20,Abdul El-Sayed,Mike Rogers,50,45,5,D+5,yes,n=779 lv; LV screen used; NYT data
+Michigan,MI,Michigan State University IPPSR/YouGov,,,2026-08-10,2026-08-20,Abdul El-Sayed,Mike Rogers,48,44,4,D+4,no,n=913 rv; RV screen of the same MSU survey — LV screen used instead; NYT data
+Michigan,MI,EPIC-MRA,,,2026-08-22,2026-08-28,Abdul El-Sayed,Mike Rogers,47,43,4,D+4,yes,n=600 lv; NYT data
+Michigan,MI,Abacus Data,,,2026-08-26,2026-08-28,Abdul El-Sayed,Mike Rogers,47,42,5,D+5,yes,n=332 lv; LV screen used; NYT data
+Michigan,MI,Abacus Data,,,2026-08-26,2026-08-28,Abdul El-Sayed,Mike Rogers,41,35,6,D+6,no,n=500 rv; RV screen of the same Abacus survey — LV screen used instead; NYT data
+Michigan,MI,"Glengariff Group, Inc.",Detroit News | WDIV-TV,,2026-08-31,2026-09-03,Abdul El-Sayed,Mike Rogers,44.4,45.8,-1.4,R+1.4,yes,n=600 lv; NYT data
+Michigan,MI,CNN/SSRS,,,2026-08-31,2026-09-06,Abdul El-Sayed,Mike Rogers,47,44,3,D+3,yes,n=843 lv; NYT data
+Michigan,MI,Trafalgar Group,,Republican,2026-09-07,2026-09-09,Abdul El-Sayed,Mike Rogers,46.3,44.8,1.5,D+1.5,yes,"n=1079 lv; R-affiliated pollster; other: Christensen (L) 0.8, Long (C) 0.7, Marsh (G) 0.4, Kristy (N) 0.2; NYT data"
+Michigan,MI,The Washington Post/George Mason University Schar School,,,2026-09-10,2026-09-14,Abdul El-Sayed,Mike Rogers,48,45,3,D+3,yes,n=803 lv; NYT data
+Michigan,MI,Emerson College,Nexstar,,2026-09-12,2026-09-14,Abdul El-Sayed,Mike Rogers,48.19,45.72,2.47,D+2.47,yes,"n=1000 lv; other: Long (C) 0.58, Christensen (L) 0.49, Marsh (G) 0.31, Kristy (N) 0.3; NYT data"
+Michigan,MI,InsiderAdvantage,,,2026-09-16,2026-09-17,Abdul El-Sayed,Mike Rogers,46.6,44.7,1.9,D+1.9,yes,"n=1200 lv; other: Christensen (L) 1.4, Long (C) 1.1, Marsh (G) 0.8; NYT data"
+Minnesota,MN,TIPP Insights,League of American Workers,Republican,2026-08-31,2026-09-02,Peggy Flanagan,Michele Tafoya,43.96,41.86,2.1,D+2.1,yes,"n=1192 lv; R-sponsored; LV screen used; other: Simonetti (I) 2.99, Whiting (L) 1.02; NYT data"
+Minnesota,MN,TIPP Insights,League of American Workers,Republican,2026-08-31,2026-09-02,Peggy Flanagan,Michele Tafoya,39.99,37.98,2.01,D+2.01,no,n=1494 rv; RV screen of the same TIPP survey — LV screen used instead; NYT data
+Minnesota,MN,Quantus Insights,,,2026-09-08,2026-09-10,Peggy Flanagan,Michele Tafoya,48.9,45.4,3.5,D+3.5,yes,n=720 lv; NYT data
+Minnesota,MN,SurveyUSA,KSTP-TV Minneapolis,,2026-09-09,2026-09-14,Peggy Flanagan,Michele Tafoya,42,42,0,EVEN,yes,"n=654 lv; other: Simonetti (I) 2, Whiting (L) 2; NYT data"
+Minnesota,MN,co/efficient,,,2026-09-14,2026-09-15,Peggy Flanagan,Michele Tafoya,43,42,1,D+1,yes,"n=833 lv; other: Simonetti (I) 2, Whiting (L) 2; NYT data"
+Minnesota,MN,co/efficient,,,2026-09-14,2026-09-15,Generic Democrat,Generic Republican,46,47,-1,R+1,no,n=833 lv; generic ballot — excluded from named-candidate average; NYT data
+Montana,MT,Peak Insights,,Republican,2026-08-23,2026-08-25,Alani Bankhead,Kurt Alme,19,44,-25,R+25,yes,"n=600 lv; R-sponsored; 4-way question (Bodnar IND 22, Austin LIB 2) — reflects the actual ballot; NYT data"
+Montana,MT,Rutgers-Eagleton,Montana Free Press,,2026-08-27,2026-09-07,Alani Bankhead,Kurt Alme,16,38,-22,R+22,yes,"n=845 rv; 4-way question (Bodnar IND 30, Austin LIB 5) — reflects the actual ballot; NYT data"
+Montana,MT,Quantus Insights,,,2026-09-14,2026-09-15,Alani Bankhead,Kurt Alme,24.4,45.3,-20.9,R+20.9,yes,n=625 lv; 3-way question (Bodnar IND 26.1) — reflects the actual ballot; NYT data
+North Carolina,NC,YouGov,Elon University,,2026-08-21,2026-08-31,Roy A. Cooper,Michael Whatley,49,38,11,D+11,yes,"n=565 lv; LV screen used; other: Dublin (G) 2, Bray (L) 2; NYT data"
+North Carolina,NC,YouGov,Elon University,,2026-08-21,2026-08-31,Roy A. Cooper,Michael Whatley,49,36,13,D+13,no,n=677 rv; RV screen of the same Elon survey — LV screen used instead; NYT data
+North Carolina,NC,YouGov,Elon University,,2026-08-21,2026-08-31,Roy A. Cooper,Michael Whatley,39,29,10,D+10,no,n=800 adults; adult screen of the same Elon survey — LV screen used instead; NYT data
+North Carolina,NC,East Carolina University Center for Survey Research,,,2026-08-31,2026-09-03,Roy A. Cooper,Michael Whatley,51.7,43.6,8.1,D+8.1,yes,"n=675 lv; other: Bray (L) 2.7, Dublin (G) 0.9; NYT data"
+North Carolina,NC,Trafalgar Group,,Republican,2026-09-08,2026-09-10,Roy A. Cooper,Michael Whatley,48.2,42.3,5.9,D+5.9,yes,"n=1084 lv; R-affiliated pollster; other: Bray (L) 1.4, Dublin (G) 1.3; NYT data"
+North Carolina,NC,Harper Polling,Carolina Journal,,2026-09-13,2026-09-15,Roy A. Cooper,Michael Whatley,49.2,34.1,15.1,D+15.1,yes,"n=608 lv; other: Bray (L) 2.9, Dublin (G) 1.5; NYT data"
+North Carolina,NC,InsiderAdvantage,,,2026-09-16,2026-09-17,Roy A. Cooper,Michael Whatley,48.4,42.5,5.9,D+5.9,yes,"n=1200 lv; other: Bray (L) 1.6, Dublin (G) 1.1; NYT data"
+Nebraska,NE,SurveyUSA,"Grant Forbes, LLC",,2026-09-08,2026-09-13,Dan Osborn,Pete Ricketts,46,42,4,D+4,yes,n=503 lv; Osborn (I) modeled on the D side; NYT data
+Nebraska,NE,Wedgewood Polls,,,2026-09-14,2026-09-16,Dan Osborn,Pete Ricketts,48,52,-4,R+4,yes,n=500 lv; Osborn (I) modeled on the D side; NYT data
+New Hampshire,NH,"Fabrizio, Lee & Associates",National Republican Senatorial Committee,Republican,2026-08-27,2026-08-30,Chris Pappas,John E. Sununu,36,37,-1,R+1,yes,"n=600 lv; R-sponsored (NRSC); other: Harris (I) 1, Lopez (I) 1, Day (I) 1; NYT data"
+New Hampshire,NH,co/efficient,,,2026-09-09,2026-09-11,Chris Pappas,John E. Sununu,46,46,0,EVEN,yes,n=958 lv; first poll after the Sept 8 primary; NYT data
+New Hampshire,NH,co/efficient,,,2026-09-09,2026-09-11,Generic Democrat,Generic Republican,46,46,0,EVEN,no,n=958 lv; generic ballot — excluded from named-candidate average; NYT data
+New Hampshire,NH,InsiderAdvantage,,,2026-09-16,2026-09-17,Chris Pappas,John E. Sununu,47.8,39.9,7.9,D+7.9,yes,"n=1200 lv; other: Laplante (C) 1.4, Giovonizzi (I) 1, Harris (I) 0.8; NYT data"
+New Mexico,NM,Research & Polling Inc.,Albuquerque Journal,,2026-08-21,2026-08-28,Ben Ray Luján,Larry Marker,53,38,15,D+15,no,"n=516 lv; held out pending confirmation of the R ballot line — races_2026.json records that the only Republican to file was disqualified and that no Republican appears on the ballot, but this NYT general-election question tests Larry Marker (R) at 38. Resolve before including; NYT data"
+Ohio,OH,Abacus Data,,,2026-08-26,2026-08-28,Sherrod Brown,Jon Husted,46,41,5,D+5,yes,n=306 lv; LV screen used; NYT data
+Ohio,OH,Abacus Data,,,2026-08-26,2026-08-28,Sherrod Brown,Jon Husted,40,33,7,D+7,no,n=500 rv; RV screen of the same Abacus survey — LV screen used instead; NYT data
+Ohio,OH,YouGov,Bowling Green State University,,2026-09-01,2026-09-10,Sherrod Brown,Jon Husted,48,45,3,D+3,yes,"n=1000 lv; other: Levy (I) 3, Redpath (L) 2; NYT data"
+Ohio,OH,InsiderAdvantage,,,2026-09-08,2026-09-09,Sherrod Brown,Jon Husted,47.3,41.9,5.4,D+5.4,yes,n=1200 lv; NYT data
+Ohio,OH,Trafalgar Group,,Republican,2026-09-14,2026-09-16,Sherrod Brown,Jon Husted,45.4,41.5,3.9,D+3.9,yes,n=1085 lv; R-affiliated pollster; NYT data
+South Carolina,SC,Abacus Data,,,2026-08-26,2026-08-28,Annie Andrews,Darline Graham,38,51,-13,R+13,yes,n=306 lv; LV screen used; first independent poll of the resolved matchup; NYT data
+South Carolina,SC,Abacus Data,,,2026-08-26,2026-08-28,Annie Andrews,Darline Graham,34,34,0,EVEN,no,n=500 rv; RV screen of the same Abacus survey — LV screen used instead; NYT data
+South Carolina,SC,InsiderAdvantage,,,2026-09-08,2026-09-09,Annie Andrews,Darline Graham,43.2,45.1,-1.9,R+1.9,yes,n=1200 lv; NYT data
+South Dakota,SD,Public Policy Polling,,Independent,2026-09-08,2026-09-09,Brian Bengs (I),Mike Rounds,42,45,-3,R+3,yes,n=629 rv; I-sponsored; Bengs (I) modeled on the D side; NYT data
+Tennessee,TN,Targoz Market Research,Beacon Center,,2026-08-15,2026-08-26,Marquita Bradshaw,Bill Hagerty,33,58,-25,R+25,yes,n=607 lv; LV screen used; first named-candidate poll of the cycle; NYT data
+Tennessee,TN,Targoz Market Research,Beacon Center,,2026-08-15,2026-08-26,Marquita Bradshaw,Bill Hagerty,31,51,-20,R+20,no,n=1157 rv; RV screen of the same Targoz survey — LV screen used instead; NYT data
+Texas,TX,Overton Insights,Texas Public Policy Foundation,,2026-08-24,2026-08-26,James Talarico,Ken Paxton,50,50,0,EVEN,yes,n=1167 lv; NYT data
+Texas,TX,YouGov,Univision,,2026-08-27,2026-09-04,James Talarico,Ken Paxton,48,43,5,D+5,yes,n=1000 rv; NYT data
+Texas,TX,Fabrizio Ward/Impact Research,AARP,,2026-08-30,2026-09-01,James Talarico,Ken Paxton,48,44,4,D+4,yes,n=895 lv; NYT data
+Texas,TX,InsiderAdvantage,,,2026-09-08,2026-09-09,James Talarico,Ken Paxton,47.1,45.6,1.5,D+1.5,yes,n=1200 lv; other: Brown (L) 2.2; NYT data
+Texas,TX,"Mason-Dixon Polling & Research, Inc.",Telemundo,,2026-09-08,2026-09-10,James Talarico,Ken Paxton,46,43,3,D+3,yes,n=625 lv; other: Brown (L) 3; NYT data
+Texas,TX,ReconMR/Siena Research Institute,,,2026-09-08,2026-09-11,James Talarico,Ken Paxton,49,43,6,D+6,yes,n=614 lv; NYT data
+Texas,TX,SoCal Strategies,,,2026-09-12,2026-09-13,James Talarico,Ken Paxton,50,45,5,D+5,yes,n=649 lv; NYT data
+Texas,TX,Emerson College,Nexstar,,2026-09-12,2026-09-14,James Talarico,Ken Paxton,47.35,46.35,1,D+1,yes,n=1000 lv; other: Brown (L) 1.9; NYT data
+Texas,TX,Trafalgar Group,,Republican,2026-09-15,2026-09-17,James Talarico,Ken Paxton,46.4,45.2,1.2,D+1.2,yes,n=1079 lv; R-affiliated pollster; other: Brown (L) 2.5; NYT data
+Massachusetts,MA,Emerson College,,,2026-08-28,2026-08-29,Markey vs Moulton,N/A,,,,,no,n=550 lv-d; D primary poll only (Markey 65.3 - Moulton 34.7). Not a general election matchup; Markey won the Sept 1 primary
+Louisiana,LA,JMC Enterprises,,Republican,2026-05-18,2026-05-19,N/A,Letlow vs Fleming,,,,,no,"n=640 lv; R-sponsored; all-party primary poll testing two Republicans (Letlow 45 - Fleming 44) — no Democrat tested, so no D-vs-R margin; NYT data"
