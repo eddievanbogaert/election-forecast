@@ -18,46 +18,49 @@ Live site: [https://elections.eddievb.com](https://elections.eddievb.com) (also:
 
 ---
 
-## Current Forecast Snapshot (September 20, 2026)
+## Current Forecast Snapshot (October 19, 2026)
 
 | Metric | Value |
 |--------|-------|
-| Expected D seats | ~50.1 / 100 |
-| D Senate control probability | ~44% |
-| Net national environment | D+5.14 |
-| Days to election | 44 |
-| Polling weight | ~66% Senate polls / 34% everything else |
+| Expected D seats | ~50.7 / 100 |
+| D Senate control probability | ~54% |
+| Net national environment | D+5.43 |
+| Days to election | 15 |
+| Polling weight | ~72% Senate polls / 28% everything else |
 
 Democrats need 51 seats for control (the model does not credit a tie-breaking
-vice president, since the VP is Republican this cycle). The expected seat count
-sitting right at 50 while control probability sits below 50% is exactly what
-that asymmetry looks like.
+vice president, since the VP is Republican this cycle). This is the first run
+with D control above 50%.
 
 ### Key Battlegrounds
 
 | Race | Rating | D Win Prob | Polling Avg |
 |------|--------|-----------|-------------|
-| NC (Cooper vs Whatley) | Safe D | ~92% | D+8.0 |
-| GA (Ossoff vs Collins) | Safe D | ~90% | D+6.5 |
-| MN (Flanagan vs Tafoya) | Safe D | ~87% | D+3.3 |
-| NH (Pappas vs Sununu) | Likely D | ~81% | D+4.1 |
-| ME (Jackson vs Collins) | Lean D | ~69% | D+1.3 |
-| MI (El-Sayed vs Rogers) | Lean D | ~62% | D+0.5 |
-| AK (Peltola vs Sullivan) | Toss-up | ~54% | D+2.2 |
-| OH vacancy (Brown vs Husted) | Toss-up | ~53% | D+1.1 |
-| TX (Talarico vs Paxton) | Toss-up | ~46% | D+2.0 |
-| IA (Turek vs Hinson) | Lean R | ~33% | R+0.8 |
-| SC vacancy (Andrews vs D. Graham) | Safe R | ~14% | R+5.0 |
+| NC (Cooper vs Whatley) | Safe D | ~94% | D+8.4 |
+| GA (Ossoff vs Collins) | Safe D | ~91% | D+6.7 |
+| MN (Flanagan vs Tafoya) | Safe D | ~87% | D+3.7 |
+| NH (Pappas vs Sununu) | Likely D | ~82% | D+4.1 |
+| ME (Jackson vs Collins) | Likely D | ~76% | D+2.6 |
+| MI (El-Sayed vs Rogers) | Lean D | ~68% | D+1.5 |
+| AK (Peltola vs Sullivan) | Lean D | ~60% | D+2.2 |
+| OH vacancy (Brown vs Husted) | Lean D | ~58% | D+1.8 |
+| TX (Talarico vs Paxton) | Toss-up | ~50% | D+2.1 |
+| IA (Turek vs Hinson) | Lean R | ~40% | D+0.2 |
+| SC vacancy (Andrews vs D. Graham) | Likely R | ~20% | R+3.3 |
+| KS (Hamilton vs Marshall) | Safe R | ~14% | D+0.4 |
+| NE (Osborn I vs Ricketts) | Safe R | ~12% | R+0.2 |
 | FL vacancy (Nixon vs Moody) | Safe R | ~9% | R+6.9 |
-| NE (Osborn I vs Ricketts) | Safe R | ~8% | R+0.4 |
 
-> **South Carolina is no longer the weakest number on this page.** Through
-> Aug 30 its average was a single D-sponsored poll showing a 41-41 tie in an
-> R+11 seat. Two independent polls have since landed — Abacus Data (Aug 26-28)
-> at R+13 and InsiderAdvantage (Sept 8-9) at R+1.9 — taking the average to
-> R+5.0 and the rating from Lean R to Safe R. The thin-average problem now
-> shows up in TN (1 poll) and the handful of other single-poll states; see the
-> depth-weighting item under Known Gaps.
+> **Maine, Georgia, Iowa, Kansas and Kentucky averages were carrying
+> non-nominee matchups.** The Oct 19 refresh found 55 included rows that tested
+> candidates who lost their primaries or withdrew (30 of them Platner/Mills rows
+> in Maine), plus generic-candidate rows. All are now flagged `no`. That alone
+> moved ME from D+1.4 to D+2.6 and is why it crossed into Likely D. See
+> `DATA-REFRESH.md`.
+
+> **Thin averages are still the weakest numbers on this page.** LA, IL, OK and
+> TN rest on one poll each (LA's is D-sponsored); see the depth-weighting item
+> under Known Gaps.
 
 > **Rating labels are looser than the analysis scale.** `prob_to_rating()` in
 > `monte_carlo.py` labels anything ≥85% "Safe", while
@@ -70,8 +73,8 @@ that asymmetry looks like.
 > predate several resolved primaries). Treat this README, `DATA-REFRESH.md`
 > and `races_2026.json` notes as current; that file needs a rewrite.
 
-See [polls.csv](backend/app/data/polls.csv) for all 499 polls considered —
-303 included in averages across 25 states.
+See [polls.csv](backend/app/data/polls.csv) for all 692 polls considered —
+460 included in averages across 28 states.
 
 ---
 
@@ -262,7 +265,7 @@ The shared national error produces the cross-state correlation essential for rea
 
 ### Planned Improvements
 
-1. **Weight polling averages by depth**: every state's `polling_average` currently counts the same regardless of whether it rests on 36 polls or 1. TN (1 poll), AL, ID and OK are the live cases — each carries the same ~66% polling weight as Texas's 36. South Carolina was the worst example until Sept 2026, when two independent polls took it from 1 poll to 3 and moved it two rating steps, which is precisely the fragility this item is about. Widening σ when a state's average is thin would be the single biggest accuracy win available.
+1. **Weight polling averages by depth**: every state's `polling_average` currently counts the same regardless of whether it rests on 36 polls or 1. IL, LA, OK and TN (1 poll each) and AL, KY (2 each) are the live cases — each carries the same ~72% polling weight as Texas's 56. South Carolina was the worst example until Sept 2026, when two independent polls took it from 1 poll to 3 and moved it two rating steps, which is precisely the fragility this item is about. Widening σ when a state's average is thin would be the single biggest accuracy win available.
 2. **Correlated state errors**: currently a single national factor. A full covariance matrix (regional clusters, open-seat correlation) would improve accuracy.
 3. **Candidate quality**: currently a coarse 0–10 score. Plan to integrate FEC fundraising data and name-recognition tiers.
 4. **Undecided allocation**: no model yet; assumes they split evenly. Will add a challenger-lean adjustment.
@@ -278,9 +281,9 @@ The shared national error produces the cross-state correlation essential for rea
 | `backend/app/data/races_2026.json` | Seed data for all 35 races (PVI, candidates, polling averages, notes) |
 | `backend/app/data/environment.json` | Economic environment indicators (GDP, consumer sentiment, unemployment) |
 | `backend/app/data/potus-approval.csv` | Raw presidential approval polls (989 polls through 8/28/26); read by `environment.py` at runtime |
-| `backend/app/data/senate.csv` | Raw NYT Senate polling bulk export (~3,800 rows); curated by hand into `polls.csv` |
+| `backend/app/data/senate.csv` | Raw NYT Senate polling bulk export (~4,900 rows); curated by hand into `polls.csv` |
 | `backend/app/data/governors.csv` | Raw NYT gubernatorial polling bulk export; read live by `governors.py` for the coattail signal |
-| `backend/app/data/polls.csv` | Curated Senate polls (408 rows, 257 included, 24 states) with sources, sponsors, dates, and inclusion flags |
+| `backend/app/data/polls.csv` | Curated Senate polls (692 rows, 460 included, 28 states) with sources, sponsors, dates, and inclusion flags |
 | `backend/app/data/archive/` | Dated snapshots of prior `senate.csv` / `potus-approval.csv` drops, kept so each new drop can be diffed against the last |
 | `backend/app/data/analysis_notes.md` | Detailed race-by-race analysis, tiered ratings, and methodology |
 | `backend/app/data/races_2028.json` | Class III seed data for the next cycle (not active) |

@@ -1,143 +1,182 @@
 # Data Refresh Checklist
 
-Status of every input that has to be fetched by hand. Last refreshed **September 20, 2026**
-(44 days to the election).
+Status of every input that has to be fetched by hand. Last refreshed **October 19, 2026**
+(15 days to the election).
 
 The four economic inputs feed `national_environment_shift()` in
-`backend/app/model/environment.py`, currently **D+5.14**. That shift is added to all 35
+`backend/app/model/environment.py`, currently **D+5.43**. That shift is added to all 35
 races, so an error here moves the whole map rather than one state.
 
 | Input | Coefficient | Current value | Contribution | Status |
 |---|---|---|---|---|
-| Presidential approval | 0.12 / net approval pt | net −18.01 | D+2.16 | ✅ through 9/16/26 |
-| Consumer sentiment | 0.04 / pt below 85.0 | 51.7 | D+1.33 | ⚠️ **stale — Aug final; Sept preliminary was due 9/11** |
-| GDP growth | 0.3 / pt above 2.0% | 1.5% | D+0.15 | ✅ Q2 second estimate |
-| Unemployment | none — display only | 4.1% | — | ⚠️ stale — July; August was due 9/4 (display only) |
+| Presidential approval | 0.12 / net approval pt | net −20.43 | D+2.45 | ✅ through 10/18/26 |
+| Consumer sentiment | 0.04 / pt below 85.0 | 51.7 | D+1.33 | ❌ **stale — Aug final; Sept prelim, Sept final and Oct prelim all out** |
+| GDP growth | 0.3 / pt above 2.0% | 1.5% | D+0.15 | ⚠️ Q2 second estimate; third estimate out late Sept |
+| Unemployment | none — display only | 4.1% | — | ⚠️ stale — July (display only) |
 | Base midterm penalty | — | — | D+1.50 | constant |
 
 ---
 
 ## ✅ Done in this refresh
 
-**Presidential approval** — new NYT bulk export, **1,020 polls through 9/16/26** (was 989
-through 8/28). 891 fall inside the 540-day window and carry weight. Net approval moved
-−17.64 → **−18.01**, slightly *more* favourable to Democrats. The previous file is archived
-at `backend/app/data/archive/potus-approval-2026-08-28.csv` (verified byte-identical to the
-version it replaced). The new file is a clean superset — 31 polls added, none dropped. No
-code or JSON edits were needed; `environment.py` reads this file live at runtime.
+**Presidential approval** — new NYT bulk export, **1,069 polls through 10/18/26** (was 1,020
+through 9/16). 881 fall inside the 540-day window. Net approval moved −18.01 → **−20.43**,
+worth +0.29 to the environment. Previous file
+archived at `backend/app/data/archive/potus-approval-2026-09-20.csv` (verified
+byte-identical). Clean superset: 49 polls added, none dropped, no values revised.
 
-**Senate polling** — new NYT bulk export, **629 polls / 4,169 rows** (was 559 / 3,794).
-71 new polls curated into `polls.csv`, which now holds 499 rows with **303 included across
-25 states** (was 408 / 257 / 24). Previous file archived at
-`backend/app/data/archive/senate-2026-08-28.csv`, also verified byte-identical.
+**Senate polling** — new NYT bulk export, **787 polls / 4,940 rows** (was 629 / 4,169).
+158 new polls; none vanished. Previous file archived at
+`backend/app/data/archive/senate-2026-09-20.csv`, also verified byte-identical.
+`polls.csv` now holds **692 rows with 460 included across 28 states** (was 499 / 303 / 25).
+Baseline reconciled to 0.01 against the stored averages, and the duplicate-signature check
+was clean, before any edits.
 
-**Net effect:** national environment D+5.10 → **D+5.14**. D control probability ~44.2% →
-**~43.8%**. Four races changed rating.
+**Net effect:** D control **~44% → ~54%** (53.9–54.4% across seeds; 40k sims each).
+Expected D seats 50.1 → **50.7**. This is the first run with Democrats favored.
+
+Attribution, all run at today's date so α drift is held constant (old inputs alone give
+45.7% today):
+
+| Step | D control | Δ |
+|---|---|---|
+| Old inputs, today's date | 45.7% | — |
+| + new approval | 46.7% | +1.0 |
+| + 158 new Senate polls, NM/ID/IL/LA resolved | 52.6% | +5.9 |
+| + nominee cleanup (see §1) | 53.9% | +1.3 |
 
 | Race | Was | Now | Why |
 |---|---|---|---|
-| **SC** | Lean R | **Safe R** | two independent polls finally landed — see below |
-| **NH** | Safe D | **Likely D** | Sununu won the primary; Brown matchups dropped |
-| **TX** | Lean R | **Toss-up** | 9 new polls, average D+1.7 → D+2.0 |
-| **IA** | Likely R | **Lean R** | 8 new polls, average R+1.4 → R+0.8 |
+| **OH** | Toss-up | **Lean D** | 11 new polls avg D+3.0; Brown led 9. Average D+1.1 → D+1.8 |
+| **SC** | Safe R | **Likely R** | four straight polls within 3 pts. Average R+5.0 → R+3.3 |
+| **ME** | Lean D | **Likely D** | the cleanup, not new polls — see §1. D+1.3 → D+2.6 |
+| **AK** | Toss-up | **Lean D** | α drift alone; already Lean D at today's date on old inputs |
 
 ---
 
-## ⚠️ Four things worth knowing
+## ⚠️ Five things worth knowing
 
-### 1. South Carolina is fixed — and it went the other way
+### 1. 55 non-nominee rows were still in the averages — fixed
 
-SC was the most fragile input in the model: its entire average was one D-sponsored poll at
-41-41 in an R+11 seat. Two independent polls of the real matchup have now landed:
+Rule 3 (re-flag a primary loser's matchups `no`) was applied to MN, SD, MA and NH but never
+to the earlier primaries. Checking every included row's candidates against
+`races_2026.json` found **55 rows** still counted:
 
-- Abacus Data (Aug 26–28, LV n=306): **Graham +13**
-- InsiderAdvantage (Sept 8–9, LV n=1200): **Graham +1.9**
-
-The three-poll average is **R+5.0**, up from D+0.0, and the race moves Lean R → **Safe R**
-(D win probability 33.7% → 14.0%). The false toss-up is retired. Three polls in an R+11 seat
-is still thin, but it is no longer one sponsored poll doing all the work.
-
-### 2. Eight duplicate rows were inflating four state averages
-
-NYT's export lists some pollsters under two names, and both spellings had been curated in as
-separate rows — the same physical survey counted twice. Found by matching on
-state + field dates + sample size + matchup:
-
-| State | Survey | Entered as |
+| State | Rows | What |
 |---|---|---|
-| AK ×3 | Alaska Survey Research (Aug '25, Oct '25, Jan '26) | "AK Survey Research" + "Alaska Survey Research" |
-| AK ×1 | PPP (Jan '26) | "PPP" + "Public Policy Polling" |
-| ME ×2 | Pan Atlantic (Dec '25, Mar '26) | "Pan Atlantic" + "Pan Atlantic SMS Group" |
-| ME ×1 | UNH (Feb '26) | "UNH" + "University of New Hampshire" |
-| MI ×1 | Glengariff (Jan '26) | "Glengariff Group" + "Glengariff Group, Inc." |
+| ME | 30 | Platner, Mills, Kleban, Smeriglio — incl. a UNH Smeriglio 1 – Collins 66 R-subsample row |
+| GA | 13 | Carter, King, Dooley |
+| IA | 5 | Sage, Wahls, Ernst, generic D |
+| KS | 2 | Schmidt |
+| KY | 2 | Cameron, Morris |
+| NH | 1 | Innis |
+| AK, MN | 1 each | generic candidate |
 
-The rounded-value copy was flagged `no` in each case and the full-precision NYT record kept.
-This is the same bug class caught in Aug 2026 with the MN PPP/GQR survey — **it recurs with
-every drop**, so re-run the signature check each time. Effect was small (AK and ME each moved
-well under a point) but it was systematically double-weighting those pollsters.
+All flagged `no` with the reason in `notes`. Biggest moves: **ME D+1.4 → D+2.6**,
+**KY R+7.0 → R+10.0**, IA +0.4, KS +0.9. The pre-flight mean check and the duplicate
+check both pass with these rows present, so neither catches it. A **nominee check** now
+belongs alongside them (see the reminders below).
 
-### 3. NYT withdrew a Minnesota poll
+### 2. New Mexico is resolved — Marker is on the ballot
 
-The Impact Research MN poll (fielded 7/8–7/11/25, Flanagan 48 – Tafoya 45) is **gone from the
-9/19 export**. Its source memo was titled "MN Senate Dec-2025" while the field dates were
-July, so it looks like a data-quality retraction. It had been included in MN's average; it is
-now flagged `no`.
+The JSON note was wrong. After the only filed Republican was disqualified, Roswell
+businessman **Larry Marker ran a write-in primary campaign and took 4,470 votes, above the
+2,351 needed** to claim the Republican line
+([Roswell Daily Record](https://www.rdrnews.com/news/local/results-of-the-new-mexico-primary-2026-write-in-campaign-gets-marker-gop-nomination-in/article_af4014da-b950-4d3c-a8f2-17bda428111d.html),
+[Source NM](https://sourcenm.com/2026/09/11/new-mexico-election-2026-us-senator/)).
+The August Research & Polling poll is now included, alongside two new ones: average
+**D+16.3** across 3 polls. Rep candidate set to Marker, quality score **2** (was 0 for
+"None (disqualified)", which had been handing Luján a 4.8-pt quality bonus). Still Safe D.
 
-### 4. New Mexico has a contradiction — held out, needs your call
+### 3. Idaho changed shape — Roth is out, Achilles is on the D side
 
-`races_2026.json` records that the only Republican to file was disqualified and that **no
-Republican appears on the NM Senate ballot**. But this drop carries a Research &
-Polling/Albuquerque Journal *general-election* question (Aug 21–28, n=516 LV) testing
-**Luján 53 – Larry Marker (R) 38**, not flagged hypothetical.
+Democrat **David Roth ended his campaign on July 28 and filed his withdrawal Aug 28**
+([Idaho Capital Sun](https://idahocapitalsun.com/2026/07/28/idaho-democrat-david-roth-ends-campaign-for-us-senate-seat-held-by-risch/),
+[Spokesman-Review](https://www.spokesman.com/stories/2026/jul/29/democrat-david-roth-to-withdraw-from-idaho-senate-/)).
+Every poll since has been Risch vs independent **Todd Achilles**. Achilles is now modeled on
+the D side, as Osborn and Bengs are, and only post-withdrawal polls are used (4 polls,
+avg **R+19.5** — IND-sponsored Bullfinch Achilles +5, R-sponsored Peak Risch +34 / +25,
+Change Risch +24). Two of those (Bullfinch Aug, Peak Aug) had sat in the export uncurated
+since September. Still Safe R.
 
-Both cannot be right. I left the poll flagged `no`, so NM still has no polling average and
-stays Safe D on fundamentals. Including it would actually make an effectively uncontested
-seat look *less* safe (D+15 is worse for Luján than unopposed). **Confirm whether Marker
-holds a ballot line before including it.**
+**Needs your call:** Achilles' **quality score is set to 4 by hand** (Roth was 2; Bengs 2,
+Osborn 7). It does not move the rating at R+32, but it isn't data-driven.
+
+### 4. Two new single-poll states — LA is the fragile one
+
+- **Louisiana**: first general-election poll, Hart Research (Sept 17-19, **D-sponsored**),
+  Letlow 48 – Davis 44. D win 0% → ~5%. One sponsored poll in an R+20 seat — the same
+  shape as the old SC problem, though the PVI keeps it Safe R.
+- **Illinois**: PPP (Oct, RV) Stratton 49 – Tracy 36. Safe D either way.
+
+IL, LA, OK and TN now each rest on a single poll.
+
+### 5. Kansas now polls even in an R+20 state
+
+Eight new polls moved KS **R+2.8 → D+0.4**. Hamilton led 6 of 8, including nonpartisan
+YouGov D+3 and Wedgewood D+2. NYT/Siena had Marshall +0.3. The model holds it Safe R
+(~14%) on R+20 PVI. That is the cap and the fundamentals working as designed, but if
+KS polling holds, it is the race most likely to embarrass the rating.
 
 ---
 
-## Primaries resolved since the last refresh
+## Curation decisions this drop
 
-Both landed as expected, and the losers' matchups are now flagged `no`:
+Usual rules, plus three clarifications now written into CONTEXT.md:
 
-- **Massachusetts (Sept 1)** — **Markey** beat Moulton (final polls had him +30). 7 Moulton
-  rows excluded; MA average D+23.3 → **D+21.0**, still Safe D.
-- **New Hampshire (Sept 8)** — **Pappas** (D) and **Sununu** (R). Brown ran ~12 points weaker
-  than Sununu, so dropping the 5 Brown rows is most of the D+6.1 → **D+4.1** move, and the
-  rating goes Safe D → **Likely D**. Two post-primary polls are in: co/efficient (Sept 9–11)
-  even, InsiderAdvantage (Sept 16–17) D+7.9.
+1. **Head-to-head over minor-party multi-way.** When a survey asked both, the
+   head-to-head is kept unless a *viable* independent is on the ballot (MT/Bodnar,
+   MS/Pinkins). 11 surveys this drop: KS ×3, OH ×2, MI ×2, MN, NE, IA, and ID/Bullfinch.
+   Matches the July TX precedent.
+2. **Two LV screens from one YouGov survey → keep the tighter (smaller-n) one** (GA, NC),
+   following the Sept IA precedent. RV screens dropped in 11 more polls (Marist ×2, Fox ×3,
+   Big Data Poll ×5, Targoz).
+3. **AK full-field-only polls are excluded.** Trafalgar (Sept 22-24) published only a
+   first-round question with the name-alike Dan J. Sullivan at 2.8 and Heikes at 0.7, which
+   understates Sullivan's final-round number. Flagged `no`. ASR's round-3 numbers and three
+   head-to-heads used as normal.
 
-No nominations remain open.
+Also:
+- 5 generic-ballot questions excluded (FL, ME, MI, NE, OH).
+- **PA skipped**: two Bravo Group/PennLive rows list only Fetterman, whose seat is not up
+  until 2028.
+- **ActiVote** appears for the first time (FL, OH, TX). Included as normal — it reports
+  forced two-party shares, but the margins are usable. Flag it if you'd rather exclude it.
+- NYT revised the Change Research ID survey (Risch 42 → 43 in the Roth form, 43 → 45 in
+  the no-Roth form). Both applied.
+- Older polls newly published: NE GBAO ×3 (Apr, Jul, Sept; pro-Osborn PAC), SD Lake
+  Research (Aug, D-sponsored), all included.
+
+Candidate fields fixed in `races_2026.json`: NH rep "TBD (primary Sept 8…)" → **John
+Sununu**; MA rep "TBD (primary Sept 1…)" → **John Deaton**. Names only; scores unchanged.
+
+Race notes rewritten for 26 races. Several
+were stale before this drop (ME and OH notes still said "Toss-up", NC "Likely D").
 
 ---
 
 ## Outstanding — not in this drop
 
-You gave me `senate.csv` and `potus-approval.csv` only, so the economic side is unchanged and
-two releases have come due:
+You gave me `senate.csv` and `potus-approval.csv` only, so the economic side is unchanged —
+and it is now **two months stale** on sentiment, the second-largest contributor:
 
-| Release | Due | Status | Matters? |
-|---|---|---|---|
-| U. Michigan September **preliminary** | Sept 11 | ❌ **not incorporated** | **yes** — sentiment is the 2nd-largest contributor (D+1.33) |
-| BLS Employment Situation, August | Sept 4 | ❌ not incorporated | display only |
+| Release | Status | Matters? |
+|---|---|---|
+| U. Michigan Sept preliminary, Sept final, **Oct preliminary** | ❌ not incorporated | **yes** |
+| BEA Q2 third estimate | ❌ not incorporated | rarely moves |
+| BLS Employment Situation, Aug and Sept | ❌ not incorporated | display only |
 
-Sentiment is the one to chase. Pull it from
-<https://www.sca.isr.umich.edu/files/tbmics.csv> (full monthly history, always current) —
-not the per-month `ff<YYYYMM>.pdf`, which lags and is named for the month it *reports*, not
-the month it is published.
+Pull sentiment from <https://www.sca.isr.umich.edu/files/tbmics.csv>.
 
 ### Coming up
 
 | Date | Release | Matters? |
 |---|---|---|
-| Late Sept | BEA Q2 third estimate | rarely moves |
-| Early Oct | U. Michigan September **final** | yes — sentiment |
-| Oct 2 | BLS Employment Situation, September | display only |
-| **Late Oct** | BEA Q3 **advance** estimate | yes — last GDP print before the election |
+| **~Oct 29** | BEA Q3 **advance** estimate | yes — last GDP print before the election |
+| ~Oct 30 | U. Michigan October **final** | yes — sentiment |
 
-Approval polling should be re-dropped roughly weekly. The average uses a 21-day half-life, so
-a file more than about two weeks stale is materially discounting its own freshest data.
+Approval polling should be re-dropped roughly weekly from here. With 15 days left, one
+more Senate drop around Oct 28 – Nov 1 would catch the final wave of public polls.
 
 ---
 
@@ -148,22 +187,24 @@ the current file before overwriting; both are curated by hand — see the pipeli
 `README.md`.
 
 `governors.csv` was **not** refreshed this cycle (still Aug 28). It feeds the β=0.10
-gubernatorial coattails term, so it is a second-order input, but it is now the stalest
-polling file in the repo.
+gubernatorial coattails term — second-order, but now nearly two months stale.
 
 ### Curation reminders for the next drop
 
 1. Diff against the newest file in `archive/` **by `poll_id`**, then group new rows by
    `question_id` and decide include/exclude per question — one survey publishing N questions
    otherwise gets N× weight.
-2. Re-run the duplicate signature check (state + field dates + sample size + matchup). It has
-   now caught double-counted rows twice running.
-3. Multi-screen polls: keep the **LV** screen. This drop had 9 such polls (Abacus ×5,
-   YouGov ×3, MSU, TIPP, Targoz, Elon lv/rv/adult).
-4. AK: keep the **head-to-head / final RCV round** question, not the first-round or
-   full-field forms.
-5. Generic-ballot questions are excluded from named-candidate averages (5 this drop).
-6. Check whether any poll_ids **vanished** from the export, not just which were added.
+2. Re-run the duplicate signature check (state + field dates + sample size + matchup).
+3. **New: run the nominee check** — every `yes` row's D and R last names must match the
+   candidates in `races_2026.json` (independents on the D side in NE/SD/ID). It caught 55
+   rows this time that both other checks pass.
+4. Multi-screen polls: keep the **LV** screen; two LV screens → the tighter one.
+5. Head-to-head over minor-party multi-way; multi-way only for a viable independent.
+6. AK: keep the **head-to-head / final RCV round**; exclude full-field-only polls.
+7. Generic-ballot questions are excluded from named-candidate averages.
+8. Check whether any poll_ids **vanished** from the export, not just which were added.
+9. Check for **older polls newly added** to the export (this drop: NE GBAO ×3 from Apr–Sept,
+   SD Lake Research from Aug), and for archived polls that were never curated (ID had two).
 
 ---
 
@@ -172,4 +213,4 @@ polling file in the repo.
 - **Cook PVI** — values in `races_2026.json` and the reference table in
   `backend/app/model/governors.py` only change after a presidential election.
 - **Candidate quality scores** — hand-set in `races_2026.json`; revisit only when a nominee
-  changes. No nominations are open.
+  changes. Two changed this time (NM Marker → 2, ID Achilles → 4).
