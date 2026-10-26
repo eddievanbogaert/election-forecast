@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-19",
+  "as_of": "2026-10-26",
   "presidential_approval": {
     "_note": "Computed live from potus-approval.csv by environment.py — this block is a fallback only and is overridden at runtime.",
     "approve": 38.72,
@@ -10,8 +10,8 @@
   "economy": {
     "gdp_growth_annualized": 1.5,
     "gdp_source": "BEA Q2 2026 second estimate (released 8/26/26): +1.5% annualized, unchanged from the advance estimate, with consumer spending revised up to 3.4%. Down from Q1 2026's +2.1% third estimate. Q2 third estimate due late September 2026; the Q3 advance estimate in late October is the last GDP print before the election.",
-    "consumer_sentiment": 51.7,
-    "consumer_sentiment_source": "University of Michigan, August 2026 final (released 8/28/26): 51.7, down about 6% from July's 55.2 and about 11% below a year ago, confirming the early-month reading amid continued worries that inflation will stay elevated. Verified against the Surveys of Consumers monthly series (sca.isr.umich.edu/files/tbmics.csv). STALE AS OF 2026-10-19: the September preliminary (Sept 11), September final and October preliminary have all since been released and none is reflected here — the 9/19 and 10/19 refreshes contained polling files only. Sentiment is the second-largest contributor to national_environment_shift(), so refresh this from tbmics.csv before relying on the shift.",
+    "consumer_sentiment": 48.0,
+    "consumer_sentiment_source": "University of Michigan, October 2026 preliminary: 48.0, essentially flat from September's 48.1 and down from August's 51.7 and July's 55.2. Taken from the Surveys of Consumers monthly series (sca.isr.umich.edu/files/tbmics.csv), pulled 10/26/26 and saved as tbmics.csv. The October final is due ~Oct 30, the last sentiment release before the election.",
     "unemployment_rate": 4.1,
     "unemployment_source": "BLS Employment Situation, July 2026 (released 8/7/26). U-3 fell to 4.1% from 4.2%, but for a weak reason — payrolls fell 23k, May and June were revised down 103k combined, and the participation rate dropped to 61.4%. STALE AS OF 2026-10-19: the August and September Employment Situation reports are not reflected here. Note: unemployment is carried for display only; national_environment_shift() does not read it, so this does not affect the forecast."
   }

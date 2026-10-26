@@ -91,17 +91,17 @@ A four-component data-driven estimate (replaces earlier flat midterm penalty):
 | Component | Coefficient | Current Value | Contribution |
 |-----------|-------------|---------------|-------------|
 | Base midterm penalty | — | — | D+1.50 |
-| Presidential approval | 0.12 per net approval pt | −17.64 | D+2.12 |
+| Presidential approval | 0.12 per net approval pt | −20.43 | D+2.45 |
 | GDP growth | 0.3 per pt above 2.0% trend | 1.5% | D+0.15 |
-| Consumer sentiment | 0.04 per pt below 85.0 baseline | 51.7 | D+1.33 |
+| Consumer sentiment | 0.04 per pt below 85.0 baseline | 48.0 | D+1.48 |
 
 Approval is **computed live** at runtime by `environment.py` from `potus-approval.csv`
 (exponential time decay, 21-day half-life, ±2.0 pt partisan-sponsor adjustment, polls older
 than 540 days dropped). The `presidential_approval` block in `environment.json` is only a
 fallback and is overridden on every run — so dropping a fresh `potus-approval.csv` in is
-all that is needed (currently 989 polls through 8/28/26). GDP and sentiment are **manual**
+all that is needed (currently 1,069 polls through 10/18/26). GDP and sentiment are **manual**
 entries in `environment.json` (BEA Q2 2026 second estimate, released 8/26; U. Michigan
-August 2026 final 51.7, released 8/28). See `DATA-REFRESH.md`.
+October 2026 preliminary 48.0, from `tbmics.csv` pulled 10/26). See `DATA-REFRESH.md`.
 
 ### Fundamentals lean (per race)
 
@@ -180,7 +180,7 @@ Chamber control = P(D total seats ≥ 51).
 |--------|-------|
 | Expected D seats | ~50.7 / 100 |
 | D Senate control probability | ~54% (53.9–54.4% across seeds) |
-| Net national environment | D+5.43 (net approval −20.43 through 10/18) |
+| Net national environment | D+5.58 (net approval −20.43 through 10/18; sentiment 48.0, Oct prelim) |
 | Polling weight | ~72% Senate polls / 28% everything else (cap 75%) |
 | D seats not up | 34 |
 | R seats not up | 31 |
@@ -373,12 +373,10 @@ curl -X POST "https://<CLOUD_RUN_URL>/api/forecast/refresh?secret=<ADMIN_SECRET>
 
 ## Next development priorities
 
-1. **Refresh consumer sentiment** — the U. Michigan September preliminary, September final
-   and October preliminary are all out and **none** is in the model; the Sept 19 and Oct 19
-   refreshes covered polling files only. Sentiment is
-   the second-largest environment contributor (D+1.33). Pull from
-   <https://www.sca.isr.umich.edu/files/tbmics.csv>. The BEA Q3 advance estimate in late
-   October is the last GDP print before the election. See `DATA-REFRESH.md`.
+1. **Final economic refresh** — sentiment is current through the October preliminary (48.0,
+   pulled Oct 26). The October final (~Oct 30) and the BEA Q3 advance GDP estimate
+   (~Oct 29) are the last releases before the election. Pull sentiment from
+   <https://www.sca.isr.umich.edu/files/tbmics.csv>. See `DATA-REFRESH.md`.
 2. **Weight polling averages by depth** — every state's average counts the same whether it
    rests on 56 polls or 1. SC was the live example until Sept, when going from 1 poll to 3
    moved it two rating steps (Lean R → Safe R) — exactly the fragility this addresses. IL, LA,

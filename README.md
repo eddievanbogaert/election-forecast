@@ -24,7 +24,7 @@ Live site: [https://elections.eddievb.com](https://elections.eddievb.com) (also:
 |--------|-------|
 | Expected D seats | ~50.7 / 100 |
 | D Senate control probability | ~54% |
-| Net national environment | D+5.43 |
+| Net national environment | D+5.58 (sentiment updated Oct 26) |
 | Days to election | 15 |
 | Polling weight | ~72% Senate polls / 28% everything else |
 
@@ -129,23 +129,23 @@ The model uses a four-component national environment estimate that replaces the 
 | Component | Coefficient | Current Value | Contribution |
 |-----------|------------|---------------|-------------|
 | Base midterm penalty | — | — | D+1.50 |
-| Presidential approval | 0.12 per net approval pt | −18.01 | D+2.16 |
+| Presidential approval | 0.12 per net approval pt | −20.43 | D+2.45 |
 | GDP growth | 0.3 per pt above 2.0% trend | 1.5% | D+0.15 |
-| Consumer sentiment | 0.04 per pt below 85.0 baseline | 51.7 | D+1.33 |
+| Consumer sentiment | 0.04 per pt below 85.0 baseline | 48.0 | D+1.48 |
 
-**Net environment: D+5.14**
+**Net environment: D+5.58**
 
 Presidential approval is computed live from `potus-approval.csv` — a
 time-decay-weighted average (half-life 21 days, partisan-adjusted, polls older
 than 540 days dropped), so the model automatically reflects the latest data
-whenever the CSV is updated. The file currently holds 1,020 polls through 9/16/26,
-891 of them inside the window. The `presidential_approval` block in
+whenever the CSV is updated. The file currently holds 1,069 polls through 10/18/26,
+881 of them inside the window. The `presidential_approval` block in
 `environment.json` is a fallback only and is overridden on every run.
 
 GDP and sentiment are **manual** entries in `backend/app/data/environment.json`,
 currently the BEA Q2 2026 second estimate (+1.5% annualized, unchanged from the
-advance, released 8/26/26) and University of Michigan August 2026 final (51.7,
-released 8/28/26). See `DATA-REFRESH.md` for the refresh routine and release
+advance, released 8/26/26) and University of Michigan October 2026 preliminary
+(48.0, from `tbmics.csv` pulled 10/26/26). See `DATA-REFRESH.md` for the refresh routine and release
 calendar.
 
 > **Sentiment is stale.** The U. Michigan September preliminary was due Sept 11

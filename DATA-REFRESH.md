@@ -4,13 +4,13 @@ Status of every input that has to be fetched by hand. Last refreshed **October 1
 (15 days to the election).
 
 The four economic inputs feed `national_environment_shift()` in
-`backend/app/model/environment.py`, currently **D+5.43**. That shift is added to all 35
+`backend/app/model/environment.py`, currently **D+5.58**. That shift is added to all 35
 races, so an error here moves the whole map rather than one state.
 
 | Input | Coefficient | Current value | Contribution | Status |
 |---|---|---|---|---|
 | Presidential approval | 0.12 / net approval pt | net −20.43 | D+2.45 | ✅ through 10/18/26 |
-| Consumer sentiment | 0.04 / pt below 85.0 | 51.7 | D+1.33 | ❌ **stale — Aug final; Sept prelim, Sept final and Oct prelim all out** |
+| Consumer sentiment | 0.04 / pt below 85.0 | 48.0 | D+1.48 | ✅ Oct preliminary (updated 10/26); Oct final due ~10/30 |
 | GDP growth | 0.3 / pt above 2.0% | 1.5% | D+0.15 | ⚠️ Q2 second estimate; third estimate out late Sept |
 | Unemployment | none — display only | 4.1% | — | ⚠️ stale — July (display only) |
 | Base midterm penalty | — | — | D+1.50 | constant |
@@ -157,12 +157,14 @@ were stale before this drop (ME and OH notes still said "Toss-up", NC "Likely D"
 
 ## Outstanding — not in this drop
 
-You gave me `senate.csv` and `potus-approval.csv` only, so the economic side is unchanged —
-and it is now **two months stale** on sentiment, the second-largest contributor:
+**Oct 26 update:** sentiment refreshed from `tbmics.csv` — September 48.1, **October
+preliminary 48.0** (was August final 51.7). Sentiment effect D+1.33 → D+1.48, environment
+D+5.43 → D+5.58, D control 54.6% → 55.2% (both at Oct 26, seed held fixed). No race moved
+more than half a point; no rating changes.
 
 | Release | Status | Matters? |
 |---|---|---|
-| U. Michigan Sept preliminary, Sept final, **Oct preliminary** | ❌ not incorporated | **yes** |
+| U. Michigan Sept final, Oct preliminary | ✅ incorporated Oct 26 | **yes** |
 | BEA Q2 third estimate | ❌ not incorporated | rarely moves |
 | BLS Employment Situation, Aug and Sept | ❌ not incorporated | display only |
 
