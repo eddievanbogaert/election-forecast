@@ -127,3 +127,6 @@ jobs:
           channelId: live
           projectId: ${{ env.PROJECT_ID }}
           entryPoint: frontend
+          # 15.34.1 added a serviceusage.services.get check that this service account
+          # lacks; 15.34.0 deploys fine. Unpin once the SA has Service Usage Consumer.
+          firebaseToolsVersion: 15.34.0
