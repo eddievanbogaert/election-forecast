@@ -47,6 +47,13 @@ N_SIMS: int = 40_000
 SIGMA_NATIONAL: float = 2.5   # national wave error (all states move together)
 DATA_PATH = Path(__file__).parent.parent / "data" / "races_2026.json"
 
+# The election was held Nov 3, 2026. The forecast is frozen at its Election Day state:
+# every run uses this reference date and seed, so the API returns the same final numbers
+# no matter when it runs or how often Cloud Run cold-starts. Set both to None to resume
+# live forecasting from today's date.
+FINAL_FORECAST_DATE: Optional[date] = date(2026, 11, 3)
+FINAL_FORECAST_SEED: Optional[int] = 20261103
+
 RATING_THRESHOLDS = [
     (0.85, "Safe D"),
     (0.70, "Likely D"),
@@ -118,7 +125,9 @@ def run_simulation(
     t0 = time.perf_counter()
     # Use US Eastern time so the date matches what US users expect
     eastern = timezone(timedelta(hours=-5))
-    ref = as_of or datetime.now(eastern).date()
+    ref = as_of or FINAL_FORECAST_DATE or datetime.now(eastern).date()
+    if rng_seed is None:
+        rng_seed = FINAL_FORECAST_SEED
     rng = np.random.default_rng(rng_seed)
 
     data = load_data()
@@ -128,7 +137,7 @@ def run_simulation(
     races_raw: list[dict] = data["races"]
 
     # Load national environment once
-    env = load_environment()
+    env = load_environment(ref)
     env_shift = national_environment_shift(env)
     env_summary = environment_summary(env)
 

@@ -20,19 +20,7 @@ export function Header({ meta }: Props) {
 
         {meta && (
           <div className="flex items-center gap-4 text-xs text-gray-400">
-            <span>
-              Model updated{' '}
-              <span className="text-gray-200 font-medium">
-                {new Date(meta.as_of).toLocaleDateString('en-US', {
-                  month: 'short',
-                  day: 'numeric',
-                  year: 'numeric',
-                })}
-              </span>
-            </span>
-            <span className="hidden md:block">
-              {meta.days_until_election.toLocaleString()} days to election
-            </span>
+            <span className="text-gray-200 font-medium">Final forecast</span>
             <span className="hidden md:block text-gray-600">
               {meta.polling_weight === 0
                 ? 'Fundamentals only'

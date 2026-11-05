@@ -20,6 +20,13 @@ Live site: [https://elections.eddievb.com](https://elections.eddievb.com) (also:
 
 ## Current Forecast Snapshot (October 19, 2026)
 
+> **Frozen at the final Election Day forecast.** The election was held Nov 3, 2026.
+> `FINAL_FORECAST_DATE` and `FINAL_FORECAST_SEED` in `backend/app/model/monte_carlo.py`
+> pin every run to Nov 3 with a fixed seed, so the site shows the same final numbers
+> indefinitely: **D control 56.3%, expected D seats 50.89**, environment D+5.58, polling
+> weight 75%. At that weight KS and NE read Likely R. Set both constants to `None` to
+> resume live forecasting. The snapshot below is the Oct 19 run.
+
 | Metric | Value |
 |--------|-------|
 | Expected D seats | ~50.7 / 100 |
